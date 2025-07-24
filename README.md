@@ -45,59 +45,55 @@
 ### Pasos
 
 1. **Clonar el repositorio**
-   \`\`\`bash
-   git clone https://github.com/CallejaJ/portfolio.git
-   cd portfolio
-   \`\`\`
+
+```bash
+git clone https://github.com/CallejaJ/portfolio.git
+cd portfolio
+```
 
 2. **Instalar dependencias**
-   \`\`\`bash
-   npm install
 
+```bash
+npm install
 # o
-
 yarn install
-
 # o
-
 pnpm install
-\`\`\`
+```
 
 3. **Ejecutar en desarrollo**
-   \`\`\`bash
-   npm run dev
 
+```bash
+npm run dev
 # o
-
 yarn dev
-
 # o
-
 pnpm dev
-\`\`\`
+```
 
 4. **Abrir en el navegador**
-   \`\`\`
-   http://localhost:3000
-   \`\`\`
+
+```
+http://localhost:3000
+```
 
 ## 📁 Estructura del Proyecto
 
-\`\`\`
+```
 portfolio/
 ├── app/
-│ ├── globals.css # Estilos globales
-│ ├── layout.tsx # Layout principal
-│ └── page.tsx # Página principal del portfolio
+│   ├── globals.css          # Estilos globales
+│   ├── layout.tsx           # Layout principal
+│   └── page.tsx             # Página principal del portfolio
 ├── components/
-│ └── ui/ # Componentes UI de shadcn
-├── public/ # Archivos estáticos
-├── README.md # Este archivo
-├── next.config.js # Configuración de Next.js
-├── tailwind.config.ts # Configuración de Tailwind
-├── tsconfig.json # Configuración de TypeScript
-└── package.json # Dependencias y scripts
-\`\`\`
+│   └── ui/                  # Componentes UI de shadcn
+├── public/                  # Archivos estáticos
+├── README.md               # Este archivo
+├── next.config.js          # Configuración de Next.js
+├── tailwind.config.ts      # Configuración de Tailwind
+├── tsconfig.json           # Configuración de TypeScript
+└── package.json            # Dependencias y scripts
+```
 
 ## 🎨 Personalización
 
@@ -105,37 +101,37 @@ portfolio/
 
 Edita los datos en `app/page.tsx`:
 
-\`\`\`typescript
+```typescript
 const personalInfo = {
-name: "Tu Nombre",
-title: "Tu Título Profesional",
-location: "Tu Ubicación",
-phone: "Tu Teléfono",
-email: "tu@email.com",
-linkedin: "https://linkedin.com/in/tu-perfil",
-github: "https://github.com/tu-usuario",
-// ...
-}
-\`\`\`
+  name: "Tu Nombre",
+  title: "Tu Título Profesional",
+  location: "Tu Ubicación",
+  phone: "Tu Teléfono",
+  email: "tu@email.com",
+  linkedin: "https://linkedin.com/in/tu-perfil",
+  github: "https://github.com/tu-usuario",
+  // ...
+};
+```
 
 ### Proyectos
 
 Modifica el array `projects` para añadir tus propios proyectos:
 
-\`\`\`typescript
+```typescript
 const projects: Project[] = [
-{
-id: 1,
-titleKey: "tuProyecto",
-image: "/ruta-a-tu-imagen.jpg",
-technologies: ["React", "Node.js", "MongoDB"],
-github: "https://github.com/tu-usuario/tu-proyecto",
-demo: "https://tu-proyecto.vercel.app",
-featured: true,
-},
-// ...
-]
-\`\`\`
+  {
+    id: 1,
+    titleKey: "tuProyecto",
+    image: "/ruta-a-tu-imagen.jpg",
+    technologies: ["React", "Node.js", "MongoDB"],
+    github: "https://github.com/tu-usuario/tu-proyecto",
+    demo: "https://tu-proyecto.vercel.app",
+    featured: true,
+  },
+  // ...
+];
+```
 
 ### Traducciones
 
@@ -160,26 +156,23 @@ Modifica `tailwind.config.ts` y `app/globals.css` para personalizar la paleta de
 
 ### Docker
 
-\`\`\`bash
-
+```bash
 # Construir imagen
-
 docker build -t portfolio .
 
 # Ejecutar contenedor
-
 docker run -p 3000:3000 portfolio
-\`\`\`
+```
 
 ## 📊 Scripts Disponibles
 
-\`\`\`bash
-npm run dev # Servidor de desarrollo
-npm run build # Build de producción
-npm run start # Servidor de producción
-npm run lint # Linting con ESLint
-npm run type-check # Verificación de tipos TypeScript
-\`\`\`
+```bash
+npm run dev          # Servidor de desarrollo
+npm run build        # Build de producción
+npm run start        # Servidor de producción
+npm run lint         # Linting con ESLint
+npm run type-check   # Verificación de tipos TypeScript
+```
 
 ## 🎯 Características Destacadas
 
