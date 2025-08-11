@@ -1,29 +1,11 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import {
-  Github,
-  ExternalLink,
-  Mail,
-  Linkedin,
-  MapPin,
-  Phone,
-  Code,
-  Zap,
-  TrendingUp,
-  Shield,
-  Cpu,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { useState } from "react";
+import { motion } from "framer-motion"
+import { Github, ExternalLink, Mail, Linkedin, MapPin, Phone, Code, Zap, TrendingUp, Shield, Cpu } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { useState } from "react"
 
 // Definir tipos para mejor seguridad de tipos
 type ProjectKey =
@@ -33,35 +15,36 @@ type ProjectKey =
   | "realEstate"
   | "tokenLaunchpad"
   | "web3Toolkit"
-  | "faviconGenerator";
+  | "faviconGenerator"
+  | "retroGamehub" // Nuevo proyecto
+  | "mementoAcademy" // Nuevo proyecto
 
 interface ProjectData {
-  title: string;
-  description: string;
-  metrics: string;
+  title: string
+  description: string
+  metrics: string
 }
 
 interface Project {
-  id: number;
-  titleKey: ProjectKey;
-  image: string;
-  technologies: string[];
-  github: string;
-  demo: string;
-  featured: boolean;
+  id: number
+  titleKey: ProjectKey
+  image: string
+  technologies: string[]
+  github: string
+  demo: string
+  featured: boolean
 }
 
 export default function JorgePortfolio() {
   // Añadir el hook useState para el idioma
-  const [language, setLanguage] = useState("es");
+  const [language, setLanguage] = useState("es")
   const t = {
     es: {
       // Personal Info
       title: "Web3 Developer | Blockchain Specialist | Prompt Engineer",
       description:
         "Blockchain developer que ha convertido la IA en su ventaja competitiva. Especialista en prompt engineering y cómo esta disciplina puede transformar los ciclos de desarrollo tradicionales.",
-      highlight:
-        "Reducción del tiempo de desarrollo hasta un 40% mediante automatización con IA",
+      highlight: "Reducción del tiempo de desarrollo hasta un 40% mediante automatización con IA",
 
       // Navigation
       viewProjects: "Ver Proyectos",
@@ -75,8 +58,7 @@ export default function JorgePortfolio() {
       experience: "Experiencia Profesional",
       experienceDesc: "Liderando proyectos Web3 innovadores",
       readyToInnovate: "¿Listo para Innovar?",
-      transformVision:
-        "Transformemos tu visión en realidad con tecnología blockchain y IA",
+      transformVision: "Transformemos tu visión en realidad con tecnología blockchain y IA",
       sendEmail: "Enviar Email",
 
       // Skills
@@ -130,6 +112,20 @@ export default function JorgePortfolio() {
             "Generador avanzado de favicons que crea automáticamente todos los tamaños y formatos necesarios para aplicaciones web modernas. Incluye preview en tiempo real y optimización automática.",
           metrics: "Genera 15+ formatos automáticamente",
         },
+        retroGamehub: {
+          // Nuevo proyecto
+          title: "Retro Gamehub",
+          description:
+            "Plataforma de juegos retro con integración de comentarios y rankings persistentes a través de Supabase. Permite a los usuarios interactuar y competir en un entorno clásico.",
+          metrics: "Comunidad activa con 100+ usuarios",
+        },
+        mementoAcademy: {
+          // Nuevo proyecto
+          title: "Memento Academy",
+          description:
+            "Plataforma educativa descentralizada para comunidades Web3. Ofrece cursos, foros y recursos sobre blockchain, DeFi y NFTs, con un sistema de recompensas basado en tokens.",
+          metrics: "50+ cursos y 10+ comunidades",
+        },
       } as Record<ProjectKey, ProjectData>,
 
       // Experience
@@ -177,8 +173,7 @@ export default function JorgePortfolio() {
       title: "Web3 Developer | Blockchain Specialist | Prompt Engineer",
       description:
         "Blockchain developer who has turned AI into his competitive advantage. Specialist in prompt engineering and how this discipline can transform traditional development cycles.",
-      highlight:
-        "Up to 40% reduction in development time through AI automation",
+      highlight: "Up to 40% reduction in development time through AI automation",
 
       // Navigation
       viewProjects: "View Projects",
@@ -192,8 +187,7 @@ export default function JorgePortfolio() {
       experience: "Professional Experience",
       experienceDesc: "Leading innovative Web3 projects",
       readyToInnovate: "Ready to Innovate?",
-      transformVision:
-        "Let's transform your vision into reality with blockchain and AI technology",
+      transformVision: "Let's transform your vision into reality with blockchain and AI technology",
       sendEmail: "Send Email",
 
       // Skills
@@ -247,6 +241,20 @@ export default function JorgePortfolio() {
             "Advanced favicon generator that automatically creates all sizes and formats needed for modern web applications. Includes real-time preview and automatic optimization.",
           metrics: "Generates 15+ formats automatically",
         },
+        retroGamehub: {
+          // Nuevo proyecto
+          title: "Retro Gamehub",
+          description:
+            "Retro gaming platform with persistent comments and rankings integrated via Supabase. Allows users to interact and compete in a classic environment.",
+          metrics: "Active community with 100+ users",
+        },
+        mementoAcademy: {
+          // Nuevo proyecto
+          title: "Memento Academy",
+          description:
+            "Decentralized educational platform for Web3 communities. Offers courses, forums, and resources on blockchain, DeFi, and NFTs, with a token-based reward system.",
+          metrics: "50+ courses and 10+ communities",
+        },
       } as Record<ProjectKey, ProjectData>,
 
       // Experience
@@ -292,10 +300,8 @@ export default function JorgePortfolio() {
   }[language] || {
     // Fallback por defecto en español
     title: "Web3 Developer | Blockchain Specialist | Prompt Engineer",
-    description:
-      "Blockchain developer que ha convertido la IA en su ventaja competitiva.",
-    highlight:
-      "Reducción del tiempo de desarrollo hasta un 40% mediante automatización con IA",
+    description: "Blockchain developer que ha convertido la IA en su ventaja competitiva.",
+    highlight: "Reducción del tiempo de desarrollo hasta un 40% mediante automatización con IA",
     viewProjects: "Ver Proyectos",
     contact: "Contactar",
     featuredProjects: "Proyectos Destacados",
@@ -305,8 +311,7 @@ export default function JorgePortfolio() {
     experience: "Experiencia Profesional",
     experienceDesc: "Liderando proyectos Web3 innovadores",
     readyToInnovate: "¿Listo para Innovar?",
-    transformVision:
-      "Transformemos tu visión en realidad con tecnología blockchain y IA",
+    transformVision: "Transformemos tu visión en realidad con tecnología blockchain y IA",
     sendEmail: "Enviar Email",
     featuredProject: "Proyecto Destacado",
     projects: {
@@ -315,11 +320,7 @@ export default function JorgePortfolio() {
         description: "Plataforma DeFi avanzada",
         metrics: "60% reducción",
       },
-      usdtStaking: {
-        title: "USDT Staking Platform",
-        description: "Sistema completo de staking",
-        metrics: "365% APY",
-      },
+      usdtStaking: { title: "USDT Staking Platform", description: "Sistema completo de staking", metrics: "365% APY" },
       nftLaunchpad: {
         title: "NFT Launchpad & Marketplace",
         description: "Plataforma Web3 completa",
@@ -345,6 +346,16 @@ export default function JorgePortfolio() {
         description: "Generador avanzado de favicons",
         metrics: "Genera 15+ formatos",
       },
+      retroGamehub: {
+        title: "Retro Gamehub",
+        description: "Plataforma de juegos retro con Supabase",
+        metrics: "Comunidad activa",
+      },
+      mementoAcademy: {
+        title: "Memento Academy",
+        description: "Plataforma educativa descentralizada",
+        metrics: "50+ cursos",
+      },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
@@ -361,7 +372,7 @@ export default function JorgePortfolio() {
     ],
     developedWith: "Desarrollado con React, Next.js y Tailwind CSS.",
     quote: '"La IA no reemplaza mi criterio, lo potencia."',
-  };
+  }
 
   const personalInfo = {
     name: "Jorge Calleja Pérez",
@@ -373,21 +384,14 @@ export default function JorgePortfolio() {
     github: "https://github.com/CallejaJ",
     description: t.description,
     highlight: t.highlight,
-  };
+  }
 
   const projects: Project[] = [
     {
       id: 1,
       titleKey: "gaslessSwap",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: [
-        "Solidity",
-        "React 18",
-        "Next.js",
-        "TypeScript",
-        "ZeroDev SDK",
-        "Account Abstraction",
-      ],
+      technologies: ["Solidity", "React 18", "Next.js", "TypeScript", "ZeroDev SDK", "Account Abstraction"],
       github: "https://github.com/CallejaJ/gasless-swap",
       demo: "https://gasless-swap.vercel.app",
       featured: true,
@@ -396,13 +400,7 @@ export default function JorgePortfolio() {
       id: 2,
       titleKey: "usdtStaking",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: [
-        "Solidity 0.8.20",
-        "ReentrancyGuard",
-        "SafeERC20",
-        "React",
-        "Web3.js",
-      ],
+      technologies: ["Solidity 0.8.20", "ReentrancyGuard", "SafeERC20", "React", "Web3.js"],
       github: "https://github.com/CallejaJ/usdt-staking",
       demo: "https://usdt-staking.vercel.app",
       featured: true,
@@ -411,13 +409,7 @@ export default function JorgePortfolio() {
       id: 3,
       titleKey: "nftLaunchpad",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: [
-        "ERC-721",
-        "Ethers.js",
-        "RainbowKit",
-        "Wagmi",
-        "Tailwind CSS",
-      ],
+      technologies: ["ERC-721", "Ethers.js", "RainbowKit", "Wagmi", "Tailwind CSS"],
       github: "https://github.com/CallejaJ/nft-launchpad",
       demo: "https://nft-launchpad.vercel.app",
       featured: true,
@@ -426,12 +418,7 @@ export default function JorgePortfolio() {
       id: 4,
       titleKey: "realEstate",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: [
-        "Next.js",
-        "Material UI",
-        "Smart Contracts",
-        "Tokenization",
-      ],
+      technologies: ["Next.js", "Material UI", "Smart Contracts", "Tokenization"],
       github: "https://github.com/CallejaJ/real-estate-tokens",
       demo: "https://realestate-tokens.vercel.app",
       featured: false,
@@ -440,13 +427,7 @@ export default function JorgePortfolio() {
       id: 5,
       titleKey: "tokenLaunchpad",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: [
-        "ERC-20",
-        "Chainlink",
-        "Multichain Bridge",
-        "React",
-        "Tailwind CSS",
-      ],
+      technologies: ["ERC-20", "Chainlink", "Multichain Bridge", "React", "Tailwind CSS"],
       github: "https://github.com/CallejaJ/token-launchpad",
       demo: "https://token-launchpad.vercel.app",
       featured: false,
@@ -455,13 +436,7 @@ export default function JorgePortfolio() {
       id: 6,
       titleKey: "web3Toolkit",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: [
-        "React",
-        "TypeScript",
-        "Ethers.js",
-        "Hardhat",
-        "Solidity Templates",
-      ],
+      technologies: ["React", "TypeScript", "Ethers.js", "Hardhat", "Solidity Templates"],
       github: "https://github.com/CallejaJ/web3-toolkit",
       demo: "https://web3-toolkit.vercel.app",
       featured: false,
@@ -470,23 +445,35 @@ export default function JorgePortfolio() {
       id: 7,
       titleKey: "faviconGenerator",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: [
-        "Next.js",
-        "Canvas API",
-        "Sharp",
-        "TypeScript",
-        "File Processing",
-      ],
+      technologies: ["Next.js", "Canvas API", "Sharp", "TypeScript", "File Processing"],
       github: "https://github.com/CallejaJ/favicon-generator",
       demo: "https://favicon-generator.vercel.app",
       featured: false,
     },
-  ];
+    {
+      id: 8, // Nuevo ID
+      titleKey: "retroGamehub",
+      image: "/placeholder.svg?height=300&width=500",
+      technologies: ["React", "Next.js", "Supabase", "PostgreSQL", "Tailwind CSS", "REST API"],
+      github: "https://github.com/CallejaJ/retro-gamehub", // Reemplazar con el repo real
+      demo: "https://retro-gamehub.vercel.app", // Reemplazar con el demo real
+      featured: false,
+    },
+    {
+      id: 9, // Nuevo ID
+      titleKey: "mementoAcademy",
+      image: "/placeholder.svg?height=300&width=500",
+      technologies: ["Next.js", "Solidity", "IPFS", "The Graph", "ERC-721", "Decentralized Storage"],
+      github: "https://github.com/CallejaJ/memento-academy", // Reemplazar con el repo real
+      demo: "https://memento-academy.vercel.app", // Reemplazar con el demo real
+      featured: false,
+    },
+  ]
 
   const skillCategories = [
     {
       title: "Web3 & Blockchain",
-      icon: <Shield className='w-6 h-6' />,
+      icon: <Shield className="w-6 h-6" />,
       skills: [
         "Solidity 0.8.20+",
         "Ethers.js",
@@ -502,7 +489,7 @@ export default function JorgePortfolio() {
     },
     {
       title: "Frontend Development",
-      icon: <Code className='w-6 h-6' />,
+      icon: <Code className="w-6 h-6" />,
       skills: [
         "React.js 18",
         "Next.js 13/14",
@@ -515,7 +502,7 @@ export default function JorgePortfolio() {
     },
     {
       title: "AI & Automation",
-      icon: <Cpu className='w-6 h-6' />,
+      icon: <Cpu className="w-6 h-6" />,
       skills: [
         "Prompt Engineering",
         "Claude 3.7",
@@ -529,64 +516,46 @@ export default function JorgePortfolio() {
     },
     {
       title: "Backend & Database",
-      icon: <TrendingUp className='w-6 h-6' />,
-      skills: [
-        "Node.js",
-        "Express",
-        "PHP 8",
-        "MongoDB",
-        "MariaDB",
-        "MySQL",
-        "REST APIs",
-      ],
+      icon: <TrendingUp className="w-6 h-6" />,
+      skills: ["Node.js", "Express", "PHP 8", "MongoDB", "MariaDB", "MySQL", "REST APIs"],
     },
-  ];
+  ]
 
   // Reemplazar la variable experience existente con:
-  const experience = t.experienceItems;
+  const experience = t.experienceItems
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900'>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900">
       {/* Hero Section */}
-      <section className='min-h-screen flex items-center justify-center px-4 relative overflow-hidden'>
-        <div className='absolute inset-0 bg-grid-pattern opacity-5'></div>
-        <div className='max-w-6xl mx-auto text-center relative z-10'>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <div className='flex items-center justify-center gap-2 mb-4'>
-              <MapPin className='w-5 h-5 text-blue-600' />
-              <span className='text-slate-600 dark:text-slate-300'>
-                {personalInfo.location}
-              </span>
+      <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="max-w-6xl mx-auto text-center relative z-10">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <MapPin className="w-5 h-5 text-blue-600" />
+              <span className="text-slate-600 dark:text-slate-300">{personalInfo.location}</span>
             </div>
 
-            <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold mb-6'>
-              <span className='bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent'>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                 {personalInfo.name}
               </span>
             </h1>
 
-            <div className='flex flex-wrap justify-center gap-2 mb-6'>
+            <div className="flex flex-wrap justify-center gap-2 mb-6">
               {t.title.split(" | ").map((role, index) => (
-                <Badge
-                  key={index}
-                  variant='outline'
-                  className='text-sm py-1 px-3'
-                >
+                <Badge key={index} variant="outline" className="text-sm py-1 px-3">
                   {role}
                 </Badge>
               ))}
             </div>
 
-            <p className='text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed'>
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed">
               {t.description}
             </p>
 
-            <div className='bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full inline-block mb-8 font-semibold'>
-              <Zap className='w-5 h-5 inline mr-2' />
+            <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full inline-block mb-8 font-semibold">
+              <Zap className="w-5 h-5 inline mr-2" />
               {t.highlight}
             </div>
           </motion.div>
@@ -595,22 +564,22 @@ export default function JorgePortfolio() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className='flex flex-wrap justify-center gap-6 mb-8'
+            className="flex flex-wrap justify-center gap-6 mb-8"
           >
             <Button
-              size='lg'
+              size="lg"
               asChild
-              className='bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300'
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <a href='#projects'>{t.viewProjects}</a>
+              <a href="#projects">{t.viewProjects}</a>
             </Button>
             <Button
-              variant='outline'
-              size='lg'
+              variant="outline"
+              size="lg"
               asChild
-              className='border-2 border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 px-8 py-3 text-lg font-semibold bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300'
+              className="border-2 border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 px-8 py-3 text-lg font-semibold bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <a href='mailto:callejaj@proton.me'>{t.contact}</a>
+              <a href="mailto:callejaj@proton.me">{t.contact}</a>
             </Button>
           </motion.div>
 
@@ -618,15 +587,13 @@ export default function JorgePortfolio() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className='flex justify-center mb-8'
+            className="flex justify-center mb-8"
           >
-            <div className='flex bg-white/20 backdrop-blur-sm rounded-full p-1'>
+            <div className="flex bg-white/20 backdrop-blur-sm rounded-full p-1">
               <button
                 onClick={() => setLanguage("es")}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                  language === "es"
-                    ? "bg-white text-blue-600 shadow-sm"
-                    : "text-slate-600 hover:text-blue-600"
+                  language === "es" ? "bg-white text-blue-600 shadow-sm" : "text-slate-600 hover:text-blue-600"
                 }`}
               >
                 ES
@@ -634,9 +601,7 @@ export default function JorgePortfolio() {
               <button
                 onClick={() => setLanguage("en")}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                  language === "en"
-                    ? "bg-white text-blue-600 shadow-sm"
-                    : "text-slate-600 hover:text-blue-600"
+                  language === "en" ? "bg-white text-blue-600 shadow-sm" : "text-slate-600 hover:text-blue-600"
                 }`}
               >
                 EN
@@ -648,59 +613,55 @@ export default function JorgePortfolio() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className='flex flex-wrap justify-center gap-6'
+            className="flex flex-wrap justify-center gap-6"
           >
             <a
               href={personalInfo.github}
-              className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
+              className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Github size={20} />
-              <span className='hidden sm:inline'>GitHub</span>
+              <span className="hidden sm:inline">GitHub</span>
             </a>
             <a
               href={personalInfo.linkedin}
-              className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
+              className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Linkedin size={20} />
-              <span className='hidden sm:inline'>LinkedIn</span>
+              <span className="hidden sm:inline">LinkedIn</span>
             </a>
             <a
-              href='mailto:callejaj@proton.me'
-              className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
+              href="mailto:callejaj@proton.me"
+              className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Mail size={20} />
-              <span className='hidden sm:inline'>callejaj@proton.me</span>
+              <span className="hidden sm:inline">callejaj@proton.me</span>
             </a>
             <a
               href={`tel:${personalInfo.phone}`}
-              className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
+              className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Phone size={20} />
-              <span className='hidden sm:inline'>{personalInfo.phone}</span>
+              <span className="hidden sm:inline">{personalInfo.phone}</span>
             </a>
           </motion.div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id='projects' className='py-20 px-4'>
-        <div className='max-w-7xl mx-auto'>
+      <section id="projects" className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className='text-center mb-16'
+            className="text-center mb-16"
           >
-            <h2 className='text-4xl md:text-5xl font-bold mb-4'>
-              {t.featuredProjects}
-            </h2>
-            <p className='text-xl text-slate-600 dark:text-slate-300'>
-              {t.featuredProjectsDesc}
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.featuredProjects}</h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300">{t.featuredProjectsDesc}</p>
           </motion.div>
 
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
@@ -710,53 +671,44 @@ export default function JorgePortfolio() {
                 viewport={{ once: true }}
                 className={project.featured ? "lg:col-span-2" : ""}
               >
-                <Card className='h-full hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm'>
-                  <div className='relative overflow-hidden rounded-t-lg'>
+                <Card className="h-full hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm">
+                  <div className="relative overflow-hidden rounded-t-lg">
                     <img
                       src={project.image || "/placeholder.svg"}
                       alt={project.titleKey}
-                      className='w-full h-64 object-cover transition-transform duration-300 hover:scale-105'
+                      className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
                     />
                     {project.featured && (
-                      <Badge className='absolute top-4 left-4 bg-gradient-to-r from-blue-500 to-purple-600'>
+                      <Badge className="absolute top-4 left-4 bg-gradient-to-r from-blue-500 to-purple-600">
                         {t.featuredProject}
                       </Badge>
                     )}
                     {t.projects[project.titleKey].metrics && (
-                      <Badge
-                        variant='secondary'
-                        className='absolute top-4 right-4'
-                      >
+                      <Badge variant="secondary" className="absolute top-4 right-4">
                         {t.projects[project.titleKey].metrics}
                       </Badge>
                     )}
                   </div>
                   <CardHeader>
-                    <CardTitle className='flex items-center justify-between text-xl'>
+                    <CardTitle className="flex items-center justify-between text-xl">
                       {t.projects[project.titleKey].title}
-                      <div className='flex gap-2'>
-                        <a
-                          href={project.github}
-                          className='text-slate-600 hover:text-blue-600 transition-colors'
-                        >
+                      <div className="flex gap-2">
+                        <a href={project.github} className="text-slate-600 hover:text-blue-600 transition-colors">
                           <Github size={20} />
                         </a>
-                        <a
-                          href={project.demo}
-                          className='text-slate-600 hover:text-blue-600 transition-colors'
-                        >
+                        <a href={project.demo} className="text-slate-600 hover:text-blue-600 transition-colors">
                           <ExternalLink size={20} />
                         </a>
                       </div>
                     </CardTitle>
-                    <CardDescription className='text-base leading-relaxed'>
+                    <CardDescription className="text-base leading-relaxed">
                       {t.projects[project.titleKey].description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className='flex flex-wrap gap-2'>
+                    <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
-                        <Badge key={tech} variant='outline' className='text-xs'>
+                        <Badge key={tech} variant="outline" className="text-xs">
                           {tech}
                         </Badge>
                       ))}
@@ -770,24 +722,20 @@ export default function JorgePortfolio() {
       </section>
 
       {/* Skills Section */}
-      <section className='py-20 px-4 bg-white/30 backdrop-blur-sm'>
-        <div className='max-w-6xl mx-auto'>
+      <section className="py-20 px-4 bg-white/30 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className='text-center mb-16'
+            className="text-center mb-16"
           >
-            <h2 className='text-4xl md:text-5xl font-bold mb-4'>
-              {t.techStack}
-            </h2>
-            <p className='text-xl text-slate-600 dark:text-slate-300'>
-              {t.techStackDesc}
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.techStack}</h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300">{t.techStackDesc}</p>
           </motion.div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {skillCategories.map((category, index) => (
               <motion.div
                 key={category.title}
@@ -796,23 +744,17 @@ export default function JorgePortfolio() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className='h-full border-0 bg-white/80 backdrop-blur-sm'>
+                <Card className="h-full border-0 bg-white/80 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className='flex items-center gap-3 text-xl'>
-                      <div className='p-2 bg-blue-100 rounded-lg text-blue-600'>
-                        {category.icon}
-                      </div>
+                    <CardTitle className="flex items-center gap-3 text-xl">
+                      <div className="p-2 bg-blue-100 rounded-lg text-blue-600">{category.icon}</div>
                       {category.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className='flex flex-wrap gap-2'>
+                    <div className="flex flex-wrap gap-2">
                       {category.skills.map((skill) => (
-                        <Badge
-                          key={skill}
-                          variant='secondary'
-                          className='text-sm py-1'
-                        >
+                        <Badge key={skill} variant="secondary" className="text-sm py-1">
                           {skill}
                         </Badge>
                       ))}
@@ -826,24 +768,20 @@ export default function JorgePortfolio() {
       </section>
 
       {/* Experience Section */}
-      <section className='py-20 px-4'>
-        <div className='max-w-4xl mx-auto'>
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className='text-center mb-16'
+            className="text-center mb-16"
           >
-            <h2 className='text-4xl md:text-5xl font-bold mb-4'>
-              {t.experience}
-            </h2>
-            <p className='text-xl text-slate-600 dark:text-slate-300'>
-              {t.experienceDesc}
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.experience}</h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300">{t.experienceDesc}</p>
           </motion.div>
 
-          <div className='space-y-8'>
+          <div className="space-y-8">
             {experience.map((job, index) => (
               <motion.div
                 key={index}
@@ -852,33 +790,25 @@ export default function JorgePortfolio() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className='border-0 bg-white/80 backdrop-blur-sm'>
+                <Card className="border-0 bg-white/80 backdrop-blur-sm">
                   <CardHeader>
-                    <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-2'>
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                       <div>
-                        <CardTitle className='text-xl'>{job.title}</CardTitle>
-                        <CardDescription className='text-lg font-semibold text-blue-600'>
-                          {job.company}
-                        </CardDescription>
+                        <CardTitle className="text-xl">{job.title}</CardTitle>
+                        <CardDescription className="text-lg font-semibold text-blue-600">{job.company}</CardDescription>
                       </div>
-                      <div className='text-right'>
-                        <div className='text-sm text-slate-600'>
-                          {job.period}
-                        </div>
-                        <div className='text-sm text-slate-500'>
-                          {job.location}
-                        </div>
+                      <div className="text-right">
+                        <div className="text-sm text-slate-600">{job.period}</div>
+                        <div className="text-sm text-slate-500">{job.location}</div>
                       </div>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <ul className='space-y-2'>
+                    <ul className="space-y-2">
                       {job.achievements.map((achievement, i) => (
-                        <li key={i} className='flex items-start gap-2'>
-                          <div className='w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0'></div>
-                          <span className='text-slate-700 dark:text-slate-300'>
-                            {achievement}
-                          </span>
+                        <li key={i} className="flex items-start gap-2">
+                          <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-slate-700 dark:text-slate-300">{achievement}</span>
                         </li>
                       ))}
                     </ul>
@@ -891,38 +821,30 @@ export default function JorgePortfolio() {
       </section>
 
       {/* Contact Section */}
-      <section className='py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white'>
-        <div className='max-w-4xl mx-auto text-center'>
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className='text-4xl md:text-5xl font-bold mb-4'>
-              {t.readyToInnovate}
-            </h2>
-            <p className='text-xl mb-8 opacity-90'>{t.transformVision}</p>
-            <div className='flex flex-wrap justify-center gap-4'>
-              <Button size='lg' variant='secondary' asChild>
-                <a
-                  href='mailto:callejaj@proton.me'
-                  className='inline-flex items-center gap-2'
-                >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.readyToInnovate}</h2>
+            <p className="text-xl mb-8 opacity-90">{t.transformVision}</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button size="lg" variant="secondary" asChild>
+                <a href="mailto:callejaj@proton.me" className="inline-flex items-center gap-2">
                   <Mail size={20} />
                   {t.sendEmail}
                 </a>
               </Button>
               <Button
-                size='lg'
-                variant='outline'
+                size="lg"
+                variant="outline"
                 asChild
-                className='text-white border-white hover:bg-white hover:text-blue-600 bg-transparent'
+                className="text-white border-white hover:bg-white hover:text-blue-600 bg-transparent"
               >
-                <a
-                  href={personalInfo.linkedin}
-                  className='inline-flex items-center gap-2'
-                >
+                <a href={personalInfo.linkedin} className="inline-flex items-center gap-2">
                   <Linkedin size={20} />
                   LinkedIn
                 </a>
@@ -933,14 +855,14 @@ export default function JorgePortfolio() {
       </section>
 
       {/* Footer */}
-      <footer className='py-8 px-4 bg-slate-900 text-white'>
-        <div className='max-w-4xl mx-auto text-center'>
-          <p className='text-slate-400'>
+      <footer className="py-8 px-4 bg-slate-900 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-slate-400">
             &copy; 2024 {personalInfo.name}. {t.developedWith}
           </p>
-          <p className='text-slate-500 text-sm mt-2'>{t.quote}</p>
+          <p className="text-slate-500 text-sm mt-2">{t.quote}</p>
         </div>
       </footer>
     </div>
-  );
+  )
 }
