@@ -435,7 +435,7 @@ export default function JorgePortfolio() {
     {
       id: 2,
       titleKey: "usdtStaking",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/usdt_staking.jpg",
       technologies: [
         "Solidity 0.8.20",
         "ReentrancyGuard",
@@ -450,7 +450,7 @@ export default function JorgePortfolio() {
     {
       id: 3,
       titleKey: "nftLaunchpad",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/nft3_launchpad.jpg",
       technologies: [
         "ERC-721",
         "Ethers.js",
@@ -465,7 +465,7 @@ export default function JorgePortfolio() {
     {
       id: 4,
       titleKey: "realEstate",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/real_estate.jpg",
       technologies: [
         "Next.js",
         "Material UI",
