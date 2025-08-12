@@ -428,8 +428,8 @@ export default function JorgePortfolio() {
         "ZeroDev SDK",
         "Account Abstraction",
       ],
-      github: "https://github.com/CallejaJ/gasless-swap",
-      demo: "https://gasless-swap.vercel.app",
+      github: "https://github.com/CallejaJ/gasless-token-swap-dapp",
+      demo: "https://gaslesstokenswap.vercel.app/",
       featured: true,
     },
     {
@@ -487,8 +487,8 @@ export default function JorgePortfolio() {
         "React",
         "Tailwind CSS",
       ],
-      github: "https://github.com/CallejaJ/token-launchpad",
-      demo: "https://token-launchpad.vercel.app",
+      github: "#",
+      demo: "#",
       featured: false,
     },
     {
@@ -502,8 +502,8 @@ export default function JorgePortfolio() {
         "Hardhat",
         "Solidity Templates",
       ],
-      github: "https://github.com/CallejaJ/web3-toolkit",
-      demo: "https://web3-toolkit.vercel.app",
+      github: "https://github.com/CallejaJ/migration-vite-to-next",
+      demo: "https://memento-toolkit.vercel.app/",
       featured: false,
     },
     {
@@ -518,11 +518,11 @@ export default function JorgePortfolio() {
         "File Processing",
       ],
       github: "https://github.com/CallejaJ/favicon-generator",
-      demo: "https://favicon-generator.vercel.app",
+      demo: "https://memento-favicon-generator.vercel.app/",
       featured: false,
     },
     {
-      id: 8, // Nuevo ID
+      id: 8,
       titleKey: "retroGamehub",
       image: "/images/retro_gamehub.jpg",
       technologies: [
@@ -533,12 +533,12 @@ export default function JorgePortfolio() {
         "Tailwind CSS",
         "REST API",
       ],
-      github: "https://github.com/CallejaJ/retro-gamehub", // Reemplazar con el repo real
-      demo: "https://retro-gamehub.vercel.app", // Reemplazar con el demo real
+      github: "https://github.com/CallejaJ/retro-gamehub",
+      demo: "https://retro-gamehub.vercel.app/",
       featured: false,
     },
     {
-      id: 9, // Nuevo ID
+      id: 9,
       titleKey: "mementoAcademy",
       image: "/images/memento_academy.jpg",
       technologies: [
@@ -549,8 +549,8 @@ export default function JorgePortfolio() {
         "ERC-721",
         "Decentralized Storage",
       ],
-      github: "https://github.com/CallejaJ/memento-academy", // Reemplazar con el repo real
-      demo: "https://memento-academy.vercel.app", // Reemplazar con el demo real
+      github: "https://github.com/CallejaJ/memento-academy",
+      demo: "https://www.memento-academy.com",
       featured: false,
     },
   ];
@@ -724,6 +724,8 @@ export default function JorgePortfolio() {
           >
             <a
               href={personalInfo.github}
+              target='_blank'
+              rel='noopener noreferrer'
               className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
             >
               <Github size={20} />
@@ -731,6 +733,8 @@ export default function JorgePortfolio() {
             </a>
             <a
               href={personalInfo.linkedin}
+              target='_blank'
+              rel='noopener noreferrer'
               className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
             >
               <Linkedin size={20} />
@@ -809,12 +813,16 @@ export default function JorgePortfolio() {
                       <div className='flex gap-2'>
                         <a
                           href={project.github}
+                          target='_blank'
+                          rel='noopener noreferrer'
                           className='text-slate-600 hover:text-blue-600 transition-colors'
                         >
                           <Github size={20} />
                         </a>
                         <a
                           href={project.demo}
+                          target='_blank'
+                          rel='noopener noreferrer'
                           className='text-slate-600 hover:text-blue-600 transition-colors'
                         >
                           <ExternalLink size={20} />
@@ -993,6 +1001,8 @@ export default function JorgePortfolio() {
               >
                 <a
                   href={personalInfo.linkedin}
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='inline-flex items-center gap-2'
                 >
                   <Linkedin size={20} />
