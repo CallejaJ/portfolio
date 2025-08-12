@@ -479,7 +479,7 @@ export default function JorgePortfolio() {
     {
       id: 5,
       titleKey: "tokenLaunchpad",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/token_launchpad.jpg",
       technologies: [
         "ERC-20",
         "Chainlink",
@@ -494,7 +494,7 @@ export default function JorgePortfolio() {
     {
       id: 6,
       titleKey: "web3Toolkit",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/web3_toolkit.jpg",
       technologies: [
         "React",
         "TypeScript",
@@ -509,7 +509,7 @@ export default function JorgePortfolio() {
     {
       id: 7,
       titleKey: "faviconGenerator",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/favicon_generator.jpg",
       technologies: [
         "Next.js",
         "Canvas API",
@@ -524,7 +524,7 @@ export default function JorgePortfolio() {
     {
       id: 8, // Nuevo ID
       titleKey: "retroGamehub",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/retro_gamehub.jpg",
       technologies: [
         "React",
         "Next.js",
@@ -540,7 +540,7 @@ export default function JorgePortfolio() {
     {
       id: 9, // Nuevo ID
       titleKey: "mementoAcademy",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/memento_academy.jpg",
       technologies: [
         "Next.js",
         "Solidity",
