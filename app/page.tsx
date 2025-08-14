@@ -788,7 +788,6 @@ export default function JorgePortfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className={project.featured ? "lg:col-span-2" : ""}
               >
                 <Card className='h-full hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm'>
                   <div className='relative overflow-hidden rounded-t-lg'>
