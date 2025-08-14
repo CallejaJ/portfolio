@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
+import { BlockchainBackground } from "@/components/blockchain-background";
 
 // Definir tipos para mejor seguridad de tipos
 type ProjectKey =
@@ -619,9 +620,12 @@ export default function JorgePortfolio() {
 
   return (
     <div className='min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900'>
+      <BlockchainBackground />
+
       {/* Hero Section */}
       <section className='min-h-screen flex items-center justify-center px-4 relative overflow-hidden'>
         <div className='absolute inset-0 bg-grid-pattern opacity-5'></div>
+
         <div className='max-w-6xl mx-auto text-center relative z-10'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -878,25 +882,33 @@ export default function JorgePortfolio() {
               >
                 <Card className='h-full border-0 bg-white/80 backdrop-blur-sm'>
                   <CardHeader>
-                    <CardTitle className='flex items-center gap-3 text-xl'>
-                      <div className='p-2 bg-blue-100 rounded-lg text-blue-600'>
-                        {category.icon}
+                    <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-2'>
+                      <div>
+                        <CardTitle className='text-xl'>
+                          {category.title}
+                        </CardTitle>
+                        <CardDescription className='text-lg font-semibold text-blue-600'>
+                          {personalInfo.name}
+                        </CardDescription>
                       </div>
-                      {category.title}
-                    </CardTitle>
+                      <div className='text-right'>
+                        <div className='text-sm text-slate-600'>
+                          {personalInfo.location}
+                        </div>
+                      </div>
+                    </div>
                   </CardHeader>
                   <CardContent>
-                    <div className='flex flex-wrap gap-2'>
-                      {category.skills.map((skill) => (
-                        <Badge
-                          key={skill}
-                          variant='secondary'
-                          className='text-sm py-1'
-                        >
-                          {skill}
-                        </Badge>
+                    <ul className='space-y-2'>
+                      {category.skills.map((skill, i) => (
+                        <li key={i} className='flex items-start gap-2'>
+                          <div className='w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0'></div>
+                          <span className='text-slate-700 dark:text-slate-300'>
+                            {skill}
+                          </span>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </CardContent>
                 </Card>
               </motion.div>
