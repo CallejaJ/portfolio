@@ -534,7 +534,7 @@ export default function JorgePortfolio() {
         "Tailwind CSS",
         "REST API",
       ],
-      github: "https://github.com/CallejaJ/retro-gamehub",
+      github: "https://callejaj.github.io/retro-gamehub/",
       demo: "https://retro-gamehub.vercel.app/",
       featured: false,
     },
@@ -632,9 +632,9 @@ export default function JorgePortfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className='flex items-center justify-center gap-2 mb-4'>
-              <MapPin className='w-5 h-5 text-blue-600' />
-              <span className='text-slate-600 dark:text-slate-300'>
+            <div className='flex items-center justify-center gap-2 mb-4 md:mb-6'>
+              <MapPin className='w-4 h-4 md:w-5 md:h-5 text-blue-600' />
+              <span className='text-sm md:text-base text-slate-600 dark:text-slate-300'>
                 {personalInfo.location}
               </span>
             </div>
