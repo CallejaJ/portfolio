@@ -473,8 +473,8 @@ export default function JorgePortfolio() {
         "Smart Contracts",
         "Tokenization",
       ],
-      github: "https://github.com/CallejaJ",
-      demo: "#",
+      github: "https://github.com/CallejaJ/tokenbricks",
+      demo: "https://tokenbricks.vercel.app/",
       featured: false,
     },
     {
