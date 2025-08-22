@@ -466,7 +466,7 @@ export default function JorgePortfolio() {
     {
       id: 4,
       titleKey: "realEstate",
-      image: "/images/real_estate.jpg",
+      image: "/images/TokenBricks.jpg",
       technologies: [
         "Next.js",
         "Material UI",
