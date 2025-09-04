@@ -445,7 +445,7 @@ export default function JorgePortfolio() {
         "Web3.js",
       ],
       github: "https://github.com/CallejaJ",
-      demo: "https://www.stakez.io",
+      demo: "https://staking-dubai.vercel.app/",
       featured: true,
     },
     {
