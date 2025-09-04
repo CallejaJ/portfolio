@@ -35,8 +35,9 @@ type ProjectKey =
   | "tokenLaunchpad"
   | "web3Toolkit"
   | "faviconGenerator"
-  | "retroGamehub" // Nuevo proyecto
-  | "mementoAcademy"; // Nuevo proyecto
+  | "retroGamehub"
+  | "mementoAcademy"
+  | "cryptoTracker"; // Nuevo proyecto añadido
 
 interface ProjectData {
   title: string;
@@ -97,6 +98,12 @@ export default function JorgePortfolio() {
             "Plataforma DeFi avanzada que permite intercambios de tokens sin gas usando tecnología Account Abstraction. Implementé ZeroDev SDK v5.4 con EntryPoint V07 para transacciones patrocinadas.",
           metrics: "60% reducción en fricción de onboarding",
         },
+        cryptoTracker: {
+          title: "Crypto Portfolio Tracker",
+          description:
+            "Tracker profesional de portfolio de criptomonedas con precios en tiempo real via Binance API y WebSocket. Dashboard analytics completo con alertas inteligentes, gráficos interactivos y gestión de holdings avanzada.",
+          metrics: "Real-time WebSocket + 8 cryptos soportadas",
+        },
         usdtStaking: {
           title: "USDT Staking Platform",
           description:
@@ -134,14 +141,12 @@ export default function JorgePortfolio() {
           metrics: "Genera 15+ formatos automáticamente",
         },
         retroGamehub: {
-          // Nuevo proyecto
           title: "Retro Gamehub",
           description:
             "Plataforma de juegos retro con integración de comentarios y rankings persistentes a través de Supabase. Permite a los usuarios interactuar y competir en un entorno clásico.",
           metrics: "Comunidad activa con 100+ usuarios",
         },
         mementoAcademy: {
-          // Nuevo proyecto
           title: "Memento Academy",
           description:
             "Plataforma educativa descentralizada para comunidades Web3. Ofrece cursos, foros y recursos sobre blockchain, DeFi y NFTs, con un sistema de recompensas basado en tokens.",
@@ -228,6 +233,12 @@ export default function JorgePortfolio() {
             "Advanced DeFi platform enabling gas-free token exchanges using Account Abstraction technology. Implemented ZeroDev SDK v5.4 with EntryPoint V07 for sponsored transactions.",
           metrics: "60% reduction in onboarding friction",
         },
+        cryptoTracker: {
+          title: "Memento Crypto Portfolio Tracker",
+          description:
+            "Professional cryptocurrency portfolio tracker with real-time prices via Binance API and WebSocket. Complete analytics dashboard with smart alerts, interactive charts, and advanced holdings management.",
+          metrics: "Real-time WebSocket + 8 supported cryptos",
+        },
         usdtStaking: {
           title: "USDT Staking Platform",
           description:
@@ -265,14 +276,12 @@ export default function JorgePortfolio() {
           metrics: "Generates 15+ formats automatically",
         },
         retroGamehub: {
-          // Nuevo proyecto
           title: "Retro Gamehub",
           description:
             "Retro gaming platform with persistent comments and rankings integrated via Supabase. Allows users to interact and compete in a classic environment.",
           metrics: "Active community with 100+ users",
         },
         mementoAcademy: {
-          // Nuevo proyecto
           title: "Memento Academy",
           description:
             "Decentralized educational platform for Web3 communities. Offers courses, forums, and resources on blockchain, DeFi, and NFTs, with a token-based reward system.",
@@ -345,6 +354,11 @@ export default function JorgePortfolio() {
         title: "Gasless Token Swap Platform",
         description: "Plataforma DeFi avanzada",
         metrics: "60% reducción",
+      },
+      cryptoTracker: {
+        title: "Memento Crypto Portfolio Tracker",
+        description: "Tracker profesional de criptomonedas",
+        metrics: "Real-time WebSocket",
       },
       usdtStaking: {
         title: "USDT Staking Platform",
@@ -435,6 +449,23 @@ export default function JorgePortfolio() {
     },
     {
       id: 2,
+      titleKey: "cryptoTracker", // Nuevo proyecto destacado
+      image: "/images/crypto_tracker.jpg",
+      technologies: [
+        "Next.js 14",
+        "TypeScript",
+        "Binance API",
+        "WebSocket",
+        "Tailwind CSS",
+        "Recharts",
+        "Real-time Data",
+      ],
+      github: "https://github.com/CallejaJ/crypto-tracker",
+      demo: "https://crypto-tracker-memento.vercel.app",
+      featured: true,
+    },
+    {
+      id: 3,
       titleKey: "usdtStaking",
       image: "/images/usdt_staking.jpg",
       technologies: [
@@ -449,7 +480,7 @@ export default function JorgePortfolio() {
       featured: true,
     },
     {
-      id: 3,
+      id: 4,
       titleKey: "nftLaunchpad",
       image: "/images/nft3_launchpad.jpg",
       technologies: [
@@ -461,10 +492,10 @@ export default function JorgePortfolio() {
       ],
       github: "https://github.com/CallejaJ",
       demo: "#",
-      featured: true,
+      featured: false,
     },
     {
-      id: 4,
+      id: 5,
       titleKey: "realEstate",
       image: "/images/TokenBricks.jpg",
       technologies: [
@@ -478,7 +509,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 5,
+      id: 6,
       titleKey: "tokenLaunchpad",
       image: "/images/token_launchpad.jpg",
       technologies: [
@@ -493,7 +524,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 6,
+      id: 7,
       titleKey: "web3Toolkit",
       image: "/images/web3_toolkit.jpg",
       technologies: [
@@ -508,7 +539,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 7,
+      id: 8,
       titleKey: "faviconGenerator",
       image: "/images/favicon_generator.jpg",
       technologies: [
@@ -523,7 +554,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 8,
+      id: 9,
       titleKey: "retroGamehub",
       image: "/images/retro_gamehub.jpg",
       technologies: [
@@ -539,7 +570,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 9,
+      id: 10,
       titleKey: "mementoAcademy",
       image: "/images/memento_academy.jpg",
       technologies: [
