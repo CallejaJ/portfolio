@@ -63,7 +63,7 @@ export default function JorgePortfolio() {
       // Personal Info
       title: "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
       description:
-        "Blockchain developer que ha convertido la IA en su ventaja competitiva. Especialista en prompt engineering y cómo esta disciplina puede transformar los ciclos de desarrollo tradicionales.",
+        "Desarrollador especializado en Web3 & Blockchain, B2B SaaS Solutions y Generative Experience Optimization. Combina arquitecturas descentralizadas con soluciones empresariales inteligentes, enfocándose en cómo la optimización de experiencias generativas puede revolucionar los procesos de desarrollo y la propuesta de valor para clientes B2B.",
       highlight:
         "Reducción del tiempo de desarrollo hasta un 40% mediante automatización con IA",
 
@@ -421,7 +421,7 @@ export default function JorgePortfolio() {
   const personalInfo = {
     name: "Jorge Calleja Pérez",
     title: t.title,
-    location: "Málaga, Spain",
+    // location: "Málaga, Spain",
     phone: "+34 649530022",
     email: "callejaj@proton.me",
     linkedin: "https://www.linkedin.com/in/callejaj",
@@ -665,14 +665,14 @@ export default function JorgePortfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className='flex items-center justify-center gap-2 mb-4 md:mb-6'>
+            {/* <div className='flex items-center justify-center gap-2 mb-4 md:mb-6'>
               <MapPin className='w-4 h-4 md:w-5 md:h-5 text-blue-600' />
               <span className='text-sm md:text-base text-slate-600 dark:text-slate-300'>
                 {personalInfo.location}
               </span>
-            </div>
+            </div> */}
 
-            <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold mb-6'>
+            <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold mb-6 mt-12 md:mt-0 leading-tight'>
               <span className='bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent'>
                 {personalInfo.name}
               </span>
@@ -694,10 +694,11 @@ export default function JorgePortfolio() {
               {t.description}
             </p>
 
-            <div className='bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1.5 rounded-full inline-block mb-8 font-semibold text-xs md:text-sm lg:text-base max-w-[90%] mx-auto'>
-              <Zap className='w-5 h-5 inline mr-2' />
-              {t.highlight}
-            </div>
+          <div className="relative overflow-hidden bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-foreground px-4 py-2.5 rounded-full inline-flex items-center gap-2 mb-8 font-semibold text-sm backdrop-blur-sm hover:border-primary/40 transition-all duration-300">
+  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-50"></div>
+  <Zap className="w-4 h-4 text-primary relative z-10" />
+  <span className="relative z-10">{t.highlight}</span>
+</div>
           </motion.div>
 
           <motion.div
@@ -923,11 +924,11 @@ export default function JorgePortfolio() {
                           {personalInfo.name}
                         </CardDescription>
                       </div>
-                      <div className='text-right'>
+                      {/* <div className='text-right'>
                         <div className='text-sm text-slate-600'>
                           {personalInfo.location}
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </CardHeader>
                   <CardContent>
