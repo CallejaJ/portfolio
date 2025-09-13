@@ -36,7 +36,7 @@ type ProjectKey =
   | "web3Toolkit"
   | "faviconGenerator"
   | "retroGamehub"
-  | "mementoAcademy"
+  | "geoOptimization"
   | "cryptoTracker"; // Nuevo proyecto añadido
 
 interface ProjectData {
@@ -146,11 +146,11 @@ export default function JorgePortfolio() {
             "Plataforma de juegos retro con integración de comentarios y rankings persistentes a través de Supabase. Permite a los usuarios interactuar y competir en un entorno clásico.",
           metrics: "Comunidad activa con 100+ usuarios",
         },
-        mementoAcademy: {
-          title: "Memento Academy",
+        geoOptimization: {
+          title: "Geo Optimization",
           description:
-            "Plataforma educativa descentralizada para comunidades Web3. Ofrece cursos, foros y recursos sobre blockchain, DeFi y NFTs, con un sistema de recompensas basado en tokens.",
-          metrics: "50+ cursos y 10+ comunidades",
+            "La Optimización de Experiencia Generativa representa un cambio fundamental desde la optimización de motores de búsqueda tradicional hacia la optimización para motores generativos.",
+          metrics: "SASS B2B con 20+ clientes",
         },
       } as Record<ProjectKey, ProjectData>,
 
@@ -281,7 +281,7 @@ export default function JorgePortfolio() {
             "Retro gaming platform with persistent comments and rankings integrated via Supabase. Allows users to interact and compete in a classic environment.",
           metrics: "Active community with 100+ users",
         },
-        mementoAcademy: {
+        geoOptimization: {
           title: "Memento Academy",
           description:
             "Decentralized educational platform for Web3 communities. Offers courses, forums, and resources on blockchain, DeFi, and NFTs, with a token-based reward system.",
@@ -395,7 +395,7 @@ export default function JorgePortfolio() {
         description: "Plataforma de juegos retro con Supabase",
         metrics: "Comunidad activa",
       },
-      mementoAcademy: {
+      geoOptimization: {
         title: "Memento Academy",
         description: "Plataforma educativa descentralizada",
         metrics: "50+ cursos",
@@ -571,18 +571,20 @@ export default function JorgePortfolio() {
     },
     {
       id: 10,
-      titleKey: "mementoAcademy",
-      image: "/images/memento_academy.jpg",
+      titleKey: "geoOptimization",
+      image: "/images/geo_optimization.jpg",
       technologies: [
         "Next.js",
-        "Solidity",
-        "IPFS",
-        "The Graph",
-        "ERC-721",
-        "Decentralized Storage",
+        "SerpAPI", // API REST para scrapear resultados de Google y otros motores
+        "Apify SERP Scraper", // Actor configurable con SDK y petición vía código
+        "DataForSEO", // Solución programática con endpoints para rank tracking y análisis
+        "Zenserp", // API fácil para desarrolladores
+        "ScaleSERP", // SERP API enfocada en velocidad y volumen
+        "SEMRush API", // Acceso a datos SEO desde código
+        "Ahrefs API", // Para analítica y rank tracking programático
       ],
-      github: "https://github.com/CallejaJ/memento-academy",
-      demo: "https://www.memento-academy.com",
+      github: "https://github.com/CallejaJ/geo",
+      demo: "https://generative-optimization-geo.vercel.app/",
       featured: false,
     },
   ];
