@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Jorge Calleja Portfolio",
-  description: "Web3 Developer | Blockchain Specialist | Prompt Engineer",
+  description: "Web3 & Blockchain Developer  | B2B SaaS Solutions | Generative experience optimization",
   generator: "v0.dev",
   icons: {
     icon: [

@@ -61,7 +61,7 @@ export default function JorgePortfolio() {
   const t = {
     es: {
       // Personal Info
-      title: "Web3 Developer | Blockchain Specialist | Prompt Engineer",
+      title: "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
       description:
         "Blockchain developer que ha convertido la IA en su ventaja competitiva. Especialista en prompt engineering y cómo esta disciplina puede transformar los ciclos de desarrollo tradicionales.",
       highlight:
@@ -196,7 +196,7 @@ export default function JorgePortfolio() {
     },
     en: {
       // Personal Info
-      title: "Web3 Developer | Blockchain Specialist | Prompt Engineer",
+      title: "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
       description:
         "Blockchain developer who has turned AI into his competitive advantage. Specialist in prompt engineering and how this discipline can transform traditional development cycles.",
       highlight:
@@ -331,7 +331,7 @@ export default function JorgePortfolio() {
     },
   }[language] || {
     // Fallback por defecto en español
-    title: "Web3 Developer | Blockchain Specialist | Prompt Engineer",
+    title: "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
     description:
       "Blockchain developer que ha convertido la IA en su ventaja competitiva.",
     highlight:
