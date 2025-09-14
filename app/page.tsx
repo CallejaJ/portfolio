@@ -61,7 +61,8 @@ export default function JorgePortfolio() {
   const t = {
     es: {
       // Personal Info
-      title: "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
+      title:
+        "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
       description:
         "Desarrollador especializado en Web3 & Blockchain, B2B SaaS Solutions y Generative Experience Optimization. Combina arquitecturas descentralizadas con soluciones empresariales inteligentes, enfocándose en cómo la optimización de experiencias generativas puede revolucionar los procesos de desarrollo y la propuesta de valor para clientes B2B.",
       highlight:
@@ -73,7 +74,8 @@ export default function JorgePortfolio() {
 
       // Sections
       featuredProjects: "Proyectos Destacados",
-      featuredProjectsDesc: "Soluciones Web3 innovadoras con impacto real",
+      featuredProjectsDesc:
+        "Soluciones empresariales que revolucionan procesos mediante Web3 e IA",
       techStack: "Stack Tecnológico",
       techStackDesc: "Tecnologías y herramientas especializadas",
       experience: "Experiencia Profesional",
@@ -196,9 +198,10 @@ export default function JorgePortfolio() {
     },
     en: {
       // Personal Info
-      title: "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
+      title:
+        "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
       description:
-        "Blockchain developer who has turned AI into his competitive advantage. Specialist in prompt engineering and how this discipline can transform traditional development cycles.",
+        "Developer specialized in Web3 & Blockchain, B2B SaaS Solutions, and Generative Experience Optimization. Combines decentralized architectures with intelligent enterprise solutions, focusing on how generative experience optimization can revolutionize development processes and value propositions for B2B clients.",
       highlight:
         "Up to 40% reduction in development time through AI automation",
 
@@ -208,7 +211,8 @@ export default function JorgePortfolio() {
 
       // Sections
       featuredProjects: "Featured Projects",
-      featuredProjectsDesc: "Innovative Web3 solutions with real impact",
+      featuredProjectsDesc:
+        "Enterprise solutions that revolutionize processes through Web3 and AI",
       techStack: "Tech Stack",
       techStackDesc: "Specialized technologies and tools",
       experience: "Professional Experience",
@@ -282,9 +286,9 @@ export default function JorgePortfolio() {
           metrics: "Active community with 100+ users",
         },
         geoOptimization: {
-          title: "Memento Academy",
+          title: "GEO Optimization",
           description:
-            "Decentralized educational platform for Web3 communities. Offers courses, forums, and resources on blockchain, DeFi, and NFTs, with a token-based reward system.",
+            "Generative Experience Optimization represents a fundamental shift from traditional search engine optimization toward optimization for generative engines.",
           metrics: "50+ courses and 10+ communities",
         },
       } as Record<ProjectKey, ProjectData>,
@@ -331,7 +335,8 @@ export default function JorgePortfolio() {
     },
   }[language] || {
     // Fallback por defecto en español
-    title: "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
+    title:
+      "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
     description:
       "Blockchain developer que ha convertido la IA en su ventaja competitiva.",
     highlight:
@@ -449,7 +454,7 @@ export default function JorgePortfolio() {
     },
     {
       id: 2,
-      titleKey: "cryptoTracker", // Nuevo proyecto destacado
+      titleKey: "cryptoTracker",
       image: "/images/crypto_tracker.jpg",
       technologies: [
         "Next.js 14",
@@ -592,7 +597,7 @@ export default function JorgePortfolio() {
   const skillCategories = [
     {
       title: "Web3 & Blockchain",
-      icon: <Shield className='w-6 h-6' />,
+      icon: <Shield className="w-6 h-6" />,
       skills: [
         "Solidity 0.8.20+",
         "Ethers.js",
@@ -608,7 +613,7 @@ export default function JorgePortfolio() {
     },
     {
       title: "Frontend Development",
-      icon: <Code className='w-6 h-6' />,
+      icon: <Code className="w-6 h-6" />,
       skills: [
         "React.js 18",
         "Next.js 13/14",
@@ -621,7 +626,7 @@ export default function JorgePortfolio() {
     },
     {
       title: "AI & Automation",
-      icon: <Cpu className='w-6 h-6' />,
+      icon: <Cpu className="w-6 h-6" />,
       skills: [
         "Prompt Engineering",
         "Claude 3.7",
@@ -635,7 +640,7 @@ export default function JorgePortfolio() {
     },
     {
       title: "Backend & Database",
-      icon: <TrendingUp className='w-6 h-6' />,
+      icon: <TrendingUp className="w-6 h-6" />,
       skills: [
         "Node.js",
         "Express",
@@ -652,14 +657,14 @@ export default function JorgePortfolio() {
   const experience = t.experienceItems;
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900'>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900">
       <BlockchainBackground />
 
       {/* Hero Section */}
-      <section className='min-h-screen flex items-center justify-center px-4 relative overflow-hidden'>
-        <div className='absolute inset-0 bg-grid-pattern opacity-5'></div>
+      <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
-        <div className='max-w-6xl mx-auto text-center relative z-10'>
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -672,55 +677,55 @@ export default function JorgePortfolio() {
               </span>
             </div> */}
 
-            <h1 className='text-4xl md:text-6xl lg:text-7xl font-bold mb-6 mt-12 md:mt-0 leading-tight'>
-              <span className='bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent'>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 mt-12 md:mt-0 leading-tight">
+              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                 {personalInfo.name}
               </span>
             </h1>
 
-            <div className='flex flex-wrap justify-center gap-2 mb-6'>
+            <div className="flex flex-wrap justify-center gap-2 mb-6">
               {t.title.split(" | ").map((role, index) => (
                 <Badge
                   key={index}
-                  variant='outline'
-                  className='text-sm py-1 px-3'
+                  variant="outline"
+                  className="text-sm py-1 px-3"
                 >
                   {role}
                 </Badge>
               ))}
             </div>
 
-            <p className='text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed'>
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed">
               {t.description}
             </p>
 
-          <div className="relative overflow-hidden bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-foreground px-4 py-2.5 rounded-full inline-flex items-center gap-2 mb-8 font-semibold text-sm backdrop-blur-sm hover:border-primary/40 transition-all duration-300">
-  <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-50"></div>
-  <Zap className="w-4 h-4 text-primary relative z-10" />
-  <span className="relative z-10">{t.highlight}</span>
-</div>
+            <div className="relative overflow-hidden bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-foreground px-4 py-2.5 rounded-full inline-flex items-center gap-2 mb-8 font-semibold text-sm backdrop-blur-sm hover:border-primary/40 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-50"></div>
+              <Zap className="w-4 h-4 text-primary relative z-10" />
+              <span className="relative z-10">{t.highlight}</span>
+            </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className='flex flex-wrap justify-center gap-6 mb-8'
+            className="flex flex-wrap justify-center gap-6 mb-8"
           >
             <Button
-              size='lg'
+              size="lg"
               asChild
-              className='bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300'
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <a href='#projects'>{t.viewProjects}</a>
+              <a href="#projects">{t.viewProjects}</a>
             </Button>
             <Button
-              variant='outline'
-              size='lg'
+              variant="outline"
+              size="lg"
               asChild
-              className='border-2 border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 px-8 py-3 text-lg font-semibold bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300'
+              className="border-2 border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 px-8 py-3 text-lg font-semibold bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <a href='mailto:callejaj@proton.me'>{t.contact}</a>
+              <a href="mailto:callejaj@proton.me">{t.contact}</a>
             </Button>
           </motion.div>
 
@@ -728,9 +733,9 @@ export default function JorgePortfolio() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className='flex justify-center mb-8'
+            className="flex justify-center mb-8"
           >
-            <div className='flex bg-white/20 backdrop-blur-sm rounded-full p-1'>
+            <div className="flex bg-white/20 backdrop-blur-sm rounded-full p-1">
               <button
                 onClick={() => setLanguage("es")}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
@@ -758,63 +763,63 @@ export default function JorgePortfolio() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className='flex flex-wrap justify-center gap-6'
+            className="flex flex-wrap justify-center gap-6"
           >
             <a
               href={personalInfo.github}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Github size={20} />
-              <span className='hidden sm:inline'>GitHub</span>
+              <span className="hidden sm:inline">GitHub</span>
             </a>
             <a
               href={personalInfo.linkedin}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Linkedin size={20} />
-              <span className='hidden sm:inline'>LinkedIn</span>
+              <span className="hidden sm:inline">LinkedIn</span>
             </a>
             <a
-              href='mailto:callejaj@proton.me'
-              className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
+              href="mailto:callejaj@proton.me"
+              className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Mail size={20} />
-              <span className='hidden sm:inline'>callejaj@proton.me</span>
+              <span className="hidden sm:inline">callejaj@proton.me</span>
             </a>
             <a
               href={`tel:${personalInfo.phone}`}
-              className='flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors'
+              className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Phone size={20} />
-              <span className='hidden sm:inline'>{personalInfo.phone}</span>
+              <span className="hidden sm:inline">{personalInfo.phone}</span>
             </a>
           </motion.div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id='projects' className='py-20 px-4'>
-        <div className='max-w-7xl mx-auto'>
+      <section id="projects" className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className='text-center mb-16'
+            className="text-center mb-16"
           >
-            <h2 className='text-4xl md:text-5xl font-bold mb-4'>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
               {t.featuredProjects}
             </h2>
-            <p className='text-xl text-slate-600 dark:text-slate-300'>
+            <p className="text-xl text-slate-600 dark:text-slate-300">
               {t.featuredProjectsDesc}
             </p>
           </motion.div>
 
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
@@ -823,57 +828,57 @@ export default function JorgePortfolio() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className='h-full hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm'>
-                  <div className='relative overflow-hidden rounded-t-lg'>
+                <Card className="h-full hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm">
+                  <div className="relative overflow-hidden rounded-t-lg">
                     <img
                       src={project.image || "/placeholder.svg"}
                       alt={project.titleKey}
-                      className='w-full h-64 object-cover transition-transform duration-300 hover:scale-105'
+                      className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
                     />
                     {project.featured && (
-                      <Badge className='absolute top-4 left-4 bg-gradient-to-r from-blue-500 to-purple-600 hidden sm:block'>
+                      <Badge className="absolute top-4 left-4 bg-gradient-to-r from-blue-500 to-purple-600 hidden sm:block">
                         {t.featuredProject}
                       </Badge>
                     )}
                     {t.projects[project.titleKey].metrics && (
                       <Badge
-                        variant='secondary'
-                        className='absolute top-4 right-4'
+                        variant="secondary"
+                        className="absolute top-4 right-4"
                       >
                         {t.projects[project.titleKey].metrics}
                       </Badge>
                     )}
                   </div>
                   <CardHeader>
-                    <CardTitle className='flex items-center justify-between text-xl'>
+                    <CardTitle className="flex items-center justify-between text-xl">
                       {t.projects[project.titleKey].title}
-                      <div className='flex gap-2'>
+                      <div className="flex gap-2">
                         <a
                           href={project.github}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className='text-slate-600 hover:text-blue-600 transition-colors'
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-slate-600 hover:text-blue-600 transition-colors"
                         >
                           <Github size={20} />
                         </a>
                         <a
                           href={project.demo}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className='text-slate-600 hover:text-blue-600 transition-colors'
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-slate-600 hover:text-blue-600 transition-colors"
                         >
                           <ExternalLink size={20} />
                         </a>
                       </div>
                     </CardTitle>
-                    <CardDescription className='text-base leading-relaxed'>
+                    <CardDescription className="text-base leading-relaxed">
                       {t.projects[project.titleKey].description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className='flex flex-wrap gap-2'>
+                    <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
-                        <Badge key={tech} variant='outline' className='text-xs'>
+                        <Badge key={tech} variant="outline" className="text-xs">
                           {tech}
                         </Badge>
                       ))}
@@ -887,24 +892,24 @@ export default function JorgePortfolio() {
       </section>
 
       {/* Skills Section */}
-      <section className='py-20 px-4 bg-white/30 backdrop-blur-sm'>
-        <div className='max-w-6xl mx-auto'>
+      <section className="py-20 px-4 bg-white/30 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className='text-center mb-16'
+            className="text-center mb-16"
           >
-            <h2 className='text-4xl md:text-5xl font-bold mb-4'>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
               {t.techStack}
             </h2>
-            <p className='text-xl text-slate-600 dark:text-slate-300'>
+            <p className="text-xl text-slate-600 dark:text-slate-300">
               {t.techStackDesc}
             </p>
           </motion.div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {skillCategories.map((category, index) => (
               <motion.div
                 key={category.title}
@@ -913,14 +918,14 @@ export default function JorgePortfolio() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className='h-full border-0 bg-white/80 backdrop-blur-sm'>
+                <Card className="h-full border-0 bg-white/80 backdrop-blur-sm">
                   <CardHeader>
-                    <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-2'>
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                       <div>
-                        <CardTitle className='text-xl'>
+                        <CardTitle className="text-xl">
                           {category.title}
                         </CardTitle>
-                        <CardDescription className='text-lg font-semibold text-blue-600'>
+                        <CardDescription className="text-lg font-semibold text-blue-600">
                           {personalInfo.name}
                         </CardDescription>
                       </div>
@@ -932,11 +937,11 @@ export default function JorgePortfolio() {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <ul className='space-y-2'>
+                    <ul className="space-y-2">
                       {category.skills.map((skill, i) => (
-                        <li key={i} className='flex items-start gap-2'>
-                          <div className='w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0'></div>
-                          <span className='text-slate-700 dark:text-slate-300'>
+                        <li key={i} className="flex items-start gap-2">
+                          <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-slate-700 dark:text-slate-300">
                             {skill}
                           </span>
                         </li>
@@ -951,24 +956,24 @@ export default function JorgePortfolio() {
       </section>
 
       {/* Experience Section */}
-      <section className='py-20 px-4'>
-        <div className='max-w-4xl mx-auto'>
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className='text-center mb-16'
+            className="text-center mb-16"
           >
-            <h2 className='text-4xl md:text-5xl font-bold mb-4'>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
               {t.experience}
             </h2>
-            <p className='text-xl text-slate-600 dark:text-slate-300'>
+            <p className="text-xl text-slate-600 dark:text-slate-300">
               {t.experienceDesc}
             </p>
           </motion.div>
 
-          <div className='space-y-8'>
+          <div className="space-y-8">
             {experience.map((job, index) => (
               <motion.div
                 key={index}
@@ -977,31 +982,31 @@ export default function JorgePortfolio() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className='border-0 bg-white/80 backdrop-blur-sm'>
+                <Card className="border-0 bg-white/80 backdrop-blur-sm">
                   <CardHeader>
-                    <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-2'>
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                       <div>
-                        <CardTitle className='text-xl'>{job.title}</CardTitle>
-                        <CardDescription className='text-lg font-semibold text-blue-600'>
+                        <CardTitle className="text-xl">{job.title}</CardTitle>
+                        <CardDescription className="text-lg font-semibold text-blue-600">
                           {job.company}
                         </CardDescription>
                       </div>
-                      <div className='text-right'>
-                        <div className='text-sm text-slate-600'>
+                      <div className="text-right">
+                        <div className="text-sm text-slate-600">
                           {job.period}
                         </div>
-                        <div className='text-sm text-slate-500'>
+                        <div className="text-sm text-slate-500">
                           {job.location}
                         </div>
                       </div>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <ul className='space-y-2'>
+                    <ul className="space-y-2">
                       {job.achievements.map((achievement, i) => (
-                        <li key={i} className='flex items-start gap-2'>
-                          <div className='w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0'></div>
-                          <span className='text-slate-700 dark:text-slate-300'>
+                        <li key={i} className="flex items-start gap-2">
+                          <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-slate-700 dark:text-slate-300">
                             {achievement}
                           </span>
                         </li>
@@ -1016,39 +1021,39 @@ export default function JorgePortfolio() {
       </section>
 
       {/* Contact Section */}
-      <section className='py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white'>
-        <div className='max-w-4xl mx-auto text-center'>
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className='text-4xl md:text-5xl font-bold mb-4'>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
               {t.readyToInnovate}
             </h2>
-            <p className='text-xl mb-8 opacity-90'>{t.transformVision}</p>
-            <div className='flex flex-wrap justify-center gap-4'>
-              <Button size='lg' variant='secondary' asChild>
+            <p className="text-xl mb-8 opacity-90">{t.transformVision}</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button size="lg" variant="secondary" asChild>
                 <a
-                  href='mailto:callejaj@proton.me'
-                  className='inline-flex items-center gap-2'
+                  href="mailto:callejaj@proton.me"
+                  className="inline-flex items-center gap-2"
                 >
                   <Mail size={20} />
                   {t.sendEmail}
                 </a>
               </Button>
               <Button
-                size='lg'
-                variant='outline'
+                size="lg"
+                variant="outline"
                 asChild
-                className='text-white border-white hover:bg-white hover:text-blue-600 bg-transparent'
+                className="text-white border-white hover:bg-white hover:text-blue-600 bg-transparent"
               >
                 <a
                   href={personalInfo.linkedin}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='inline-flex items-center gap-2'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
                 >
                   <Linkedin size={20} />
                   LinkedIn
@@ -1060,19 +1065,19 @@ export default function JorgePortfolio() {
       </section>
 
       {/* Footer */}
-      <footer className='py-8 px-4 bg-slate-900 text-white'>
-        <div className='max-w-4xl mx-auto text-center'>
-          <div className='mb-3'>
+      <footer className="py-8 px-4 bg-slate-900 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-3">
             <img
-              src='/jorgecallejaicon.png'
-              alt='Jorge Calleja Logo'
-              className='w-12 h-12 mx-auto mb-2 opacity-80 hover:opacity-100 transition-opacity'
+              src="/jorgecallejaicon.png"
+              alt="Jorge Calleja Logo"
+              className="w-12 h-12 mx-auto mb-2 opacity-80 hover:opacity-100 transition-opacity"
             />
           </div>
-          <p className='text-slate-400'>
+          <p className="text-slate-400">
             &copy; 2024 {personalInfo.name}. {t.developedWith}
           </p>
-          <p className='text-slate-500 text-sm mt-2'>{t.quote}</p>
+          <p className="text-slate-500 text-sm mt-2">{t.quote}</p>
         </div>
       </footer>
     </div>
