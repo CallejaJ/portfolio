@@ -16,7 +16,7 @@ interface Node {
 
 export function BlockchainBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
   const nodesRef = useRef<Node[]>([]);
   const timeRef = useRef<number>(0);
 
@@ -220,8 +220,7 @@ export function BlockchainBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className='fixed inset-0 pointer-events-none z-0'
-      style={{ background: "transparent" }}
+      className='fixed inset-0 pointer-events-none z-0 bg-transparent'
     />
   );
 }
