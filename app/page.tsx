@@ -609,6 +609,14 @@ export default function JorgePortfolio() {
         "DeFi Protocols",
         "Account Abstraction",
         "ZeroDev SDK",
+        "Hardhat",
+        "OpenZeppelin",
+        "Metamask",
+        "WalletConnect",
+        "Multichain Development",
+        "Chainlink Oracles",
+        "IPFS & Filecoin",
+        "NFT Standards & Marketplaces",
       ],
     },
     {
@@ -616,12 +624,18 @@ export default function JorgePortfolio() {
       icon: <Code className="w-6 h-6" />,
       skills: [
         "React.js 18",
-        "Next.js 13/14",
+        "Next.js 15",
         "TypeScript",
-        "Tailwind CSS 3",
+        "Tailwind CSS 4",
+        "shadcn/ui",
         "Material-UI",
-        "Vite 3",
+        "Vite 5",
         "JavaScript ES6+",
+        "React Query/TanStack Query", // Manejo de estado servidor
+        "Framer Motion", // Animaciones (ya lo usas en tu código)
+        "React Hook Form", // Manejo de formularios
+        "Storybook", // Desarrollo de componentes
+        "Vitest", // Testing moderno
       ],
     },
     {
@@ -629,13 +643,19 @@ export default function JorgePortfolio() {
       icon: <Cpu className="w-6 h-6" />,
       skills: [
         "Prompt Engineering",
-        "Claude 3.7",
+        "Claude Sonnet",
+        "Claude Opus",
         "GPT-4o",
-        "Deep Seek",
-        "Grok 3",
-        "NLP",
+        "GPT-4o mini",
+        "o1-preview",
+        "o1-mini",
+        "DeepSeek-V3",
+        "Grok-3",
+        "Gemini 2.0 Flash",
         "Development Acceleration",
         "AI-assisted Coding",
+        "Cursor IDE",
+        "GitHub Copilot",
       ],
     },
     {
@@ -922,18 +942,13 @@ export default function JorgePortfolio() {
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                       <div>
-                        <CardTitle className="text-xl">
+                        {/* <CardTitle className="text-xl">
                           {category.title}
-                        </CardTitle>
+                        </CardTitle> */}
                         <CardDescription className="text-lg font-semibold text-blue-600">
-                          {personalInfo.name}
+                          {category.title}
                         </CardDescription>
                       </div>
-                      {/* <div className='text-right'>
-                        <div className='text-sm text-slate-600'>
-                          {personalInfo.location}
-                        </div>
-                      </div> */}
                     </div>
                   </CardHeader>
                   <CardContent>
