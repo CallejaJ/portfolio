@@ -427,7 +427,7 @@ export default function JorgePortfolio() {
     name: "Jorge Calleja Pérez",
     title: t.title,
     // location: "Málaga, Spain",
-    phone: "+34 649530022",
+    // phone: "+34 649530022",
     email: "callejaj@proton.me",
     linkedin: "https://www.linkedin.com/in/callejaj",
     github: "https://github.com/CallejaJ",
