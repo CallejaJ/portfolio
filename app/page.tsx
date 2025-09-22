@@ -810,13 +810,13 @@ export default function JorgePortfolio() {
               <Mail size={20} />
               <span className="hidden sm:inline">callejaj@proton.me</span>
             </a>
-            <a
+            {/* <a
               href={`tel:${personalInfo.phone}`}
               className="flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors"
             >
               <Phone size={20} />
               <span className="hidden sm:inline">{personalInfo.phone}</span>
-            </a>
+            </a> */}
           </motion.div>
         </div>
       </section>
