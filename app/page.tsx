@@ -539,7 +539,7 @@ export default function JorgePortfolio() {
         "Hardhat",
         "Solidity Templates",
       ],
-      github: "https://github.com/CallejaJ/migration-vite-to-next",
+      github: "https://github.com/CallejaJ/memento-web3-toolkit",
       demo: "https://memento-toolkit.vercel.app/",
       featured: false,
     },
