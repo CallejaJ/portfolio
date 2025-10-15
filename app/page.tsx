@@ -168,7 +168,7 @@ export default function JorgePortfolio() {
         {
           title: "Frontend Developer",
           company: "DocuDID",
-          period: "2024 - 2025",
+          period: "May 2025 - current",
           location: "Remote",
           achievements: [
             "Lideré desarrollo frontend de plataforma legal SaaS con React, Next.js y TypeScript",
