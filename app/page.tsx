@@ -37,7 +37,8 @@ type ProjectKey =
   | "faviconGenerator"
   | "retroGamehub"
   | "geoOptimization"
-  | "cryptoTracker"; // Nuevo proyecto añadido
+  | "cryptoTracker"
+  | "docudid";
 
 interface ProjectData {
   title: string;
@@ -94,6 +95,12 @@ export default function JorgePortfolio() {
       // Projects
       featuredProject: "Proyecto Destacado",
       projects: {
+        docudid: {
+          title: "DOCUDID - AI Legal Assistant Platform",
+          description:
+            "Plataforma SaaS de gestión documental legal con IA especializada (Alexia AI) que automatiza análisis de contratos, investigación jurisprudencial y redacción legal. Sistema multi-tenant con soporte para 40+ idiomas y especialización en todas las ramas del derecho.",
+          metrics: "847+ despachos, 95% satisfacción, 300% mejora eficiencia",
+        },
         gaslessSwap: {
           title: "Gasless Token Swap Platform",
           description:
@@ -158,6 +165,19 @@ export default function JorgePortfolio() {
 
       // Experience
       experienceItems: [
+        {
+          title: "Frontend Developer",
+          company: "DocuDID",
+          period: "2024 - 2025",
+          location: "Remote",
+          achievements: [
+            "Lideré desarrollo frontend de plataforma legal SaaS con React, Next.js y TypeScript",
+            "Construí dashboard de análisis legal en tiempo real con streaming de respuestas IA vía WebSocket",
+            "Implementé sistema de internacionalización con i18next soportando 40+ idiomas",
+            "Desarrollé biblioteca de componentes escalable con Tailwind CSS para arquitectura multi-tenant",
+            "Optimicé rendimiento logrando 40% mejora y tiempos de respuesta de 30 segundos",
+          ],
+        },
         {
           title: "Web3 Developer",
           company: "ENO Network",
@@ -438,6 +458,24 @@ export default function JorgePortfolio() {
   const projects: Project[] = [
     {
       id: 1,
+      titleKey: "docudid",
+      image: "/images/docudid.svg", // Asegúrate de tener esta imagen
+      technologies: [
+        "React 18",
+        "Next.js 15",
+        "TypeScript",
+        "Prisma",
+        "WebSocket",
+        "i18next",
+        "Tailwind CSS",
+        "OpenAI API",
+      ],
+      github: "https://github.com/CallejaJ", // Cambia por el repo real si existe
+      demo: "https://docudid.com", // Cambia por la URL real
+      featured: true, // true si quieres que aparezca destacado
+    },
+    {
+      id: 2,
       titleKey: "gaslessSwap",
       image: "/images/gasless_token_swap.jpg",
       technologies: [
@@ -453,7 +491,7 @@ export default function JorgePortfolio() {
       featured: true,
     },
     {
-      id: 2,
+      id: 3,
       titleKey: "cryptoTracker",
       image: "/images/crypto_tracker.jpg",
       technologies: [
@@ -470,7 +508,7 @@ export default function JorgePortfolio() {
       featured: true,
     },
     {
-      id: 3,
+      id: 4,
       titleKey: "usdtStaking",
       image: "/images/usdt_staking.jpg",
       technologies: [
@@ -485,7 +523,7 @@ export default function JorgePortfolio() {
       featured: true,
     },
     {
-      id: 4,
+      id: 5,
       titleKey: "nftLaunchpad",
       image: "/images/nft3_launchpad.jpg",
       technologies: [
@@ -500,7 +538,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 5,
+      id: 6,
       titleKey: "realEstate",
       image: "/images/TokenBricks.jpg",
       technologies: [
@@ -514,7 +552,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 6,
+      id: 7,
       titleKey: "tokenLaunchpad",
       image: "/images/token_launchpad.jpg",
       technologies: [
@@ -529,7 +567,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 7,
+      id: 8,
       titleKey: "web3Toolkit",
       image: "/images/web3_toolkit.jpg",
       technologies: [
@@ -544,7 +582,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 8,
+      id: 9,
       titleKey: "faviconGenerator",
       image: "/images/favicon_generator.jpg",
       technologies: [
@@ -559,7 +597,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 9,
+      id: 10,
       titleKey: "retroGamehub",
       image: "/images/retro_gamehub.jpg",
       technologies: [
@@ -575,7 +613,7 @@ export default function JorgePortfolio() {
       featured: false,
     },
     {
-      id: 10,
+      id: 11,
       titleKey: "geoOptimization",
       image: "/images/geo_optimization.jpg",
       technologies: [
@@ -853,7 +891,7 @@ export default function JorgePortfolio() {
                     <img
                       src={project.image || "/placeholder.svg"}
                       alt={project.titleKey}
-                      className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
+                      className="w-full h-64 object-cover bg-gradient-to-br from-slate-50 to-blue-50 transition-transform duration-300 hover:scale-105"
                     />
                     {project.featured && (
                       <Badge className="absolute top-4 left-4 bg-gradient-to-r from-blue-500 to-purple-600 hidden sm:block">
