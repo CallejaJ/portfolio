@@ -459,7 +459,7 @@ export default function JorgePortfolio() {
     {
       id: 1,
       titleKey: "docudid",
-      image: "/images/docudid.svg", // Asegúrate de tener esta imagen
+      image: "/images/docudid.jpg",
       technologies: [
         "React 18",
         "Next.js 15",
