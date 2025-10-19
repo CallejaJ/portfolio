@@ -46,24 +46,23 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
               viewport={{ once: true }}
             >
               <Card className="h-full hover:shadow-2xl transition-all duration-300 border-0 bg-white dark:bg-slate-800 overflow-hidden group">
-                <div className="relative overflow-hidden rounded-t-lg h-64">
+                <div className="relative overflow-hidden rounded-t-lg">
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.titleKey}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-64 object-cover bg-gradient-to-br from-slate-50 to-blue-50 transition-transform duration-300 hover:scale-105"
                   />
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
-                  {/* Badges positioned over image */}
-                  <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
+                  {/* Badges positioned over image - OCULTOS EN MÓVIL */}
+                  <div className="hidden sm:flex absolute top-4 left-4 right-4 justify-between items-start">
                     {project.featured && (
-                      <Badge className="bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0 shadow-lg">
+                      <Badge className="bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0 shadow-lg text-xs px-2 py-1">
                         {t.featuredProject}
                       </Badge>
                     )}
+
                     {t.projects[project.titleKey].metrics && (
-                      <Badge className="bg-slate-900/80 dark:bg-slate-100/90 text-white dark:text-slate-900 border-0 backdrop-blur-sm shadow-lg ml-auto">
+                      <Badge className="bg-slate-900/80 dark:bg-slate-100/90 text-white dark:text-slate-900 border-0 backdrop-blur-sm shadow-lg ml-auto text-xs px-3 py-1">
                         {t.projects[project.titleKey].metrics}
                       </Badge>
                     )}
@@ -72,6 +71,7 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
                   {/* Links overlay */}
                   <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a
+                      aria-label="github"
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -83,6 +83,7 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
                       />
                     </a>
                     <a
+                      aria-label="demo"
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"

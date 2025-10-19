@@ -16,13 +16,13 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Header fixed con idioma y tema */}
-      <div className="fixed top-4 right-4 z-50 flex items-center gap-3">
-        {/* Switch de idioma mejorado */}
+      {/* Header fixed con idioma y tema - MEJORADO PARA MÓVIL */}
+      <div className="fixed top-4 left-4 right-4 md:left-auto md:right-4 z-50 flex items-center justify-between md:justify-end gap-3">
+        {/* Switch de idioma mejorado con más margen en móvil */}
         <div className="flex bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-full p-1 shadow-lg border border-slate-200 dark:border-slate-700">
           <button
             onClick={() => setLanguage("es")}
-            className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+            className={`px-5 py-2.5 md:px-4 md:py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
               language === "es"
                 ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
                 : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
@@ -32,7 +32,7 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
           </button>
           <button
             onClick={() => setLanguage("en")}
-            className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+            className={`px-5 py-2.5 md:px-4 md:py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
               language === "en"
                 ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
                 : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
@@ -52,7 +52,7 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 mt-12 md:mt-0 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 mt-20 md:mt-0 leading-tight">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
               {personalInfo.name}
             </span>
@@ -89,7 +89,6 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-wrap justify-center gap-4 mb-12"
         >
-          {/* Botón Ver Proyectos mejorado */}
           <Button
             size="lg"
             asChild
@@ -98,7 +97,6 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
             <a href="#projects">{t.viewProjects}</a>
           </Button>
 
-          {/* Botón Contactar mejorado */}
           <Button
             variant="outline"
             size="lg"
