@@ -1,18 +1,8 @@
-// ============================================
-// COMPONENTE: Skills/Tecnologías
-// ============================================
-
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
-// Interfaces
 interface SkillCategory {
   title: string;
   icon: React.ReactNode;
@@ -29,7 +19,7 @@ interface SkillsSectionProps {
 
 const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
   return (
-    <section className="py-20 px-4 bg-white/30 backdrop-blur-sm">
+    <section className="py-20 px-4 bg-slate-50 dark:bg-slate-900/50">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,7 +28,9 @@ const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.techStack}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
+            {t.techStack}
+          </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300">
             {t.techStackDesc}
           </p>
@@ -53,22 +45,18 @@ const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full border-0 bg-white/80 backdrop-blur-sm">
+              <Card className="h-full border-0 bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                    <div>
-                      <CardDescription className="text-lg font-semibold text-blue-600">
-                        {category.title}
-                      </CardDescription>
-                    </div>
-                  </div>
+                  <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                    {category.title}
+                  </h3>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {category.skills.map((skill, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-slate-700 dark:text-slate-300">
+                      <li key={i} className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full flex-shrink-0"></div>
+                        <span className="text-slate-700 dark:text-slate-200 text-base">
                           {skill}
                         </span>
                       </li>

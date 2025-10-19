@@ -1,7 +1,3 @@
-// ============================================
-// COMPONENTE: Proyectos
-// ============================================
-
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
@@ -14,11 +10,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Project } from "@/lib/projects-data"; // Importa el tipo
+import { Project } from "@/lib/projects-data";
 
 interface ProjectsSectionProps {
   t: any;
-  projects: Project[]; // ✅ Agrega esta prop
+  projects: Project[];
 }
 
 const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
@@ -32,7 +28,7 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
             {t.featuredProjects}
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300">
@@ -49,59 +45,74 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm">
-                <div className="relative overflow-hidden rounded-t-lg">
+              <Card className="h-full hover:shadow-2xl transition-all duration-300 border-0 bg-white dark:bg-slate-800 overflow-hidden group">
+                <div className="relative overflow-hidden rounded-t-lg h-64">
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.titleKey}
-                    className="w-full h-64 object-cover bg-gradient-to-br from-slate-50 to-blue-50 transition-transform duration-300 hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  {project.featured && (
-                    <Badge className="absolute top-4 left-4 bg-gradient-to-r from-blue-500 to-purple-600 hidden sm:block">
-                      {t.featuredProject}
-                    </Badge>
-                  )}
-                  {t.projects[project.titleKey].metrics && (
-                    <Badge
-                      variant="secondary"
-                      className="absolute top-4 right-4"
+                  {/* Overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                  {/* Badges positioned over image */}
+                  <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
+                    {project.featured && (
+                      <Badge className="bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0 shadow-lg">
+                        {t.featuredProject}
+                      </Badge>
+                    )}
+                    {t.projects[project.titleKey].metrics && (
+                      <Badge className="bg-slate-900/80 dark:bg-slate-100/90 text-white dark:text-slate-900 border-0 backdrop-blur-sm shadow-lg ml-auto">
+                        {t.projects[project.titleKey].metrics}
+                      </Badge>
+                    )}
+                  </div>
+
+                  {/* Links overlay */}
+                  <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-white dark:bg-slate-800 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors shadow-lg"
                     >
-                      {t.projects[project.titleKey].metrics}
-                    </Badge>
-                  )}
+                      <Github
+                        size={20}
+                        className="text-slate-900 dark:text-white"
+                      />
+                    </a>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-white dark:bg-slate-800 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors shadow-lg"
+                    >
+                      <ExternalLink
+                        size={20}
+                        className="text-slate-900 dark:text-white"
+                      />
+                    </a>
+                  </div>
                 </div>
-                <CardHeader>
-                  <CardTitle className="flex items-center justify-between text-xl">
+
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-xl text-slate-900 dark:text-white">
                     {t.projects[project.titleKey].title}
-                    <div className="flex gap-2">
-                      <a
-                        aria-label="GitHub Repository"
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-600 hover:text-blue-600 transition-colors"
-                      >
-                        <Github size={20} />
-                      </a>
-                      <a
-                        aria-label="demo"
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-600 hover:text-blue-600 transition-colors"
-                      >
-                        <ExternalLink size={20} />
-                      </a>
-                    </div>
                   </CardTitle>
-                  <CardDescription className="text-base leading-relaxed">
+                  <CardDescription className="text-base leading-relaxed text-slate-600 dark:text-slate-300 mt-2">
                     {t.projects[project.titleKey].description}
                   </CardDescription>
                 </CardHeader>
+
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs">
+                      <Badge
+                        key={tech}
+                        variant="outline"
+                        className="text-xs bg-slate-50 dark:bg-slate-700/50 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-600"
+                      >
                         {tech}
                       </Badge>
                     ))}

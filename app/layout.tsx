@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Jorge Calleja Portfolio",
-  description: "Web3 & Blockchain Developer  | B2B SaaS Solutions | Generative experience optimization",
+  description:
+    "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
   generator: "v0.dev",
   icons: {
     icon: [
@@ -42,33 +44,42 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="es" suppressHydrationWarning>
       <head>
-        <link rel='icon' href='/jorgecallejaicon.png' sizes='any' />
+        <link rel="icon" href="/jorgecallejaicon.png" sizes="any" />
         <link
-          rel='icon'
-          href='/jorgecallejaicon.png'
-          sizes='16x16'
-          type='image/png'
+          rel="icon"
+          href="/jorgecallejaicon.png"
+          sizes="16x16"
+          type="image/png"
         />
         <link
-          rel='icon'
-          href='/jorgecallejaicon.png'
-          sizes='32x32'
-          type='image/png'
+          rel="icon"
+          href="/jorgecallejaicon.png"
+          sizes="32x32"
+          type="image/png"
         />
-        <link rel='apple-touch-icon' href='/jorgecallejaicon.png' />
-        <link rel='shortcut icon' href='/jorgecallejaicon.png' />
-        <link rel='manifest' href='/site.webmanifest' />
+        <link rel="apple-touch-icon" href="/jorgecallejaicon.png" />
+        <link rel="shortcut icon" href="/jorgecallejaicon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
+          html {
+            font-family: ${GeistSans.style.fontFamily};
+            --font-sans: ${GeistSans.variable};
+            --font-mono: ${GeistMono.variable};
+          }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
