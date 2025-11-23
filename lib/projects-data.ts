@@ -81,7 +81,7 @@ export const projects: Project[] = [
       "Vitest",
     ],
     github: "https://github.com/CallejaJ",
-    demo: "https://anairodriguez.vercel.app/",
+    demo: "https://anarodriguezabogados.vercel.app/",
     featured: true,
   },
   {
