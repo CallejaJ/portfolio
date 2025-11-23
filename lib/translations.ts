@@ -1,9 +1,5 @@
-// ============================================
-// TRADUCCIONES
-// ============================================
 // lib/translations.ts
 
-// Primero define los tipos
 export type ProjectKey =
   | "gaslessSwap"
   | "usdtStaking"
@@ -15,7 +11,10 @@ export type ProjectKey =
   | "retroGamehub"
   | "geoOptimization"
   | "cryptoTracker"
-  | "docudid";
+  | "docudid"
+  | "anaRodriguez"
+  | "tuvozamiga"
+  | "bachataAlAireLibre";
 
 export interface ProjectData {
   title: string;
@@ -125,19 +124,40 @@ export const translations = {
           "La Optimización de Experiencia Generativa representa un cambio fundamental desde la optimización de motores de búsqueda tradicional hacia la optimización para motores generativos.",
         metrics: "SASS B2B con 20+ clientes",
       },
+      tuvozamiga: {
+        title: "TUVOZAMIGA - Plataforma de Compañía Virtual con IA",
+        description:
+          "Aplicación web de compañía virtual que combate la soledad no deseada mediante escucha activa y conversación empática 24/7. Implementa procesamiento de audio en tiempo real con latencia ultra baja, visualizador de ondas reactivo usando Web Audio API y Canvas, todo con interfaz 100% en español optimizada para accesibilidad.",
+        metrics: "Latencia ultra baja + Visualización audio real-time + IA empática",
+      },
+      bachataAlAireLibre: {
+        title: "Bachata al Aire Libre - Landing Page de Alto Rendimiento",
+        description:
+          "Landing page moderna y optimizada para clases de bachata y salsa al aire libre en Málaga. Alcanza puntuaciones Lighthouse excepcionales: Performance 99, Accessibility 100, Best Practices 96, SEO 100. Incluye PWA, sistema multi-idioma, reproductor de música, galería de fotos animada, testimonios reales y integración con Google Maps.",
+        metrics: "Lighthouse 99+ + PWA + Multi-idioma + SEO 100",
+      },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
-        title: "Frontend Developer",
-        company: "DocuDID",
-        period: "May 2025 - current",
+        title: "Frontend Web3 Developer",
+        company: "Memento Academy Freelance",
+        period: "May 2025 - Actualidad",
         location: "Remote",
         achievements: [
-          "Lideré desarrollo frontend de plataforma legal SaaS con React, Next.js y TypeScript",
-          "Construí dashboard de análisis legal en tiempo real con streaming de respuestas IA vía WebSocket",
-          "Implementé sistema de internacionalización con i18next soportando 40+ idiomas",
-          "Desarrollé biblioteca de componentes escalable con Tailwind CSS para arquitectura multi-tenant",
-          "Optimicé rendimiento logrando 40% mejora y tiempos de respuesta de 30 segundos",
+          "Desarrollo y diseño personalizado de plataformas, landing pages y páginas corporativas",
+          "Enfoque especializado en SEO-GEO y optimización de experiencia del usuario",
+          "Implementación de soluciones Web3 y blockchain para proyectos freelance",
+        ],
+      },
+      {
+        title: "Frontend Developer",
+        company: "DocuDID",
+        period: "Sep 2025 - Oct 2025",
+        location: "Remote",
+        achievements: [
+          "Diseñé y desarrollé interfaz frontend de plataforma legal SaaS con React, Next.js y TypeScript",
+          "Implementé sistema de diseño con paleta de colores personalizada usando Tailwind CSS",
+          "Conecté frontend con backend mediante integración de Prisma ORM",
         ],
       },
       {
@@ -273,19 +293,40 @@ export const translations = {
           "Generative Experience Optimization represents a fundamental shift from traditional search engine optimization toward optimization for generative engines.",
         metrics: "B2B SaaS with 20+ clients",
       },
+      tuvozamiga: {
+        title: "TUVOZAMIGA - Virtual Companion Platform with AI",
+        description:
+          "Virtual companion web application that combats unwanted loneliness through active listening and empathetic conversation 24/7. Features ultra-low latency real-time audio processing, reactive waveform visualizer using Web Audio API and Canvas, all with 100% Spanish interface optimized for accessibility.",
+        metrics: "Ultra-low latency + Real-time audio visualization + Empathetic AI",
+      },
+      bachataAlAireLibre: {
+        title: "Bachata al Aire Libre - High-Performance Landing Page",
+        description:
+          "Modern, optimized landing page for outdoor bachata and salsa dance classes in Málaga. Achieves exceptional Lighthouse scores: Performance 99, Accessibility 100, Best Practices 96, SEO 100. Features PWA capabilities, multi-language support, music player, animated photo gallery, real testimonials and Google Maps integration.",
+        metrics: "Lighthouse 99+ + PWA + Multi-language + SEO 100",
+      },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
-        title: "Frontend Developer",
-        company: "DocuDID",
-        period: "May 2025 - current",
+        title: "Frontend Web3 Developer",
+        company: "Memento Academy Freelance",
+        period: "May 2025 - Present",
         location: "Remote",
         achievements: [
-          "Led frontend development of legal SaaS platform with React, Next.js and TypeScript",
-          "Built real-time legal analysis dashboard with AI response streaming via WebSocket",
-          "Implemented internationalization system with i18next supporting 40+ languages",
-          "Developed scalable component library with Tailwind CSS for multi-tenant architecture",
-          "Optimized performance achieving 40% improvement and 30-second response times",
+          "Custom development and design of platforms, landing pages and corporate websites",
+          "Specialized focus on SEO-GEO and user experience optimization",
+          "Implementation of Web3 and blockchain solutions for freelance projects",
+        ],
+      },
+      {
+        title: "Frontend Developer",
+        company: "DocuDID",
+        period: "Sep 2025 - Oct 2025",
+        location: "Remote",
+        achievements: [
+          "Designed and developed frontend interface for legal SaaS platform with React, Next.js and TypeScript",
+          "Implemented design system with custom color palette using Tailwind CSS",
+          "Connected frontend with backend through Prisma ORM integration",
         ],
       },
       {

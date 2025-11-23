@@ -12,7 +12,9 @@ export type ProjectKey =
   | "geoOptimization"
   | "cryptoTracker"
   | "docudid"
-  | "anaRodriguez";
+  | "anaRodriguez"
+  | "tuvozamiga"
+  | "bachataAlAireLibre";
 
 export interface Project {
   id: number;
@@ -25,6 +27,79 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  // 4 proyectos más recientes primero
+  {
+    id: 14,
+    titleKey: "bachataAlAireLibre",
+    image: "/images/bachataalairelibre.png",
+    technologies: [
+      "Next.js 14",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Framer Motion",
+      "PWA",
+      "i18n",
+    ],
+    github: "https://github.com/CallejaJ/carlos-yepes-reyes",
+    demo: "https://bachataalairelibre.com",
+    featured: true,
+  },
+  {
+    id: 13,
+    titleKey: "tuvozamiga",
+    image: "/images/tuvozamiga.png",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Web Audio API",
+      "Canvas API",
+      "Orga AI",
+      "Vercel Edge",
+    ],
+    github: "https://github.com/CallejaJ/tuvozamiga",
+    demo: "https://tuvozamiga.vercel.app",
+    featured: true,
+  },
+  {
+    id: 12,
+    titleKey: "anaRodriguez",
+    image: "/images/ana.png",
+    technologies: [
+      "Next.js 15",
+      "React 19",
+      "TypeScript",
+      "Prisma",
+      "shadcn/ui",
+      "Framer Motion",
+      "React Hook Form",
+      "Zod",
+      "Tailwind CSS 4",
+      "Nodemailer",
+      "Vitest",
+    ],
+    github: "https://github.com/CallejaJ",
+    demo: "https://anairodriguez.vercel.app/",
+    featured: true,
+  },
+  {
+    id: 11,
+    titleKey: "geoOptimization",
+    image: "/images/geo_optimization.jpg",
+    technologies: [
+      "Next.js",
+      "SerpAPI",
+      "Apify SERP Scraper",
+      "DataForSEO",
+      "Zenserp",
+    ],
+    github: "https://github.com/CallejaJ/geo",
+    demo: "https://generative-optimization-geo.vercel.app/",
+    featured: false,
+  },
+  // Proyectos anteriores
   {
     id: 1,
     titleKey: "docudid",
@@ -174,41 +249,5 @@ export const projects: Project[] = [
     github: "https://callejaj.github.io/retro-gamehub/",
     demo: "https://retro-gamehub.vercel.app/",
     featured: false,
-  },
-  {
-    id: 11,
-    titleKey: "geoOptimization",
-    image: "/images/geo_optimization.jpg",
-    technologies: [
-      "Next.js",
-      "SerpAPI",
-      "Apify SERP Scraper",
-      "DataForSEO",
-      "Zenserp",
-    ],
-    github: "https://github.com/CallejaJ/geo",
-    demo: "https://generative-optimization-geo.vercel.app/",
-    featured: false,
-  },
-  {
-    id: 12,
-    titleKey: "anaRodriguez",
-    image: "/images/ana.png",
-    technologies: [
-      "Next.js 15",
-      "React 19",
-      "TypeScript",
-      "Prisma",
-      "shadcn/ui",
-      "Framer Motion",
-      "React Hook Form",
-      "Zod",
-      "Tailwind CSS 4",
-      "Nodemailer",
-      "Vitest",
-    ],
-    github: "https://github.com/CallejaJ", // Actualiza si tienes el repo
-    demo: "https://anairodriguez.vercel.app/",
-    featured: true,
   },
 ];
