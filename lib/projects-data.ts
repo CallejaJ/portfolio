@@ -130,8 +130,8 @@ export const projects: Project[] = [
       "ZeroDev SDK",
       "Account Abstraction",
     ],
-    github: "https://github.com/CallejaJ",
-    demo: "https://gaslesstokenswap.vercel.app/",
+    github: "https://github.com/CallejaJ/token-swap",
+    demo: "https://gasless-token-swap.vercel.app/",
     featured: true,
   },
   {
