@@ -65,6 +65,7 @@ export const techMap: Record<string, TechItem> = {
   "Next.js": { slug: "nextdotjs", label: "Next.js" },
   "Next.js 14": { slug: "nextdotjs", label: "Next.js 14" },
   "Next.js 15": { slug: "nextdotjs", label: "Next.js 15" },
+  "Next.js 16": { slug: "nextdotjs", label: "Next.js 16" },
   "React": { slug: "react", label: "React" },
   "React 18": { slug: "react", label: "React 18" },
   "React 19": { slug: "react", label: "React 19" },
@@ -75,6 +76,7 @@ export const techMap: Record<string, TechItem> = {
   "Framer Motion": { slug: "framer", label: "Framer Motion" },
   "Material UI": { path: "/icons/material-ui.png", label: "Material UI" },
   "Three.js": { slug: "threedotjs", label: "Three.js" },
+  "Lucide React": { slug: "lucide", label: "Lucide React" },
   
   // Backend & Databases
   "Prisma": { slug: "prisma", label: "Prisma" },
@@ -98,6 +100,9 @@ export const techMap: Record<string, TechItem> = {
   "ERC-20": { slug: "ethereum", label: "ERC-20" },
   "Smart Contracts": { path: "/icons/smart-contract.png", label: "Smart Contracts" },
   "Account Abstraction": { icon: Shield, label: "Account Abstraction" },
+  "OpenZeppelin": { icon: Shield, label: "OpenZeppelin" },
+  "Viem": { slug: "viem", icon: Code2, label: "Viem" },
+  "TanStack Query": { slug: "reactquery", label: "TanStack Query" },
   "Privy": { path: "/icons/privy.avif", label: "Privy" },
   "ZeroDev SDK": { path: "/icons/zerodev.png", label: "ZeroDev" },
   
@@ -109,10 +114,11 @@ export const techMap: Record<string, TechItem> = {
   "React Hook Form": { slug: "reacthookform", icon: FileCode, label: "React Hook Form" },
   "Nodemailer": { slug: "nodemailer", icon: Mail, label: "Nodemailer" },
   "Vitest": { slug: "vitest", label: "Vitest" },
+  "Jest": { slug: "jest", label: "Jest" },
   "i18n": { slug: "i18next", label: "i18n" },
   "i18next": { slug: "i18next", label: "i18next" },
   "WebSocket": { path: "/icons/websocket.png", label: "WebSocket" },
-  "Canvas API": { icon: Brush, label: "Canvas" },
+  "Canvas API": { path: "/icons/canvas.svg", label: "Canvas" },
   "Web Audio API": { icon: AudioWaveform, label: "Web Audio" },
   "SerpAPI": { icon: Search, label: "SerpAPI" },
   "Apify SERP Scraper": { icon: Search, label: "Apify" },
@@ -126,4 +132,9 @@ export const techMap: Record<string, TechItem> = {
   "REST API": { icon: Server, label: "REST API" },
   "File Processing": { icon: FileCode, label: "File Processing" },
   "Orga AI": { icon: Cpu, label: "Orga AI" },
+  "Vite": { slug: "vite", label: "Vite" },
+  "React Router": { slug: "reactrouter", label: "React Router" },
+  "Zustand": { path: "/icons/zustand.webp", label: "Zustand" }, 
+  "LayerZero": { icon: Layers, label: "LayerZero" },
+  "Recharts D3": { path: "/icons/recharts-d3.png", label: "Recharts D3" },
 };
