@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Project } from "@/lib/projects-data";
+import TechLogoComposition from "@/components/tech-logo-composition";
 
 interface ProjectsSectionProps {
   t: any;
@@ -47,10 +48,10 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
             >
               <Card className="h-full hover:shadow-2xl transition-all duration-300 border-0 bg-white dark:bg-slate-800 overflow-hidden group">
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.titleKey}
-                    className="w-full h-64 object-cover bg-gradient-to-br from-slate-50 to-blue-50 transition-transform duration-300 hover:scale-105"
+                  {/* Reemplazamos la imagen estática por la composición de iconos */}
+                  <TechLogoComposition 
+                    technologies={project.technologies}
+                    className="w-full h-64 transition-transform duration-300 group-hover:scale-105"
                   />
 
                   {/* Badges positioned over image - OCULTOS EN MÓVIL */}

@@ -128,7 +128,7 @@ export const projects: Project[] = [
       "Next.js",
       "TypeScript",
       "ZeroDev SDK",
-      "Account Abstraction",
+      "Privy",
     ],
     github: "https://github.com/CallejaJ/token-swap",
     demo: "https://gasless-token-swap.vercel.app/",
