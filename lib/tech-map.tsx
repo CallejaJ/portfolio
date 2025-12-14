@@ -31,6 +31,7 @@ export interface TechItem {
   icon?: LucideIcon | React.FC<any>; // Fallback Lucide icon or custom component
   color?: string; // Override color if needed
   label: string;
+  isDarkLogo?: boolean; // If true, keep inverted in dark mode on hover
 }
 
 // Helper for Recharts which doesn't have a simple icon
@@ -62,27 +63,27 @@ const OpenAIIcon = (props: any) => (
 
 export const techMap: Record<string, TechItem> = {
   // Frameworks & Libraries
-  "Next.js": { slug: "nextdotjs", label: "Next.js" },
-  "Next.js 14": { slug: "nextdotjs", label: "Next.js 14" },
-  "Next.js 15": { slug: "nextdotjs", label: "Next.js 15" },
-  "Next.js 16": { slug: "nextdotjs", label: "Next.js 16" },
+  "Next.js": { slug: "nextdotjs", label: "Next.js", isDarkLogo: true },
+  "Next.js 14": { slug: "nextdotjs", label: "Next.js 14", isDarkLogo: true },
+  "Next.js 15": { slug: "nextdotjs", label: "Next.js 15", isDarkLogo: true },
+  "Next.js 16": { slug: "nextdotjs", label: "Next.js 16", isDarkLogo: true },
   "React": { slug: "react", label: "React" },
   "React 18": { slug: "react", label: "React 18" },
   "React 19": { slug: "react", label: "React 19" },
   "TypeScript": { slug: "typescript", label: "TypeScript" },
   "Tailwind CSS": { slug: "tailwindcss", label: "Tailwind CSS" },
   "Tailwind CSS 4": { slug: "tailwindcss", label: "Tailwind CSS 4" },
-  "shadcn/ui": { slug: "shadcnui", icon: Layout, label: "shadcn/ui" },
-  "Framer Motion": { slug: "framer", label: "Framer Motion" },
+  "shadcn/ui": { slug: "shadcnui", icon: Layout, label: "shadcn/ui", isDarkLogo: true },
+  "Framer Motion": { slug: "framer", label: "Framer Motion", isDarkLogo: true },
   "Material UI": { path: "/icons/material-ui.png", label: "Material UI" },
-  "Three.js": { slug: "threedotjs", label: "Three.js" },
+  "Three.js": { slug: "threedotjs", label: "Three.js", isDarkLogo: true },
   "Lucide React": { slug: "lucide", label: "Lucide React" },
   
   // Backend & Databases
-  "Prisma": { slug: "prisma", label: "Prisma" },
+  "Prisma": { slug: "prisma", label: "Prisma", isDarkLogo: true },
   "Supabase": { slug: "supabase", label: "Supabase" },
   "PostgreSQL": { slug: "postgresql", label: "PostgreSQL" },
-  "Vercel Edge": { slug: "vercel", label: "Vercel Edge" },
+  "Vercel Edge": { slug: "vercel", label: "Vercel Edge", isDarkLogo: true },
   "Node.js": { slug: "nodedotjs", label: "Node.js" },
   
   // Crypto & Web3
@@ -92,7 +93,7 @@ export const techMap: Record<string, TechItem> = {
   "Ethers.js": { slug: "ethers", icon: Code2, label: "Ethers.js" },
   "Hardhat": { path: "/icons/hardhat.png", label: "Hardhat" },
   "RainbowKit": { path: "/icons/rainbowkit.svg", label: "RainbowKit" },
-  "Wagmi": { path: "/icons/wagmi.png", label: "Wagmi" },
+  "Wagmi": { path: "/icons/wagmi.png", label: "Wagmi", isDarkLogo: true },
   "Chainlink": { slug: "chainlink", label: "Chainlink" },
   "OpenAI API": { icon: OpenAIIcon, label: "OpenAI" },
   "Binance API": { slug: "binance", label: "Binance" },
@@ -101,9 +102,9 @@ export const techMap: Record<string, TechItem> = {
   "Smart Contracts": { path: "/icons/smart-contract.png", label: "Smart Contracts" },
   "Account Abstraction": { icon: Shield, label: "Account Abstraction" },
   "OpenZeppelin": { icon: Shield, label: "OpenZeppelin" },
-  "Viem": { slug: "viem", icon: Code2, label: "Viem" },
+  "Viem": { slug: "viem", icon: Code2, label: "Viem", isDarkLogo: true },
   "TanStack Query": { slug: "reactquery", label: "TanStack Query" },
-  "Privy": { path: "/icons/privy.avif", label: "Privy" },
+  "Privy": { path: "/icons/privy.avif", label: "Privy", isDarkLogo: true },
   "ZeroDev SDK": { path: "/icons/zerodev.png", label: "ZeroDev" },
   
   // Tools & APIs

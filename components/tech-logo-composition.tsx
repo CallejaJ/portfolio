@@ -31,13 +31,16 @@ export default function TechLogoComposition({
           // Determine Icon source
           let iconContent;
           
+          const darkHoverClass = item.isDarkLogo ? "" : "dark:group-hover:invert-0";
+          const imgClassName = `w-10 h-10 md:w-12 md:h-12 object-contain filter grayscale group-hover:grayscale-0 dark:invert ${darkHoverClass} transition-all duration-300 opacity-70 group-hover:opacity-100 group-hover:scale-110`;
+          
           if (item.path) {
              // eslint-disable-next-line @next/next/no-img-element
              iconContent = (
                <img 
                  src={item.path} 
                  alt={item.label}
-                 className="w-10 h-10 md:w-12 md:h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100 group-hover:scale-110"
+                 className={imgClassName}
                />
              );
           } else if (item.slug) {
@@ -47,9 +50,9 @@ export default function TechLogoComposition({
                <img 
                  src={`https://cdn.simpleicons.org/${item.slug}`} 
                  alt={item.label}
-                 className="w-10 h-10 md:w-12 md:h-12 object-contain filter grayscale group-hover:grayscale-0 dark:invert dark:group-hover:invert-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
+                 className={imgClassName}
                />
-            );
+             );
           } else {
              const IconComponent = item.icon || Code;
              iconContent = (
