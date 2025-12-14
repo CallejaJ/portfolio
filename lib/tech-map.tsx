@@ -138,4 +138,11 @@ export const techMap: Record<string, TechItem> = {
   "Zustand": { path: "/icons/zustand.webp", label: "Zustand" }, 
   "LayerZero": { icon: Layers, label: "LayerZero" },
   "Recharts D3": { path: "/icons/recharts-d3.png", label: "Recharts D3" },
+  "Analytics": { slug: "vercel", label: "Vercel Analytics", isDarkLogo: true },
+  "Vercel Analytics": { slug: "vercel", label: "Vercel Analytics", isDarkLogo: true },
+  "Embla Carousel": { slug: "emblacarousel", label: "Embla Carousel" },
+  "Sonner": { icon: Zap, label: "Sonner" },
+  "Vaul": { icon: Box, label: "Vaul" },
+  "Axios": { slug: "axios", label: "Axios" },
+  "Radix UI": { slug: "radixui", label: "Radix UI", isDarkLogo: true },
 };
