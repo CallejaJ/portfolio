@@ -16,33 +16,8 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Header fixed con idioma y tema - MEJORADO PARA MÓVIL */}
-      <div className="fixed top-4 left-4 right-4 md:left-auto md:right-4 z-50 flex items-center justify-between md:justify-end gap-3">
-        {/* Switch de idioma ultra-compacto para móvil */}
-        <div className="flex bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-full p-0.5 shadow-lg border border-slate-200 dark:border-slate-700">
-          <button
-            onClick={() => setLanguage("es")}
-            className={`px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 ${
-              language === "es"
-                ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
-                : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
-            }`}
-          >
-            ES
-          </button>
-          <button
-            onClick={() => setLanguage("en")}
-            className={`px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 ${
-              language === "en"
-                ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
-                : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
-            }`}
-          >
-            EN
-          </button>
-        </div>
-        <ThemeToggle />
-      </div>
+      {/* Header fixed removido - Ahora en components/header.tsx */}
+
 
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 

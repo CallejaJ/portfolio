@@ -33,6 +33,12 @@ export const translations = {
       "Reducción del tiempo de desarrollo hasta un 40% mediante automatización con IA",
     viewProjects: "Ver Proyectos",
     contact: "Contactar",
+    nav: {
+      projects: "Proyectos",
+      experience: "Experiencia",
+      skills: "Skills",
+      contact: "Contacto",
+    },
     featuredProjects: "Proyectos Destacados",
     featuredProjectsDesc:
       "Soluciones empresariales que revolucionan procesos mediante Web3 e IA",
@@ -202,6 +208,12 @@ export const translations = {
     highlight: "Up to 40% reduction in development time through AI automation",
     viewProjects: "View Projects",
     contact: "Contact",
+    nav: {
+      projects: "Projects",
+      experience: "Experience",
+      skills: "Skills",
+      contact: "Contact",
+    },
     featuredProjects: "Featured Projects",
     featuredProjectsDesc:
       "Enterprise solutions that revolutionize processes through Web3 and AI",

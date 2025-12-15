@@ -13,7 +13,7 @@ const ContactSection = ({ t }: any) => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
