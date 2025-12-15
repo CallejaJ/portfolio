@@ -18,11 +18,11 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
       {/* Header fixed con idioma y tema - MEJORADO PARA MÓVIL */}
       <div className="fixed top-4 left-4 right-4 md:left-auto md:right-4 z-50 flex items-center justify-between md:justify-end gap-3">
-        {/* Switch de idioma mejorado con más margen en móvil */}
-        <div className="flex bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-full p-1 shadow-lg border border-slate-200 dark:border-slate-700">
+        {/* Switch de idioma ultra-compacto para móvil */}
+        <div className="flex bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-full p-0.5 shadow-lg border border-slate-200 dark:border-slate-700">
           <button
             onClick={() => setLanguage("es")}
-            className={`px-5 py-2.5 md:px-4 md:py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+            className={`px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 ${
               language === "es"
                 ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
                 : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
@@ -32,7 +32,7 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
           </button>
           <button
             onClick={() => setLanguage("en")}
-            className={`px-5 py-2.5 md:px-4 md:py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+            className={`px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 ${
               language === "en"
                 ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
                 : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
@@ -74,10 +74,12 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
             {t.description}
           </p>
 
-          <div className="relative overflow-hidden bg-gradient-to-r from-blue-500/10 to-purple-500/10 dark:from-blue-400/10 dark:to-purple-400/10 border border-blue-200 dark:border-blue-800 px-4 py-2.5 rounded-full inline-flex items-center gap-2 mb-8 font-semibold text-sm backdrop-blur-sm hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300">
+          <div className="relative overflow-hidden bg-gradient-to-r from-blue-500/10 to-purple-500/10 dark:from-blue-400/10 dark:to-purple-400/10 border border-blue-200 dark:border-blue-800 px-4 py-3 md:py-2.5 rounded-2xl md:rounded-full inline-flex items-center gap-3 md:gap-2 mb-8 font-semibold text-sm backdrop-blur-sm hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 max-w-xs md:max-w-none mx-auto text-left md:text-center">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 dark:from-blue-400/5 dark:to-purple-400/5 opacity-50"></div>
-            <Zap className="w-4 h-4 text-blue-600 dark:text-blue-400 relative z-10" />
-            <span className="relative z-10 text-slate-700 dark:text-slate-200">
+            <div className="bg-white/50 dark:bg-slate-800/50 p-1.5 rounded-full shrink-0">
+              <Zap className="w-4 h-4 text-blue-600 dark:text-blue-400 relative z-10" />
+            </div>
+            <span className="relative z-10 text-slate-700 dark:text-slate-200 leading-tight">
               {t.highlight}
             </span>
           </div>
