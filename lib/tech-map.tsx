@@ -108,6 +108,10 @@ export const techMap: Record<string, TechItem> = {
   "ZeroDev SDK": { path: "/icons/zerodev.png", label: "ZeroDev" },
   
   // Tools & APIs
+  "IOTA dApp Kit": { path: "/icons/iota.webp", label: "IOTA dApp Kit" },
+  "IOTA SDK": { path: "/icons/iota.webp", label: "IOTA SDK" },
+  "Pinata Web3": { path: "/icons/pinata.png", label: "Pinata Web3" },
+  "React Query": { slug: "reactquery", label: "React Query" },
   "PWA": { slug: "pwa", label: "PWA" },
   "Recharts": { icon: ActivityIcon, label: "Recharts" },
   "MUI": { slug: "mui", label: "MUI" },

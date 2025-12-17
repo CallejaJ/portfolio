@@ -89,10 +89,11 @@ export const translations = {
         metrics: "365% APY con máxima seguridad",
       },
       nftLaunchpad: {
-        title: "NFT Launchpad & Marketplace",
+        title: "Plataforma de minteo de NFTs en la red IOTA",
         description:
-          "Plataforma Web3 completa con funcionalidad de lanzamiento de NFTs, marketplace con ofertas y royalties. Sistema de tokenización multichain para creadores.",
-        metrics: "45% aumento en opciones de monetización",
+          "Aplicación descentralizada (dApp) para crear y acuñar NFTs en IOTA Rebased Testnet. Aprovecha zkLogin para autenticación sin fricción usando cuentas de Google e IPFS (Pinata) para almacenamiento descentralizado de activos NFT. Implementa contratos inteligentes en Move con API backend para minting patrocinado.",
+        metrics:
+          "zkLogin OAuth + IPFS Pinata + Move contracts + Sponsored minting",
       },
       realEstate: {
         title: "Real Estate Tokenization",
@@ -134,7 +135,8 @@ export const translations = {
         title: "TUVOZAMIGA - Plataforma de Compañía Virtual con IA",
         description:
           "Aplicación web de compañía virtual que combate la soledad no deseada mediante escucha activa y conversación empática 24/7. Implementa procesamiento de audio en tiempo real con latencia ultra baja, visualizador de ondas reactivo usando Web Audio API y Canvas, todo con interfaz 100% en español optimizada para accesibilidad.",
-        metrics: "Latencia ultra baja + Visualización audio real-time + IA empática",
+        metrics:
+          "Latencia ultra baja + Visualización audio real-time + IA empática",
       },
       bachataAlAireLibre: {
         title: "Bachata al Aire Libre - Landing Page de Alto Rendimiento",
@@ -264,10 +266,11 @@ export const translations = {
         metrics: "365% APY with maximum security",
       },
       nftLaunchpad: {
-        title: "NFT Launchpad & Marketplace",
+        title: "IOTA NFT dApp - Minting Platform with zkLogin",
         description:
-          "Complete Web3 platform with NFT launch functionality, marketplace with offers and royalties. Multichain tokenization system for creators.",
-        metrics: "45% increase in monetization options",
+          "Decentralized application (dApp) for creating and minting NFTs on IOTA Rebased Testnet. Leverages zkLogin for frictionless authentication using Google accounts and IPFS (Pinata) for decentralized storage of NFT assets. Implements Move smart contracts with backend API for sponsored minting.",
+        metrics:
+          "zkLogin OAuth + IPFS Pinata + Move contracts + Sponsored minting",
       },
       realEstate: {
         title: "Real Estate Tokenization",
@@ -309,7 +312,8 @@ export const translations = {
         title: "TUVOZAMIGA - Virtual Companion Platform with AI",
         description:
           "Virtual companion web application that combats unwanted loneliness through active listening and empathetic conversation 24/7. Features ultra-low latency real-time audio processing, reactive waveform visualizer using Web Audio API and Canvas, all with 100% Spanish interface optimized for accessibility.",
-        metrics: "Ultra-low latency + Real-time audio visualization + Empathetic AI",
+        metrics:
+          "Ultra-low latency + Real-time audio visualization + Empathetic AI",
       },
       bachataAlAireLibre: {
         title: "Bachata al Aire Libre - High-Performance Landing Page",
