@@ -6,7 +6,7 @@ export type ProjectKey =
   | "nftLaunchpad"
   | "realEstate"
   | "tokenLaunchpad"
-  | "web3Toolkit"
+  | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"
   | "geoOptimization"
@@ -107,11 +107,11 @@ export const translations = {
           "dApp launchpad multichain con fases de precios diferenciadas y conexiones a contratos inteligentes. Integración con oráculos Chainlink.",
         metrics: "35% más conversiones con múltiples métodos de pago",
       },
-      web3Toolkit: {
-        title: "Web3 Toolkit",
+      smartMeterDashboard: {
+        title: "Smart e-Meter Dashboard",
         description:
-          "Suite completa de herramientas para desarrolladores Web3 que incluye generadores de contratos, validadores de transacciones y utilidades de debugging. Acelera el desarrollo blockchain con templates predefinidos.",
-        metrics: "50+ herramientas integradas",
+          "Monitoreo en tiempo real de infraestructura energética inteligente. Visualiza el consumo, estado y salud de todos los medidores conectados.",
+        metrics: "Consumo real + Estado de salud + Recharts",
       },
       faviconGenerator: {
         title: "Favicon Generator",
@@ -284,11 +284,11 @@ export const translations = {
           "Multichain dApp launchpad with differentiated price phases and smart contract connections. Integration with Chainlink oracles.",
         metrics: "35% more conversions with multiple payment methods",
       },
-      web3Toolkit: {
-        title: "Web3 Toolkit",
+      smartMeterDashboard: {
+        title: "Smart e-Meter Dashboard",
         description:
-          "Complete suite of tools for Web3 developers including contract generators, transaction validators and debugging utilities.",
-        metrics: "50+ integrated tools",
+          "Real-time monitoring of smart energy infrastructure. View consumption, status, and health of all connected meters.",
+        metrics: "Real-time consumption + Health status + Recharts",
       },
       faviconGenerator: {
         title: "Favicon Generator",

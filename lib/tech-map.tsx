@@ -149,4 +149,5 @@ export const techMap: Record<string, TechItem> = {
   "Vaul": { icon: Box, label: "Vaul" },
   "Axios": { slug: "axios", label: "Axios" },
   "Radix UI": { slug: "radixui", label: "Radix UI", isDarkLogo: true },
+  "date-fns": { slug: "date-fns", label: "date-fns" },
 };

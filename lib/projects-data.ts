@@ -6,7 +6,7 @@ export type ProjectKey =
   | "nftLaunchpad"
   | "realEstate"
   | "tokenLaunchpad"
-  | "web3Toolkit"
+  | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"
   | "geoOptimization"
@@ -226,20 +226,22 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    titleKey: "web3Toolkit",
-    image: "/images/web3_toolkit.jpg",
+    titleKey: "smartMeterDashboard",
+    image: "/images/smart-meter.png",
     technologies: [
-      "Vite",
-      "Recharts D3",
-      "React Router",
-      "Tailwind CSS",
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
       "Framer Motion",
-      "Lucide React",
       "Recharts",
+      "Lucide React",
+      "Zustand",
+      "date-fns",
     ],
-    github: "https://github.com/CallejaJ/memento-web3-toolkit",
-    demo: "https://memento-toolkit.vercel.app/",
-    featured: false,
+    github: "https://github.com/CallejaJ/smart-meter-dashboard",
+    demo: "https://smart-emeter-dashboard.vercel.app/",
+    featured: true,
   },
   {
     id: 9,

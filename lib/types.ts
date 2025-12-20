@@ -7,7 +7,7 @@ type ProjectKey =
   | "nftLaunchpad"
   | "realEstate"
   | "tokenLaunchpad"
-  | "web3Toolkit"
+  | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"
   | "geoOptimization"
