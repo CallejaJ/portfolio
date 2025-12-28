@@ -86,6 +86,9 @@ export const techMap: Record<string, TechItem> = {
   "PostgreSQL": { slug: "postgresql", label: "PostgreSQL" },
   "Vercel Edge": { slug: "vercel", label: "Vercel Edge", isDarkLogo: true },
   "Node.js": { slug: "nodedotjs", label: "Node.js" },
+  "FastAPI": { slug: "fastapi", label: "FastAPI" },
+  "Python": { slug: "python", label: "Python" },
+  "Instagrapi": { slug: "instagram", label: "Instagrapi" },
   
   // Crypto & Web3
   "Solidity": { slug: "solidity", label: "Solidity" },

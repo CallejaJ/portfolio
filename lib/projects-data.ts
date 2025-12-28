@@ -3,7 +3,7 @@ export type ProjectKey =
   | "usdtStaking"
   | "nftLaunchpad"
   | "realEstate"
-  | "tokenLaunchpad"
+  | "instagoal"
   | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"
@@ -205,24 +205,19 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    titleKey: "tokenLaunchpad",
-    image: "/images/token_launchpad.jpg",
+    titleKey: "instagoal",
+    image: "/images/instagoal.png",
     technologies: [
-      "Vite",
-      "Hardhat",
-      "Tailwind CSS",
-      "RainbowKit",
-      "Wagmi",
-      "Zustand",
-      "TanStack Query",
-      "LayerZero",
-      "Axios",
-      "Framer Motion",
+      "Next.js 16",
+      "TypeScript",
+      "FastAPI",
+      "Python",
+      "Instagrapi",
+      "WebSocket",
       "Lucide React",
-      "Recharts",
     ],
     github: "https://github.com/CallejaJ",
-    demo: "#",
+    demo: "https://instagoal.vercel.app/",
     featured: true,
   },
   {
@@ -231,12 +226,11 @@ export const projects: Project[] = [
     image: "/images/smart-meter.png",
     technologies: [
       "Next.js 16",
-      "React 19",
       "TypeScript",
       "Tailwind CSS 4",
       "Framer Motion",
-      "Recharts",
-      "Lucide React",
+      "Recharts D3",
+      "shadcn/ui",
       "Zustand",
       "date-fns",
     ],

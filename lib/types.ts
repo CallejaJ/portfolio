@@ -6,7 +6,7 @@ type ProjectKey =
   | "usdtStaking"
   | "nftLaunchpad"
   | "realEstate"
-  | "tokenLaunchpad"
+  | "instagoal"
   | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"

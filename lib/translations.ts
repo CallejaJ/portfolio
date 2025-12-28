@@ -5,7 +5,7 @@ export type ProjectKey =
   | "usdtStaking"
   | "nftLaunchpad"
   | "realEstate"
-  | "tokenLaunchpad"
+  | "instagoal"
   | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"
@@ -102,11 +102,11 @@ export const translations = {
           "Plataforma para propiedad fraccionada de bienes raíces usando blockchain. Sistema que reduce las barreras tradicionales de inversión inmobiliaria.",
         metrics: "60% aumento en accesibilidad de inversión",
       },
-      tokenLaunchpad: {
-        title: "Token Launchpad Multichain",
+      instagoal: {
+        title: "Instagoal - Plataforma de Automatización Instagram",
         description:
-          "dApp launchpad multichain con fases de precios diferenciadas y conexiones a contratos inteligentes. Integración con oráculos Chainlink.",
-        metrics: "35% más conversiones con múltiples métodos de pago",
+          "Aplicación híbrida premium para crecimiento orgánico en Instagram. Combina frontend Next.js 16 de alto rendimiento con backend Python/FastAPI para automatización inteligente. Implementa estrategias 'Sniper' para segmentación precisa de audiencia, estadísticas en tiempo real vía WebSocket y UI glassmorphism con animaciones fluidas.",
+        metrics: "Real-time analytics + WebSocket + Targeting inteligente",
       },
       smartMeterDashboard: {
         title: "Smart e-Meter Dashboard",
@@ -279,11 +279,11 @@ export const translations = {
           "Platform for fractional property ownership using blockchain. System that reduces traditional barriers to real estate investment.",
         metrics: "60% increase in investment accessibility",
       },
-      tokenLaunchpad: {
-        title: "Multichain Token Launchpad",
+      instagoal: {
+        title: "Instagoal - Instagram Automation Platform",
         description:
-          "Multichain dApp launchpad with differentiated price phases and smart contract connections. Integration with Chainlink oracles.",
-        metrics: "35% more conversions with multiple payment methods",
+          "Premium hybrid application for organic Instagram growth. Combines high-performance Next.js 16 frontend with Python/FastAPI backend for smart automation. Features 'Sniper' strategies for precise audience targeting, real-time statistics via WebSocket, and glassmorphism UI with smooth animations.",
+        metrics: "Real-time analytics + WebSocket + Smart targeting",
       },
       smartMeterDashboard: {
         title: "Smart e-Meter Dashboard",
