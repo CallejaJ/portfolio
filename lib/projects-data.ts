@@ -1,5 +1,3 @@
-// lib/projects-data.ts
-
 export type ProjectKey =
   | "gaslessSwap"
   | "usdtStaking"
@@ -9,7 +7,7 @@ export type ProjectKey =
   | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"
-  | "geoOptimization"
+  | "mementoAcademy"
   | "cryptoTracker"
   | "docudid"
   | "anaRodriguez"
@@ -87,19 +85,22 @@ export const projects: Project[] = [
   },
   {
     id: 11,
-    titleKey: "geoOptimization",
-    image: "/images/geo_optimization.jpg",
+    titleKey: "mementoAcademy",
+    image: "/images/memento-academy.png",
     technologies: [
-      "Next.js 14",
+      "Next.js 15",
       "Tailwind CSS 4",
-      "shadcn/ui",
-      "Vercel Analytics",
-      "React Hook Form",
-      "Zod",
+      "Prisma 7",
+      "Supabase",
+      "Brevo",
+      "Radix UI",
+      "Lucide React",
+      "Canvas Confetti",
+      "Framer Motion",
     ],
-    github: "https://github.com/CallejaJ/geo",
-    demo: "https://generative-optimization-geo.vercel.app/",
-    featured: false,
+    github: "https://github.com/Memento-Academy",
+    demo: "https://memento-academy.com/",
+    featured: true,
   },
   // Proyectos anteriores
   {

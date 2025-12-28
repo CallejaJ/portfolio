@@ -81,6 +81,7 @@ export const techMap: Record<string, TechItem> = {
   
   // Backend & Databases
   "Prisma": { slug: "prisma", label: "Prisma", isDarkLogo: true },
+  "Prisma 7": { slug: "prisma", label: "Prisma 7", isDarkLogo: true },
   "Supabase": { slug: "supabase", label: "Supabase" },
   "PostgreSQL": { slug: "postgresql", label: "PostgreSQL" },
   "Vercel Edge": { slug: "vercel", label: "Vercel Edge", isDarkLogo: true },
@@ -106,6 +107,8 @@ export const techMap: Record<string, TechItem> = {
   "TanStack Query": { slug: "reactquery", label: "TanStack Query" },
   "Privy": { path: "/icons/privy.avif", label: "Privy", isDarkLogo: true },
   "ZeroDev SDK": { path: "/icons/zerodev.png", label: "ZeroDev" },
+  
+  "Brevo": { slug: "brevo", label: "Brevo" },
   
   // Tools & APIs
   "IOTA dApp Kit": { path: "/icons/iota.webp", label: "IOTA dApp Kit" },
@@ -146,6 +149,7 @@ export const techMap: Record<string, TechItem> = {
   "Vercel Analytics": { slug: "vercel", label: "Vercel Analytics", isDarkLogo: true },
   "Embla Carousel": { slug: "emblacarousel", label: "Embla Carousel" },
   "Sonner": { icon: Zap, label: "Sonner" },
+  "Canvas Confetti": { icon: Zap, label: "Canvas Confetti" },
   "Vaul": { icon: Box, label: "Vaul" },
   "Axios": { slug: "axios", label: "Axios" },
   "Radix UI": { slug: "radixui", label: "Radix UI", isDarkLogo: true },

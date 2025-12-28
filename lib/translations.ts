@@ -9,7 +9,8 @@ export type ProjectKey =
   | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"
-  | "geoOptimization"
+
+  | "mementoAcademy"
   | "cryptoTracker"
   | "docudid"
   | "anaRodriguez"
@@ -125,11 +126,11 @@ export const translations = {
           "Plataforma de juegos retro con integración de comentarios y rankings persistentes a través de Supabase. Permite a los usuarios interactuar y competir en un entorno clásico.",
         metrics: "Comunidad activa con 100+ usuarios",
       },
-      geoOptimization: {
-        title: "Geo Optimization",
+      mementoAcademy: {
+        title: "Memento Academy - Plataforma Educativa Web3",
         description:
-          "La Optimización de Experiencia Generativa representa un cambio fundamental desde la optimización de motores de búsqueda tradicional hacia la optimización para motores generativos.",
-        metrics: "SASS B2B con 20+ clientes",
+          "Plataforma educativa gratuita diseñada para recién llegados a Web3. Simplificamos Criptomonedas, CBDCs y tecnología Blockchain con cero costos para la comunidad. Incluye cursos premium, sistema de logros gamificado y arquitectura serverless moderna.",
+        metrics: "Next.js 15 + Prisma 7 + Supabase + Brevo API",
       },
       tuvozamiga: {
         title: "TUVOZAMIGA - Plataforma de Compañía Virtual con IA",
@@ -302,11 +303,11 @@ export const translations = {
           "Retro gaming platform with persistent comments and rankings integrated via Supabase.",
         metrics: "Active community with 100+ users",
       },
-      geoOptimization: {
-        title: "GEO Optimization",
+      mementoAcademy: {
+        title: "Memento Academy - Web3 Educational Platform",
         description:
-          "Generative Experience Optimization represents a fundamental shift from traditional search engine optimization toward optimization for generative engines.",
-        metrics: "B2B SaaS with 20+ clients",
+          "Free educational platform designed for Web3 newcomers. We simplify Cryptocurrencies, CBDCs, and Blockchain technology with zero costs for the community. Features premium courses, gamified achievement system, and modern serverless architecture.",
+        metrics: "Next.js 15 + Prisma 7 + Supabase + Brevo API",
       },
       tuvozamiga: {
         title: "TUVOZAMIGA - Virtual Companion Platform with AI",
