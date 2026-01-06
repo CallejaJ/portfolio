@@ -66,38 +66,38 @@ export const translations = {
         metrics: "Sistema de reservas + Testing completo + UI moderna",
       },
       docudid: {
-        title: "DOCUDID - AI Legal Assistant Platform",
+        title: "DOCUDID - Plataforma de Asistente Legal con IA",
         description:
           "Plataforma SaaS de gestión documental legal con IA especializada (Alexia AI) que automatiza análisis de contratos, investigación jurisprudencial y redacción legal. Sistema multi-tenant con soporte para 40+ idiomas y especialización en todas las ramas del derecho.",
         metrics: "847+ despachos, 95% satisfacción, 300% mejora eficiencia",
       },
       gaslessSwap: {
-        title: "Gasless Token Swap Platform",
+        title: "Plataforma de Intercambio de Tokens sin Gas",
         description:
           "Plataforma DeFi avanzada que permite intercambios de tokens sin gas usando tecnología Account Abstraction. Implementé ZeroDev SDK v5.4 con EntryPoint V07 para transacciones patrocinadas.",
         metrics: "60% reducción en fricción de onboarding",
       },
       cryptoTracker: {
-        title: "Crypto Portfolio Tracker",
+        title: "Rastreador de Portfolio de Criptomonedas",
         description:
           "Tracker profesional de portfolio de criptomonedas con precios en tiempo real via Binance API y WebSocket. Dashboard analytics completo con alertas inteligentes, gráficos interactivos y gestión de holdings avanzada.",
         metrics: "Real-time WebSocket + 8 cryptos soportadas",
       },
       usdtStaking: {
-        title: "USDT Staking Platform",
+        title: "Plataforma de Staking USDT",
         description:
           "Sistema completo de staking con contratos inteligentes ofreciendo 365% APY y gestión dinámica de fondos.",
         metrics: "365% APY con máxima seguridad",
       },
       nftLaunchpad: {
-        title: "Plataforma de minteo de NFTs en la red IOTA",
+        title: "Plataforma de Minteo de NFTs en la Red IOTA",
         description:
           "Aplicación descentralizada (dApp) para crear y acuñar NFTs en IOTA Rebased Testnet. Aprovecha zkLogin para autenticación sin fricción usando cuentas de Google e IPFS (Pinata) para almacenamiento descentralizado de activos NFT. Implementa contratos inteligentes en Move con API backend para minting patrocinado.",
         metrics:
           "zkLogin OAuth + IPFS Pinata + Move contracts + Sponsored minting",
       },
       realEstate: {
-        title: "Real Estate Tokenization",
+        title: "Tokenización de Bienes Raíces",
         description:
           "Plataforma para propiedad fraccionada de bienes raíces usando blockchain. Sistema que reduce las barreras tradicionales de inversión inmobiliaria.",
         metrics: "60% aumento en accesibilidad de inversión",
@@ -109,19 +109,19 @@ export const translations = {
         metrics: "Real-time analytics + WebSocket + Targeting inteligente",
       },
       smartMeterDashboard: {
-        title: "Smart e-Meter Dashboard",
+        title: "Panel de Control de Medidor Inteligente",
         description:
           "Monitoreo en tiempo real de infraestructura energética inteligente. Visualiza el consumo, estado y salud de todos los medidores conectados.",
         metrics: "Consumo real + Estado de salud + Recharts",
       },
       faviconGenerator: {
-        title: "Favicon Generator",
+        title: "Generador de Favicon",
         description:
           "Generador avanzado de favicons que crea automáticamente todos los tamaños y formatos necesarios para aplicaciones web modernas. Incluye preview en tiempo real y optimización automática.",
         metrics: "Genera 15+ formatos automáticamente",
       },
       retroGamehub: {
-        title: "Retro Gamehub",
+        title: "Centro de Juegos Retro",
         description:
           "Plataforma de juegos retro con integración de comentarios y rankings persistentes a través de Supabase. Permite a los usuarios interactuar y competir en un entorno clásico.",
         metrics: "Comunidad activa con 100+ usuarios",
