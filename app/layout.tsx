@@ -12,28 +12,28 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/jorgecallejaicon.png",
+        url: "/images/profile.jpg",
         sizes: "32x32",
-        type: "image/png",
+        type: "image/jpeg",
       },
       {
-        url: "/jorgecallejaicon.png",
+        url: "/images/profile.jpg",
         sizes: "16x16",
-        type: "image/png",
+        type: "image/jpeg",
       },
       {
-        url: "/jorgecallejaicon.png",
+        url: "/images/profile.jpg",
         sizes: "any",
       },
     ],
     apple: [
       {
-        url: "/jorgecallejaicon.png",
+        url: "/images/profile.jpg",
         sizes: "180x180",
-        type: "image/png",
+        type: "image/jpeg",
       },
     ],
-    shortcut: "/jorgecallejaicon.png",
+    shortcut: "/images/profile.jpg",
   },
   manifest: "/site.webmanifest",
 };
@@ -46,21 +46,21 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/jorgecallejaicon.png" sizes="any" />
+        <link rel="icon" href="/images/profile.jpg" sizes="any" />
         <link
           rel="icon"
-          href="/jorgecallejaicon.png"
+          href="/images/profile.jpg"
           sizes="16x16"
-          type="image/png"
+          type="image/jpeg"
         />
         <link
           rel="icon"
-          href="/jorgecallejaicon.png"
+          href="/images/profile.jpg"
           sizes="32x32"
-          type="image/png"
+          type="image/jpeg"
         />
-        <link rel="apple-touch-icon" href="/jorgecallejaicon.png" />
-        <link rel="shortcut icon" href="/jorgecallejaicon.png" />
+        <link rel="apple-touch-icon" href="/images/profile.jpg" />
+        <link rel="shortcut icon" href="/images/profile.jpg" />
         <link rel="manifest" href="/site.webmanifest" />
         <style>{`
           html {

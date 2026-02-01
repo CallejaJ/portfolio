@@ -44,10 +44,10 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
         <a href="#" className="flex items-center gap-2 group">
           <div className="relative w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
             <Image
-              src="/jorgecallejaicon.png"
-              alt="Jorge Calleja Logo"
+              src="/images/profile.jpg"
+              alt="Jorge Calleja Profile"
               fill
-              className="object-contain"
+              className="object-cover rounded-full"
               priority
             />
           </div>

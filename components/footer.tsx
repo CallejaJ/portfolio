@@ -12,9 +12,9 @@ const Footer = ({ t }: any) => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-3">
           <img
-            src="/jorgecallejaicon.png"
-            alt="Jorge Calleja Logo"
-            className="w-12 h-12 mx-auto mb-2 opacity-80 hover:opacity-100 transition-opacity"
+            src="/images/profile.jpg"
+            alt="Jorge Calleja Profile"
+            className="w-12 h-12 mx-auto mb-2 opacity-80 hover:opacity-100 transition-opacity rounded-full object-cover"
           />
         </div>
         <p className="text-muted-foreground">
