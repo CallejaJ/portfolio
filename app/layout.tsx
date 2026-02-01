@@ -12,28 +12,28 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/images/profile.jpg",
+        url: "/images/profile-round.png",
         sizes: "32x32",
-        type: "image/jpeg",
+        type: "image/png",
       },
       {
-        url: "/images/profile.jpg",
+        url: "/images/profile-round.png",
         sizes: "16x16",
-        type: "image/jpeg",
+        type: "image/png",
       },
       {
-        url: "/images/profile.jpg",
+        url: "/images/profile-round.png",
         sizes: "any",
       },
     ],
     apple: [
       {
-        url: "/images/profile.jpg",
+        url: "/images/profile-round.png",
         sizes: "180x180",
-        type: "image/jpeg",
+        type: "image/png",
       },
     ],
-    shortcut: "/images/profile.jpg",
+    shortcut: "/images/profile-round.png",
   },
   manifest: "/site.webmanifest",
 };
@@ -46,21 +46,21 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/images/profile.jpg" sizes="any" />
+        <link rel="icon" href="/images/profile-round.png" sizes="any" />
         <link
           rel="icon"
-          href="/images/profile.jpg"
+          href="/images/profile-round.png"
           sizes="16x16"
-          type="image/jpeg"
+          type="image/png"
         />
         <link
           rel="icon"
-          href="/images/profile.jpg"
+          href="/images/profile-round.png"
           sizes="32x32"
-          type="image/jpeg"
+          type="image/png"
         />
-        <link rel="apple-touch-icon" href="/images/profile.jpg" />
-        <link rel="shortcut icon" href="/images/profile.jpg" />
+        <link rel="apple-touch-icon" href="/images/profile-round.png" />
+        <link rel="shortcut icon" href="/images/profile-round.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <style>{`
           html {

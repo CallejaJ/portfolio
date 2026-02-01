@@ -65,7 +65,7 @@ export const translations = {
         metrics: "Sistema de reservas + Testing completo + UI moderna",
       },
       docudid: {
-        title: "DOCUDID - Plataforma de Asistente Legal con IA",
+        title: "LEXTY - Plataforma de Asistente Legal con IA",
         description:
           "Plataforma SaaS de gestión documental legal con IA especializada (Alexia AI) que automatiza análisis de contratos, investigación jurisprudencial y redacción legal. Sistema multi-tenant con soporte para 40+ idiomas y especialización en todas las ramas del derecho.",
         metrics: "847+ despachos, 95% satisfacción, 300% mejora eficiencia",
@@ -154,6 +154,16 @@ export const translations = {
         achievements: [
           "Desarrollo de plataformas Web3 y landing pages de alto rendimiento con Next.js, TypeScript y Tailwind CSS.",
           "Implementación de integraciones blockchain mediante Privy y optimización SEO-GEO para proyectos descentralizados.",
+        ],
+      },
+      {
+        title: "Frontend Developer",
+        company: "LEXTY",
+        period: "sept. 2025 - oct. 2025",
+        location: "En remoto",
+        achievements: [
+          "Desarrollé el frontend de una plataforma SaaS legal multi-tenant con Next.js, React y Prisma. Integré un chatbot de IA generativa (Alexia AI) capaz de analizar contratos, generar documentos, posts del blog e imágenes automáticamente mediante streaming en tiempo real.",
+          "Implementé organización de documentos legales en blockchain y sistema i18n con i18next soportando 40+ idiomas.",
         ],
       },
       {
@@ -250,7 +260,7 @@ export const translations = {
         metrics: "Booking system + Full testing coverage + Modern UI",
       },
       docudid: {
-        title: "DOCUDID - AI Legal Assistant Platform",
+        title: "LEXTY - AI Legal Assistant Platform",
         description:
           "Legal document management SaaS platform with specialized AI (Alexia AI) that automates contract analysis, jurisprudential research and legal drafting. Multi-tenant system supporting 40+ languages and specialization in all branches of law.",
         metrics: "847+ firms, 95% satisfaction, 300% efficiency improvement",
@@ -339,6 +349,16 @@ export const translations = {
         achievements: [
           "Development of Web3 platforms and high-performance landing pages with Next.js, TypeScript and Tailwind CSS.",
           "Blockchain integrations via Privy and SEO-GEO optimization for decentralized projects.",
+        ],
+      },
+      {
+        title: "Frontend Developer",
+        company: "LEXTY",
+        period: "Sept 2025 - Oct 2025",
+        location: "Remote",
+        achievements: [
+          "Built the frontend of a multi-tenant legal SaaS platform with Next.js, React and Prisma. Integrated a generative AI chatbot (Alexia AI) capable of analyzing contracts, generating documents, blog posts and images automatically via real-time streaming.",
+          "Implemented blockchain-based legal document organization and i18n system with i18next supporting 40+ languages.",
         ],
       },
       {

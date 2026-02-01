@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import { ThemeToggle } from "./theme-toggle";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -15,8 +16,11 @@ interface HeaderProps {
 export const Header = ({ language, setLanguage, t }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -43,13 +47,19 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <div className="relative w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
-            <Image
-              src="/images/profile.jpg"
-              alt="Jorge Calleja Profile"
-              fill
-              className="object-cover rounded-full"
-              priority
-            />
+            {mounted && (
+              <Image
+                src={
+                  resolvedTheme === "dark"
+                    ? "/images/profile.jpg"
+                    : "/images/profile-light.jpg"
+                }
+                alt="Jorge Calleja Profile"
+                fill
+                className="object-cover rounded-full"
+                priority
+              />
+            )}
           </div>
         </a>
 
