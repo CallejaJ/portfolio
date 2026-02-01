@@ -1,6 +1,7 @@
 // lib/translations.ts
 
 export type ProjectKey =
+  | "web3ArcadeShield"
   | "gaslessSwap"
   | "usdtStaking"
   | "nftLaunchpad"
@@ -58,6 +59,12 @@ export const translations = {
     developedWith: "Desarrollado con React, Next.js y Tailwind CSS.",
     quote: '"La IA no reemplaza mi criterio, lo potencia."',
     projects: {
+      web3ArcadeShield: {
+        title: "Web3 Arcade Shield - Juego Web3 con IA",
+        description:
+          "Un juego arcade Web3 seguro impulsado por IA con transacciones sin gas (Gasless). Juega, puntúa y registra tus logros on-chain sin pagar comisiones, protegido por detección de trampas en tiempo real con Genkit y Gemini AI.",
+        metrics: "Gasless (ZeroDev) + AI Anti-Cheat + Privy Auth",
+      },
       anaRodriguez: {
         title: "Ana Rodríguez Abogados - Plataforma de Servicios Legales",
         description:
@@ -253,6 +260,12 @@ export const translations = {
     developedWith: "Built with React, Next.js and Tailwind CSS.",
     quote: '"AI doesn\'t replace my judgment, it enhances it."',
     projects: {
+      web3ArcadeShield: {
+        title: "Web3 Arcade Shield - AI-Powered Web3 Game",
+        description:
+          "A secure, AI-powered Web3 arcade game with gasless transactions. Play, score, and submit your achievements on-chain without paying gas fees—protected by real-time anti-cheat detection using Genkit and Gemini AI.",
+        metrics: "Gasless (ZeroDev) + AI Anti-Cheat + Privy Auth",
+      },
       anaRodriguez: {
         title: "Ana Rodríguez Abogados - Legal Services Platform",
         description:

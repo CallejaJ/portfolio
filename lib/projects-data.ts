@@ -1,4 +1,5 @@
 export type ProjectKey =
+  | "web3ArcadeShield"
   | "gaslessSwap"
   | "usdtStaking"
   | "nftLaunchpad"
@@ -26,6 +27,22 @@ export interface Project {
 
 export const projects: Project[] = [
   // Web3 Projects (Priority)
+  {
+    id: 15,
+    titleKey: "web3ArcadeShield",
+    image: "/images/web3arcade.png",
+    technologies: [
+      "Next.js 15",
+      "React 19",
+      "Privy",
+      "ZeroDev",
+      "Genkit AI",
+      "Gemini",
+    ],
+    github: "https://github.com/CallejaJ/web3-arcade-shield",
+    demo: "https://web3arcade.xyz/",
+    featured: true,
+  },
   {
     id: 11,
     titleKey: "mementoAcademy",
