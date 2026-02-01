@@ -18,7 +18,7 @@ export default function JorgePortfolio() {
   const t = translations[language as keyof typeof translations];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-900">
+    <div className="min-h-screen bg-background">
       <BlockchainBackground />
       <Header language={language} setLanguage={setLanguage} t={t} />
       <HeroSection t={t} />

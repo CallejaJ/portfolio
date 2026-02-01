@@ -35,7 +35,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-md py-3"
+          ? "bg-background/80 backdrop-blur-md shadow-md py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -43,7 +43,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <div className="relative w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
-             <Image
+            <Image
               src="/jorgecallejaicon.png"
               alt="Jorge Calleja Logo"
               fill
@@ -60,7 +60,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
               <li key={item.key}>
                 <a
                   href={item.href}
-                  className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                 >
                   {t.nav[item.key]}
                 </a>
@@ -68,15 +68,15 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
             ))}
           </ul>
 
-          <div className="h-6 w-px bg-slate-200 dark:bg-slate-700 mx-2"></div>
+          <div className="h-6 w-px bg-border mx-2"></div>
 
-          <div className="flex bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-full p-0.5 border border-slate-200 dark:border-slate-700">
+          <div className="flex bg-card/50 backdrop-blur-sm rounded-full p-0.5 border border-border">
             <button
               onClick={() => setLanguage("es")}
               className={`px-3 py-1 rounded-full text-xs font-semibold transition-all duration-300 ${
                 language === "es"
                   ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                  : "text-muted-foreground hover:text-foreground"
               }`}
             >
               ES
@@ -86,7 +86,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
               className={`px-3 py-1 rounded-full text-xs font-semibold transition-all duration-300 ${
                 language === "en"
                   ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                  : "text-muted-foreground hover:text-foreground"
               }`}
             >
               EN
@@ -98,13 +98,13 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
 
         {/* Mobile Controls */}
         <div className="flex md:hidden items-center gap-3">
-            <div className="flex bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-full p-0.5 border border-slate-200 dark:border-slate-700">
+          <div className="flex bg-card/50 backdrop-blur-sm rounded-full p-0.5 border border-border">
             <button
               onClick={() => setLanguage("es")}
               className={`px-2 py-1 rounded-full text-[10px] font-semibold transition-all duration-300 ${
                 language === "es"
                   ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-slate-300"
+                  : "text-muted-foreground"
               }`}
             >
               ES
@@ -114,13 +114,13 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
               className={`px-2 py-1 rounded-full text-[10px] font-semibold transition-all duration-300 ${
                 language === "en"
                   ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-slate-300"
+                  : "text-muted-foreground"
               }`}
             >
               EN
             </button>
           </div>
-          
+
           <ThemeToggle />
 
           <Button
@@ -129,27 +129,31 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="ml-1"
           >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </Button>
         </div>
       </div>
 
       {/* Mobile Menu - Web3 Style */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl border-b border-slate-200/20 dark:border-slate-700/20 shadow-2xl">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-background/70 backdrop-blur-xl border-b border-border shadow-2xl">
           <div className="relative">
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-purple-500/5 pointer-events-none"></div>
-            
+
             <nav className="relative flex flex-col p-6 gap-2">
               {navItems.map((item, index) => (
                 <a
                   key={item.key}
                   href={item.href}
-                  className="group relative px-4 py-3 rounded-xl text-base font-medium text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:bg-white/50 dark:hover:bg-slate-800/50 backdrop-blur-sm"
+                  className="group relative px-4 py-3 rounded-xl text-base font-medium text-foreground hover:text-primary transition-all duration-300 hover:bg-card/50 backdrop-blur-sm"
                   onClick={() => setMobileMenuOpen(false)}
                   style={{
-                    animation: `slideIn 0.3s ease-out ${index * 0.05}s both`
+                    animation: `slideIn 0.3s ease-out ${index * 0.05}s both`,
                   }}
                 >
                   <div className="flex items-center gap-3">
@@ -164,7 +168,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
           </div>
         </div>
       )}
-      
+
       <style jsx>{`
         @keyframes slideIn {
           from {

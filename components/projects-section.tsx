@@ -29,10 +29,10 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
             {t.featuredProjects}
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300">
+          <p className="text-xl text-muted-foreground">
             {t.featuredProjectsDesc}
           </p>
         </motion.div>
@@ -46,10 +46,10 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-2xl transition-all duration-300 border-0 bg-white dark:bg-slate-800 overflow-hidden group">
+              <Card className="h-full hover:shadow-2xl transition-all duration-300 border border-border bg-card overflow-hidden group">
                 <div className="relative overflow-hidden rounded-t-lg">
                   {/* Reemplazamos la imagen estática por la composición de iconos */}
-                  <TechLogoComposition 
+                  <TechLogoComposition
                     technologies={project.technologies}
                     className="w-full h-64 transition-transform duration-300 group-hover:scale-105"
                   />
@@ -57,13 +57,13 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
                   {/* Badges positioned over image - OCULTOS EN MÓVIL */}
                   <div className="hidden sm:flex absolute top-4 left-4 right-4 justify-between items-start">
                     {project.featured && (
-                      <Badge className="bg-gradient-to-r from-blue-500 to-purple-600 text-white border-0 shadow-lg text-xs px-2 py-1">
+                      <Badge className="bg-gradient-to-r from-primary via-blue-500 to-secondary text-white border-0 shadow-lg text-xs px-3 py-1 font-semibold">
                         {t.featuredProject}
                       </Badge>
                     )}
 
                     {t.projects[project.titleKey].metrics && (
-                      <Badge className="bg-slate-900/80 dark:bg-slate-100/90 text-white dark:text-slate-900 border-0 backdrop-blur-sm shadow-lg ml-auto text-xs px-3 py-1">
+                      <Badge className="bg-background/80 text-foreground border border-border backdrop-blur-sm shadow-lg ml-auto text-xs px-3 py-1">
                         {t.projects[project.titleKey].metrics}
                       </Badge>
                     )}
@@ -76,33 +76,27 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-white dark:bg-slate-800 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors shadow-lg"
+                      className="p-2 bg-card rounded-full hover:bg-muted transition-colors shadow-lg"
                     >
-                      <Github
-                        size={20}
-                        className="text-slate-900 dark:text-white"
-                      />
+                      <Github size={20} className="text-foreground" />
                     </a>
                     <a
                       aria-label="demo"
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-white dark:bg-slate-800 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors shadow-lg"
+                      className="p-2 bg-card rounded-full hover:bg-muted transition-colors shadow-lg"
                     >
-                      <ExternalLink
-                        size={20}
-                        className="text-slate-900 dark:text-white"
-                      />
+                      <ExternalLink size={20} className="text-foreground" />
                     </a>
                   </div>
                 </div>
 
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-xl text-slate-900 dark:text-white">
+                  <CardTitle className="text-xl text-card-foreground">
                     {t.projects[project.titleKey].title}
                   </CardTitle>
-                  <CardDescription className="text-base leading-relaxed text-slate-600 dark:text-slate-300 mt-2">
+                  <CardDescription className="text-base leading-relaxed text-muted-foreground mt-2">
                     {t.projects[project.titleKey].description}
                   </CardDescription>
                 </CardHeader>
@@ -113,7 +107,7 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
                       <Badge
                         key={tech}
                         variant="outline"
-                        className="text-xs bg-slate-50 dark:bg-slate-700/50 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-600"
+                        className="text-xs bg-muted/50 text-muted-foreground border-border"
                       >
                         {tech}
                       </Badge>

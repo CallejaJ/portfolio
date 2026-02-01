@@ -84,7 +84,7 @@ export function BlockchainBackground() {
           if (i !== j) {
             const distance = Math.sqrt(
               Math.pow(node.x - otherNode.x, 2) +
-                Math.pow(node.y - otherNode.y, 2)
+                Math.pow(node.y - otherNode.y, 2),
             );
             const connectionBonus =
               (node.type === "block" && otherNode.type === "transaction") ||
@@ -108,18 +108,18 @@ export function BlockchainBackground() {
             const connectedNode = nodesRef.current[connectionIndex];
             const distance = Math.sqrt(
               Math.pow(node.x - connectedNode.x, 2) +
-                Math.pow(node.y - connectedNode.y, 2)
+                Math.pow(node.y - connectedNode.y, 2),
             );
             const opacity = Math.max(0, 1 - distance / 150);
 
             let connectionColor = "rgba(59, 130, 246, ";
             if (node.type === "block" || connectedNode.type === "block") {
-              connectionColor = "rgba(34, 197, 94, "; // Verde para bloques
+              connectionColor = "rgba(6, 182, 212, "; // Cyan para bloques
             } else if (
               node.type === "validator" ||
               connectedNode.type === "validator"
             ) {
-              connectionColor = "rgba(168, 85, 247, "; // Púrpura para validadores
+              connectionColor = "rgba(147, 51, 234, "; // Electric Purple para validadores
             }
 
             ctx.strokeStyle = `${connectionColor}${opacity * 0.2})`;
@@ -146,15 +146,15 @@ export function BlockchainBackground() {
 
         if (node.type === "block") {
           const size = node.size + pulseIntensity * 2;
-          ctx.fillStyle = `rgba(34, 197, 94, ${0.6 + pulseIntensity * 0.4})`;
-          ctx.shadowColor = "rgba(34, 197, 94, 0.5)";
+          ctx.fillStyle = `rgba(6, 182, 212, ${0.6 + pulseIntensity * 0.4})`;
+          ctx.shadowColor = "rgba(6, 182, 212, 0.5)";
           ctx.shadowBlur = 8;
           ctx.fillRect(node.x - size / 2, node.y - size / 2, size, size);
           ctx.shadowBlur = 0;
         } else if (node.type === "validator") {
           const size = node.size + pulseIntensity * 1.5;
-          ctx.fillStyle = `rgba(168, 85, 247, ${0.7 + pulseIntensity * 0.3})`;
-          ctx.shadowColor = "rgba(168, 85, 247, 0.5)";
+          ctx.fillStyle = `rgba(147, 51, 234, ${0.7 + pulseIntensity * 0.3})`;
+          ctx.shadowColor = "rgba(147, 51, 234, 0.5)";
           ctx.shadowBlur = 6;
           ctx.beginPath();
           ctx.moveTo(node.x, node.y - size);
@@ -172,15 +172,15 @@ export function BlockchainBackground() {
             0,
             node.x,
             node.y,
-            size
+            size,
           );
           gradient.addColorStop(
             0,
-            `rgba(59, 130, 246, ${0.8 + pulseIntensity * 0.2})`
+            `rgba(59, 130, 246, ${0.8 + pulseIntensity * 0.2})`,
           );
           gradient.addColorStop(
             1,
-            `rgba(59, 130, 246, ${0.2 + pulseIntensity * 0.1})`
+            `rgba(59, 130, 246, ${0.2 + pulseIntensity * 0.1})`,
           );
 
           ctx.fillStyle = gradient;
@@ -220,7 +220,7 @@ export function BlockchainBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className='fixed inset-0 pointer-events-none z-0 bg-transparent'
+      className="fixed inset-0 pointer-events-none z-0 bg-transparent"
     />
   );
 }

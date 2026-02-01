@@ -9,7 +9,6 @@ export type ProjectKey =
   | "smartMeterDashboard"
   | "faviconGenerator"
   | "retroGamehub"
-
   | "mementoAcademy"
   | "cryptoTracker"
   | "docudid"
@@ -27,9 +26,9 @@ export interface ProjectData {
 export const translations = {
   es: {
     title:
-      "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
+      "Web3 Frontend Developer · React & TypeScript · Interfaces Descentralizadas",
     description:
-      "Desarrollador especializado en Web3 & Blockchain, B2B SaaS Solutions y Generative Experience Optimization. Combina arquitecturas descentralizadas con soluciones empresariales inteligentes, enfocándose en cómo la optimización de experiencias generativas puede revolucionar los procesos de desarrollo y la propuesta de valor para clientes B2B.",
+      "Web3 Frontend Developer especializado en React y TypeScript. Construyo interfaces descentralizadas que absorben la complejidad de blockchain y la convierten en experiencias fluidas para el usuario: desde Account Abstraction y tokenización de activos hasta NFT marketplaces y DeFi. Generalista en el ecosistema Web3, pero siempre con foco en que el producto final sienta que es nativo web.",
     highlight:
       "Reducción del tiempo de desarrollo hasta un 40% mediante automatización con IA",
     viewProjects: "Ver Proyectos",
@@ -148,66 +147,74 @@ export const translations = {
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
-        title: "Frontend Web3 Developer",
-        company: "Memento Academy Freelance",
-        period: "May 2025 - Actualidad",
-        location: "Remote",
+        title: "Web3 Frontend Developer",
+        company: "Memento Academy",
+        period: "may. 2025 - actualidad",
+        location: "España · En remoto",
         achievements: [
-          "Desarrollo y diseño personalizado de plataformas, landing pages y páginas corporativas",
-          "Enfoque especializado en SEO-GEO y optimización de experiencia del usuario",
-          "Implementación de soluciones Web3 y blockchain para proyectos freelance",
-        ],
-      },
-      {
-        title: "Frontend Developer",
-        company: "DocuDID",
-        period: "Sep 2025 - Oct 2025",
-        location: "Remote",
-        achievements: [
-          "Diseñé y desarrollé interfaz frontend de plataforma legal SaaS con React, Next.js y TypeScript",
-          "Implementé sistema de diseño con paleta de colores personalizada usando Tailwind CSS",
-          "Conecté frontend con backend mediante integración de Prisma ORM",
+          "Desarrollo de plataformas Web3 y landing pages de alto rendimiento con Next.js, TypeScript y Tailwind CSS.",
+          "Implementación de integraciones blockchain mediante Privy y optimización SEO-GEO para proyectos descentralizados.",
         ],
       },
       {
         title: "Web3 Developer",
         company: "ENO Network",
-        period: "Nov 2024 – Apr 2025",
-        location: "Remote",
+        period: "nov. 2024 - abr. 2025",
+        location: "En remoto",
         achievements: [
-          "Lideré desarrollo frontend con ERC-721 NFT launchpad y marketplace",
-          "Implementé técnicas de prompt engineering, reduciendo tiempo de desarrollo 40%",
-          "Desarrollé sistema de integración de wallets multichain (IOTA, Arbitrum, ENO)",
+          "Desarrollé el frontend de una plataforma Web3 con Next.js y React, integrando ERC-721 NFT launchpad y marketplace.",
+          "Implementé sistema de wallets multichain (IOTA, Arbitrum, ENO) y mecanismos de gobernanza on-chain.",
+          "Resultados: +65% retención de usuarios, +40% en ingresos de creadores vs plataformas tradicionales.",
         ],
       },
       {
         title: "Lead Developer",
-        company: "Recomark",
-        period: "May 2024 - Oct 2024",
-        location: "Remote",
+        company: "Real Estate Start-Up",
+        period: "may. 2024 - oct. 2024",
+        location: "Málaga · En remoto",
         achievements: [
-          "Creé interfaces para marketplace inmobiliario con algoritmo blockchain multinivel",
-          "Lideré equipo de 3 desarrolladores implementando metodologías Scrum",
-          "Aceleré tiempo de desarrollo 35% mediante IA generativa estratégica",
+          "Lideré un equipo de 3 desarrolladores en la construcción de un marketplace inmobiliario con tokenización de activos en blockchain.",
+          "Stack: Next.js, Node.js, web3.js, Sequelize.",
+          "Implementé metodología Scrum y reduje el tiempo de desarrollo un 35% mediante herramientas de IA generativa.",
         ],
       },
       {
-        title: "Full-Stack Developer",
-        company: "Polo Nacional Contenidos Digitales",
-        period: "Mar 2023 - Oct 2023",
-        location: "Málaga, Spain",
+        title: "Frontend Web Developer",
+        company: "Freelancer.com",
+        period: "nov. 2023 - jun. 2024",
+        location: "Reino Unido · En remoto",
         achievements: [
-          "Desarrollé marketplace inmobiliario con capacidades de renderizado 3D",
-          "Implementé sistema de banco de tiempo online 24/7 para ciudadanos de Málaga",
+          "Desarrollo de aplicaciones web utilizando React.js y Node.js para clientes internacionales.",
+        ],
+      },
+      {
+        title: "Frontend Web Developer",
+        company: "TUBLIAN",
+        period: "mar. 2024 - abr. 2024",
+        location: "Ohio · En remoto",
+        achievements: [
+          "Contribución a proyectos Open Source en MERN Stack.",
+          "Implementación de componentes con React Hooks y contenedorización con Docker.",
+        ],
+      },
+      {
+        title: "Full Stack Developer Bootcamp",
+        company: "Polo Nacional de Contenidos Digitales de Málaga",
+        period: "mar. 2023 - oct. 2023",
+        location: "Málaga · Presencial",
+        achievements: [
+          "Bootcamp de 600 horas de desarrollo web.",
+          "Proyectos finales: ecommerce con renderizado 3D para arquitectura residencial y plataforma de gestión de banco del tiempo.",
+          "Stack: React, Node.js, Express, MySQL, MongoDB, Docker, Jest, Cypress. Metodologías: Scrum y Kanban.",
         ],
       },
     ],
   },
   en: {
     title:
-      "Web3 & Blockchain Developer | B2B SaaS Solutions | Generative experience optimization",
+      "Web3 Frontend Developer · React & TypeScript · Decentralized Interfaces",
     description:
-      "Developer specialized in Web3 & Blockchain, B2B SaaS Solutions, and Generative Experience Optimization. Combines decentralized architectures with intelligent enterprise solutions, focusing on how generative experience optimization can revolutionize development processes and value propositions for B2B clients.",
+      "Web3 Frontend Developer specialized in React and TypeScript. I build decentralized interfaces that absorb blockchain complexity and turn it into seamless user experiences: from Account Abstraction and asset tokenization to NFT marketplaces and DeFi. Generalist across the Web3 ecosystem, but always focused on making the end product feel natively web.",
     highlight: "Up to 40% reduction in development time through AI automation",
     viewProjects: "View Projects",
     contact: "Contact",
@@ -325,57 +332,65 @@ export const translations = {
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
-        title: "Frontend Web3 Developer",
-        company: "Memento Academy Freelance",
+        title: "Web3 Frontend Developer",
+        company: "Memento Academy",
         period: "May 2025 - Present",
-        location: "Remote",
+        location: "Spain · Remote",
         achievements: [
-          "Custom development and design of platforms, landing pages and corporate websites",
-          "Specialized focus on SEO-GEO and user experience optimization",
-          "Implementation of Web3 and blockchain solutions for freelance projects",
-        ],
-      },
-      {
-        title: "Frontend Developer",
-        company: "DocuDID",
-        period: "Sep 2025 - Oct 2025",
-        location: "Remote",
-        achievements: [
-          "Designed and developed frontend interface for legal SaaS platform with React, Next.js and TypeScript",
-          "Implemented design system with custom color palette using Tailwind CSS",
-          "Connected frontend with backend through Prisma ORM integration",
+          "Development of Web3 platforms and high-performance landing pages with Next.js, TypeScript and Tailwind CSS.",
+          "Blockchain integrations via Privy and SEO-GEO optimization for decentralized projects.",
         ],
       },
       {
         title: "Web3 Developer",
         company: "ENO Network",
-        period: "Nov 2024 – Apr 2025",
+        period: "Nov 2024 - Apr 2025",
         location: "Remote",
         achievements: [
-          "Led frontend development with ERC-721 NFT launchpad and marketplace",
-          "Implemented prompt engineering techniques, reducing development time by 40%",
-          "Developed multichain wallet integration system (IOTA, Arbitrum, ENO)",
+          "Built the frontend of a Web3 platform with Next.js and React, integrating an ERC-721 NFT launchpad and marketplace.",
+          "Implemented a multichain wallet system (IOTA, Arbitrum, ENO) and on-chain governance mechanisms.",
+          "Results: +65% user retention, +40% creator revenue vs traditional platforms.",
         ],
       },
       {
         title: "Lead Developer",
-        company: "Recomark",
+        company: "Real Estate Start-Up",
         period: "May 2024 - Oct 2024",
-        location: "Remote",
+        location: "Málaga · Remote",
         achievements: [
-          "Created interfaces for real estate marketplace with blockchain multilevel algorithm",
-          "Led team of 3 developers implementing Scrum methodologies",
-          "Accelerated development time by 35% through strategic generative AI",
+          "Led a team of 3 developers building a real estate marketplace with blockchain-based asset tokenization.",
+          "Stack: Next.js, Node.js, web3.js, Sequelize.",
+          "Implemented Scrum methodology and reduced development time by 35% using generative AI tools.",
         ],
       },
       {
-        title: "Full-Stack Developer",
-        company: "Polo Nacional Contenidos Digitales",
-        period: "Mar 2023 - Oct 2023",
-        location: "Málaga, Spain",
+        title: "Frontend Web Developer",
+        company: "Freelancer.com",
+        period: "Nov 2023 - Jun 2024",
+        location: "United Kingdom · Remote",
         achievements: [
-          "Developed real estate marketplace with 3D rendering capabilities",
-          "Implemented 24/7 online time bank system for Málaga citizens",
+          "Development of web applications using React.js and Node.js for international clients.",
+        ],
+      },
+      {
+        title: "Frontend Web Developer",
+        company: "TUBLIAN",
+        period: "Mar 2024 - Apr 2024",
+        location: "Ohio · Remote",
+        achievements: [
+          "Contributed to Open Source projects in MERN Stack.",
+          "Implementation of components with React Hooks and containerization with Docker.",
+        ],
+      },
+      {
+        title: "Full Stack Developer Bootcamp",
+        company: "Polo Nacional de Contenidos Digitales de Málaga",
+        period: "Mar 2023 - Oct 2023",
+        location: "Málaga · On-site",
+        achievements: [
+          "600-hour web development bootcamp.",
+          "Final projects: ecommerce with 3D rendering for residential architecture and a time bank management platform.",
+          "Stack: React, Node.js, Express, MySQL, MongoDB, Docker, Jest, Cypress. Methodologies: Scrum and Kanban.",
         ],
       },
     ],

@@ -19,7 +19,7 @@ interface SkillsSectionProps {
 
 const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
   return (
-    <section id="skills" className="py-20 px-4 bg-slate-50 dark:bg-slate-900/50">
+    <section id="skills" className="py-20 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,10 +28,10 @@ const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
             {t.techStack}
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300">
+          <p className="text-xl text-muted-foreground mr-20">
             {t.techStackDesc}
           </p>
         </motion.div>
@@ -45,9 +45,9 @@ const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full border-0 bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="h-full border border-border bg-card shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
-                  <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  <h3 className="text-2xl font-bold text-primary">
                     {category.title}
                   </h3>
                 </CardHeader>
@@ -55,8 +55,8 @@ const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
                   <ul className="space-y-3">
                     {category.skills.map((skill, i) => (
                       <li key={i} className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full flex-shrink-0"></div>
-                        <span className="text-slate-700 dark:text-slate-200 text-base">
+                        <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                        <span className="text-card-foreground text-base">
                           {skill}
                         </span>
                       </li>

@@ -18,7 +18,6 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
       {/* Header fixed removido - Ahora en components/header.tsx */}
 
-
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -38,23 +37,23 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
               <Badge
                 key={index}
                 variant="outline"
-                className="text-sm py-1 px-3 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200"
+                className="text-sm py-1 px-3 border-border text-foreground"
               >
                 {role}
               </Badge>
             ))}
           </div>
 
-          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-4 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-4xl mx-auto leading-relaxed">
             {t.description}
           </p>
 
-          <div className="relative overflow-hidden bg-gradient-to-r from-blue-500/10 to-purple-500/10 dark:from-blue-400/10 dark:to-purple-400/10 border border-blue-200 dark:border-blue-800 px-4 py-3 md:py-2.5 rounded-2xl md:rounded-full inline-flex items-center gap-3 md:gap-2 mb-8 font-semibold text-sm backdrop-blur-sm hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-300 max-w-xs md:max-w-none mx-auto text-left md:text-center">
+          <div className="relative overflow-hidden bg-gradient-to-r from-secondary/10 to-primary/10 border border-border px-4 py-3 md:py-2.5 rounded-2xl md:rounded-full inline-flex items-center gap-3 md:gap-2 mb-8 font-semibold text-sm backdrop-blur-sm hover:border-primary transition-all duration-300 max-w-xs md:max-w-none mx-auto text-left md:text-center">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 dark:from-blue-400/5 dark:to-purple-400/5 opacity-50"></div>
-            <div className="bg-white/50 dark:bg-slate-800/50 p-1.5 rounded-full shrink-0">
-              <Zap className="w-4 h-4 text-blue-600 dark:text-blue-400 relative z-10" />
+            <div className="bg-card/50 p-1.5 rounded-full shrink-0">
+              <Zap className="w-4 h-4 text-primary relative z-10" />
             </div>
-            <span className="relative z-10 text-slate-700 dark:text-slate-200 leading-tight">
+            <span className="relative z-10 text-foreground leading-tight">
               {t.highlight}
             </span>
           </div>
@@ -78,7 +77,7 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
             variant="outline"
             size="lg"
             asChild
-            className="border-2 border-slate-300 dark:border-slate-600 bg-white/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-slate-400 dark:hover:border-slate-500 px-8 py-6 text-lg font-semibold backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            className="border-2 border-border bg-card/80 text-foreground hover:bg-muted/50 hover:border-primary px-8 py-6 text-lg font-semibold backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
           >
             <a
               href="mailto:callejaj@proton.me"
@@ -100,7 +99,7 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
             href={personalInfo.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Github size={20} />
             <span className="hidden sm:inline font-medium">GitHub</span>
@@ -109,14 +108,14 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
             href={personalInfo.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Linkedin size={20} />
             <span className="hidden sm:inline font-medium">LinkedIn</span>
           </a>
           <a
             href="mailto:callejaj@proton.me"
-            className="flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Mail size={20} />
             <span className="hidden sm:inline font-medium">
