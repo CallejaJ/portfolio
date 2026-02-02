@@ -8,7 +8,7 @@ type ProjectKey =
   | "realEstate"
   | "instagoal"
   | "smartMeterDashboard"
-  | "faviconGenerator"
+  | "brandGenesis"
   | "retroGamehub"
   | "geoOptimization"
   | "cryptoTracker"

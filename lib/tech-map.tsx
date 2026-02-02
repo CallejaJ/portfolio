@@ -163,7 +163,17 @@ export const techMap: Record<string, TechItem> = {
   "Orga AI": { icon: Cpu, label: "Orga AI" },
   "Genkit AI": { slug: "firebase", label: "Genkit AI" },
   Gemini: { slug: "google", label: "Gemini" },
+  "Google Gemini AI": { slug: "google", label: "Google Gemini AI" },
   ZeroDev: { path: "/icons/zerodev.png", label: "ZeroDev" },
+  "ZeroDev (Gasless)": {
+    path: "/icons/zerodev.png",
+    label: "ZeroDev (Gasless)",
+  },
+  "Privy Auth": {
+    path: "/icons/privy.avif",
+    label: "Privy Auth",
+    isDarkLogo: true,
+  },
 
   Vite: { slug: "vite", label: "Vite" },
   "React Router": { slug: "reactrouter", label: "React Router" },

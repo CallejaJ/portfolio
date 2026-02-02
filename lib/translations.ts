@@ -8,7 +8,7 @@ export type ProjectKey =
   | "realEstate"
   | "instagoal"
   | "smartMeterDashboard"
-  | "faviconGenerator"
+  | "brandGenesis"
   | "retroGamehub"
   | "mementoAcademy"
   | "cryptoTracker"
@@ -120,11 +120,11 @@ export const translations = {
           "Monitoreo en tiempo real de infraestructura energética inteligente. Visualiza el consumo, estado y salud de todos los medidores conectados.",
         metrics: "Consumo real + Estado de salud + Recharts",
       },
-      faviconGenerator: {
-        title: "Generador de Favicon",
+      brandGenesis: {
+        title: "BrandGenesis AI - Consultor de Marca Web3",
         description:
-          "Generador avanzado de favicons que crea automáticamente todos los tamaños y formatos necesarios para aplicaciones web modernas. Incluye preview en tiempo real y optimización automática.",
-        metrics: "Genera 15+ formatos automáticamente",
+          "Generador de identidad de marca Web3 impulsado por IA. Chatea con un consultor experto (Gemini 1.5 Flash) para generar tu logo y paleta de colores, y mintéalo como NFT en Sepolia sin pagar gas (Gasless) usando ZeroDev y Privy.",
+        metrics: "Next.js 15 + Gemini AI + Privy + ZeroDev (Gasless)",
       },
       retroGamehub: {
         title: "Centro de Juegos Retro",
@@ -321,11 +321,11 @@ export const translations = {
           "Real-time monitoring of smart energy infrastructure. View consumption, status, and health of all connected meters.",
         metrics: "Real-time consumption + Health status + Recharts",
       },
-      faviconGenerator: {
-        title: "Favicon Generator",
+      brandGenesis: {
+        title: "BrandGenesis AI - Web3 Brand Consultant",
         description:
-          "Advanced favicon generator that automatically creates all sizes and formats needed for modern web applications.",
-        metrics: "Generates 15+ formats automatically",
+          "An AI-powered Web3 branding tool. Chat with an expert AI consultant to generate your brand identity and mint it as an NFT—completely gasless. Features instant previews and retro aesthetics.",
+        metrics: "Next.js 15 + Gemini AI + Privy + ZeroDev (Gasless)",
       },
       retroGamehub: {
         title: "Retro Gamehub",

@@ -6,7 +6,7 @@ export type ProjectKey =
   | "realEstate"
   | "instagoal"
   | "smartMeterDashboard"
-  | "faviconGenerator"
+  | "brandGenesis"
   | "retroGamehub"
   | "mementoAcademy"
   | "cryptoTracker"
@@ -41,6 +41,24 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/web3-arcade-shield",
     demo: "https://web3arcade.xyz/",
+    featured: true,
+  },
+  {
+    id: 9,
+    titleKey: "brandGenesis",
+    image: "/images/favicon_generator.jpg",
+    technologies: [
+      "Next.js 15",
+      "React 19",
+      "Google Gemini AI",
+      "Privy Auth",
+      "ZeroDev (Gasless)",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Lucide React",
+    ],
+    github: "https://github.com/CallejaJ/brand-genesis-ai",
+    demo: "https://brand-genesis-ai.vercel.app/",
     featured: true,
   },
   {
@@ -258,24 +276,7 @@ export const projects: Project[] = [
     demo: "https://smart-emeter-dashboard.vercel.app/",
     featured: true,
   },
-  {
-    id: 9,
-    titleKey: "faviconGenerator",
-    image: "/images/favicon_generator.jpg",
-    technologies: [
-      "Next.js 15",
-      "React 19",
-      "Canvas API",
-      "Tailwind CSS",
-      "Lucide React",
-      "shadcn/ui",
-      "React Hook Form",
-      "Zod",
-    ],
-    github: "https://github.com/CallejaJ/favicon-generator",
-    demo: "https://memento-favicon-generator.vercel.app/",
-    featured: false,
-  },
+
   {
     id: 10,
     titleKey: "retroGamehub",
