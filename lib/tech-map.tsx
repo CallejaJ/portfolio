@@ -89,6 +89,7 @@ export const techMap: Record<string, TechItem> = {
   "Material UI": { path: "/icons/material-ui.png", label: "Material UI" },
   "Three.js": { slug: "threedotjs", label: "Three.js", isDarkLogo: true },
   "Lucide React": { slug: "lucide", label: "Lucide React" },
+  "Lucide Icons": { slug: "lucide", label: "Lucide Icons" },
 
   // Backend & Databases
   Prisma: { slug: "prisma", label: "Prisma", isDarkLogo: true },
@@ -169,6 +170,8 @@ export const techMap: Record<string, TechItem> = {
     path: "/icons/zerodev.png",
     label: "ZeroDev (Gasless)",
   },
+  "Gemini 2.0 Flash": { slug: "googlegemini", label: "Gemini 2.0 Flash" },
+  "Ethereum Sepolia": { slug: "ethereum", label: "Ethereum Sepolia" },
   "Privy Auth": {
     path: "/icons/privy.avif",
     label: "Privy Auth",
