@@ -123,8 +123,8 @@ export const translations = {
       brandGenesis: {
         title: "BrandGenesis AI - Consultor de Marca Web3",
         description:
-          "Generador de identidad de marca Web3 impulsado por IA. Chatea con un consultor experto (Gemini 1.5 Flash) para generar tu logo y paleta de colores, y mintéalo como NFT en Sepolia sin pagar gas (Gasless) usando ZeroDev y Privy.",
-        metrics: "Next.js 15 + Gemini AI + Privy + ZeroDev (Gasless)",
+          "Consultor de marca Web3 impulsado por Gemini 2.0 Flash. Chatea con un experto IA para diseñar tu identidad visual (Logos, Colores) y mintéala como NFT en Sepolia sin costes de gas. Acceso a +1500 iconos dinámicos, previsualizaciones instantáneas y almacenamiento on-chain permanente.",
+        metrics: "Gemini 2.0 Flash + 1500+ Iconos + Gasless Minting",
       },
       retroGamehub: {
         title: "Centro de Juegos Retro",
@@ -324,8 +324,8 @@ export const translations = {
       brandGenesis: {
         title: "BrandGenesis AI - Web3 Brand Consultant",
         description:
-          "An AI-powered Web3 branding tool. Chat with an expert AI consultant to generate your brand identity and mint it as an NFT—completely gasless. Features instant previews and retro aesthetics.",
-        metrics: "Next.js 15 + Gemini AI + Privy + ZeroDev (Gasless)",
+          "A comprehensive Web3 Brand Consultant powered by Gemini 2.0 Flash. Chat with an expert AI to design your brand identity and mint it as an NFT—completely gasless. Features 1500+ on-demand icons, instant previews, and permanent on-chain storage on Sepolia.",
+        metrics: "Gemini 2.0 Flash + 1500+ Icons + Gasless Minting",
       },
       retroGamehub: {
         title: "Retro Gamehub",
