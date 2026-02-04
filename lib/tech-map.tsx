@@ -191,7 +191,7 @@ export const techMap: Record<string, TechItem> = {
   },
   "Embla Carousel": { slug: "emblacarousel", label: "Embla Carousel" },
   Sonner: { icon: Zap, label: "Sonner" },
-  "Canvas Confetti": { icon: Zap, label: "Canvas Confetti" },
+
   Vaul: { icon: Box, label: "Vaul" },
   Axios: { slug: "axios", label: "Axios" },
   "Radix UI": { slug: "radixui", label: "Radix UI", isDarkLogo: true },

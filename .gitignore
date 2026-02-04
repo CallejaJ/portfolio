@@ -25,3 +25,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# CV
+CV_JORGE_CALLEJA_2025.md
+CV_JORGE_CALLEJA_2025_EN.md

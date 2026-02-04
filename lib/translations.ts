@@ -30,8 +30,7 @@ export const translations = {
       "Web3 Frontend Developer · React & TypeScript · Interfaces Descentralizadas",
     description:
       "Web3 Frontend Developer especializado en React y TypeScript. Construyo interfaces descentralizadas que absorben la complejidad de blockchain y la convierten en experiencias fluidas para el usuario: desde Account Abstraction y tokenización de activos hasta NFT marketplaces y DeFi. Generalista en el ecosistema Web3, pero siempre con foco en que el producto final sienta que es nativo web.",
-    highlight:
-      "Reducción del tiempo de desarrollo hasta un 40% mediante automatización con IA",
+    highlight: "Adaptabilidad · Trabajo en Equipo · Innovación Tecnológica",
     viewProjects: "Ver Proyectos",
     contact: "Contactar",
     nav: {
@@ -74,14 +73,14 @@ export const translations = {
       docudid: {
         title: "LEXTY - Plataforma de Asistente Legal con IA",
         description:
-          "Plataforma SaaS de gestión documental legal con IA especializada (Alexia AI) que automatiza análisis de contratos, investigación jurisprudencial y redacción legal. Sistema multi-tenant con soporte para 40+ idiomas y especialización en todas las ramas del derecho.",
-        metrics: "847+ despachos, 95% satisfacción, 300% mejora eficiencia",
+          "Plataforma SaaS de gestión documental legal con IA especializada (Alexia AI) que automatiza análisis de contratos, investigación jurisprudencial y redacción legal. Sistema multi-tenant diseñado para escalabilidad global con soporte multilenguaje.",
+        metrics: "SaaS Multi-tenant + AI Integration + i18n System",
       },
       gaslessSwap: {
         title: "Plataforma de Intercambio de Tokens sin Gas",
         description:
-          "Plataforma DeFi avanzada que permite intercambios de tokens sin gas usando tecnología Account Abstraction. Implementé ZeroDev SDK v5.4 con EntryPoint V07 para transacciones patrocinadas.",
-        metrics: "60% reducción en fricción de onboarding",
+          "Plataforma DeFi avanzada que permite intercambios de tokens sin gas usando tecnología Account Abstraction, eliminando la fricción del onboarding para nuevos usuarios.",
+        metrics: "Reducción de fricción en onboarding",
       },
       cryptoTracker: {
         title: "Rastreador de Portfolio de Criptomonedas",
@@ -105,8 +104,8 @@ export const translations = {
       realEstate: {
         title: "Tokenización de Bienes Raíces",
         description:
-          "Plataforma para propiedad fraccionada de bienes raíces usando blockchain. Sistema que reduce las barreras tradicionales de inversión inmobiliaria.",
-        metrics: "60% aumento en accesibilidad de inversión",
+          "Plataforma para propiedad fraccionada de bienes raíces usando blockchain, facilitando el acceso a inversiones mediante tokenización de activos.",
+        metrics: "Mayor accesibilidad de inversión",
       },
       instagoal: {
         title: "Instagoal - Plataforma de Automatización Instagram",
@@ -124,7 +123,7 @@ export const translations = {
         title: "BrandGenesis AI - Consultor de Marca Web3",
         description:
           "Consultor de marca Web3 impulsado por Gemini 2.0 Flash. Chatea con un experto IA para diseñar tu identidad visual (Logos, Colores) y mintéala como NFT en Sepolia sin costes de gas. Acceso a +1500 iconos dinámicos, previsualizaciones instantáneas y almacenamiento on-chain permanente.",
-        metrics: "Gemini 2.0 Flash + 1500+ Iconos + Gasless Minting",
+        metrics: "Gemini 2.0 Flash + 1500+ Icons + Gasless Minting",
       },
       retroGamehub: {
         title: "Centro de Juegos Retro",
@@ -148,8 +147,8 @@ export const translations = {
       bachataAlAireLibre: {
         title: "Bachata al Aire Libre - Landing Page de Alto Rendimiento",
         description:
-          "Landing page moderna y optimizada para clases de bachata y salsa al aire libre en Málaga. Alcanza puntuaciones Lighthouse excepcionales: Performance 99, Accessibility 100, Best Practices 96, SEO 100. Incluye PWA, sistema multi-idioma, reproductor de música, galería de fotos animada, testimonios reales y integración con Google Maps.",
-        metrics: "Lighthouse 99+ + PWA + Multi-idioma + SEO 100",
+          "Landing page moderna y optimizada para clases de bachata y salsa al aire libre en Málaga. Alcanza puntuaciones excepcionales en rendimiento, accesibilidad y SEO. Incluye PWA, sistema multi-idioma, reproductor de música, galería de fotos animada, testimonios reales y integración con Google Maps.",
+        metrics: "Alto Rendimiento + PWA + Multi-idioma + SEO",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
@@ -169,8 +168,8 @@ export const translations = {
         period: "sept. 2025 - oct. 2025",
         location: "En remoto",
         achievements: [
-          "Desarrollé el frontend de una plataforma SaaS legal multi-tenant con Next.js, React y Prisma. Integré un chatbot de IA generativa (Alexia AI) capaz de analizar contratos, generar documentos, posts del blog e imágenes automáticamente mediante streaming en tiempo real.",
-          "Implementé organización de documentos legales en blockchain y sistema i18n con i18next soportando 40+ idiomas.",
+          "Desarrollé el frontend de una plataforma SaaS legal multi-tenant con Next.js y React, demostrando capacidad para escalar arquitecturas complejas.",
+          "Integré con éxito soluciones de IA generativa (Alexia AI) y colaboré estrechamente con el equipo para implementar un sistema i18n global.",
         ],
       },
       {
@@ -180,8 +179,8 @@ export const translations = {
         location: "En remoto",
         achievements: [
           "Desarrollé el frontend de una plataforma Web3 con Next.js y React, integrando ERC-721 NFT launchpad y marketplace.",
-          "Implementé sistema de wallets multichain (IOTA, Arbitrum, ENO) y mecanismos de gobernanza on-chain.",
-          "Resultados: +65% retención de usuarios, +40% en ingresos de creadores vs plataformas tradicionales.",
+          "Arquitectura de wallets multichain (IOTA, Arbitrum, ENO) implementando abstracción de proveedores para una experiencia unificada.",
+          "Integración de WebSockets para actualizaciones de estado en tiempo real, optimizando el rendimiento en redes de alta latencia.",
         ],
       },
       {
@@ -190,9 +189,9 @@ export const translations = {
         period: "may. 2024 - oct. 2024",
         location: "Málaga · En remoto",
         achievements: [
-          "Lideré un equipo de 3 desarrolladores en la construcción de un marketplace inmobiliario con tokenización de activos en blockchain.",
+          "Lideré un equipo de 3 desarrolladores facilitando la comunicación y resolución de conflictos en un entorno remoto.",
           "Stack: Next.js, Node.js, web3.js, Sequelize.",
-          "Implementé metodología Scrum y reduje el tiempo de desarrollo un 35% mediante herramientas de IA generativa.",
+          "Impulsé la adopción de metodologías Scrum y herramientas de IA, mejorando la colaboración y eficiencia del equipo.",
         ],
       },
       {
@@ -201,7 +200,7 @@ export const translations = {
         period: "nov. 2023 - jun. 2024",
         location: "Reino Unido · En remoto",
         achievements: [
-          "Desarrollo de aplicaciones web utilizando React.js y Node.js para clientes internacionales.",
+          "Desarrollo de aplicaciones web utilizando React.js y Node.js, adaptándome a los requisitos cambiantes de clientes internacionales.",
         ],
       },
       {
@@ -210,8 +209,8 @@ export const translations = {
         period: "mar. 2024 - abr. 2024",
         location: "Ohio · En remoto",
         achievements: [
-          "Contribución a proyectos Open Source en MERN Stack.",
-          "Implementación de componentes con React Hooks y contenedorización con Docker.",
+          "Contribución activa a proyectos Open Source en MERN Stack, colaborando con desarrolladores de diferentes husos horarios.",
+          "Implementación de componentes con React Hooks y contenedorización con Docker, aprendiendo y aplicando nuevas tecnologías sobre la marcha.",
         ],
       },
       {
@@ -232,7 +231,7 @@ export const translations = {
       "Web3 Frontend Developer · React & TypeScript · Decentralized Interfaces",
     description:
       "Web3 Frontend Developer specialized in React and TypeScript. I build decentralized interfaces that absorb blockchain complexity and turn it into seamless user experiences: from Account Abstraction and asset tokenization to NFT marketplaces and DeFi. Generalist across the Web3 ecosystem, but always focused on making the end product feel natively web.",
-    highlight: "Up to 40% reduction in development time through AI automation",
+    highlight: "Adaptability · Teamwork · Technological Innovation",
     viewProjects: "View Projects",
     contact: "Contact",
     nav: {
@@ -275,14 +274,14 @@ export const translations = {
       docudid: {
         title: "LEXTY - AI Legal Assistant Platform",
         description:
-          "Legal document management SaaS platform with specialized AI (Alexia AI) that automates contract analysis, jurisprudential research and legal drafting. Multi-tenant system supporting 40+ languages and specialization in all branches of law.",
-        metrics: "847+ firms, 95% satisfaction, 300% efficiency improvement",
+          "Legal document management SaaS platform with specialized AI (Alexia AI) that automates contract analysis and legal drafting. Multi-tenant system designed for global scalability with multi-language support.",
+        metrics: "Multi-tenant SaaS + AI Integration + i18n System",
       },
       gaslessSwap: {
         title: "Gasless Token Swap Platform",
         description:
-          "Advanced DeFi platform enabling gas-free token exchanges using Account Abstraction technology. Implemented ZeroDev SDK v5.4 with EntryPoint V07 for sponsored transactions.",
-        metrics: "60% reduction in onboarding friction",
+          "Advanced DeFi platform enabling gas-free token exchanges using Account Abstraction technology, eliminating onboarding friction for new users.",
+        metrics: "Reduced onboarding friction",
       },
       cryptoTracker: {
         title: "Memento Crypto Portfolio Tracker",
@@ -306,8 +305,8 @@ export const translations = {
       realEstate: {
         title: "Real Estate Tokenization",
         description:
-          "Platform for fractional property ownership using blockchain. System that reduces traditional barriers to real estate investment.",
-        metrics: "60% increase in investment accessibility",
+          "Platform for fractional property ownership using blockchain, facilitating investment access through asset tokenization.",
+        metrics: "Increased investment accessibility",
       },
       instagoal: {
         title: "Instagoal - Instagram Automation Platform",
@@ -337,7 +336,7 @@ export const translations = {
         title: "Memento Academy - Web3 Educational Platform",
         description:
           "Free educational platform designed for Web3 newcomers. We simplify Cryptocurrencies, CBDCs, and Blockchain technology with zero costs for the community. Features premium courses, gamified achievement system, and modern serverless architecture.",
-        metrics: "Next.js 15 + Prisma 7 + Supabase + Brevo API",
+        metrics: "Next.js 15 + Supabase + Brevo API",
       },
       tuvozamiga: {
         title: "TUVOZAMIGA - Virtual Companion Platform with AI",
@@ -349,8 +348,8 @@ export const translations = {
       bachataAlAireLibre: {
         title: "Bachata al Aire Libre - High-Performance Landing Page",
         description:
-          "Modern, optimized landing page for outdoor bachata and salsa dance classes in Málaga. Achieves exceptional Lighthouse scores: Performance 99, Accessibility 100, Best Practices 96, SEO 100. Features PWA capabilities, multi-language support, music player, animated photo gallery, real testimonials and Google Maps integration.",
-        metrics: "Lighthouse 99+ + PWA + Multi-language + SEO 100",
+          "Modern, optimized landing page for outdoor bachata and salsa dance classes in Málaga. Achieves exceptional scores in performance and accessibility. Features PWA capabilities, multi-language support, music player, animated photo gallery, real testimonials and Google Maps integration.",
+        metrics: "High Performance + PWA + Multi-language + SEO",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
@@ -370,8 +369,8 @@ export const translations = {
         period: "Sept 2025 - Oct 2025",
         location: "Remote",
         achievements: [
-          "Built the frontend of a multi-tenant legal SaaS platform with Next.js, React and Prisma. Integrated a generative AI chatbot (Alexia AI) capable of analyzing contracts, generating documents, blog posts and images automatically via real-time streaming.",
-          "Implemented blockchain-based legal document organization and i18n system with i18next supporting 40+ languages.",
+          "Built the frontend of a multi-tenant legal SaaS platform with Next.js and React, demonstrating ability to scale complex architectures.",
+          "Successfully integrated generative AI solutions (Alexia AI) and collaborated closely with the team to implement a global i18n system.",
         ],
       },
       {
@@ -381,8 +380,8 @@ export const translations = {
         location: "Remote",
         achievements: [
           "Built the frontend of a Web3 platform with Next.js and React, integrating an ERC-721 NFT launchpad and marketplace.",
-          "Implemented a multichain wallet system (IOTA, Arbitrum, ENO) and on-chain governance mechanisms.",
-          "Results: +65% user retention, +40% creator revenue vs traditional platforms.",
+          "Multichain wallet architecture (IOTA, Arbitrum, ENO) implementing provider abstraction for a unified experience.",
+          "WebSocket integration for real-time state updates, optimizing performance in high-latency networks.",
         ],
       },
       {
@@ -391,9 +390,9 @@ export const translations = {
         period: "May 2024 - Oct 2024",
         location: "Málaga · Remote",
         achievements: [
-          "Led a team of 3 developers building a real estate marketplace with blockchain-based asset tokenization.",
+          "Led a team of 3 developers facilitating communication and conflict resolution in a remote environment.",
           "Stack: Next.js, Node.js, web3.js, Sequelize.",
-          "Implemented Scrum methodology and reduced development time by 35% using generative AI tools.",
+          "Championed the adoption of Scrum methodologies and AI tools, improving team collaboration and efficiency.",
         ],
       },
       {
@@ -402,7 +401,7 @@ export const translations = {
         period: "Nov 2023 - Jun 2024",
         location: "United Kingdom · Remote",
         achievements: [
-          "Development of web applications using React.js and Node.js for international clients.",
+          "Development of web applications using React.js and Node.js, adapting to changing requirements of international clients.",
         ],
       },
       {
@@ -411,8 +410,8 @@ export const translations = {
         period: "Mar 2024 - Apr 2024",
         location: "Ohio · Remote",
         achievements: [
-          "Contributed to Open Source projects in MERN Stack.",
-          "Implementation of components with React Hooks and containerization with Docker.",
+          "Active contribution to Open Source projects in MERN Stack, collaborating with developers across different time zones.",
+          "Implementation of components with React Hooks and containerization with Docker, learning and applying new technologies on the fly.",
         ],
       },
       {
