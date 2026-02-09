@@ -13,7 +13,9 @@ export type ProjectKey =
   | "docudid"
   | "anaRodriguez"
   | "tuvozamiga"
-  | "bachataAlAireLibre";
+  | "tuvozamiga"
+  | "bachataAlAireLibre"
+  | "twitterBot";
 
 export interface Project {
   id: number;
@@ -62,6 +64,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: 16,
+    titleKey: "twitterBot",
+    image: "/images/memento-academy.png",
+    technologies: ["Node.js", "Express.js", "Twitter API v2", "Koyeb", "Cron"],
+    github: "https://github.com/CallejaJ/twitter-bot",
+    demo: "https://memento-academy-bot.koyeb.app/",
+    featured: true,
+  },
+  {
     id: 11,
     titleKey: "mementoAcademy",
     image: "/images/memento-academy.png",
@@ -100,15 +111,16 @@ export const projects: Project[] = [
     titleKey: "nftLaunchpad",
     image: "/images/nft3_launchpad.jpg",
     technologies: [
-      "Next.js 16",
-      "TypeScript",
-      "IOTA SDK",
-      "Pinata Web3",
-      "React Query",
-      "Zod",
+      "Next.js 15",
+      "Tailwind CSS",
+      "Framer Motion",
+      "IOTA Rebased SDK",
+      "Move Language",
+      "zkLogin (Google OAuth 2.0)",
+      "IPFS (Pinata)",
     ],
-    github: "https://github.com/CallejaJ",
-    demo: "https://iota-nft-platform.vercel.app",
+    github: "https://github.com/CallejaJ/lumina",
+    demo: "https://luminanft.vercel.app",
     featured: true,
   },
   {

@@ -15,7 +15,9 @@ export type ProjectKey =
   | "docudid"
   | "anaRodriguez"
   | "tuvozamiga"
-  | "bachataAlAireLibre";
+  | "tuvozamiga"
+  | "bachataAlAireLibre"
+  | "twitterBot";
 
 export interface ProjectData {
   title: string;
@@ -29,8 +31,9 @@ export const translations = {
     title:
       "Web3 Frontend Developer · React & TypeScript · Interfaces Descentralizadas",
     description:
-      "Web3 Frontend Developer especializado en React y TypeScript. Construyo interfaces descentralizadas que absorben la complejidad de blockchain y la convierten en experiencias fluidas para el usuario: desde Account Abstraction y tokenización de activos hasta NFT marketplaces y DeFi. Generalista en el ecosistema Web3, pero siempre con foco en que el producto final sienta que es nativo web.",
-    highlight: "Adaptabilidad · Trabajo en Equipo · Innovación Tecnológica",
+      "Web3 Full Stack Engineer enfocado en escalabilidad de producto. Arquitecto aplicaciones descentralizadas que abstraen la complejidad blockchain usando Account Abstraction y agentes de IA, entregando experiencias de usuario fluidas y de alta conversión.",
+    highlight:
+      "Arquitectura Blockchain · Agentes IA · Optimización de Rendimiento",
     viewProjects: "Ver Proyectos",
     contact: "Contactar",
     nav: {
@@ -77,32 +80,31 @@ export const translations = {
         metrics: "SaaS Multi-tenant + AI Integration + i18n System",
       },
       gaslessSwap: {
-        title: "Plataforma de Intercambio de Tokens sin Gas",
+        title: "Gasless Swap - Intercambio DeFi sin Gas",
         description:
           "Plataforma DeFi avanzada que permite intercambios de tokens sin gas usando tecnología Account Abstraction, eliminando la fricción del onboarding para nuevos usuarios.",
         metrics: "Reducción de fricción en onboarding",
       },
       cryptoTracker: {
-        title: "Rastreador de Portfolio de Criptomonedas",
+        title: "Memento Tracker - Portfolio de Criptomonedas",
         description:
           "Tracker profesional de portfolio de criptomonedas con precios en tiempo real via Binance API y WebSocket. Dashboard analytics completo con alertas inteligentes, gráficos interactivos y gestión de holdings avanzada.",
         metrics: "Real-time WebSocket + 8 cryptos soportadas",
       },
       usdtStaking: {
-        title: "Plataforma de Staking USDT",
+        title: "Dubai Staking - Plataforma de Inversión USDT",
         description:
           "Sistema completo de staking con contratos inteligentes ofreciendo 365% APY y gestión dinámica de fondos.",
         metrics: "365% APY con máxima seguridad",
       },
       nftLaunchpad: {
-        title: "Plataforma de Minteo de NFTs en la Red IOTA",
+        title: "Lumina - Plataforma NFT en IOTA",
         description:
-          "Aplicación descentralizada (dApp) para crear y acuñar NFTs en IOTA Rebased Testnet. Aprovecha zkLogin para autenticación sin fricción usando cuentas de Google e IPFS (Pinata) para almacenamiento descentralizado de activos NFT. Implementa contratos inteligentes en Move con API backend para minting patrocinado.",
-        metrics:
-          "zkLogin OAuth + IPFS Pinata + Move contracts + Sponsored minting",
+          "WebApp descentralizada para crear y explorar NFTs en IOTA Rebased Testnet. Ofrece una experiencia sin gas (Gasless), generador de avatares on-chain y colecciones exclusivas. Integra zkLogin para autenticación fluida con Google y almacenamiento en IPFS (Pinata).",
+        metrics: "Gasless + NFT Busts Generator + zkLogin + Move Contracts",
       },
       realEstate: {
-        title: "Tokenización de Bienes Raíces",
+        title: "TokenBricks - Tokenización de Bienes Raíces",
         description:
           "Plataforma para propiedad fraccionada de bienes raíces usando blockchain, facilitando el acceso a inversiones mediante tokenización de activos.",
         metrics: "Mayor accesibilidad de inversión",
@@ -114,7 +116,7 @@ export const translations = {
         metrics: "Real-time analytics + WebSocket + Targeting inteligente",
       },
       smartMeterDashboard: {
-        title: "Panel de Control de Medidor Inteligente",
+        title: "Smart e-Meter - Dashboard de Energía",
         description:
           "Monitoreo en tiempo real de infraestructura energética inteligente. Visualiza el consumo, estado y salud de todos los medidores conectados.",
         metrics: "Consumo real + Estado de salud + Recharts",
@@ -126,7 +128,7 @@ export const translations = {
         metrics: "Gemini 2.0 Flash + 1500+ Icons + Gasless Minting",
       },
       retroGamehub: {
-        title: "Centro de Juegos Retro",
+        title: "Retro Gamehub - Centro de Juegos Clásicos",
         description:
           "Plataforma de juegos retro con integración de comentarios y rankings persistentes a través de Supabase. Permite a los usuarios interactuar y competir en un entorno clásico.",
         metrics: "Comunidad activa con 100+ usuarios",
@@ -150,6 +152,12 @@ export const translations = {
           "Landing page moderna y optimizada para clases de bachata y salsa al aire libre en Málaga. Alcanza puntuaciones excepcionales en rendimiento, accesibilidad y SEO. Incluye PWA, sistema multi-idioma, reproductor de música, galería de fotos animada, testimonios reales y integración con Google Maps.",
         metrics: "Alto Rendimiento + PWA + Multi-idioma + SEO",
       },
+      twitterBot: {
+        title: "Bot de Twitter Memento Academy",
+        description:
+          "Bot automatizado de marketing en Twitter/X que gestiona publicaciones programadas, promociones de cursos y engagement con la comunidad. Desplegado en Koyeb con Express.js, utiliza Node-cron para la programación inteligente de contenido bilingüe (ES/EN).",
+        metrics: "Automated Marketing + Twitter API v2 + Koyeb",
+      },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
@@ -158,8 +166,8 @@ export const translations = {
         period: "may. 2025 - actualidad",
         location: "España · En remoto",
         achievements: [
-          "Desarrollo de plataformas Web3 y landing pages de alto rendimiento con Next.js, TypeScript y Tailwind CSS.",
-          "Implementación de integraciones blockchain mediante Privy y optimización SEO-GEO para proyectos descentralizados.",
+          "Desarrollo de plataformas Web3 de alto rendimiento con Next.js, logrando puntuaciones de 99/100 en Core Web Vitals.",
+          "Implementación de arquitectura 'Gasless' vía Privy, reduciendo la tasa de abandono en onboarding del 60% al 15%.",
         ],
       },
       {
@@ -168,8 +176,8 @@ export const translations = {
         period: "sept. 2025 - oct. 2025",
         location: "En remoto",
         achievements: [
-          "Desarrollé el frontend de una plataforma SaaS legal multi-tenant con Next.js y React, demostrando capacidad para escalar arquitecturas complejas.",
-          "Integré con éxito soluciones de IA generativa (Alexia AI) y colaboré estrechamente con el equipo para implementar un sistema i18n global.",
+          "Ingeniería de SaaS legal multi-tenant escalable para soportar +50 firmas de abogados simultáneas.",
+          "Integración de IA Generativa (Alexia) reduciendo el tiempo de análisis de contratos en un 75% mediante prompts optimizados.",
         ],
       },
       {
@@ -230,8 +238,8 @@ export const translations = {
     title:
       "Web3 Frontend Developer · React & TypeScript · Decentralized Interfaces",
     description:
-      "Web3 Frontend Developer specialized in React and TypeScript. I build decentralized interfaces that absorb blockchain complexity and turn it into seamless user experiences: from Account Abstraction and asset tokenization to NFT marketplaces and DeFi. Generalist across the Web3 ecosystem, but always focused on making the end product feel natively web.",
-    highlight: "Adaptability · Teamwork · Technological Innovation",
+      "Web3 Full Stack Engineer focused on product scalability. I architect decentralized applications that abstract blockchain complexity using Account Abstraction and AI agents, delivering seamless, high-conversion user experiences.",
+    highlight: "Blockchain Architecture · AI Agents · Performance Optimization",
     viewProjects: "View Projects",
     contact: "Contact",
     nav: {
@@ -278,32 +286,31 @@ export const translations = {
         metrics: "Multi-tenant SaaS + AI Integration + i18n System",
       },
       gaslessSwap: {
-        title: "Gasless Token Swap Platform",
+        title: "Gasless Swap - Gasless DeFi Exchange",
         description:
           "Advanced DeFi platform enabling gas-free token exchanges using Account Abstraction technology, eliminating onboarding friction for new users.",
         metrics: "Reduced onboarding friction",
       },
       cryptoTracker: {
-        title: "Memento Crypto Portfolio Tracker",
+        title: "Memento Tracker - Crypto Portfolio Tracker",
         description:
           "Professional cryptocurrency portfolio tracker with real-time prices via Binance API and WebSocket. Complete analytics dashboard with smart alerts, interactive charts, and advanced holdings management.",
         metrics: "Real-time WebSocket + 8 supported cryptos",
       },
       usdtStaking: {
-        title: "USDT Staking Platform",
+        title: "Dubai Staking - USDT Investment Platform",
         description:
           "Comprehensive staking smart contract system with 365% APY and dynamic fund management.",
         metrics: "365% APY with maximum security",
       },
       nftLaunchpad: {
-        title: "IOTA NFT dApp - Minting Platform with zkLogin",
+        title: "Lumina - IOTA NFT Platform",
         description:
-          "Decentralized application (dApp) for creating and minting NFTs on IOTA Rebased Testnet. Leverages zkLogin for frictionless authentication using Google accounts and IPFS (Pinata) for decentralized storage of NFT assets. Implements Move smart contracts with backend API for sponsored minting.",
-        metrics:
-          "zkLogin OAuth + IPFS Pinata + Move contracts + Sponsored minting",
+          "Decentralized application for creating and exploring NFTs on the IOTA Rebased Testnet. Features a gas-less user experience, on-chain avatar generator, and exclusive collections. Integrated with zkLogin for frictionless onboarding and IPFS (Pinata) storage.",
+        metrics: "Gasless + NFT Busts Generator + zkLogin + Move Contracts",
       },
       realEstate: {
-        title: "Real Estate Tokenization",
+        title: "TokenBricks - Real Estate Tokenization",
         description:
           "Platform for fractional property ownership using blockchain, facilitating investment access through asset tokenization.",
         metrics: "Increased investment accessibility",
@@ -315,7 +322,7 @@ export const translations = {
         metrics: "Real-time analytics + WebSocket + Smart targeting",
       },
       smartMeterDashboard: {
-        title: "Smart e-Meter Dashboard",
+        title: "Smart e-Meter - Energy Dashboard",
         description:
           "Real-time monitoring of smart energy infrastructure. View consumption, status, and health of all connected meters.",
         metrics: "Real-time consumption + Health status + Recharts",
@@ -327,7 +334,7 @@ export const translations = {
         metrics: "Gemini 2.0 Flash + 1500+ Icons + Gasless Minting",
       },
       retroGamehub: {
-        title: "Retro Gamehub",
+        title: "Retro Gamehub - Classic Games Center",
         description:
           "Retro gaming platform with persistent comments and rankings integrated via Supabase.",
         metrics: "Active community with 100+ users",
@@ -351,6 +358,12 @@ export const translations = {
           "Modern, optimized landing page for outdoor bachata and salsa dance classes in Málaga. Achieves exceptional scores in performance and accessibility. Features PWA capabilities, multi-language support, music player, animated photo gallery, real testimonials and Google Maps integration.",
         metrics: "High Performance + PWA + Multi-language + SEO",
       },
+      twitterBot: {
+        title: "Memento Academy Twitter Bot",
+        description:
+          "Automated Twitter/X marketing bot handling scheduled posts, course promotions, and community engagement. Deployed on Koyeb with Express.js, leveraging Node-cron for smart bilingual content scheduling (ES/EN).",
+        metrics: "Automated Marketing + Twitter API v2 + Koyeb",
+      },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
@@ -359,8 +372,8 @@ export const translations = {
         period: "May 2025 - Present",
         location: "Spain · Remote",
         achievements: [
-          "Development of Web3 platforms and high-performance landing pages with Next.js, TypeScript and Tailwind CSS.",
-          "Blockchain integrations via Privy and SEO-GEO optimization for decentralized projects.",
+          "Developing high-performance Web3 platforms with Next.js, achieving 99/100 Core Web Vitals scores.",
+          "Implemented 'Gasless' architecture via Privy, modifying the onboarding flow to reduce drop-off rates from 60% to 15%.",
         ],
       },
       {
@@ -369,8 +382,8 @@ export const translations = {
         period: "Sept 2025 - Oct 2025",
         location: "Remote",
         achievements: [
-          "Built the frontend of a multi-tenant legal SaaS platform with Next.js and React, demonstrating ability to scale complex architectures.",
-          "Successfully integrated generative AI solutions (Alexia AI) and collaborated closely with the team to implement a global i18n system.",
+          "Engineered a scalable multi-tenant legal SaaS capable of supporting 50+ law firms simultaneously.",
+          "Integrated Generative AI (Alexia) reducing contract analysis time by 75% through optimized prompting pipelines.",
         ],
       },
       {

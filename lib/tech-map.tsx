@@ -21,6 +21,7 @@ import {
   AudioWaveform,
   Brush,
   WalletCards,
+  Timer,
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 import React from "react";
@@ -196,4 +197,12 @@ export const techMap: Record<string, TechItem> = {
   Axios: { slug: "axios", label: "Axios" },
   "Radix UI": { slug: "radixui", label: "Radix UI", isDarkLogo: true },
   "date-fns": { slug: "date-fns", label: "date-fns" },
+  "Express.js": { slug: "express", label: "Express.js", isDarkLogo: true },
+  "Twitter API v2": {
+    path: "/icons/twiiter-api.png",
+    label: "Twitter API v2",
+    isDarkLogo: true,
+  },
+  Koyeb: { slug: "koyeb", label: "Koyeb", isDarkLogo: true },
+  Cron: { path: "/icons/node-cron.png", label: "Cron Jobs" },
 };
