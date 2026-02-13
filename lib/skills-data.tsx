@@ -3,6 +3,7 @@ import { Shield, Code, Cpu, TrendingUp } from "lucide-react";
 
 export const skillCategories = [
   {
+    titleKey: "web3Blockchain",
     title: "Web3 & Blockchain",
     icon: <Shield className="w-6 h-6" />,
     skills: [
@@ -27,6 +28,7 @@ export const skillCategories = [
     ],
   },
   {
+    titleKey: "frontendDev",
     title: "Frontend Development",
     icon: <Code className="w-6 h-6" />,
     skills: [
@@ -52,12 +54,13 @@ export const skillCategories = [
     ],
   },
   {
+    titleKey: "aiAutomation",
     title: "AI & Automation",
     icon: <Cpu className="w-6 h-6" />,
     skills: [
       "Prompt Engineering",
       "Claude 4 Sonnet",
-      "Claude 4 Opus",
+      "Claude Opus 4.6",
       "GPT-4.1",
       "GPT-4.1 mini",
       "o3",
@@ -74,6 +77,7 @@ export const skillCategories = [
     ],
   },
   {
+    titleKey: "backendDb",
     title: "Backend & Database",
     icon: <TrendingUp className="w-6 h-6" />,
     skills: [

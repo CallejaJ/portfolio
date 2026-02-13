@@ -116,7 +116,6 @@ export const projects: Project[] = [
       "Framer Motion",
       "IOTA Rebased SDK",
       "Move Language",
-      "zkLogin (Google OAuth 2.0)",
       "IPFS (Pinata)",
     ],
     github: "https://github.com/CallejaJ/lumina",

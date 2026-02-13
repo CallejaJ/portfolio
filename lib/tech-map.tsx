@@ -130,8 +130,8 @@ export const techMap: Record<string, TechItem> = {
   Brevo: { slug: "brevo", label: "Brevo" },
 
   // Tools & APIs
-  "IOTA dApp Kit": { path: "/icons/iota.webp", label: "IOTA dApp Kit" },
-  "IOTA SDK": { path: "/icons/iota.webp", label: "IOTA SDK" },
+  "IOTA dApp Kit": { slug: "iota", label: "IOTA dApp Kit", isDarkLogo: true },
+  "IOTA SDK": { slug: "iota", label: "IOTA SDK", isDarkLogo: true },
   "Pinata Web3": { path: "/icons/pinata.png", label: "Pinata Web3" },
   "React Query": { slug: "reactquery", label: "React Query" },
   PWA: { slug: "pwa", label: "PWA" },
@@ -207,13 +207,17 @@ export const techMap: Record<string, TechItem> = {
   Cron: { path: "/icons/node-cron.png", label: "Cron Jobs" },
 
   // Cloud & DevOps
-  AWS: { path: "/icons/aws.svg", label: "AWS" },
+  AWS: { path: "/icons/aws.svg", label: "AWS", isDarkLogo: true },
   Terraform: { slug: "terraform", label: "Terraform" },
   "GitHub Actions": { slug: "githubactions", label: "GitHub Actions" },
 
   // Lumina / IOTA ecosystem
-  "IOTA Rebased SDK": { path: "/icons/iota.webp", label: "IOTA Rebased SDK" },
-  "Move Language": { icon: FileCode, label: "Move" },
-  "zkLogin (Google OAuth 2.0)": { slug: "google", label: "zkLogin" },
+  "IOTA Rebased SDK": {
+    slug: "iota",
+    label: "IOTA Rebased SDK",
+    isDarkLogo: true,
+  },
+  "Move Language": { path: "/icons/move-icon.png", label: "Move" },
+  "zkLogin (Google OAuth 2.0)": { path: "/icons/oauth.png", label: "zkLogin" },
   "IPFS (Pinata)": { path: "/icons/pinata.png", label: "Pinata IPFS" },
 };

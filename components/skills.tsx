@@ -4,16 +4,14 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 interface SkillCategory {
+  titleKey?: string;
   title: string;
   icon: React.ReactNode;
   skills: string[];
 }
 
 interface SkillsSectionProps {
-  t: {
-    techStack: string;
-    techStackDesc: string;
-  };
+  t: Record<string, any>;
   skillCategories: SkillCategory[];
 }
 
@@ -39,7 +37,7 @@ const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <motion.div
-              key={category.title}
+              key={category.titleKey || category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
@@ -48,7 +46,8 @@ const SkillsSection = ({ t, skillCategories }: SkillsSectionProps) => {
               <Card className="h-full border border-border bg-card shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <h3 className="text-2xl font-bold text-primary">
-                    {category.title}
+                    {(category.titleKey && t[category.titleKey]) ||
+                      category.title}
                   </h3>
                 </CardHeader>
                 <CardContent>
