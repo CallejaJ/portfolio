@@ -3,10 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { Zap, Mail, Linkedin, Github } from "lucide-react";
-import { ThemeToggle } from "./theme-toggle";
+import { Zap, Mail, Linkedin, Github, FileText } from "lucide-react";
 
-const HeroSection = ({ language, setLanguage, t }: any) => {
+const HeroSection = ({ language, t }: any) => {
   const personalInfo = {
     name: "Jorge Calleja Pérez",
     email: "callejaj@proton.me",
@@ -71,6 +70,23 @@ const HeroSection = ({ language, setLanguage, t }: any) => {
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-6 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
           >
             <a href="#projects">{t.viewProjects}</a>
+          </Button>
+
+          <Button
+            variant="outline"
+            size="lg"
+            asChild
+            className="border-2 border-border bg-card/80 text-foreground hover:bg-muted/50 hover:border-primary px-8 py-6 text-lg font-semibold backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+          >
+            <a
+              href={language === "es" ? "/cv_es_ats.html" : "/cv_en_ats.html"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <FileText size={20} />
+              {t.viewCV}
+            </a>
           </Button>
 
           <Button

@@ -35,6 +35,7 @@ export const translations = {
     highlight:
       "Arquitectura Blockchain · Agentes IA · Optimización de Rendimiento",
     viewProjects: "Ver Proyectos",
+    viewCV: "Ver CV",
     contact: "Contactar",
     nav: {
       projects: "Proyectos",
@@ -136,8 +137,8 @@ export const translations = {
       mementoAcademy: {
         title: "Memento Academy - Plataforma Educativa Web3",
         description:
-          "Plataforma educativa gratuita diseñada para recién llegados a Web3. Simplificamos Criptomonedas, CBDCs y tecnología Blockchain con cero costos para la comunidad. Incluye cursos premium, sistema de logros gamificado y arquitectura serverless moderna.",
-        metrics: "Next.js 15 + Prisma 7 + Supabase + Brevo API",
+          "Plataforma educativa gratuita para Web3. Infraestructura cloud completa en AWS (S3, CloudFront CDN, SES, CloudWatch) gestionada con Terraform IaC y CI/CD automatizado con GitHub Actions (OIDC). Cursos premium, sistema de logros gamificado y autenticación Web3 con Privy.",
+        metrics: "AWS + Terraform IaC + GitHub Actions CI/CD",
       },
       tuvozamiga: {
         title: "TUVOZAMIGA - Plataforma de Compañía Virtual con IA",
@@ -168,6 +169,7 @@ export const translations = {
         achievements: [
           "Desarrollo de plataformas Web3 de alto rendimiento con Next.js, logrando puntuaciones de 99/100 en Core Web Vitals.",
           "Implementación de arquitectura 'Gasless' vía Privy, reduciendo la tasa de abandono en onboarding del 60% al 15%.",
+          "Infraestructura cloud AWS (S3, CloudFront, SES, CloudWatch, SNS) gestionada con Terraform IaC. CI/CD automatizado con GitHub Actions y autenticación OIDC.",
         ],
       },
       {
@@ -241,6 +243,7 @@ export const translations = {
       "Web3 Full Stack Engineer focused on product scalability. I architect decentralized applications that abstract blockchain complexity using Account Abstraction and AI agents, delivering seamless, high-conversion user experiences.",
     highlight: "Blockchain Architecture · AI Agents · Performance Optimization",
     viewProjects: "View Projects",
+    viewCV: "View CV",
     contact: "Contact",
     nav: {
       projects: "Projects",
@@ -342,8 +345,8 @@ export const translations = {
       mementoAcademy: {
         title: "Memento Academy - Web3 Educational Platform",
         description:
-          "Free educational platform designed for Web3 newcomers. We simplify Cryptocurrencies, CBDCs, and Blockchain technology with zero costs for the community. Features premium courses, gamified achievement system, and modern serverless architecture.",
-        metrics: "Next.js 15 + Supabase + Brevo API",
+          "Free educational platform for Web3 newcomers. Full AWS cloud infrastructure (S3, CloudFront CDN, SES, CloudWatch) managed with Terraform IaC and automated CI/CD via GitHub Actions with OIDC keyless auth. Premium courses, gamified achievements, and Web3 auth with Privy.",
+        metrics: "AWS + Terraform IaC + GitHub Actions CI/CD",
       },
       tuvozamiga: {
         title: "TUVOZAMIGA - Virtual Companion Platform with AI",
@@ -374,6 +377,7 @@ export const translations = {
         achievements: [
           "Developing high-performance Web3 platforms with Next.js, achieving 99/100 Core Web Vitals scores.",
           "Implemented 'Gasless' architecture via Privy, modifying the onboarding flow to reduce drop-off rates from 60% to 15%.",
+          "Architected AWS cloud infrastructure (S3, CloudFront, SES, CloudWatch, SNS) managed with Terraform IaC. Automated CI/CD with GitHub Actions using OIDC keyless authentication.",
         ],
       },
       {

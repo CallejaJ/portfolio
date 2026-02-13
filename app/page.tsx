@@ -21,11 +21,11 @@ export default function JorgePortfolio() {
     <div className="min-h-screen bg-background">
       <BlockchainBackground />
       <Header language={language} setLanguage={setLanguage} t={t} />
-      <HeroSection t={t} />
+      <HeroSection t={t} language={language} />
       <ProjectsSection t={t} projects={projects} />
       <SkillsSection t={t} skillCategories={skillCategories} />
       <ExperienceSection t={t} />
-      <ContactSection t={t} />
+      <ContactSection t={t} language={language} />
       <Footer t={t} />
     </div>
   );

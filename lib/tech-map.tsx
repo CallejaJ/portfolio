@@ -205,4 +205,15 @@ export const techMap: Record<string, TechItem> = {
   },
   Koyeb: { slug: "koyeb", label: "Koyeb", isDarkLogo: true },
   Cron: { path: "/icons/node-cron.png", label: "Cron Jobs" },
+
+  // Cloud & DevOps
+  AWS: { path: "/icons/aws.svg", label: "AWS" },
+  Terraform: { slug: "terraform", label: "Terraform" },
+  "GitHub Actions": { slug: "githubactions", label: "GitHub Actions" },
+
+  // Lumina / IOTA ecosystem
+  "IOTA Rebased SDK": { path: "/icons/iota.webp", label: "IOTA Rebased SDK" },
+  "Move Language": { icon: FileCode, label: "Move" },
+  "zkLogin (Google OAuth 2.0)": { slug: "google", label: "zkLogin" },
+  "IPFS (Pinata)": { path: "/icons/pinata.png", label: "Pinata IPFS" },
 };

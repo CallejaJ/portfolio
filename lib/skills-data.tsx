@@ -89,6 +89,10 @@ export const skillCategories = [
       "MySQL",
       "REST APIs",
       "WebSocket",
+      "AWS (S3, CloudFront, SES)",
+      "Terraform",
+      "GitHub Actions",
+      "Docker",
     ],
   },
 ];

@@ -26,6 +26,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# CV
+# CV (Markdown source files - HTML CVs served from public/)
 CV_JORGE_CALLEJA_2025.md
 CV_JORGE_CALLEJA_2025_EN.md
