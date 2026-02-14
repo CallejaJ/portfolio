@@ -84,7 +84,7 @@ export const projects: Project[] = [
       "GitHub Actions",
       "Prisma",
       "Supabase",
-      "Tailwind CSS 4",
+      "Tailwind CSS",
     ],
     github: "https://github.com/Memento-Academy",
     demo: "https://memento-academy.com/",
