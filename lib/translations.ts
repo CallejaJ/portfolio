@@ -175,11 +175,12 @@ export const translations = {
       {
         title: "Frontend Developer",
         company: "LEXTY",
-        period: "sept. 2025 - oct. 2025",
+        period: "jun. 2025 - nov. 2025",
         location: "En remoto",
         achievements: [
           "Ingeniería de SaaS legal multi-tenant escalable para soportar +50 firmas de abogados simultáneas.",
           "Integración de IA Generativa (Alexia) reduciendo el tiempo de análisis de contratos en un 75% mediante prompts optimizados.",
+          "Desarrollé sistema i18n con soporte para +40 idiomas y librería de componentes reutilizables. CI/CD automatizado con Vercel y GitHub Actions.",
         ],
       },
       {
@@ -388,6 +389,7 @@ export const translations = {
         achievements: [
           "Engineered a scalable multi-tenant legal SaaS capable of supporting 50+ law firms simultaneously.",
           "Integrated Generative AI (Alexia) reducing contract analysis time by 75% through optimized prompting pipelines.",
+          "Built i18n system supporting 40+ languages and a reusable component library. Configured automated CI/CD pipelines with Vercel and GitHub Actions.",
         ],
       },
       {
