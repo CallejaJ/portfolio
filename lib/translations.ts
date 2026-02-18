@@ -384,7 +384,7 @@ export const translations = {
       {
         title: "Frontend Developer",
         company: "LEXTY",
-        period: "Sept 2025 - Oct 2025",
+        period: "Jun 2025 - Nov 2025",
         location: "Remote",
         achievements: [
           "Engineered a scalable multi-tenant legal SaaS capable of supporting 50+ law firms simultaneously.",
