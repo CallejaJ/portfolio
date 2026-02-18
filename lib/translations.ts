@@ -184,7 +184,7 @@ export const translations = {
         ],
       },
       {
-        title: "Web3 Developer",
+        title: "Frontend Developer",
         company: "ENO Network",
         period: "nov. 2024 - abr. 2025",
         location: "En remoto",
@@ -217,7 +217,7 @@ export const translations = {
       {
         title: "Frontend Web Developer",
         company: "TUBLIAN",
-        period: "mar. 2024 - abr. 2024",
+        period: "nov. 2023 - abr. 2024",
         location: "Ohio · En remoto",
         achievements: [
           "Contribución activa a proyectos Open Source en MERN Stack, colaborando con desarrolladores de diferentes husos horarios.",
@@ -393,7 +393,7 @@ export const translations = {
         ],
       },
       {
-        title: "Web3 Developer",
+        title: "Frontend Developer",
         company: "ENO Network",
         period: "Nov 2024 - Apr 2025",
         location: "Remote",
@@ -426,7 +426,7 @@ export const translations = {
       {
         title: "Frontend Web Developer",
         company: "TUBLIAN",
-        period: "Mar 2024 - Apr 2024",
+        period: "Nov 2023 - Apr 2024",
         location: "Ohio · Remote",
         achievements: [
           "Active contribution to Open Source projects in MERN Stack, collaborating with developers across different time zones.",
