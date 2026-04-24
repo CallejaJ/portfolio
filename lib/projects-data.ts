@@ -189,7 +189,7 @@ export const projects: Project[] = [
       "OpenAI API",
     ],
     github: "https://github.com/CallejaJ",
-    demo: "https://docudid.vercel.app",
+    demo: "https://lexty.vercel.app/",
     featured: true,
   },
   {
