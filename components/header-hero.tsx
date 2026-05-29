@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { Zap, Mail, Linkedin, Github, FileText } from "lucide-react";
+import { Zap, Mail, Linkedin, Github, Download } from "lucide-react";
 
 const HeroSection = ({ language, t }: any) => {
   const personalInfo = {
@@ -79,13 +79,20 @@ const HeroSection = ({ language, t }: any) => {
             className="border-2 border-border bg-card/80 text-foreground hover:bg-muted/50 hover:border-primary px-8 py-6 text-lg font-semibold backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
           >
             <a
-              href={language === "es" ? "/cv_es_ats.html" : "/cv_en_ats.html"}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={
+                language === "es"
+                  ? "/cv_es_jorge_calleja.pdf"
+                  : "/cv_en_jorge_calleja.pdf"
+              }
+              download={
+                language === "es"
+                  ? "CV_Jorge_Calleja_ES.pdf"
+                  : "CV_Jorge_Calleja_EN.pdf"
+              }
               className="flex items-center gap-2"
             >
-              <FileText size={20} />
-              {t.viewCV}
+              <Download size={20} />
+              {t.downloadCV}
             </a>
           </Button>
 

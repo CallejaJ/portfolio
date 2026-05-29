@@ -36,6 +36,7 @@ export const translations = {
       "Arquitectura Blockchain · Agentes IA · Optimización de Rendimiento",
     viewProjects: "Ver Proyectos",
     viewCV: "Ver CV",
+    downloadCV: "Descargar CV",
     contact: "Contactar",
     nav: {
       projects: "Proyectos",
@@ -245,6 +246,7 @@ export const translations = {
     highlight: "Blockchain Architecture · AI Agents · Performance Optimization",
     viewProjects: "View Projects",
     viewCV: "View CV",
+    downloadCV: "Download CV",
     contact: "Contact",
     nav: {
       projects: "Projects",
