@@ -104,9 +104,9 @@ export const techMap: Record<string, TechItem> = {
   Instagrapi: { slug: "instagram", label: "Instagrapi" },
 
   // Crypto & Web3
-  Solidity: { slug: "solidity", label: "Solidity" },
-  "Solidity 0.8": { slug: "solidity", label: "Solidity 0.8" },
-  "Solidity 0.8.20": { slug: "solidity", label: "Solidity" },
+  Solidity: { slug: "solidity", label: "Solidity", isDarkLogo: true },
+  "Solidity 0.8": { slug: "solidity", label: "Solidity 0.8", isDarkLogo: true },
+  "Solidity 0.8.20": { slug: "solidity", label: "Solidity", isDarkLogo: true },
   "Safe (Smart Accounts)": {
     icon: WalletCards,
     label: "Safe (Smart Accounts)",
