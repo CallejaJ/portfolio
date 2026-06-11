@@ -20,7 +20,6 @@ import {
   Smartphone,
   AudioWaveform,
   Brush,
-  WalletCards,
   Timer,
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
@@ -108,10 +107,10 @@ export const techMap: Record<string, TechItem> = {
   "Solidity 0.8": { slug: "solidity", label: "Solidity 0.8", isDarkLogo: true },
   "Solidity 0.8.20": { slug: "solidity", label: "Solidity", isDarkLogo: true },
   "Safe (Smart Accounts)": {
-    icon: WalletCards,
+    path: "/icons/safe.png",
     label: "Safe (Smart Accounts)",
   },
-  "ERC-4337": { icon: Shield, label: "ERC-4337" },
+  "ERC-4337": { path: "/icons/erc4337.png", label: "ERC-4337" },
   Foundry: { icon: Box, label: "Foundry" },
   "PKI X.509": { icon: Shield, label: "PKI X.509" },
   "Web3.js": { slug: "web3dotjs", label: "Web3.js" },
