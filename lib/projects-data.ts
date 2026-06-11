@@ -15,7 +15,8 @@ export type ProjectKey =
   | "tuvozamiga"
   | "tuvozamiga"
   | "bachataAlAireLibre"
-  | "twitterBot";
+  | "twitterBot"
+  | "legacyWallet";
 
 export interface Project {
   id: number;
@@ -29,6 +30,25 @@ export interface Project {
 
 export const projects: Project[] = [
   // Web3 Projects (Priority)
+  {
+    id: 17,
+    titleKey: "legacyWallet",
+    image: "/images/legacy-wallet.png",
+    technologies: [
+      "Solidity 0.8",
+      "Safe (Smart Accounts)",
+      "ERC-4337",
+      "TypeScript",
+      "React 18",
+      "Node.js",
+      "Foundry",
+      "PKI X.509",
+      "Ethereum Sepolia",
+    ],
+    github: "https://github.com/CallejaJ/legacy-wallet",
+    demo: "https://legacy-wallet-uma.vercel.app/",
+    featured: true,
+  },
   {
     id: 15,
     titleKey: "web3ArcadeShield",
@@ -287,22 +307,4 @@ export const projects: Project[] = [
     featured: true,
   },
 
-  {
-    id: 10,
-    titleKey: "retroGamehub",
-    image: "/images/retro_gamehub.jpg",
-    technologies: [
-      "Next.js 15",
-      "React 19",
-      "Supabase",
-      "Tailwind CSS 4",
-      "Lucide React",
-      "shadcn/ui",
-      "React Hook Form",
-      "Zod",
-    ],
-    github: "https://callejaj.github.io/retro-gamehub/",
-    demo: "https://retro-gamehub.vercel.app/",
-    featured: false,
-  },
 ];

@@ -17,7 +17,8 @@ export type ProjectKey =
   | "tuvozamiga"
   | "tuvozamiga"
   | "bachataAlAireLibre"
-  | "twitterBot";
+  | "twitterBot"
+  | "legacyWallet";
 
 export interface ProjectData {
   title: string;
@@ -159,6 +160,12 @@ export const translations = {
         description:
           "Bot automatizado de marketing en Twitter/X que gestiona publicaciones programadas, promociones de cursos y engagement con la comunidad. Desplegado en Koyeb con Express.js, utiliza Node-cron para la programación inteligente de contenido bilingüe (ES/EN).",
         metrics: "Automated Marketing + Twitter API v2 + Koyeb",
+      },
+      legacyWallet: {
+        title: "Legacy Wallet - Herencia Blockchain con Safe",
+        description:
+          "Módulo Safe para gestión de herencias digitales que combina validación notarial PKI (X.509), quórum multi-firma de herederos y reclamaciones gasless patrocinadas vía Safe Relay Kit (ERC-4337). Contratos en Solidity con Foundry, oráculo Node.js y dApp React desplegada en Ethereum Sepolia Testnet.",
+        metrics: "Safe Module + PKI X.509 + Gasless ERC-4337 + Quórum Multi-firma",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
@@ -369,6 +376,12 @@ export const translations = {
         description:
           "Automated Twitter/X marketing bot handling scheduled posts, course promotions, and community engagement. Deployed on Koyeb with Express.js, leveraging Node-cron for smart bilingual content scheduling (ES/EN).",
         metrics: "Automated Marketing + Twitter API v2 + Koyeb",
+      },
+      legacyWallet: {
+        title: "Legacy Wallet - Blockchain Inheritance with Safe",
+        description:
+          "A Safe module for digital inheritance management combining notarial PKI validation (X.509), multi-signature heir quorum, and gasless sponsored claims via Safe Relay Kit (ERC-4337). Solidity contracts with Foundry, Node.js oracle, and React dApp deployed on Ethereum Sepolia Testnet.",
+        metrics: "Safe Module + PKI X.509 + Gasless ERC-4337 + Multi-sig Quorum",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
