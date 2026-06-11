@@ -105,7 +105,15 @@ export const techMap: Record<string, TechItem> = {
 
   // Crypto & Web3
   Solidity: { slug: "solidity", label: "Solidity" },
+  "Solidity 0.8": { slug: "solidity", label: "Solidity 0.8" },
   "Solidity 0.8.20": { slug: "solidity", label: "Solidity" },
+  "Safe (Smart Accounts)": {
+    icon: WalletCards,
+    label: "Safe (Smart Accounts)",
+  },
+  "ERC-4337": { icon: Shield, label: "ERC-4337" },
+  Foundry: { icon: Box, label: "Foundry" },
+  "PKI X.509": { icon: Shield, label: "PKI X.509" },
   "Web3.js": { slug: "web3dotjs", label: "Web3.js" },
   "Ethers.js": { slug: "ethers", icon: Code2, label: "Ethers.js" },
   Hardhat: { path: "/icons/hardhat.png", label: "Hardhat" },
