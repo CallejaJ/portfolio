@@ -62,4 +62,35 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: Re
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="es" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }}
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <style>{`
+          html {
+            font-family: ${GeistSans.style.fontFamily};
+            --font-sans: ${GeistSans.variable};
+            --font-mono: ${GeistMono.variable};
+          }
+        `}</style>
+      </head>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}

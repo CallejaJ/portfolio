@@ -618,4 +618,108 @@ export const translations = {
         description:
           "Virtual companion web application that combats unwanted loneliness through active listening and empathetic conversation 24/7. Features ultra-low latency real-time audio processing, reactive waveform visualizer using Web Audio API and Canvas, all with 100% Spanish interface optimized for accessibility.",
         metrics:
-          "Ultra-low latency + Real-time audio visualization + Empathetic
+          "Ultra-low latency + Real-time audio visualization + Empathetic AI",
+      },
+      bachataAlAireLibre: {
+        title: "Bachata al Aire Libre - High-Performance Landing Page",
+        description:
+          "Modern and optimized landing page for outdoor bachata and salsa classes in Malaga. Achieves exceptional scores in performance, accessibility, and SEO. Includes PWA, multi-language system, music player, animated photo gallery, real testimonials, and Google Maps integration.",
+        metrics: "High Performance + PWA + Multi-language + SEO",
+      },
+      malagaPremiumTransfers: {
+        title: "Málaga Premium Transfers - Corporate & SEO Website",
+        description:
+          "High-performance website for an exclusive private transport service in Costa del Sol. Built with Astro and Tailwind CSS 4 for maximum speed (SSG). Features dynamic SEO routing for automatic landing page generation by destination, detailed fleet catalog, and direct booking.",
+        metrics: "Astro SSG + Dynamic SEO + High-End UI",
+      },
+      twitterBot: {
+        title: "Memento Academy Twitter Bot",
+        description:
+          "Automated Twitter/X marketing bot handling scheduled posts, course promotions, and community engagement. Deployed on Koyeb with Express.js, leveraging Node-cron for smart bilingual content scheduling (ES/EN).",
+        metrics: "Automated Marketing + Twitter API v2 + Koyeb",
+      },
+      legacyWallet: {
+        title: "Legacy Wallet - Blockchain Inheritance with Safe",
+        description:
+          "A Safe module for digital inheritance management combining notarial PKI validation (X.509), multi-signature heir quorum, and gasless sponsored claims via Safe Relay Kit (ERC-4337). Solidity contracts with Foundry, Node.js oracle, and React dApp deployed on Ethereum Sepolia Testnet.",
+        metrics: "Safe Module + PKI X.509 + Gasless ERC-4337 + Multi-sig Quorum",
+      },
+    } as Record<ProjectKey, ProjectData>,
+    experienceItems: [
+      {
+        title: "Web3 Frontend Developer",
+        company: "Freelance",
+        period: "May 2025 - Present",
+        location: "Spain · Remote",
+        achievements: [
+          "Developing high-performance Web3 platforms with Next.js, achieving 99/100 Core Web Vitals scores.",
+          "Implemented 'Gasless' architecture via Privy, modifying the onboarding flow to reduce drop-off rates from 60% to 15%.",
+          "Architected AWS cloud infrastructure (S3, CloudFront, SES, CloudWatch, SNS) managed with Terraform IaC. Automated CI/CD with GitHub Actions using OIDC keyless authentication.",
+        ],
+      },
+      {
+        title: "Frontend Developer",
+        company: "LEXTY",
+        period: "Jun 2025 - Nov 2025",
+        location: "Remote",
+        achievements: [
+          "Engineered a scalable multi-tenant legal SaaS capable of supporting 50+ law firms simultaneously.",
+          "Integrated Generative AI (Alexia) reducing contract analysis time by 75% through optimized prompting pipelines.",
+          "Built i18n system supporting 40+ languages and a reusable component library. Configured automated CI/CD pipelines with Vercel and GitHub Actions.",
+        ],
+      },
+      {
+        title: "Frontend Developer",
+        company: "ENO Network",
+        period: "Oct 2024 - Apr 2025",
+        location: "Remote",
+        achievements: [
+          "Built the frontend of a Web3 platform with Next.js and React, integrating an ERC-721 NFT launchpad and marketplace.",
+          "Multichain wallet architecture (IOTA, Arbitrum, ENO) implementing provider abstraction for a unified experience.",
+          "WebSocket integration for real-time state updates, optimizing performance in high-latency networks.",
+        ],
+      },
+      {
+        title: "Lead Developer",
+        company: "Real Estate Start-Up",
+        period: "Apr 2024 - Oct 2024",
+        location: "Málaga · Remote",
+        achievements: [
+          "Led a team of 3 developers facilitating communication and conflict resolution in a remote environment.",
+          "Stack: Next.js, Node.js, web3.js, Sequelize.",
+          "Championed the adoption of Scrum methodologies and AI tools, improving team collaboration and efficiency.",
+        ],
+      },
+      {
+        title: "Frontend Web Developer",
+        company: "Freelancer.com",
+        period: "Nov 2023 - Jun 2024",
+        location: "United Kingdom · Remote",
+        achievements: [
+          "Development of web applications using React.js and Node.js, adapting to changing requirements of international clients.",
+        ],
+      },
+      {
+        title: "Frontend Web Developer",
+        company: "TUBLIAN",
+        period: "Jul 2023 - Mar 2024",
+        location: "Ohio · Remote",
+        achievements: [
+          "Active contribution to Open Source projects in MERN Stack, collaborating with developers across different time zones.",
+          "Implementation of components with React Hooks and containerization with Docker, learning and applying new technologies on the fly.",
+        ],
+      },
+      {
+        title: "Full Stack Developer Bootcamp",
+        company: "Polo Nacional de Contenidos Digitales de Málaga",
+        period: "Mar 2023 - Oct 2023",
+        location: "Málaga · On-site",
+        achievements: [
+          "600-hour web development bootcamp.",
+          "Final projects: ecommerce with 3D rendering for residential architecture and a time bank management platform.",
+          "Stack: React, Node.js, Express, MySQL, MongoDB, Docker, Jest, Cypress. Methodologies: Scrum and Kanban.",
+        ],
+      },
+    ],
+  },
+};
