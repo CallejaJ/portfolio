@@ -35,9 +35,25 @@ const businessJsonLd = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Jorge Calleja · Arreglo webs del Kit Digital que no funcionan | Desarrollo web Málaga",
   description:
     "¿Tu web del Kit Digital no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 48h. Webs rápidas (99/100), con estructura SEO y pensadas para conseguir clientes.",
+  openGraph: {
+    title: "Jorge Calleja · Arreglo webs del Kit Digital que no funcionan",
+    description:
+      "¿Tu web no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 48h, sin compromiso.",
+    url: SITE_URL,
+    siteName: "Jorge Calleja — Desarrollo Web",
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jorge Calleja · Arreglo webs del Kit Digital que no funcionan",
+    description:
+      "¿Tu web no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 48h, sin compromiso.",
+  },
   keywords: [
     "arreglar web kit digital",
     "diseño web Málaga",
