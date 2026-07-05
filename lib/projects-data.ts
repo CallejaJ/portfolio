@@ -16,7 +16,8 @@ export type ProjectKey =
   | "tuvozamiga"
   | "bachataAlAireLibre"
   | "twitterBot"
-  | "legacyWallet";
+  | "legacyWallet"
+  | "malagaPremiumTransfers";
 
 export interface Project {
   id: number;
@@ -271,6 +272,21 @@ export const projects: Project[] = [
   },
 
   // Other Projects
+  {
+    id: 18,
+    titleKey: "malagaPremiumTransfers",
+    image: "/images/malaga-premium-transfers.png",
+    technologies: [
+      "Astro v5",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Vite",
+      "Vercel",
+    ],
+    github: "https://github.com/CallejaJ",
+    demo: "https://malagapremiumtransfers.com",
+    featured: true,
+  },
   {
     id: 14,
     titleKey: "bachataAlAireLibre",

@@ -1,0 +1,30 @@
+# Jorge Calleja — Desarrollo Web (Málaga, España)
+
+> Desarrollador web freelance especializado en rescatar webs del programa Kit Digital que no funcionan: sin estructura, invisibles en Google o con botones rotos en móvil. Webs rápidas (99/100 en Lighthouse), con SEO técnico y optimizadas para buscadores con IA (GEO). Auditoría gratuita en 48 horas.
+
+## Servicios
+
+- **Rescate de webs del Kit Digital**: auditoría de la web entregada, conservación de dominio/textos/fotos y reconstrucción de estructura, velocidad y funcionalidad móvil.
+- **Webs nuevas pensadas para vender**: diseño desde cero orientado a conversión (llamadas y mensajes), carga instantánea, mobile-first.
+- **Posicionamiento y velocidad**: SEO técnico, contenido estructurado, Core Web Vitals 99/100, con informe antes/después.
+- **GEO (Generative Engine Optimization)**: optimización para que ChatGPT, Perplexity y otros buscadores con IA entiendan y citen la web.
+
+## Cómo trabaja
+
+1. Contacto por WhatsApp (+34 649 53 00 22) con el enlace de la web.
+2. Auditoría gratuita en 48h con informe claro y sin tecnicismos.
+3. Presupuesto cerrado y plazo concreto.
+4. Entrega verificada en todos los dispositivos, con formación básica incluida.
+
+## Datos de contacto
+
+- Nombre: Jorge Calleja Pérez
+- Zona: Málaga, España (trabaja en remoto para toda España)
+- Email: callejaj@proton.me
+- WhatsApp: +34 649 53 00 22
+- LinkedIn: https://www.linkedin.com/in/callejaj
+- GitHub: https://github.com/CallejaJ
+
+## Experiencia demostrable
+
+Más de 20 webs y aplicaciones entregadas para negocios reales: despachos de abogados, empresas de transporte, academias, clases de baile y plataformas SaaS. Stack principal: Next.js, React, TypeScript, Tailwind CSS.

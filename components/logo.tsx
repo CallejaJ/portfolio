@@ -1,0 +1,66 @@
+"use client";
+import React from "react";
+
+// ============================================
+// LOGO CORPORATIVO: Cohete (despegue / visibilidad)
+// Gradiente de marca azul → púrpura, llama cyan
+// ============================================
+
+export const RocketLogo = ({
+  size = 40,
+  className = "",
+}: {
+  size?: number;
+  className?: string;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    aria-hidden="true"
+  >
+    <defs>
+      <linearGradient id="rocket-body" x1="14" y1="4" x2="36" y2="34" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stopColor="#3b82f6" />
+        <stop offset="1" stopColor="#9333ea" />
+      </linearGradient>
+      <linearGradient id="rocket-flame" x1="24" y1="33" x2="24" y2="45" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stopColor="#22d3ee" />
+        <stop offset="1" stopColor="#818cf8" stopOpacity="0" />
+      </linearGradient>
+    </defs>
+
+    {/* Estela de despegue */}
+    <path
+      d="M21.5 34 L24 45 L26.5 34 Z"
+      fill="url(#rocket-flame)"
+    />
+
+    {/* Aletas */}
+    <path d="M17 25 C13.5 27 11 31 10.5 35 C13.5 33.5 16 31.5 17.5 29.5 Z" fill="#9333ea" />
+    <path d="M31 25 C34.5 27 37 31 37.5 35 C34.5 33.5 32 31.5 30.5 29.5 Z" fill="#9333ea" />
+
+    {/* Cuerpo del cohete */}
+    <path
+      d="M24 3 C29.5 7.5 32 15 32 21.5 C32 26.5 30 30.5 28 33 L20 33 C18 30.5 16 26.5 16 21.5 C16 15 18.5 7.5 24 3 Z"
+      fill="url(#rocket-body)"
+    />
+
+    {/* Ventana */}
+    <circle cx="24" cy="17" r="4.2" fill="#0f0a1e" />
+    <circle cx="24" cy="17" r="2.8" fill="#22d3ee" />
+    <circle cx="25" cy="16" r="0.9" fill="white" opacity="0.85" />
+
+    {/* Brillo lateral */}
+    <path
+      d="M21 7 C19.5 10.5 18.8 15 18.8 20 C18.8 24.5 19.8 28.5 21 31 L20 33 C18 30.5 16 26.5 16 21.5 C16 15 18.5 7.5 24 3 C22.8 4.2 21.8 5.5 21 7 Z"
+      fill="white"
+      opacity="0.18"
+    />
+  </svg>
+);
+
+export default RocketLogo;

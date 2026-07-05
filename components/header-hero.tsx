@@ -2,151 +2,127 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
-import { Zap, Mail, Linkedin, Github, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { getWhatsAppLink } from "@/lib/site-config";
+import { WhatsAppIcon } from "./whatsapp-button";
 
-const HeroSection = ({ language, t }: any) => {
-  const personalInfo = {
-    name: "Jorge Calleja Pérez",
-    email: "callejaj@proton.me",
-    linkedin: "https://www.linkedin.com/in/callejaj",
-    github: "https://github.com/CallejaJ",
-  };
+const container = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.12 },
+  },
+};
 
+const item = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
+
+const HeroSection = ({ t }: any) => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Header fixed removido - Ahora en components/header.tsx */}
-
+    <section className="min-h-screen flex justify-center px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
-      <div className="max-w-6xl mx-auto text-center relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+      {/* Animated gradient blobs */}
+      <motion.div
+        aria-hidden="true"
+        className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-purple-500/20 blur-3xl"
+        animate={{ x: [0, 40, 0], y: [0, 30, 0] }}
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        aria-hidden="true"
+        className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-blue-500/20 blur-3xl"
+        animate={{ x: [0, -40, 0], y: [0, -30, 0] }}
+        transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="max-w-5xl mx-auto text-center relative z-10 pt-36 pb-16 md:pt-44 md:pb-24"
+      >
+        {/* Headline */}
+        <motion.h1
+          variants={item}
+          className="text-4xl md:text-6xl lg:text-[4.2rem] font-bold mb-6 leading-tight tracking-tight"
         >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 mt-20 md:mt-0 leading-tight">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              {personalInfo.name}
-            </span>
-          </h1>
+          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            {t.title}
+          </span>
+        </motion.h1>
 
-          <div className="flex flex-wrap justify-center gap-2 mb-6">
-            {t.title.split(" | ").map((role: string, index: number) => (
-              <Badge
-                key={index}
-                variant="outline"
-                className="text-sm py-1 px-3 border-border text-foreground"
-              >
-                {role}
-              </Badge>
-            ))}
-          </div>
+        <motion.p
+          variants={item}
+          className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed"
+        >
+          {t.description}
+        </motion.p>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-4xl mx-auto leading-relaxed">
-            {t.description}
-          </p>
-
-          <div className="relative overflow-hidden bg-gradient-to-r from-secondary/10 to-primary/10 border border-border px-4 py-3 md:py-2.5 rounded-2xl md:rounded-full inline-flex items-center gap-3 md:gap-2 mb-8 font-semibold text-sm backdrop-blur-sm hover:border-primary transition-all duration-300 max-w-xs md:max-w-none mx-auto text-left md:text-center">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 dark:from-blue-400/5 dark:to-purple-400/5 opacity-50"></div>
-            <div className="bg-card/50 p-1.5 rounded-full shrink-0">
-              <Zap className="w-4 h-4 text-primary relative z-10" />
-            </div>
-            <span className="relative z-10 text-foreground leading-tight">
-              {t.highlight}
-            </span>
-          </div>
-        </motion.div>
-
+        {/* CTAs */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          variants={item}
+          className="flex flex-col sm:flex-row flex-wrap justify-center items-stretch sm:items-center gap-4 mb-5 px-2"
         >
           <Button
             size="lg"
             asChild
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-6 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-          >
-            <a href="#projects">{t.viewProjects}</a>
-          </Button>
-
-          <Button
-            variant="outline"
-            size="lg"
-            asChild
-            className="border-2 border-border bg-card/80 text-foreground hover:bg-muted/50 hover:border-primary px-8 py-6 text-lg font-semibold backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            className="bg-[#25D366] hover:bg-[#1fbd5a] text-white border-0 px-8 py-6 text-lg font-semibold shadow-[0_8px_30px_rgba(37,211,102,0.35)] hover:shadow-[0_8px_40px_rgba(37,211,102,0.5)] transition-all duration-300 hover:scale-105 w-full sm:w-auto"
           >
             <a
-              href={
-                language === "es"
-                  ? "/cv_es_jorge_calleja.pdf"
-                  : "/cv_en_jorge_calleja.pdf"
-              }
-              download={
-                language === "es"
-                  ? "CV_Jorge_Calleja_ES.pdf"
-                  : "CV_Jorge_Calleja_EN.pdf"
-              }
-              className="flex items-center gap-2"
+              href={getWhatsAppLink(t.whatsappMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2"
             >
-              <Download size={20} />
-              {t.downloadCV}
-            </a>
-          </Button>
-
-          <Button
-            variant="outline"
-            size="lg"
-            asChild
-            className="border-2 border-border bg-card/80 text-foreground hover:bg-muted/50 hover:border-primary px-8 py-6 text-lg font-semibold backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-          >
-            <a
-              href="mailto:callejaj@proton.me"
-              className="flex items-center gap-2"
-            >
-              <Mail size={20} />
+              <WhatsAppIcon size={22} />
               {t.contact}
             </a>
           </Button>
+
+          <Button
+            variant="outline"
+            size="lg"
+            asChild
+            className="border-2 border-border bg-card/80 text-foreground hover:bg-muted/50 hover:border-primary px-8 py-6 text-lg font-semibold backdrop-blur-sm shadow-xl transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+          >
+            <a href="#projects" className="flex items-center justify-center gap-2">
+              {t.viewProjects}
+              <ArrowRight size={18} />
+            </a>
+          </Button>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="flex flex-wrap justify-center gap-6"
+        {/* Texto bajo los CTAs, mismo estilo que la descripción */}
+        <motion.p
+          variants={item}
+          className="text-base md:text-lg text-muted-foreground mb-14 max-w-3xl mx-auto leading-relaxed"
         >
-          <a
-            href={personalInfo.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
-          >
-            <Github size={20} />
-            <span className="hidden sm:inline font-medium">GitHub</span>
-          </a>
-          <a
-            href={personalInfo.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
-          >
-            <Linkedin size={20} />
-            <span className="hidden sm:inline font-medium">LinkedIn</span>
-          </a>
-          <a
-            href="mailto:callejaj@proton.me"
-            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300"
-          >
-            <Mail size={20} />
-            <span className="hidden sm:inline font-medium">
-              callejaj@proton.me
-            </span>
-          </a>
+          {t.heroBadge}
+        </motion.p>
+
+        {/* Stats strip */}
+        <motion.div
+          variants={item}
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
+        >
+          {t.heroStats.map((stat: any, i: number) => (
+            <motion.div
+              key={i}
+              whileHover={{ y: -4 }}
+              className="rounded-2xl border border-border bg-card/50 backdrop-blur-sm px-4 py-5 transition-colors hover:border-primary/50"
+            >
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                {stat.value}
+              </div>
+              <div className="text-xs md:text-sm text-muted-foreground mt-1 leading-tight">
+                {stat.label}
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

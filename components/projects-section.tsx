@@ -46,7 +46,7 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-2xl transition-all duration-300 border border-border bg-card overflow-hidden group">
+              <Card className="h-full hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] transition-all duration-300 border border-border/50 hover:border-primary/50 bg-card/50 overflow-hidden group">
                 <div className="relative overflow-hidden rounded-t-lg">
                   {/* Reemplazamos la imagen estática por la composición de iconos */}
                   <TechLogoComposition

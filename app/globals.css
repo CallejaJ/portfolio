@@ -28,15 +28,15 @@
   }
 
   .dark {
-    /* Deep Void Purple Background */
-    --background: 265 40% 5%;
+    /* Deep Void Purple Background - Lighter */
+    --background: 265 40% 8%;
     --foreground: 210 20% 98%;
 
     /* Slightly lighter dark purple for cards */
-    --card: 265 35% 8%;
+    --card: 265 35% 11%;
     --card-foreground: 210 20% 98%;
 
-    --popover: 265 35% 8%;
+    --popover: 265 35% 11%;
     --popover-foreground: 210 20% 98%;
 
     /* Electric Purple */
@@ -47,17 +47,17 @@
     --secondary: 180 100% 50%;
     --secondary-foreground: 265 40% 10%;
 
-    --muted: 265 30% 15%;
-    --muted-foreground: 260 20% 65%;
+    --muted: 265 30% 18%;
+    --muted-foreground: 260 20% 70%;
 
-    --accent: 265 30% 15%;
+    --accent: 265 30% 18%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    /* Purple tinted border */
-    --border: 290 50% 20%;
+    /* Purple tinted border - More visible */
+    --border: 290 40% 25%;
     --input: 265 30% 15%;
     --ring: 265 90% 65%;
   }
