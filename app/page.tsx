@@ -38,7 +38,7 @@ type BgKey = keyof typeof backgrounds;
 
 export default function JorgeLanding() {
   const [language, setLanguage] = useState("es");
-  const [bg, setBg] = useState<BgKey>("liftoff");
+  const [bg, setBg] = useState<BgKey>("growth");
   const t = translations[language as keyof typeof translations];
   const Background = backgrounds[bg].component;
 
@@ -57,6 +57,7 @@ export default function JorgeLanding() {
       <FloatingWhatsApp t={t} />
 
       {/* ── Selector temporal de fondos: BORRAR al decidir ── */}
+      {/*
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex gap-1 rounded-full border border-border bg-card/90 backdrop-blur-sm p-1 shadow-xl">
         {(Object.keys(backgrounds) as BgKey[]).map((key, i) => (
           <button
@@ -73,6 +74,7 @@ export default function JorgeLanding() {
           </button>
         ))}
       </div>
+      */}
     </div>
   );
 }
