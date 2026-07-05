@@ -36,4 +36,8 @@ export default function JorgeLanding() {
       <ProjectsSection t={t} projects={landingProjects} />
       <FaqSection t={t} />
       <ContactSection t={t} language={language} />
-   
+      <Footer t={t} />
+      <FloatingWhatsApp t={t} />
+    </div>
+  );
+}
