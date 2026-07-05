@@ -155,4 +155,4 @@ const PainPointsSection = ({ t }: { t: any }) => {
   );
 };
 
-export default PainPointsSection;
+export default Pain

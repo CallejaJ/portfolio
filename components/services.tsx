@@ -65,6 +65,4 @@ const ServicesSection = ({ t }: { t: any }) => {
       </div>
     </section>
   );
-};
-
-export default ServicesSection;
+}
