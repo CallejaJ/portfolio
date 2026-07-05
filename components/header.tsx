@@ -62,7 +62,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-6">
           <ul className="flex items-center gap-6">
             {navItems.map((item) => (
               <li key={item.key}>
@@ -115,7 +115,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
         </nav>
 
         {/* Mobile Controls */}
-        <div className="flex md:hidden items-center gap-3">
+        <div className="flex lg:hidden items-center gap-3">
           <div className="flex bg-card/50 backdrop-blur-sm rounded-full p-0.5 border border-border">
             <button
               onClick={() => setLanguage("es")}
@@ -158,7 +158,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
 
       {/* Mobile Menu - Web3 Style */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/70 backdrop-blur-xl border-b border-border shadow-2xl">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-background/70 backdrop-blur-xl border-b border-border shadow-2xl">
           <div className="relative">
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-purple-500/5 pointer-events-none"></div>

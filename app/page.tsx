@@ -43,7 +43,7 @@ export default function JorgeLanding() {
   const Background = backgrounds[bg].component;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Background key={bg} />
       <Header language={language} setLanguage={setLanguage} t={t} />
       <HeroSection t={t} />
