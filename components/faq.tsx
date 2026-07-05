@@ -30,7 +30,7 @@ const FaqSection = ({ t }: { t: any }) => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-14">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

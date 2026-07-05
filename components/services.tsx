@@ -9,7 +9,7 @@ const icons = [Wrench, Rocket, LineChart, Sparkles];
 const ServicesSection = ({ t }: { t: any }) => {
   return (
     <section className="py-24 relative" id="services">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

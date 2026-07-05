@@ -57,18 +57,19 @@ export default function JorgeLanding() {
       <FloatingWhatsApp t={t} />
 
       {/* ── Selector temporal de fondos: BORRAR al decidir ── */}
-      <div className="fixed bottom-5 left-5 z-50 flex gap-1.5 rounded-full border border-border bg-card/90 backdrop-blur-sm p-1.5 shadow-xl">
-        {(Object.keys(backgrounds) as BgKey[]).map((key) => (
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex gap-1 rounded-full border border-border bg-card/90 backdrop-blur-sm p-1 shadow-xl">
+        {(Object.keys(backgrounds) as BgKey[]).map((key, i) => (
           <button
             key={key}
             onClick={() => setBg(key)}
-            className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all ${
+            title={backgrounds[key].label}
+            className={`w-8 h-8 rounded-full text-xs font-bold transition-all ${
               bg === key
                 ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
                 : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            {backgrounds[key].label}
+            {i + 1}
           </button>
         ))}
       </div>

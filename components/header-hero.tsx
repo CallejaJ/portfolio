@@ -20,7 +20,7 @@ const item = {
 
 const HeroSection = ({ t }: any) => {
   return (
-    <section className="min-h-screen flex justify-center px-4 relative overflow-hidden">
+    <section className="min-h-screen flex justify-center px-6 relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
       {/* Animated gradient blobs */}

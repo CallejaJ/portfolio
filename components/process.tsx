@@ -10,7 +10,7 @@ const icons = [MessageCircle, FileSearch, Handshake, PartyPopper];
 const ProcessSection = ({ t }: { t: any }) => {
   return (
     <section className="py-24 bg-secondary/5 relative" id="process">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

@@ -23,7 +23,7 @@ const Footer = ({ t }: any) => {
 
   return (
     <footer className="bg-background text-foreground border-t border-border">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-14">
+      <div className="max-w-7xl mx-auto px-6 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Marca */}
           <div className="sm:col-span-2 lg:col-span-1">
@@ -137,7 +137,7 @@ const Footer = ({ t }: any) => {
 
       {/* Barra inferior */}
       <div className="border-t border-border">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-2">
           <p className="text-xs text-muted-foreground">
             &copy; {year} Jorge Calleja Pérez. {t.footer.rights}
           </p>

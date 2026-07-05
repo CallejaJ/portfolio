@@ -104,7 +104,7 @@ const PainPointItem = ({
 const PainPointsSection = ({ t }: { t: any }) => {
   return (
     <section className="pt-28 pb-24 bg-secondary/5 relative" id="pain-points">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

@@ -13,7 +13,7 @@ const ContactSection = ({ t }: any) => {
   return (
     <section
       id="contact"
-      className="py-24 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white relative overflow-hidden"
+      className="py-24 px-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white relative overflow-hidden"
     >
       {/* Decorative animated circles */}
       <motion.div
