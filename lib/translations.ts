@@ -29,7 +29,7 @@ export interface ProjectData {
 // Ahora exporta las traducciones
 export const translations = {
   es: {
-    title: "¿Pagaste el Kit Digital y tu web sigue sin traerte clientes?",
+    title: "¿Te hicieron la web con el Kit Digital y sigue sin traerte clientes?",
     description:
       "No eres el único. A miles de negocios les entregaron una web hecha en serie: sin estructura, invisible en Google y con botones que no funcionan desde el móvil. Mándame tu enlace, la reviso gratis y te digo exactamente qué está fallando.",
     highlight:
