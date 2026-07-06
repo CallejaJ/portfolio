@@ -21,7 +21,7 @@ import { translations } from "@/lib/translations";
 import { projects } from "@/lib/projects-data";
 
 // Proyectos relevantes para pymes y negocios locales (orden de aparición)
-const LANDING_PROJECT_IDS = [12, 18, 14, 13, 1, 11];
+const LANDING_PROJECT_IDS = [12, 18, 14, 13, 1, 11, 20, 10];
 const landingProjects = LANDING_PROJECT_IDS.map(
   (id) => projects.find((p) => p.id === id)!
 ).filter(Boolean);

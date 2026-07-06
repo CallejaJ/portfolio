@@ -18,7 +18,8 @@ export type ProjectKey =
   | "tuvozamiga"
   | "bachataAlAireLibre"
   | "twitterBot"
-  | "legacyWallet";
+  | "legacyWallet"
+  | "precioLuzHora";
 
 export interface ProjectData {
   title: string;
@@ -268,11 +269,10 @@ export const translations = {
         metrics: "AWS + Terraform IaC + GitHub Actions CI/CD",
       },
       tuvozamiga: {
-        title: "TUVOZAMIGA - Plataforma de Compañía Virtual con IA",
+        title: "TUVOZAMIGA - Compañía Virtual",
         description:
-          "Aplicación web de compañía virtual que combate la soledad no deseada mediante escucha activa y conversación empática 24/7. Implementa procesamiento de audio en tiempo real con latencia ultra baja, visualizador de ondas reactivo usando Web Audio API y Canvas, todo con interfaz 100% en español optimizada para accesibilidad.",
-        metrics:
-          "Latencia ultra baja + Visualización audio real-time + IA empática",
+          "Una aplicación web diseñada para combatir la soledad proporcionando una voz amigable y escucha activa impulsada por IA. Disponible 24/7 con latencia ultra baja y escucha empática.",
+        metrics: "Next.js 16 + Orga AI + Ultra-low Latency",
       },
       bachataAlAireLibre: {
         title: "Bachata al Aire Libre - Landing Page de Alto Rendimiento",
@@ -297,6 +297,12 @@ export const translations = {
         description:
           "Módulo Safe para gestión de herencias digitales que combina validación notarial PKI (X.509), quórum multi-firma de herederos y reclamaciones gasless patrocinadas vía Safe Relay Kit (ERC-4337). Contratos en Solidity con Foundry, oráculo Node.js y dApp React desplegada en Ethereum Sepolia Testnet.",
         metrics: "Safe Module + PKI X.509 + Gasless ERC-4337 + Quórum Multi-firma",
+      },
+      precioLuzHora: {
+        title: "Precio Luz Hora - Tracker PVPC y Optimizador",
+        description:
+          "Plataforma en tiempo real para rastrear el precio de la luz en España (PVPC) mediante la API de REE. Incluye gráficos interactivos, recomendaciones de ahorro y calculadoras de facturas de luz y gas. Destaca por su rendimiento excepcional (Astro 5) y optimización SEO/GEO avanzada.",
+        metrics: "Astro 5 + SEO Avanzado + Lighthouse 99/100",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
@@ -614,11 +620,10 @@ export const translations = {
         metrics: "AWS + Terraform IaC + GitHub Actions CI/CD",
       },
       tuvozamiga: {
-        title: "TUVOZAMIGA - Virtual Companion Platform with AI",
+        title: "TUVOZAMIGA - Virtual Companion",
         description:
-          "Virtual companion web application that combats unwanted loneliness through active listening and empathetic conversation 24/7. Features ultra-low latency real-time audio processing, reactive waveform visualizer using Web Audio API and Canvas, all with 100% Spanish interface optimized for accessibility.",
-        metrics:
-          "Ultra-low latency + Real-time audio visualization + Empathetic AI",
+          "A web application designed to combat loneliness by providing a friendly voice and active listening powered by AI. Always available 24/7 with ultra-low latency and empathetic listening.",
+        metrics: "Next.js 16 + Orga AI + Ultra-low Latency",
       },
       bachataAlAireLibre: {
         title: "Bachata al Aire Libre - High-Performance Landing Page",
@@ -643,6 +648,12 @@ export const translations = {
         description:
           "A Safe module for digital inheritance management combining notarial PKI validation (X.509), multi-signature heir quorum, and gasless sponsored claims via Safe Relay Kit (ERC-4337). Solidity contracts with Foundry, Node.js oracle, and React dApp deployed on Ethereum Sepolia Testnet.",
         metrics: "Safe Module + PKI X.509 + Gasless ERC-4337 + Multi-sig Quorum",
+      },
+      precioLuzHora: {
+        title: "Precio Luz Hora - PVPC Tracker & Optimizer",
+        description:
+          "Real-time platform to track Spanish electricity prices (PVPC) using the official REE API. Features interactive charts, smart energy-saving recommendations, and comprehensive bill calculators. Built for exceptional performance with Astro 5 and advanced SEO/GEO optimization.",
+        metrics: "Astro 5 + Advanced SEO + Lighthouse 99/100",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [

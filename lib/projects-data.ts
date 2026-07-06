@@ -17,7 +17,8 @@ export type ProjectKey =
   | "bachataAlAireLibre"
   | "twitterBot"
   | "legacyWallet"
-  | "malagaPremiumTransfers";
+  | "malagaPremiumTransfers"
+  | "precioLuzHora";
 
 export interface Project {
   id: number;
@@ -236,17 +237,31 @@ export const projects: Project[] = [
     image: "/images/tuvozamiga.png",
     technologies: [
       "Next.js 16",
-      "Canvas API",
+      "React 19",
       "Tailwind CSS 4",
+      "Orga AI",
+      "Radix UI",
       "Lucide React",
-      "shadcn/ui",
-      "Framer Motion",
-      "React Hook Form",
-      "Zod",
-      "Web Audio API",
     ],
     github: "https://github.com/CallejaJ/tuvozamiga",
     demo: "https://tuvozamiga.vercel.app",
+    featured: true,
+  },
+  {
+    id: 10,
+    titleKey: "retroGamehub",
+    image: "/images/placeholder.jpg",
+    technologies: [
+      "Next.js 15",
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Supabase",
+      "PostgreSQL",
+    ],
+    github: "https://github.com/CallejaJ/retro-gamehub",
+    demo: "",
     featured: true,
   },
   {
@@ -322,5 +337,20 @@ export const projects: Project[] = [
     demo: "https://smart-emeter-dashboard.vercel.app/",
     featured: true,
   },
-
+  {
+    id: 20,
+    titleKey: "precioLuzHora",
+    image: "/images/placeholder.jpg",
+    technologies: [
+      "Astro 5",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Recharts",
+      "REE API",
+    ],
+    github: "https://github.com/CallejaJ/precio-luz-hora",
+    demo: "https://precioluzhora.online",
+    featured: true,
+  },
 ];
