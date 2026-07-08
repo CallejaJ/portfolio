@@ -21,7 +21,7 @@ export type ProjectKey =
   | "legacyWallet"
   | "precioLuzHora"
   | "nitrileAffair"
-  | "bancoDelTiempoMalaga";
+  | "timeBankOnChain";
 
 export interface ProjectData {
   title: string;
@@ -312,11 +312,11 @@ export const translations = {
           "Landing page de una sola página para el proyecto musical Nitrile Affair, con reproductores de SoundCloud y Bandcamp embebidos, galería con lightbox, videos de YouTube e historial de directos verificado en Resident Advisor. Sin frameworks ni build step, con modo claro/oscuro persistente.",
         metrics: "Cero dependencias + Modo claro/oscuro + Embeds verificados",
       },
-      bancoDelTiempoMalaga: {
-        title: "Banco del Tiempo Málaga - Intercambio de Servicios",
+      timeBankOnChain: {
+        title: "Time Bank on Chain - Banco del Tiempo",
         description:
-          "Plataforma que conecta ofertas y demandas de usuarios donde la moneda de intercambio es el tiempo. Incluye autenticación JWT, validación de formularios con Formik-Yup, panel de solicitudes editables y mensajería entre usuarios, con API REST en Node.js/Express y base de datos MySQL.",
-        metrics: "JWT Auth + REST API + MySQL + Formik-Yup",
+          "Evolución en Next.js 16 del banco del tiempo original (React/Vite + Express + MySQL): los usuarios intercambian servicios usando el tiempo como moneda. Server Actions, transferencias de créditos atómicas con Prisma, autenticación JWT en cookie httpOnly y validación con Zod. Roadmap: créditos como token ERC-20 on-chain.",
+        metrics: "Next.js 16 + Prisma + Transferencias Atómicas + Roadmap ERC-20",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
@@ -675,11 +675,11 @@ export const translations = {
           "Single-page site for the electronic music project Nitrile Affair, featuring embedded SoundCloud and Bandcamp players, a lightbox gallery, YouTube videos, and a live performance history verified via Resident Advisor. Zero frameworks, no build step, with persistent light/dark mode.",
         metrics: "Zero dependencies + Light/Dark mode + Verified embeds",
       },
-      bancoDelTiempoMalaga: {
-        title: "Banco del Tiempo Málaga - Time-Based Exchange",
+      timeBankOnChain: {
+        title: "Time Bank on Chain - Time-Based Exchange",
         description:
-          "Platform connecting user offers and demands where the exchange currency is time. Features JWT authentication, form validation with Formik-Yup, an editable request dashboard, and user-to-user messaging, backed by a Node.js/Express REST API and MySQL database.",
-        metrics: "JWT Auth + REST API + MySQL + Formik-Yup",
+          "Next.js 16 evolution of the original time bank (React/Vite + Express + MySQL): users exchange services using time as currency. Server Actions, atomic credit transfers with Prisma, JWT auth in httpOnly cookies, and Zod validation. Roadmap: time credits as an on-chain ERC-20 token.",
+        metrics: "Next.js 16 + Prisma + Atomic Transfers + ERC-20 Roadmap",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [

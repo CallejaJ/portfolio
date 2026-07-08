@@ -20,7 +20,7 @@ export type ProjectKey =
   | "malagaPremiumTransfers"
   | "precioLuzHora"
   | "nitrileAffair"
-  | "bancoDelTiempoMalaga";
+  | "timeBankOnChain";
 
 export interface Project {
   id: number;
@@ -373,20 +373,20 @@ export const projects: Project[] = [
   },
   {
     id: 22,
-    titleKey: "bancoDelTiempoMalaga",
+    titleKey: "timeBankOnChain",
     image: "/images/placeholder.jpg",
     technologies: [
-      "React",
-      "Vite",
-      "Material UI",
-      "Formik-Yup",
-      "Node.js",
-      "Express",
-      "MySQL",
+      "Next.js 16",
+      "React 19",
+      "Prisma 6",
+      "PostgreSQL",
+      "Tailwind CSS 4",
+      "shadcn/ui",
+      "Zod",
       "JWT",
     ],
-    github: "https://github.com/CallejaJ/bancodeltiempomalaga",
-    demo: "https://github.com/CallejaJ/bancodeltiempomalaga",
+    github: "https://github.com/CallejaJ/timebankonchain",
+    demo: "https://timebankonchain-six.vercel.app",
     featured: true,
   },
 ];
