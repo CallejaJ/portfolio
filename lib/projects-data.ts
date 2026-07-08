@@ -261,7 +261,7 @@ export const projects: Project[] = [
       "PostgreSQL",
     ],
     github: "https://github.com/CallejaJ/retro-gamehub",
-    demo: "",
+    demo: "https://retrogamehub.vercel.app",
     featured: true,
   },
   {
