@@ -18,7 +18,9 @@ export type ProjectKey =
   | "twitterBot"
   | "legacyWallet"
   | "malagaPremiumTransfers"
-  | "precioLuzHora";
+  | "precioLuzHora"
+  | "nitrileAffair"
+  | "bancoDelTiempoMalaga";
 
 export interface Project {
   id: number;
@@ -351,6 +353,40 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/precio-luz-hora",
     demo: "https://precioluzhora.online",
+    featured: true,
+  },
+  {
+    id: 21,
+    titleKey: "nitrileAffair",
+    image: "/images/placeholder.jpg",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript Vanilla",
+      "SoundCloud Widget",
+      "Bandcamp Embed",
+      "YouTube Embed",
+    ],
+    github: "https://github.com/CallejaJ/nitrile-affair",
+    demo: "https://nitrile-affair.vercel.app/",
+    featured: true,
+  },
+  {
+    id: 22,
+    titleKey: "bancoDelTiempoMalaga",
+    image: "/images/placeholder.jpg",
+    technologies: [
+      "React",
+      "Vite",
+      "Material UI",
+      "Formik-Yup",
+      "Node.js",
+      "Express",
+      "MySQL",
+      "JWT",
+    ],
+    github: "https://github.com/CallejaJ/bancodeltiempomalaga",
+    demo: "https://github.com/CallejaJ/bancodeltiempomalaga",
     featured: true,
   },
 ];

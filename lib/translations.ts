@@ -19,7 +19,9 @@ export type ProjectKey =
   | "bachataAlAireLibre"
   | "twitterBot"
   | "legacyWallet"
-  | "precioLuzHora";
+  | "precioLuzHora"
+  | "nitrileAffair"
+  | "bancoDelTiempoMalaga";
 
 export interface ProjectData {
   title: string;
@@ -303,6 +305,18 @@ export const translations = {
         description:
           "Plataforma en tiempo real para rastrear el precio de la luz en España (PVPC) mediante la API de REE. Incluye gráficos interactivos, recomendaciones de ahorro y calculadoras de facturas de luz y gas. Destaca por su rendimiento excepcional (Astro 5) y optimización SEO/GEO avanzada.",
         metrics: "Astro 5 + SEO Avanzado + Lighthouse 99/100",
+      },
+      nitrileAffair: {
+        title: "Nitrile Affair - Sitio de Artista Electrónico",
+        description:
+          "Landing page de una sola página para el proyecto musical Nitrile Affair, con reproductores de SoundCloud y Bandcamp embebidos, galería con lightbox, videos de YouTube e historial de directos verificado en Resident Advisor. Sin frameworks ni build step, con modo claro/oscuro persistente.",
+        metrics: "Cero dependencias + Modo claro/oscuro + Embeds verificados",
+      },
+      bancoDelTiempoMalaga: {
+        title: "Banco del Tiempo Málaga - Intercambio de Servicios",
+        description:
+          "Plataforma que conecta ofertas y demandas de usuarios donde la moneda de intercambio es el tiempo. Incluye autenticación JWT, validación de formularios con Formik-Yup, panel de solicitudes editables y mensajería entre usuarios, con API REST en Node.js/Express y base de datos MySQL.",
+        metrics: "JWT Auth + REST API + MySQL + Formik-Yup",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
@@ -654,6 +668,18 @@ export const translations = {
         description:
           "Real-time platform to track Spanish electricity prices (PVPC) using the official REE API. Features interactive charts, smart energy-saving recommendations, and comprehensive bill calculators. Built for exceptional performance with Astro 5 and advanced SEO/GEO optimization.",
         metrics: "Astro 5 + Advanced SEO + Lighthouse 99/100",
+      },
+      nitrileAffair: {
+        title: "Nitrile Affair - Electronic Artist Website",
+        description:
+          "Single-page site for the electronic music project Nitrile Affair, featuring embedded SoundCloud and Bandcamp players, a lightbox gallery, YouTube videos, and a live performance history verified via Resident Advisor. Zero frameworks, no build step, with persistent light/dark mode.",
+        metrics: "Zero dependencies + Light/Dark mode + Verified embeds",
+      },
+      bancoDelTiempoMalaga: {
+        title: "Banco del Tiempo Málaga - Time-Based Exchange",
+        description:
+          "Platform connecting user offers and demands where the exchange currency is time. Features JWT authentication, form validation with Formik-Yup, an editable request dashboard, and user-to-user messaging, backed by a Node.js/Express REST API and MySQL database.",
+        metrics: "JWT Auth + REST API + MySQL + Formik-Yup",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
