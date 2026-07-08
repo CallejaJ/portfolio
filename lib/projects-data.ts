@@ -51,7 +51,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/legacy-wallet",
     demo: "https://legacy-wallet-uma.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 15,
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/web3-arcade-shield",
     demo: "https://web3arcade.xyz/",
-    featured: true,
+    featured: false,
   },
   {
     id: 9,
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/brand-genesis-ai",
     demo: "https://brand-genesis-ai.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 16,
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     technologies: ["Node.js", "Express.js", "Twitter API v2", "Koyeb", "Cron"],
     github: "https://github.com/CallejaJ/twitter-bot",
     demo: "https://memento-academy-bot.koyeb.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 11,
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/Memento-Academy",
     demo: "https://memento-academy.com/",
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -128,7 +128,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/token-swap",
     demo: "https://gasless-token-swap.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 5,
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/lumina",
     demo: "https://luminanft.vercel.app",
-    featured: true,
+    featured: false,
   },
   {
     id: 6,
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/tokenbricks",
     demo: "https://tokenbricks.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ",
     demo: "https://staking-dubai.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
@@ -194,7 +194,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/crypto-tracker",
     demo: "https://crypto-tracker-memento.vercel.app",
-    featured: true,
+    featured: false,
   },
 
   // Enterprise & AI Solutions
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ",
     demo: "https://lexty.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 7,
@@ -231,7 +231,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ",
     demo: "https://instagoal.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 13,
@@ -247,7 +247,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/tuvozamiga",
     demo: "https://tuvozamiga.vercel.app",
-    featured: true,
+    featured: false,
   },
   {
     id: 10,
@@ -264,7 +264,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/retro-gamehub",
     demo: "https://retrogamehub.vercel.app",
-    featured: true,
+    featured: false,
   },
   {
     id: 12,
@@ -285,7 +285,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ",
     demo: "https://anarodriguezabogados.vercel.app/",
-    featured: true,
+    featured: false,
   },
 
   // Other Projects
@@ -337,7 +337,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/smart-meter-dashboard",
     demo: "https://smart-emeter-dashboard.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 20,
@@ -353,7 +353,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/precio-luz-hora",
     demo: "https://precioluzhora.online",
-    featured: true,
+    featured: false,
   },
   {
     id: 21,
@@ -369,7 +369,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/nitrile-affair",
     demo: "https://nitrile-affair.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     id: 22,
