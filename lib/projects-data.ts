@@ -252,7 +252,7 @@ export const projects: Project[] = [
   {
     id: 10,
     titleKey: "retroGamehub",
-    image: "/images/placeholder.jpg",
+    image: "/images/retro-gamehub.png",
     technologies: [
       "Next.js 15",
       "React 18",
@@ -342,7 +342,7 @@ export const projects: Project[] = [
   {
     id: 20,
     titleKey: "precioLuzHora",
-    image: "/images/placeholder.jpg",
+    image: "/images/precio-luz-hora.png",
     technologies: [
       "Astro 5",
       "React 19",
@@ -358,7 +358,7 @@ export const projects: Project[] = [
   {
     id: 21,
     titleKey: "nitrileAffair",
-    image: "/images/placeholder.jpg",
+    image: "/images/nitrile-affair.png",
     technologies: [
       "HTML5",
       "CSS3",
@@ -374,7 +374,7 @@ export const projects: Project[] = [
   {
     id: 22,
     titleKey: "timeBankOnChain",
-    image: "/images/placeholder.jpg",
+    image: "/images/timebank.png",
     technologies: [
       "Next.js 16",
       "React 19",

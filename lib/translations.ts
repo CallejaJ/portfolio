@@ -260,10 +260,10 @@ export const translations = {
         metrics: "Gemini 2.0 Flash + 1500+ Icons + Gasless Minting",
       },
       retroGamehub: {
-        title: "Retro Gamehub - Centro de Juegos Clásicos",
+        title: "Retro Gamehub — Sala de juegos online",
         description:
-          "Plataforma de juegos retro con integración de comentarios y rankings persistentes a través de Supabase. Permite a los usuarios interactuar y competir en un entorno clásico.",
-        metrics: "Comunidad activa con 100+ usuarios",
+          "Una sala de juegos clásicos donde la gente compite, comenta y vuelve: rankings en vivo y una comunidad de más de 100 jugadores. La prueba de que una web puede ser un sitio al que apetece volver cada día.",
+        metrics: "Comunidad de +100 jugadores",
       },
       mementoAcademy: {
         title: "Memento Academy — Academia online",
@@ -302,22 +302,22 @@ export const translations = {
         metrics: "Safe Module + PKI X.509 + Gasless ERC-4337 + Quórum Multi-firma",
       },
       precioLuzHora: {
-        title: "Precio Luz Hora - Tracker PVPC y Optimizador",
+        title: "Precio Luz Hora — Ahorro en la factura de la luz",
         description:
-          "Plataforma en tiempo real para rastrear el precio de la luz en España (PVPC) mediante la API de REE. Incluye gráficos interactivos, recomendaciones de ahorro y calculadoras de facturas de luz y gas. Destaca por su rendimiento excepcional (Astro 5) y optimización SEO/GEO avanzada.",
-        metrics: "Astro 5 + SEO Avanzado + Lighthouse 99/100",
+          "Web que muestra el precio de la luz hora a hora, directamente de la fuente oficial, y te dice cuándo poner la lavadora para pagar menos. Con calculadoras de factura y consejos de ahorro. Miles de visitas gracias a estar en primera página de Google.",
+        metrics: "Precio de la luz en tiempo real",
       },
       nitrileAffair: {
-        title: "Nitrile Affair - Sitio de Artista Electrónico",
+        title: "Nitrile Affair — Web de artista musical",
         description:
-          "Landing page de una sola página para el proyecto musical Nitrile Affair, con reproductores de SoundCloud y Bandcamp embebidos, galería con lightbox, videos de YouTube e historial de directos verificado en Resident Advisor. Sin frameworks ni build step, con modo claro/oscuro persistente.",
-        metrics: "Cero dependencias + Modo claro/oscuro + Embeds verificados",
+          "La web de un artista electrónico con toda su música en un solo sitio: reproductores de SoundCloud y Bandcamp, vídeos, galería y su historial de directos verificado. Carga al instante en cualquier dispositivo.",
+        metrics: "Toda su música en un solo enlace",
       },
       timeBankOnChain: {
-        title: "Time Bank on Chain - Banco del Tiempo",
+        title: "Time Bank — Banco del tiempo",
         description:
-          "Evolución en Next.js 16 del banco del tiempo original (React/Vite + Express + MySQL): los usuarios intercambian servicios usando el tiempo como moneda. Server Actions, transferencias de créditos atómicas con Prisma, autenticación JWT en cookie httpOnly y validación con Zod. Roadmap: créditos como token ERC-20 on-chain.",
-        metrics: "Next.js 16 + Prisma + Transferencias Atómicas + Roadmap ERC-20",
+          "Una comunidad donde los usuarios intercambian servicios usando el tiempo como moneda: das una hora de clases, recibes una hora de fontanería. Los créditos se transfieren de forma segura y el saldo nunca falla.",
+        metrics: "Intercambio de servicios por horas",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
@@ -624,10 +624,10 @@ export const translations = {
         metrics: "Gemini 2.0 Flash + 1500+ Icons + Gasless Minting",
       },
       retroGamehub: {
-        title: "Retro Gamehub - Classic Games Center",
+        title: "Retro Gamehub — Online arcade",
         description:
-          "Retro gaming platform with persistent comments and rankings integrated via Supabase.",
-        metrics: "Active community with 100+ users",
+          "A classic games arcade where people compete, comment, and come back: live rankings and a community of 100+ players. Proof that a website can be a place people return to daily.",
+        metrics: "Community of 100+ players",
       },
       mementoAcademy: {
         title: "Memento Academy — Online academy",
@@ -666,22 +666,22 @@ export const translations = {
         metrics: "Safe Module + PKI X.509 + Gasless ERC-4337 + Multi-sig Quorum",
       },
       precioLuzHora: {
-        title: "Precio Luz Hora - PVPC Tracker & Optimizer",
+        title: "Precio Luz Hora — Save on electricity bills",
         description:
-          "Real-time platform to track Spanish electricity prices (PVPC) using the official REE API. Features interactive charts, smart energy-saving recommendations, and comprehensive bill calculators. Built for exceptional performance with Astro 5 and advanced SEO/GEO optimization.",
-        metrics: "Astro 5 + Advanced SEO + Lighthouse 99/100",
+          "A website showing Spain's electricity price hour by hour, straight from the official source, telling you when to run appliances to pay less. With bill calculators and saving tips. Thousands of visits thanks to ranking on Google's first page.",
+        metrics: "Real-time electricity prices",
       },
       nitrileAffair: {
-        title: "Nitrile Affair - Electronic Artist Website",
+        title: "Nitrile Affair — Music artist website",
         description:
-          "Single-page site for the electronic music project Nitrile Affair, featuring embedded SoundCloud and Bandcamp players, a lightbox gallery, YouTube videos, and a live performance history verified via Resident Advisor. Zero frameworks, no build step, with persistent light/dark mode.",
-        metrics: "Zero dependencies + Light/Dark mode + Verified embeds",
+          "An electronic artist's website with all his music in one place: SoundCloud and Bandcamp players, videos, gallery, and a verified live-performance history. Loads instantly on any device.",
+        metrics: "All his music in one link",
       },
       timeBankOnChain: {
-        title: "Time Bank on Chain - Time-Based Exchange",
+        title: "Time Bank — Time-based exchange",
         description:
-          "Next.js 16 evolution of the original time bank (React/Vite + Express + MySQL): users exchange services using time as currency. Server Actions, atomic credit transfers with Prisma, JWT auth in httpOnly cookies, and Zod validation. Roadmap: time credits as an on-chain ERC-20 token.",
-        metrics: "Next.js 16 + Prisma + Atomic Transfers + ERC-20 Roadmap",
+          "A community where users trade services using time as currency: teach one hour of classes, receive one hour of plumbing. Credits transfer securely and balances never fail.",
+        metrics: "Service exchange by the hour",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
