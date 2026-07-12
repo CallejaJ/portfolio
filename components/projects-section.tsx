@@ -10,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Project } from "@/lib/projects-data";
 
 interface ProjectsSectionProps {
@@ -59,15 +58,12 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
                     src={project.image}
                     alt={t.projects[project.titleKey].title}
                     fill
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-[1.03]"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-                  {/* Beneficio destacado sobre la imagen */}
-                  {t.projects[project.titleKey].metrics && (
-                    <Badge className="absolute top-4 right-4 bg-background/85 text-foreground border border-border backdrop-blur-sm shadow-lg text-xs px-3 py-1">
-                      {t.projects[project.titleKey].metrics}
-                    </Badge>
-                  )}
+                  {/* Duotono azul/lila (colores del logo); al hover se revelan los colores reales */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 mix-blend-color opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-700/30 to-purple-600/30 mix-blend-multiply opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"></div>
                   {/* Indicador de "ver web" al hover */}
                   <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/85 backdrop-blur-sm border border-border text-sm font-semibold text-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <ExternalLink size={15} />
