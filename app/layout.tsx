@@ -12,7 +12,7 @@ const businessJsonLd = {
   "@type": "ProfessionalService",
   name: "Jorge Calleja — Desarrollo Web",
   description:
-    "Desarrollo web para pymes y autónomos: rescate de webs del Kit Digital, webs nuevas pensadas para vender, SEO técnico, velocidad 99/100 y optimización para buscadores con IA (GEO). Auditoría gratuita en 48h.",
+    "Desarrollo web para pymes y autónomos: rescate de webs del Kit Digital, webs nuevas pensadas para vender, SEO técnico, velocidad 99/100 y optimización para buscadores con IA (GEO). Auditoría gratuita en 24h.",
   url: SITE_URL,
   email: CONTACT_EMAIL,
   telephone: "+34649530022",
@@ -43,11 +43,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Jorge Calleja · Arreglo webs del Kit Digital que no funcionan | Desarrollo web Málaga",
   description:
-    "¿Tu web del Kit Digital no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 48h. Webs rápidas (99/100), con estructura SEO y pensadas para conseguir clientes.",
+    "¿Tu web del Kit Digital no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 24h. Webs rápidas (99/100), con estructura SEO y pensadas para conseguir clientes.",
   openGraph: {
     title: "Jorge Calleja · Arreglo webs del Kit Digital que no funcionan",
     description:
-      "¿Tu web no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 48h, sin compromiso.",
+      "¿Tu web no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 24h, sin compromiso.",
     url: SITE_URL,
     siteName: "Jorge Calleja — Desarrollo Web",
     locale: "es_ES",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jorge Calleja · Arreglo webs del Kit Digital que no funcionan",
     description:
-      "¿Tu web no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 48h, sin compromiso.",
+      "¿Tu web no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 24h, sin compromiso.",
   },
   keywords: [
     "arreglar web kit digital",

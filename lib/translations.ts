@@ -36,12 +36,12 @@ export const translations = {
     description:
       "No eres el único. A miles de negocios les entregaron una web hecha en serie: sin estructura, invisible en Google y con botones que no funcionan desde el móvil. Mándame tu enlace, la reviso gratis y te digo exactamente qué está fallando.",
     highlight:
-      "Auditoría gratuita en 48h · Sin compromiso · Te lo explico sin tecnicismos",
+      "Auditoría gratuita en 24h · Sin compromiso · Te lo explico sin tecnicismos",
     heroBadge: "Desarrollador web · Málaga · Respuesta en menos de 24h",
     heroStats: [
       { value: "20+", label: "webs y apps entregadas" },
       { value: "99/100", label: "velocidad en Google" },
-      { value: "48h", label: "tu auditoría gratuita" },
+      { value: "24h", label: "tu auditoría gratuita" },
       { value: "0€", label: "saber qué le pasa a tu web" },
     ],
     viewProjects: "Ver trabajos reales",
@@ -143,7 +143,7 @@ export const translations = {
           desc: "Me mandas el enlace de tu web o me cuentas qué necesitas. Sin formularios eternos ni llamadas comerciales.",
         },
         {
-          title: "Auditoría gratuita en 48h",
+          title: "Auditoría gratuita en 24h",
           desc: "Reviso tu web y te mando un informe claro: qué falla, por qué te está costando clientes y qué haría yo. Gratis y sin compromiso.",
         },
         {
@@ -158,7 +158,7 @@ export const translations = {
     },
     finalCta: {
       title: "¿Le echo un vistazo a tu web?",
-      desc: "Mándame el enlace por WhatsApp y en 48h te digo exactamente qué está fallando y cuánto costaría arreglarlo. Gratis, sin compromiso y sin jerga técnica.",
+      desc: "Mándame el enlace por WhatsApp y en 24h te digo exactamente qué está fallando y cuánto costaría arreglarlo. Gratis, sin compromiso y sin jerga técnica.",
       button: "Enviar mi web por WhatsApp",
       secondary: "O si lo prefieres, escríbeme un email",
     },
@@ -400,12 +400,12 @@ export const translations = {
     title: "Got a “Kit Digital” website that still brings you no clients?",
     description:
       "You're not alone. Thousands of businesses received mass-produced websites through Spain's Kit Digital grant: no structure, invisible on Google, and buttons that don't work on mobile. Send me your link — I'll review it for free and tell you exactly what's failing.",
-    highlight: "Free audit in 48h · No strings attached · Plain-language report",
+    highlight: "Free audit in 24h · No strings attached · Plain-language report",
     heroBadge: "Web developer · Málaga, Spain · Replies within 24h",
     heroStats: [
       { value: "20+", label: "websites & apps delivered" },
       { value: "99/100", label: "Google speed score" },
-      { value: "48h", label: "for your free audit" },
+      { value: "24h", label: "for your free audit" },
       { value: "€0", label: "to know what's wrong" },
     ],
     viewProjects: "See real work",
@@ -506,7 +506,7 @@ export const translations = {
           desc: "Send me your website link or tell me what you need. No endless forms, no sales calls.",
         },
         {
-          title: "Free audit within 48h",
+          title: "Free audit within 24h",
           desc: "I review your website and send you a clear report: what's failing, why it's costing you clients, and what I'd do. Free, no strings attached.",
         },
         {
@@ -521,7 +521,7 @@ export const translations = {
     },
     finalCta: {
       title: "Want me to take a look at your website?",
-      desc: "Send me the link on WhatsApp and within 48h I'll tell you exactly what's failing and what it would cost to fix. Free, no strings attached, no tech jargon.",
+      desc: "Send me the link on WhatsApp and within 24h I'll tell you exactly what's failing and what it would cost to fix. Free, no strings attached, no tech jargon.",
       button: "Send my website on WhatsApp",
       secondary: "Or if you prefer, send me an email",
     },

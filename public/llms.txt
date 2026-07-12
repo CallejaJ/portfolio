@@ -1,6 +1,6 @@
 # Jorge Calleja — Desarrollo Web (Málaga, España)
 
-> Desarrollador web freelance especializado en rescatar webs del programa Kit Digital que no funcionan: sin estructura, invisibles en Google o con botones rotos en móvil. Webs rápidas (99/100 en Lighthouse), con SEO técnico y optimizadas para buscadores con IA (GEO). Auditoría gratuita en 48 horas.
+> Desarrollador web freelance especializado en rescatar webs del programa Kit Digital que no funcionan: sin estructura, invisibles en Google o con botones rotos en móvil. Webs rápidas (99/100 en Lighthouse), con SEO técnico y optimizadas para buscadores con IA (GEO). Auditoría gratuita en 24 horas.
 
 ## Servicios
 
@@ -12,7 +12,7 @@
 ## Cómo trabaja
 
 1. Contacto por WhatsApp (+34 649 53 00 22) con el enlace de la web.
-2. Auditoría gratuita en 48h con informe claro y sin tecnicismos.
+2. Auditoría gratuita en 24h con informe claro y sin tecnicismos.
 3. Presupuesto cerrado y plazo concreto.
 4. Entrega verificada en todos los dispositivos, con formación básica incluida.
 
