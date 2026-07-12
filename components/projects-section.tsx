@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -11,7 +12,6 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Project } from "@/lib/projects-data";
-import TechLogoComposition from "@/components/tech-logo-composition";
 
 interface ProjectsSectionProps {
   t: any;
@@ -46,51 +46,34 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] transition-all duration-300 border border-border/50 hover:border-primary/50 bg-card/50 overflow-hidden group">
-                <div className="relative overflow-hidden rounded-t-lg">
-                  {/* Reemplazamos la imagen estática por la composición de iconos */}
-                  <TechLogoComposition
-                    technologies={project.technologies}
-                    className="w-full h-64 transition-transform duration-300 group-hover:scale-105"
+              <Card className="h-full hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] transition-all duration-300 border border-border/50 hover:border-primary/50 bg-card/50 overflow-hidden group flex flex-col">
+                {/* Captura de la web, enlazada a la demo */}
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block overflow-hidden aspect-[16/10]"
+                  aria-label={t.projects[project.titleKey].title}
+                >
+                  <Image
+                    src={project.image}
+                    alt={t.projects[project.titleKey].title}
+                    fill
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-
-                  {/* Badges positioned over image - OCULTOS EN MÓVIL */}
-                  <div className="hidden sm:flex absolute top-4 left-4 right-4 justify-between items-start">
-                    {project.featured && (
-                      <Badge className="bg-gradient-to-r from-primary via-blue-500 to-secondary text-white border-0 shadow-lg text-xs px-3 py-1 font-semibold">
-                        {t.featuredProject}
-                      </Badge>
-                    )}
-
-                    {t.projects[project.titleKey].metrics && (
-                      <Badge className="bg-background/80 text-foreground border border-border backdrop-blur-sm shadow-lg ml-auto text-xs px-3 py-1">
-                        {t.projects[project.titleKey].metrics}
-                      </Badge>
-                    )}
-                  </div>
-
-                  {/* Links overlay */}
-                  <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a
-                      aria-label="github"
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-card rounded-full hover:bg-muted transition-colors shadow-lg"
-                    >
-                      <Github size={20} className="text-foreground" />
-                    </a>
-                    <a
-                      aria-label="demo"
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-card rounded-full hover:bg-muted transition-colors shadow-lg"
-                    >
-                      <ExternalLink size={20} className="text-foreground" />
-                    </a>
-                  </div>
-                </div>
+                  {/* Beneficio destacado sobre la imagen */}
+                  {t.projects[project.titleKey].metrics && (
+                    <Badge className="absolute top-4 right-4 bg-background/85 text-foreground border border-border backdrop-blur-sm shadow-lg text-xs px-3 py-1">
+                      {t.projects[project.titleKey].metrics}
+                    </Badge>
+                  )}
+                  {/* Indicador de "ver web" al hover */}
+                  <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/85 backdrop-blur-sm border border-border text-sm font-semibold text-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <ExternalLink size={15} />
+                    {t.visitSite}
+                  </span>
+                </a>
 
                 <CardHeader className="pb-3">
                   <CardTitle className="text-xl text-card-foreground">
@@ -101,18 +84,11 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
                   </CardDescription>
                 </CardHeader>
 
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="outline"
-                        className="text-xs bg-muted/50 text-muted-foreground border-border"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
+                <CardContent className="mt-auto">
+                  {/* Tecnologías: línea discreta para quien sí entiende */}
+                  <p className="text-xs text-muted-foreground/70 border-t border-border/50 pt-4">
+                    {project.technologies.join(" · ")}
+                  </p>
                 </CardContent>
               </Card>
             </motion.div>

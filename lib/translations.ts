@@ -45,6 +45,7 @@ export const translations = {
       { value: "0€", label: "saber qué le pasa a tu web" },
     ],
     viewProjects: "Ver trabajos reales",
+    visitSite: "Ver la web",
     viewCV: "Ver CV",
     downloadCV: "Descargar CV",
     contact: "Hablamos por WhatsApp",
@@ -199,16 +200,16 @@ export const translations = {
         metrics: "Gasless (ZeroDev) + AI Anti-Cheat + Privy Auth",
       },
       anaRodriguez: {
-        title: "Ana Rodríguez Abogados - Plataforma de Servicios Legales",
+        title: "Ana Rodríguez Abogados — Despacho de abogados",
         description:
-          "Plataforma web profesional para despacho de abogados con sistema de reservas integrado, gestión de clientes y formularios de contacto. Implementa testing completo con Vitest, validación de formularios con Zod y componentes reutilizables con shadcn/ui.",
-        metrics: "Sistema de reservas + Testing completo + UI moderna",
+          "Una web que trabaja sola: los clientes reservan cita online a cualquier hora, el formulario llega siempre y la imagen transmite la seriedad que un bufete necesita. Menos llamadas para agendar, más tiempo para ejercer.",
+        metrics: "Reservas online 24/7",
       },
       docudid: {
-        title: "LEXTY - Plataforma de Asistente Legal con IA",
+        title: "LEXTY — Asistente legal con IA",
         description:
-          "Plataforma SaaS de gestión documental legal con IA especializada (Alexia AI) que automatiza análisis de contratos, investigación jurisprudencial y redacción legal. Sistema multi-tenant diseñado para escalabilidad global con soporte multilenguaje.",
-        metrics: "SaaS Multi-tenant + AI Integration + i18n System",
+          "Plataforma para despachos donde la IA analiza contratos y redacta borradores en minutos en lugar de horas. Da servicio a decenas de despachos a la vez, en más de 40 idiomas, sin que el abogado toque nada técnico.",
+        metrics: "75% menos tiempo por contrato",
       },
       gaslessSwap: {
         title: "Gasless Swap - Intercambio DeFi sin Gas",
@@ -265,28 +266,28 @@ export const translations = {
         metrics: "Comunidad activa con 100+ usuarios",
       },
       mementoAcademy: {
-        title: "Memento Academy - Plataforma Educativa Web3",
+        title: "Memento Academy — Academia online",
         description:
-          "Plataforma educativa gratuita para Web3. Infraestructura cloud completa en AWS (S3, CloudFront CDN, SES, CloudWatch) gestionada con Terraform IaC y CI/CD automatizado con GitHub Actions (OIDC). Cursos premium, sistema de logros gamificado y autenticación Web3 con Privy.",
-        metrics: "AWS + Terraform IaC + GitHub Actions CI/CD",
+          "Academia digital gratuita con cursos, sistema de logros y comunidad. Montada sobre la nube de Amazon con infraestructura profesional: aguanta picos de alumnos sin caerse y los emails llegan siempre.",
+        metrics: "Cursos + logros + emails automáticos",
       },
       tuvozamiga: {
-        title: "TUVOZAMIGA - Compañía Virtual",
+        title: "TUVOZAMIGA — Compañía por voz con IA",
         description:
-          "Una aplicación web diseñada para combatir la soledad proporcionando una voz amigable y escucha activa impulsada por IA. Disponible 24/7 con latencia ultra baja y escucha empática.",
-        metrics: "Next.js 16 + Orga AI + Ultra-low Latency",
+          "Una aplicación que conversa por voz con personas que pasan demasiado tiempo solas: escucha activa y charla empática a cualquier hora, con una interfaz 100% en español pensada para quien no se maneja con la tecnología.",
+        metrics: "Conversación por voz 24/7",
       },
       bachataAlAireLibre: {
-        title: "Bachata al Aire Libre - Landing Page de Alto Rendimiento",
+        title: "Bachata al Aire Libre — Clases de baile en Málaga",
         description:
-          "Landing page moderna y optimizada para clases de bachata y salsa al aire libre en Málaga. Alcanza puntuaciones excepcionales en rendimiento, accesibilidad y SEO. Incluye PWA, sistema multi-idioma, reproductor de música, galería de fotos animada, testimonios reales y integración con Google Maps.",
-        metrics: "Alto Rendimiento + PWA + Multi-idioma + SEO",
+          "Una landing que convierte curiosos en alumnos: carga al instante, suena la música, se ven las fotos y los testimonios reales, y el mapa te lleva a la clase. Disponible en varios idiomas para los alumnos extranjeros y se instala como app en el móvil.",
+        metrics: "Carga instantánea + Multi-idioma",
       },
       malagaPremiumTransfers: {
-        title: "Málaga Premium Transfers - Web Corporativa y SEO",
+        title: "Málaga Premium Transfers — Transporte privado",
         description:
-          "Web de alto rendimiento para servicio exclusivo de transporte privado en la Costa del Sol. Desarrollada con Astro y Tailwind CSS 4 para máxima velocidad (SSG). Incluye sistema de enrutamiento SEO dinámico para generación automática de landing pages por destino, catálogo de flota detallado y reserva directa.",
-        metrics: "SSG Astro + SEO Dinámico + UI High-End",
+          "Web construida para salir en Google: cada destino de la Costa del Sol tiene su propia página, generada automáticamente, que captura las búsquedas de ese trayecto. El cliente ve la flota y reserva directo, sin intermediarios ni comisiones.",
+        metrics: "Una página por destino en Google",
       },
       twitterBot: {
         title: "Bot de Twitter Memento Academy",
@@ -409,6 +410,7 @@ export const translations = {
       { value: "€0", label: "to know what's wrong" },
     ],
     viewProjects: "See real work",
+    visitSite: "Visit site",
     viewCV: "View CV",
     downloadCV: "Download CV",
     contact: "Chat on WhatsApp",
@@ -562,16 +564,16 @@ export const translations = {
         metrics: "Gasless (ZeroDev) + AI Anti-Cheat + Privy Auth",
       },
       anaRodriguez: {
-        title: "Ana Rodríguez Abogados - Legal Services Platform",
+        title: "Ana Rodríguez Abogados — Law firm",
         description:
-          "Professional website for law firm with integrated booking system, client management and contact forms. Features comprehensive testing with Vitest, form validation with Zod and reusable components with shadcn/ui.",
-        metrics: "Booking system + Full testing coverage + Modern UI",
+          "A website that works on its own: clients book appointments online at any hour, the contact form always delivers, and the design conveys the seriousness a law firm needs. Fewer scheduling calls, more time to practice.",
+        metrics: "Online booking 24/7",
       },
       docudid: {
-        title: "LEXTY - AI Legal Assistant Platform",
+        title: "LEXTY — AI legal assistant",
         description:
-          "Legal document management SaaS platform with specialized AI (Alexia AI) that automates contract analysis and legal drafting. Multi-tenant system designed for global scalability with multi-language support.",
-        metrics: "Multi-tenant SaaS + AI Integration + i18n System",
+          "A platform for law firms where AI analyzes contracts and drafts documents in minutes instead of hours. Serves dozens of firms simultaneously, in over 40 languages, with zero technical work for the lawyer.",
+        metrics: "75% less time per contract",
       },
       gaslessSwap: {
         title: "Gasless Swap - Gasless DeFi Exchange",
@@ -628,28 +630,28 @@ export const translations = {
         metrics: "Active community with 100+ users",
       },
       mementoAcademy: {
-        title: "Memento Academy - Web3 Educational Platform",
+        title: "Memento Academy — Online academy",
         description:
-          "Free educational platform for Web3 newcomers. Full AWS cloud infrastructure (S3, CloudFront CDN, SES, CloudWatch) managed with Terraform IaC and automated CI/CD via GitHub Actions with OIDC keyless auth. Premium courses, gamified achievements, and Web3 auth with Privy.",
-        metrics: "AWS + Terraform IaC + GitHub Actions CI/CD",
+          "A free digital academy with courses, achievements, and community. Built on Amazon's cloud with professional infrastructure: it handles student traffic spikes without going down, and emails always arrive.",
+        metrics: "Courses + achievements + automated emails",
       },
       tuvozamiga: {
-        title: "TUVOZAMIGA - Virtual Companion",
+        title: "TUVOZAMIGA — AI voice companion",
         description:
-          "A web application designed to combat loneliness by providing a friendly voice and active listening powered by AI. Always available 24/7 with ultra-low latency and empathetic listening.",
-        metrics: "Next.js 16 + Orga AI + Ultra-low Latency",
+          "An application that holds voice conversations with people who spend too much time alone: active listening and empathetic chat at any hour, with an interface designed for non-technical users.",
+        metrics: "Voice conversation 24/7",
       },
       bachataAlAireLibre: {
-        title: "Bachata al Aire Libre - High-Performance Landing Page",
+        title: "Bachata al Aire Libre — Dance classes in Málaga",
         description:
-          "Modern and optimized landing page for outdoor bachata and salsa classes in Malaga. Achieves exceptional scores in performance, accessibility, and SEO. Includes PWA, multi-language system, music player, animated photo gallery, real testimonials, and Google Maps integration.",
-        metrics: "High Performance + PWA + Multi-language + SEO",
+          "A landing page that turns visitors into students: it loads instantly, plays music, shows real photos and testimonials, and the map takes you to class. Available in several languages for foreign students and installable as a mobile app.",
+        metrics: "Instant load + Multi-language",
       },
       malagaPremiumTransfers: {
-        title: "Málaga Premium Transfers - Corporate & SEO Website",
+        title: "Málaga Premium Transfers — Private transport",
         description:
-          "High-performance website for an exclusive private transport service in Costa del Sol. Built with Astro and Tailwind CSS 4 for maximum speed (SSG). Features dynamic SEO routing for automatic landing page generation by destination, detailed fleet catalog, and direct booking.",
-        metrics: "Astro SSG + Dynamic SEO + High-End UI",
+          "A website built to rank on Google: every Costa del Sol destination gets its own automatically generated page that captures searches for that route. Clients browse the fleet and book directly — no middlemen, no commissions.",
+        metrics: "One Google page per destination",
       },
       twitterBot: {
         title: "Memento Academy Twitter Bot",
