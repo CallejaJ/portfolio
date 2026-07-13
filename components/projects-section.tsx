@@ -46,32 +46,41 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
               viewport={{ once: true }}
             >
               <Card className="h-full hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] transition-all duration-300 border border-border/50 hover:border-primary/50 bg-card/50 overflow-hidden group flex flex-col">
-                {/* Captura de la web, enlazada a la demo */}
+                {/* Captura dentro de marco de navegador, enlazada a la demo */}
                 <a
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative block overflow-hidden aspect-[16/10]"
+                  className="relative block p-4 pb-0 bg-gradient-to-br from-blue-600/10 via-purple-600/5 to-indigo-700/10"
                   aria-label={t.projects[project.titleKey].title}
                 >
-                  <Image
-                    src={project.image}
-                    alt={t.projects[project.titleKey].title}
-                    fill
-                    className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-[1.03]"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                  {/* Duotono azul/lila (colores del logo); al hover se revelan los colores reales */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 mix-blend-color opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"></div>
-                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-700/30 to-purple-600/30 mix-blend-multiply opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"></div>
-                  {/* Indicador de "ver web" al hover */}
-                  <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/85 backdrop-blur-sm border border-border text-sm font-semibold text-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <ExternalLink size={15} />
-                    {t.visitSite}
-                  </span>
+                  <div className="rounded-t-xl overflow-hidden border border-b-0 border-border/60 shadow-lg bg-card">
+                    {/* Barra del navegador */}
+                    <div className="flex items-center gap-1.5 px-3 py-2 bg-background/80 border-b border-border/60">
+                      <span className="w-2 h-2 rounded-full bg-red-400"></span>
+                      <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+                      <span className="w-2 h-2 rounded-full bg-green-400"></span>
+                    </div>
+                    {/* Captura con duotono; al hover revela colores reales */}
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                      <Image
+                        src={project.image}
+                        alt={t.projects[project.titleKey].title}
+                        fill
+                        className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-[1.03]"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 mix-blend-color opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"></div>
+                      <div className="absolute inset-0 bg-gradient-to-tr from-blue-700/30 to-purple-600/30 mix-blend-multiply opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"></div>
+                      <span className="absolute bottom-3 right-3 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-background/85 backdrop-blur-sm border border-border text-sm font-semibold text-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <ExternalLink size={14} />
+                        {t.visitSite}
+                      </span>
+                    </div>
+                  </div>
                 </a>
 
-                <CardHeader className="pb-3">
+                <CardHeader className="pt-5 pb-3">
                   <CardTitle className="text-xl text-card-foreground">
                     {t.projects[project.titleKey].title}
                   </CardTitle>
