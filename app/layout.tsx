@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 import { SITE_URL, CONTACT_EMAIL } from "@/lib/site-config";
 import "./globals.css";
 
@@ -52,12 +53,21 @@ export const metadata: Metadata = {
     siteName: "Jorge Calleja — Desarrollo Web",
     locale: "es_ES",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "jorgecalleja.dev — Desarrollo web en Málaga",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jorge Calleja · Arreglo webs del Kit Digital que no funcionan",
     description:
       "¿Tu web no aparece en Google o los botones no funcionan en el móvil? Auditoría gratuita en 24h, sin compromiso.",
+    images: ["/og-image.jpg"],
   },
   keywords: [
     "arreglar web kit digital",
@@ -111,6 +121,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
