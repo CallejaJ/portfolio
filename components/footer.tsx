@@ -6,7 +6,7 @@
 
 import React from "react";
 import { Linkedin, Github, Mail } from "lucide-react";
-import { RocketLogo } from "./logo";
+import { FaroLogo } from "./logo";
 import { WhatsAppIcon } from "./whatsapp-button";
 import { getWhatsAppLink, CONTACT_EMAIL } from "@/lib/site-config";
 
@@ -28,9 +28,9 @@ const Footer = ({ t }: any) => {
           {/* Marca */}
           <div className="sm:col-span-2 lg:col-span-1">
             <a href="#" className="flex items-center gap-2 mb-4 group w-fit">
-              <RocketLogo
+              <FaroLogo
                 size={36}
-                className="transition-transform duration-300 group-hover:-translate-y-0.5"
+                className="transition-transform duration-300 group-hover:scale-110"
               />
               <span className="font-bold text-lg tracking-tight">
                 Jorge{" "}

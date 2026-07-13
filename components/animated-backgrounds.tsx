@@ -369,3 +369,95 @@ export function CombinedBackground() {
 
   return <canvas ref={canvasRef} className={CANVAS_CLASS} />;
 }
+
+// ---------------------------------------------------------
+// 5) FARO — haz de luz que barre la pantalla y destellos
+//    que se encienden a su paso (visibilidad)
+// ---------------------------------------------------------
+interface Glint {
+  x: number;
+  y: number;
+  glow: number;
+  size: number;
+  hue: number;
+}
+
+export function FaroBackground() {
+  const glints = useRef<Glint[]>([]);
+
+  const canvasRef = useCanvasAnimation((ctx, w, h, t) => {
+    if (glints.current.length === 0) {
+      const count = Math.floor((w * h) / 26000);
+      for (let i = 0; i < count; i++) {
+        glints.current.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          glow: 0,
+          size: 1 + Math.random() * 2,
+          hue: Math.random() > 0.4 ? 190 : 265,
+        });
+      }
+    }
+
+    ctx.clearRect(0, 0, w, h);
+
+    // Fuente de luz: arriba, en el centro
+    const sx = w / 2;
+    const sy = -h * 0.08;
+    const maxLen = Math.hypot(w, h) * 1.1;
+
+    // El haz barre de lado a lado, lentamente
+    const angle = Math.PI / 2 + Math.sin(t / 420) * 0.75;
+    const halfW = 0.14;
+
+    // Cono de luz con degradado radial
+    const grad = ctx.createRadialGradient(sx, sy, 0, sx, sy, maxLen);
+    grad.addColorStop(0, "rgba(34, 211, 238, 0.13)");
+    grad.addColorStop(0.5, "rgba(34, 211, 238, 0.05)");
+    grad.addColorStop(1, "rgba(34, 211, 238, 0)");
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.moveTo(sx, sy);
+    ctx.lineTo(
+      sx + Math.cos(angle - halfW) * maxLen,
+      sy + Math.sin(angle - halfW) * maxLen
+    );
+    ctx.lineTo(
+      sx + Math.cos(angle + halfW) * maxLen,
+      sy + Math.sin(angle + halfW) * maxLen
+    );
+    ctx.closePath();
+    ctx.fill();
+
+    // Destellos: se encienden cuando el haz pasa por encima
+    for (const g of glints.current) {
+      const a = Math.atan2(g.y - sy, g.x - sx);
+      const diff = Math.abs(a - angle);
+      if (diff < halfW) g.glow = 1;
+
+      g.glow = Math.max(0, g.glow - 0.012);
+      const alpha = 0.1 + g.glow * 0.6;
+      const size = g.size + g.glow * 2.5;
+
+      ctx.fillStyle = `hsla(${g.hue}, 95%, 70%, ${alpha})`;
+      ctx.beginPath();
+      ctx.arc(g.x, g.y, size, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Cruz de destello en los más brillantes
+      if (g.glow > 0.55) {
+        ctx.strokeStyle = `hsla(${g.hue}, 95%, 75%, ${g.glow * 0.45})`;
+        ctx.lineWidth = 1;
+        const r = size * 3;
+        ctx.beginPath();
+        ctx.moveTo(g.x - r, g.y);
+        ctx.lineTo(g.x + r, g.y);
+        ctx.moveTo(g.x, g.y - r);
+        ctx.lineTo(g.x, g.y + r);
+        ctx.stroke();
+      }
+    }
+  });
+
+  return <canvas ref={canvasRef} className={CANVAS_CLASS} />;
+}

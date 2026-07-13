@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { getWhatsAppLink } from "@/lib/site-config";
 import { WhatsAppIcon } from "./whatsapp-button";
-import { RocketLogo } from "./logo";
+import { FaroLogo } from "./logo";
 
 interface HeaderProps {
   language: string;
@@ -49,9 +49,9 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <RocketLogo
+          <FaroLogo
             size={40}
-            className="transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-0.5"
+            className="transition-transform duration-300 group-hover:scale-110"
           />
           <span className="hidden sm:block font-bold text-foreground text-lg tracking-tight">
             Jorge{" "}
