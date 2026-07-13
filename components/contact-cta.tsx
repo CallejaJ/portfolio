@@ -5,7 +5,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import { Button } from "./ui/button";
 import { getWhatsAppLink, CONTACT_EMAIL } from "@/lib/site-config";
 import { WhatsAppIcon } from "./whatsapp-button";
 
@@ -42,36 +41,23 @@ const ContactSection = ({ t }: any) => {
           <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto leading-relaxed">
             {t.finalCta.desc}
           </p>
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-stretch sm:items-center gap-4">
-            <Button
-              size="lg"
-              asChild
-              className="bg-[#25D366] hover:bg-[#1fbd5a] text-white border-0 font-bold text-lg px-8 py-7 shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-4">
+            <a
+              href={getWhatsAppLink(t.whatsappMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] hover:bg-[#1fbd5a] text-white font-bold text-base md:text-lg px-6 py-4 shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 w-full sm:w-auto text-center leading-snug"
             >
-              <a
-                href={getWhatsAppLink(t.whatsappMessage)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3"
-              >
-                <WhatsAppIcon size={24} />
-                {t.finalCta.button}
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="font-bold text-lg px-8 py-7 text-white border-white hover:bg-white hover:text-blue-600 bg-transparent transition-all duration-300 w-full sm:w-auto"
+              <WhatsAppIcon size={22} />
+              {t.finalCta.button}
+            </a>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="inline-flex items-center justify-center gap-2 rounded-full font-bold text-base md:text-lg px-6 py-4 text-white border-2 border-white hover:bg-white hover:text-blue-600 bg-transparent transition-all duration-300 w-full sm:w-auto text-center leading-snug"
             >
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="inline-flex items-center justify-center gap-2"
-              >
-                <Mail size={22} />
-                {t.finalCta.secondary}
-              </a>
-            </Button>
+              <Mail size={20} />
+              {t.finalCta.secondary}
+            </a>
           </div>
         </motion.div>
       </div>
