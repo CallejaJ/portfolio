@@ -143,11 +143,11 @@ const PainPointsSection = ({ t }: { t: any }) => {
             href={getWhatsAppLink(t.whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#1fbd5a] text-white text-lg font-semibold shadow-[0_8px_30px_rgba(37,211,102,0.35)] transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-full bg-[#25D366] hover:bg-[#1fbd5a] text-white text-base md:text-lg font-semibold shadow-[0_8px_30px_rgba(37,211,102,0.35)] transition-all duration-300 hover:scale-105 max-w-full text-center leading-snug"
           >
-            <WhatsAppIcon size={22} />
+            <WhatsAppIcon size={22} className="shrink-0" />
             {t.painPoints.cta}
-            <ArrowRight size={18} />
+            <ArrowRight size={18} className="shrink-0" />
           </a>
         </motion.div>
       </div>

@@ -27,9 +27,9 @@ const LeadMagnetSection = ({ t }: { t: any }) => {
           <a
             href="/descargas/checklist-web-kit-digital.pdf"
             download
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-lg font-semibold transition-all duration-300 hover:scale-105 mb-6"
+            className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 mb-6 text-center leading-snug"
           >
-            <FileDown size={20} />
+            <FileDown size={20} className="shrink-0" />
             {t.leadMagnet.button}
           </a>
           <p className="text-sm text-muted-foreground">

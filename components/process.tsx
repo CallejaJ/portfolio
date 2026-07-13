@@ -78,7 +78,7 @@ const ProcessSection = ({ t }: { t: any }) => {
             href={getWhatsAppLink(t.whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#1fbd5a] text-white text-lg font-semibold shadow-[0_8px_30px_rgba(37,211,102,0.35)] transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[#25D366] hover:bg-[#1fbd5a] text-white text-base md:text-lg font-semibold shadow-[0_8px_30px_rgba(37,211,102,0.35)] transition-all duration-300 hover:scale-105 whitespace-nowrap max-w-full"
           >
             <WhatsAppIcon size={22} />
             {t.contact}
