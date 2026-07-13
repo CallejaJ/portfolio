@@ -14,10 +14,10 @@ import { WhatsAppIcon } from "./whatsapp-button";
 
 const icons = [PackageX, SearchX, SmartphoneNfc, TimerOff];
 const images = [
-  "/images/pain-points/stagnant.png",
-  "/images/pain-points/invisibility.png",
-  "/images/pain-points/obsolete.png",
-  "/images/pain-points/loading-slow.png",
+  "/images/pain-points/stagnant.jpg",
+  "/images/pain-points/invisibility.jpg",
+  "/images/pain-points/obsolete.jpg",
+  "/images/pain-points/loading-slow.jpg",
 ];
 
 const PainPointItem = ({
