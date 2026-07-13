@@ -15,16 +15,24 @@ const CaseStudySection = ({ t }: { t: any }) => {
           viewport={{ once: true }}
           className="rounded-3xl border border-border bg-card/50 overflow-hidden lg:grid lg:grid-cols-2"
         >
-          {/* Imagen del proyecto */}
-          <div className="relative h-64 sm:h-80 lg:h-auto lg:min-h-[520px]">
-            <Image
-              src="/images/malaga-premium-transfers.png"
-              alt={t.caseStudy.client}
-              fill
-              className="object-cover object-left-top"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-700/30 to-purple-600/30 mix-blend-multiply"></div>
+          {/* Imagen del proyecto — dentro de marco de navegador, sin recortes */}
+          <div className="relative flex items-center justify-center p-6 sm:p-8 bg-gradient-to-br from-blue-600/15 via-purple-600/10 to-indigo-700/15">
+            <div className="w-full rounded-xl overflow-hidden shadow-2xl border border-border/60 bg-card">
+              {/* Barra del navegador */}
+              <div className="flex items-center gap-1.5 px-3 py-2.5 bg-background/80 border-b border-border/60">
+                <span className="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+              </div>
+              <Image
+                src="/images/malaga-premium-transfers.png"
+                alt={t.caseStudy.client}
+                width={1280}
+                height={800}
+                className="w-full h-auto"
+                sizes="(max-width: 1024px) 90vw, 45vw"
+              />
+            </div>
           </div>
 
           {/* Historia + números */}
