@@ -37,7 +37,7 @@ const FloatingWhatsApp = ({ t }: { t: any }) => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={t.contact}
-          className="fixed bottom-5 right-5 md:bottom-8 md:right-8 z-50 group"
+          className="hidden md:block fixed md:bottom-8 md:right-8 z-50 group"
         >
           {/* Pulse ring */}
           <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-30"></span>

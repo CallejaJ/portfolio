@@ -157,6 +157,61 @@ export const translations = {
         },
       ],
     },
+    testimonials: {
+      title: "Lo que dicen mis clientes",
+      items: [
+        {
+          quote:
+            "Necesitaba una web seria, que diera confianza y que mis clientes pudieran reservar cita sin llamar. Jorge la hizo rápido, me explicó todo sin tecnicismos y el resultado es justo lo que buscaba.",
+          name: "Ana Rodríguez",
+          business: "Ana Rodríguez Abogados · Toledo",
+          url: "https://anarodriguezabogados.vercel.app",
+        },
+      ],
+    },
+    caseStudy: {
+      badge: "Caso real",
+      title: "De invisible en Google a recibir reservas directas",
+      client: "Málaga Premium Transfers · transporte privado en la Costa del Sol",
+      story:
+        "Un servicio de chófer privado con un problema clásico: los clientes no lo encontraban y las reservas llegaban por intermediarios que se llevaban comisión. Construimos una web donde cada destino tiene su propia página pensada para Google, con reserva directa por WhatsApp.",
+      stats: [
+        { value: "99/100", label: "velocidad en Google (Lighthouse)" },
+        { value: "+30", label: "páginas de destino posicionándose" },
+        { value: "0€", label: "en comisiones de intermediarios" },
+      ],
+      cta: "Quiero algo así para mi negocio",
+    },
+    about: {
+      title: "Quién está detrás",
+      name: "Jorge Calleja",
+      role: "Desarrollador web · Málaga",
+      paragraphs: [
+        "Soy Jorge, desarrollador web en Málaga. Llevo años construyendo webs y aplicaciones para negocios reales: despachos, transporte, academias, artistas.",
+        "Trabajo solo y eso es una ventaja para ti: hablas directamente con quien hace tu web, sin comerciales ni intermediarios. Te explico las cosas en tu idioma y te enseño a manejar lo básico para que no dependas de nadie.",
+        "Si tu web no te está trayendo clientes, mándamela. Miro qué falla y te lo cuento claro, gratis.",
+      ],
+    },
+    leadMagnet: {
+      title: "¿Aún no quieres contratar a nadie? Llévate esto gratis",
+      desc: "He preparado una checklist con las 10 cosas que tu web del Kit Digital debería tener y probablemente no tiene. Revísala tú mismo en 10 minutos.",
+      button: "Descargar la checklist (PDF)",
+      whatsapp: "¿Prefieres que revise yo tu web con la checklist en mano? Pídemelo por WhatsApp, es gratis.",
+    },
+    auditForm: {
+      title: "¿Sin WhatsApp? Pide tu auditoría por email",
+      desc: "Déjame la dirección de tu web y tu email, y en 24h te mando el informe.",
+      urlPlaceholder: "https://tu-web.es",
+      emailPlaceholder: "tu@email.com",
+      button: "Pedir auditoría gratuita",
+      sending: "Enviando…",
+      success: "¡Recibido! En 24h tendrás tu informe en el email.",
+      error: "No se pudo enviar. Escríbeme por WhatsApp o a callejaj@proton.me.",
+    },
+    mobileBar: {
+      text: "Auditoría gratis en 24h",
+      button: "WhatsApp",
+    },
     finalCta: {
       title: "¿Le echo un vistazo a tu web?",
       desc: "Mándame el enlace por WhatsApp y en 24h te digo exactamente qué está fallando y cuánto costaría arreglarlo. Gratis, sin compromiso y sin jerga técnica.",
@@ -526,6 +581,61 @@ export const translations = {
           desc: "I launch your website working on every device, we test it together, and I show you how to handle the basics so you don't depend on anyone.",
         },
       ],
+    },
+    testimonials: {
+      title: "What my clients say",
+      items: [
+        {
+          quote:
+            "I needed a serious website that inspired trust and let my clients book appointments without calling. Jorge built it fast, explained everything without jargon, and the result is exactly what I was looking for.",
+          name: "Ana Rodríguez",
+          business: "Ana Rodríguez Abogados · Toledo",
+          url: "https://anarodriguezabogados.vercel.app",
+        },
+      ],
+    },
+    caseStudy: {
+      badge: "Real case",
+      title: "From invisible on Google to direct bookings",
+      client: "Málaga Premium Transfers · private transport on the Costa del Sol",
+      story:
+        "A private chauffeur service with a classic problem: clients couldn't find it and bookings came through middlemen taking commissions. We built a website where every destination gets its own Google-ready page, with direct WhatsApp booking.",
+      stats: [
+        { value: "99/100", label: "Google speed score (Lighthouse)" },
+        { value: "+30", label: "destination pages ranking" },
+        { value: "€0", label: "in middleman commissions" },
+      ],
+      cta: "I want this for my business",
+    },
+    about: {
+      title: "Who's behind this",
+      name: "Jorge Calleja",
+      role: "Web developer · Málaga, Spain",
+      paragraphs: [
+        "I'm Jorge, a web developer in Málaga. I've spent years building websites and apps for real businesses: law firms, transport, academies, artists.",
+        "I work solo, and that's an advantage for you: you talk directly to the person building your website — no salespeople, no middlemen. I explain things in plain language and teach you the basics so you don't depend on anyone.",
+        "If your website isn't bringing you clients, send it my way. I'll check what's failing and tell you straight, for free.",
+      ],
+    },
+    leadMagnet: {
+      title: "Not ready to hire anyone? Take this for free",
+      desc: "I've put together a checklist of 10 things your Kit Digital website should have and probably doesn't. Review it yourself in 10 minutes.",
+      button: "Download the checklist (PDF)",
+      whatsapp: "Prefer me to review your website checklist in hand? Ask me on WhatsApp — it's free.",
+    },
+    auditForm: {
+      title: "No WhatsApp? Request your audit by email",
+      desc: "Leave your website address and your email, and you'll get the report within 24h.",
+      urlPlaceholder: "https://your-website.com",
+      emailPlaceholder: "you@email.com",
+      button: "Request free audit",
+      sending: "Sending…",
+      success: "Got it! Your report will land in your inbox within 24h.",
+      error: "Couldn't send. Message me on WhatsApp or at callejaj@proton.me.",
+    },
+    mobileBar: {
+      text: "Free audit in 24h",
+      button: "WhatsApp",
     },
     finalCta: {
       title: "Want me to take a look at your website?",

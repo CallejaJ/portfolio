@@ -10,6 +10,12 @@ import ServicesSection from "@/components/services";
 import ProcessSection from "@/components/process";
 import FaqSection from "@/components/faq";
 import FloatingWhatsApp from "@/components/whatsapp-button";
+import CaseStudySection from "@/components/case-study";
+import TestimonialsSection from "@/components/testimonials";
+import AboutSection from "@/components/about";
+import LeadMagnetSection from "@/components/lead-magnet";
+import AuditFormSection from "@/components/audit-form";
+import MobileCtaBar from "@/components/mobile-cta-bar";
 import { Header } from "@/components/header";
 import {
   LiftoffBackground,
@@ -51,10 +57,16 @@ export default function JorgeLanding() {
       <ServicesSection t={t} />
       <ProcessSection t={t} />
       <ProjectsSection t={t} projects={landingProjects} />
+      <CaseStudySection t={t} />
+      <TestimonialsSection t={t} />
+      <AboutSection t={t} />
+      <LeadMagnetSection t={t} />
       <FaqSection t={t} />
+      <AuditFormSection t={t} />
       <ContactSection t={t} language={language} />
       <Footer t={t} />
       <FloatingWhatsApp t={t} />
+      <MobileCtaBar t={t} />
 
       {/* ── Selector temporal de fondos: BORRAR al decidir ── */}
       {/*
