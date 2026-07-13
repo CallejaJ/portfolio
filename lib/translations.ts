@@ -319,6 +319,12 @@ export const translations = {
           "Una comunidad donde los usuarios intercambian servicios usando el tiempo como moneda: das una hora de clases, recibes una hora de fontanería. Los créditos se transfieren de forma segura y el saldo nunca falla.",
         metrics: "Intercambio de servicios por horas",
       },
+      outdoorBachata: {
+        title: "Outdoor Bachata Málaga — Turismo de cruceros",
+        description:
+          "Web en inglés dirigida a los cruceristas que atracan en Málaga: bajan del barco y reservan una clase de bachata junto al puerto. El mismo negocio de baile, abierto a un público internacional que busca experiencias.",
+        metrics: "Reservas de turistas internacionales",
+      },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
@@ -682,6 +688,12 @@ export const translations = {
         description:
           "A community where users trade services using time as currency: teach one hour of classes, receive one hour of plumbing. Credits transfer securely and balances never fail.",
         metrics: "Service exchange by the hour",
+      },
+      outdoorBachata: {
+        title: "Outdoor Bachata Málaga — Cruise tourism",
+        description:
+          "An English-language site aimed at cruise passengers docking in Málaga: they step off the ship and book a bachata class right by the port. The same dance business, opened up to an international audience looking for experiences.",
+        metrics: "International tourist bookings",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [

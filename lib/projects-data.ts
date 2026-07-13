@@ -20,7 +20,8 @@ export type ProjectKey =
   | "malagaPremiumTransfers"
   | "precioLuzHora"
   | "nitrileAffair"
-  | "timeBankOnChain";
+  | "timeBankOnChain"
+  | "outdoorBachata";
 
 export interface Project {
   id: number;
@@ -388,5 +389,19 @@ export const projects: Project[] = [
     github: "https://github.com/CallejaJ/timebankonchain",
     demo: "https://timebankonchain-six.vercel.app",
     featured: true,
+  },
+  {
+    id: 23,
+    titleKey: "outdoorBachata",
+    image: "/images/outdoor-bachata.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "SEO internacional",
+    ],
+    github: "https://github.com/CallejaJ",
+    demo: "https://www.outdoorbachatamalaga.eu",
+    featured: false,
   },
 ];
