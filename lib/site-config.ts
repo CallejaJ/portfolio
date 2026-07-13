@@ -7,6 +7,9 @@ export const WHATSAPP_NUMBER = "34649530022"; // prefijo país + número, sin "+
 
 export const CONTACT_EMAIL = "callejaj@proton.me";
 
+// Enlace para dejar reseña en Google
+export const GOOGLE_REVIEW_URL = "https://g.page/r/CWeblad9pUMcEBM/review";
+
 // URL pública del sitio
 export const SITE_URL = "https://jorgecalleja.dev";
 

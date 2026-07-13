@@ -8,7 +8,7 @@ import React from "react";
 import { Linkedin, Github, Mail } from "lucide-react";
 import { FaroLogo } from "./logo";
 import { WhatsAppIcon } from "./whatsapp-button";
-import { getWhatsAppLink, CONTACT_EMAIL } from "@/lib/site-config";
+import { getWhatsAppLink, CONTACT_EMAIL, GOOGLE_REVIEW_URL } from "@/lib/site-config";
 
 const Footer = ({ t }: any) => {
   const year = new Date().getFullYear();
@@ -153,6 +153,14 @@ const Footer = ({ t }: any) => {
               className="text-xs text-muted-foreground hover:text-primary transition-colors"
             >
               {t.footer.cookies}
+            </a>
+            <a
+              href={GOOGLE_REVIEW_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors"
+            >
+              {t.footer.review}
             </a>
           </div>
           <p className="text-xs text-muted-foreground">{t.footer.madeIn}</p>

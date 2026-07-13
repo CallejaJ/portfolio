@@ -159,6 +159,8 @@ export const translations = {
     },
     testimonials: {
       title: "Lo que dicen mis clientes",
+      reviewText: "¿Trabajamos juntos? Me ayudarías mucho dejando tu opinión.",
+      reviewButton: "Deja tu reseña en Google",
       items: [
         {
           quote:
@@ -231,6 +233,7 @@ export const translations = {
       madeIn: "Hecho en Málaga con Next.js",
       privacy: "Privacidad",
       cookies: "Cookies",
+      review: "Deja tu reseña",
     },
     techStack: "Stack Tecnológico",
     techStackDesc: "Tecnologías y herramientas especializadas",
@@ -584,6 +587,8 @@ export const translations = {
     },
     testimonials: {
       title: "What my clients say",
+      reviewText: "Did we work together? A quick review would really help me out.",
+      reviewButton: "Leave a Google review",
       items: [
         {
           quote:
@@ -656,6 +661,7 @@ export const translations = {
       madeIn: "Made in Málaga with Next.js",
       privacy: "Privacy",
       cookies: "Cookies",
+      review: "Leave a review",
     },
     techStack: "Tech Stack",
     techStackDesc: "Specialized technologies and tools",

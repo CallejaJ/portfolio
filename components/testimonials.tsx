@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Quote, ExternalLink } from "lucide-react";
+import { Quote, ExternalLink, Star } from "lucide-react";
+import { GOOGLE_REVIEW_URL } from "@/lib/site-config";
 
 const TestimonialsSection = ({ t }: { t: any }) => {
   return (
@@ -61,6 +62,31 @@ const TestimonialsSection = ({ t }: { t: any }) => {
             </motion.figure>
           ))}
         </div>
+
+        {/* Pedir reseña en Google */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-10 text-center"
+        >
+          <p className="text-muted-foreground mb-4">
+            {t.testimonials.reviewText}
+          </p>
+          <a
+            href={GOOGLE_REVIEW_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-card hover:bg-muted/50 hover:border-primary/50 font-semibold transition-all duration-300 hover:scale-105"
+          >
+            <span className="flex gap-0.5">
+              {[0, 1, 2, 3, 4].map((i) => (
+                <Star key={i} size={16} className="fill-amber-400 text-amber-400" />
+              ))}
+            </span>
+            {t.testimonials.reviewButton}
+          </a>
+        </motion.div>
       </div>
     </section>
   );
