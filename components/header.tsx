@@ -182,18 +182,6 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
                 </a>
               ))}
-
-              {/* WhatsApp CTA in mobile menu */}
-              <a
-                href={getWhatsAppLink(t.whatsappMessage)}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setMobileMenuOpen(false)}
-                className="mt-2 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#25D366] text-white text-base font-semibold shadow-md"
-              >
-                <WhatsAppIcon size={18} />
-                {t.contact}
-              </a>
             </nav>
           </div>
         </div>
