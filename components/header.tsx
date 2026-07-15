@@ -48,7 +48,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="#" aria-label="Jorge Calleja — Inicio" className="flex items-center gap-2 group">
           <FaroLogo
             size={40}
             className="transition-transform duration-300 group-hover:scale-110"
@@ -145,6 +145,8 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
             variant="ghost"
             size="icon"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={mobileMenuOpen}
             className="ml-1"
           >
             {mobileMenuOpen ? (

@@ -27,7 +27,7 @@ const Footer = ({ t }: any) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Marca */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <a href="#" className="flex items-center gap-2 mb-4 group w-fit">
+            <a href="#" aria-label="Jorge Calleja — Inicio" className="flex items-center gap-2 mb-4 group w-fit">
               <FaroLogo
                 size={36}
                 className="transition-transform duration-300 group-hover:scale-110"
@@ -46,9 +46,9 @@ const Footer = ({ t }: any) => {
 
           {/* Secciones */}
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted-foreground">
+            <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted-foreground">
               {t.footer.navTitle}
-            </h4>
+            </h3>
             <ul className="space-y-2.5">
               {navLinks.map((link) => (
                 <li key={link.key}>
@@ -65,9 +65,9 @@ const Footer = ({ t }: any) => {
 
           {/* Servicios */}
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted-foreground">
+            <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted-foreground">
               {t.footer.servicesTitle}
-            </h4>
+            </h3>
             <ul className="space-y-2.5">
               {t.services.items.map((item: any, i: number) => (
                 <li key={i}>
@@ -84,9 +84,9 @@ const Footer = ({ t }: any) => {
 
           {/* Contacto */}
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted-foreground">
+            <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted-foreground">
               {t.footer.contactTitle}
-            </h4>
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a

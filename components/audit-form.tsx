@@ -59,14 +59,14 @@ const AuditFormSection = ({ t }: { t: any }) => {
               name="website"
               required
               placeholder={t.auditForm.urlPlaceholder}
-              className="flex-1 px-5 py-3.5 rounded-full bg-card border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary transition-colors"
+              className="flex-1 px-5 py-3.5 rounded-full bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
             />
             <input
               type="email"
               name="email"
               required
               placeholder={t.auditForm.emailPlaceholder}
-              className="flex-1 px-5 py-3.5 rounded-full bg-card border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary transition-colors"
+              className="flex-1 px-5 py-3.5 rounded-full bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
             />
             <button
               type="submit"

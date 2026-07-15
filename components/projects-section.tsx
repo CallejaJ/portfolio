@@ -91,7 +91,7 @@ const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
 
                 <CardContent className="mt-auto">
                   {/* Tecnologías: línea discreta para quien sí entiende */}
-                  <p className="text-xs text-muted-foreground/70 border-t border-border/50 pt-4">
+                  <p className="text-xs text-muted-foreground border-t border-border/50 pt-4">
                     {project.technologies.join(" · ")}
                   </p>
                 </CardContent>
