@@ -214,6 +214,12 @@ export const translations = {
       text: "Auditoría gratis en 24h",
       button: "WhatsApp",
     },
+    cookies: {
+      text: "Uso cookies de medición (Meta) para mejorar mis anuncios. Solo se activan si aceptas.",
+      accept: "Aceptar",
+      reject: "Rechazar",
+      more: "Más info",
+    },
     finalCta: {
       title: "¿Le echo un vistazo a tu web?",
       desc: "Mándame el enlace por WhatsApp y en 24h te digo exactamente qué está fallando y cuánto costaría arreglarlo. Gratis, sin compromiso y sin jerga técnica.",
@@ -641,6 +647,12 @@ export const translations = {
     mobileBar: {
       text: "Free audit in 24h",
       button: "WhatsApp",
+    },
+    cookies: {
+      text: "I use measurement cookies (Meta) to improve my ads. They only activate if you accept.",
+      accept: "Accept",
+      reject: "Reject",
+      more: "More info",
     },
     finalCta: {
       title: "Want me to take a look at your website?",

@@ -24,8 +24,9 @@ export default function CookiesPage() {
 
       <div className="space-y-6 text-muted-foreground leading-relaxed">
         <p className="text-foreground font-medium">
-          La versión corta: esta web no usa cookies de rastreo, de publicidad ni
-          de analítica. Por eso no ves ningún banner de cookies.
+          La versión corta: esta web solo usa una cookie de medición de Meta
+          (Facebook), y únicamente si tú la aceptas en el banner. Si la rechazas,
+          no se activa nada. Tú decides.
         </p>
 
         <h2 className="text-xl font-bold text-foreground pt-4">
@@ -41,31 +42,38 @@ export default function CookiesPage() {
           2. Qué utiliza esta web
         </h2>
         <p>
-          Esta web únicamente guarda en tu navegador (localStorage) tu
-          preferencia de tema claro u oscuro. Este almacenamiento es
-          estrictamente técnico, no permite identificarte, no se comparte con
-          nadie y está exento del deber de consentimiento según el criterio de
-          la AEPD para almacenamiento técnico necesario.
+          <strong className="text-foreground">Cookie técnica:</strong> guardo en
+          tu navegador (localStorage) tu preferencia de tema claro/oscuro y tu
+          decisión sobre las cookies. Es almacenamiento estrictamente técnico, no
+          te identifica y está exento de consentimiento según la AEPD.
+        </p>
+        <p>
+          <strong className="text-foreground">Cookie de medición (Meta Pixel):</strong>{" "}
+          solo si aceptas en el banner, cargo el píxel de Meta (Facebook), que
+          instala cookies para medir la eficacia de mis anuncios y mostrarme
+          estadísticas anónimas de las visitas que llegan desde ellos. Si
+          rechazas, el píxel no se carga en absoluto. Puedes cambiar tu decisión
+          borrando los datos de navegación de este sitio.
         </p>
 
         <h2 className="text-xl font-bold text-foreground pt-4">
           3. Servicios de terceros
         </h2>
         <p>
-          Si haces clic en el botón de WhatsApp, pasarás a la aplicación o web
-          de WhatsApp (Meta), que aplica sus propias políticas de cookies y
-          privacidad. Lo mismo ocurre con los enlaces a LinkedIn o GitHub. Esta
-          web no carga scripts de esos servicios: solo son enlaces.
+          El píxel de medición lo presta Meta Platforms Ireland Ltd., que trata
+          los datos conforme a su propia política de privacidad. Si haces clic en
+          el botón de WhatsApp pasarás a WhatsApp (Meta); lo mismo con los enlaces
+          a LinkedIn o GitHub. Esos son solo enlaces, no cargan scripts.
         </p>
 
         <h2 className="text-xl font-bold text-foreground pt-4">
-          4. Si esto cambia
+          4. Base legal
         </h2>
         <p>
-          Si en el futuro incorporo herramientas de analítica (por ejemplo,
-          Google Analytics), actualizaré esta política y añadiré un banner de
-          consentimiento previo conforme al RGPD y a la Guía de Cookies de la
-          AEPD antes de activar ninguna cookie no técnica.
+          La cookie de Meta se activa exclusivamente con tu consentimiento previo
+          (art. 6.1.a RGPD), que otorgas al pulsar "Aceptar" en el banner. Puedes
+          retirarlo en cualquier momento. La cookie técnica se ampara en el
+          interés legítimo de que la web funcione correctamente.
         </p>
 
         <p className="pt-6 text-sm">

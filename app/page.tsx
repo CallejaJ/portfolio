@@ -16,6 +16,8 @@ import AboutSection from "@/components/about";
 import LeadMagnetSection from "@/components/lead-magnet";
 import AuditFormSection from "@/components/audit-form";
 import MobileCtaBar from "@/components/mobile-cta-bar";
+import CookieConsent from "@/components/cookie-consent";
+import WhatsAppTracker from "@/components/whatsapp-tracker";
 import { Header } from "@/components/header";
 import { FaroBackground } from "@/components/animated-backgrounds";
 import { translations } from "@/lib/translations";
@@ -50,6 +52,8 @@ export default function JorgeLanding() {
       <Footer t={t} />
       <FloatingWhatsApp t={t} />
       <MobileCtaBar t={t} />
+      <CookieConsent t={t} />
+      <WhatsAppTracker />
     </div>
   );
 }
