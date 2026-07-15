@@ -387,7 +387,7 @@ export const projects: Project[] = [
       "JWT",
     ],
     github: "https://github.com/CallejaJ/timebankonchain",
-    demo: "https://timebankonchain-six.vercel.app",
+    demo: "https://bancodeltiempomalaga.com",
     featured: true,
   },
   {
