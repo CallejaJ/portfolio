@@ -91,7 +91,7 @@ export const projects: Project[] = [
   {
     id: 16,
     titleKey: "twitterBot",
-    image: "/images/memento-academy.png",
+    image: "/images/memento-academy.webp",
     technologies: ["Node.js", "Express.js", "Twitter API v2", "Koyeb", "Cron"],
     github: "https://github.com/CallejaJ/twitter-bot",
     demo: "https://memento-academy-bot.koyeb.app/",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
   {
     id: 11,
     titleKey: "mementoAcademy",
-    image: "/images/memento-academy.png",
+    image: "/images/memento-academy.webp",
     technologies: [
       "Next.js 15",
       "TypeScript",
@@ -202,7 +202,7 @@ export const projects: Project[] = [
   {
     id: 1,
     titleKey: "docudid",
-    image: "/images/docudid.jpg",
+    image: "/images/docudid.webp",
     technologies: [
       "React 18",
       "Next.js 15",
@@ -237,7 +237,7 @@ export const projects: Project[] = [
   {
     id: 13,
     titleKey: "tuvozamiga",
-    image: "/images/tuvozamiga.png",
+    image: "/images/tuvozamiga.webp",
     technologies: [
       "Next.js 16",
       "React 19",
@@ -253,7 +253,7 @@ export const projects: Project[] = [
   {
     id: 10,
     titleKey: "retroGamehub",
-    image: "/images/retro-gamehub.png",
+    image: "/images/retro-gamehub.webp",
     technologies: [
       "Next.js 15",
       "React 18",
@@ -270,7 +270,7 @@ export const projects: Project[] = [
   {
     id: 12,
     titleKey: "anaRodriguez",
-    image: "/images/ana.png",
+    image: "/images/ana.webp",
     technologies: [
       "Next.js 15",
       "React 19",
@@ -293,7 +293,7 @@ export const projects: Project[] = [
   {
     id: 18,
     titleKey: "malagaPremiumTransfers",
-    image: "/images/malaga-premium-transfers.png",
+    image: "/images/malaga-premium-transfers.webp",
     technologies: [
       "Astro v5",
       "TypeScript",
@@ -308,7 +308,7 @@ export const projects: Project[] = [
   {
     id: 14,
     titleKey: "bachataAlAireLibre",
-    image: "/images/bachataalairelibre.png",
+    image: "/images/bachataalairelibre.webp",
     technologies: [
       "Next.js 14",
       "TypeScript",
@@ -343,7 +343,7 @@ export const projects: Project[] = [
   {
     id: 20,
     titleKey: "precioLuzHora",
-    image: "/images/precio-luz-hora.png",
+    image: "/images/precio-luz-hora.webp",
     technologies: [
       "Astro 5",
       "React 19",
@@ -359,7 +359,7 @@ export const projects: Project[] = [
   {
     id: 21,
     titleKey: "nitrileAffair",
-    image: "/images/nitrile-affair.png",
+    image: "/images/nitrile-affair.webp",
     technologies: [
       "HTML5",
       "CSS3",
@@ -375,7 +375,7 @@ export const projects: Project[] = [
   {
     id: 22,
     titleKey: "timeBankOnChain",
-    image: "/images/timebank.png",
+    image: "/images/timebank.webp",
     technologies: [
       "Next.js 16",
       "React 19",
@@ -393,7 +393,7 @@ export const projects: Project[] = [
   {
     id: 23,
     titleKey: "outdoorBachata",
-    image: "/images/outdoor-bachata.png",
+    image: "/images/outdoor-bachata.webp",
     technologies: [
       "Next.js",
       "TypeScript",

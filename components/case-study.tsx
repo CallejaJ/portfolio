@@ -25,7 +25,7 @@ const CaseStudySection = ({ t }: { t: any }) => {
                 <span className="w-2.5 h-2.5 rounded-full bg-green-400"></span>
               </div>
               <Image
-                src="/images/malaga-premium-transfers.png"
+                src="/images/malaga-premium-transfers.webp"
                 alt={t.caseStudy.client}
                 width={1280}
                 height={800}
