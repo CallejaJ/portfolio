@@ -208,7 +208,7 @@ export const translations = {
       button: "Pedir auditoría gratuita",
       sending: "Enviando…",
       success: "¡Recibido! En 24h tendrás tu informe en el email.",
-      error: "No se pudo enviar. Escríbeme por WhatsApp o a callejaj@proton.me.",
+      error: "No se pudo enviar. Escríbeme por WhatsApp o a hola@jorgecalleja.dev.",
     },
     mobileBar: {
       text: "Auditoría gratis en 24h",
@@ -642,7 +642,7 @@ export const translations = {
       button: "Request free audit",
       sending: "Sending…",
       success: "Got it! Your report will land in your inbox within 24h.",
-      error: "Couldn't send. Message me on WhatsApp or at callejaj@proton.me.",
+      error: "Couldn't send. Message me on WhatsApp or at hola@jorgecalleja.dev.",
     },
     mobileBar: {
       text: "Free audit in 24h",

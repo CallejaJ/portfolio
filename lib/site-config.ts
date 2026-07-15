@@ -5,7 +5,7 @@
 
 export const WHATSAPP_NUMBER = "34649530022"; // prefijo país + número, sin "+" ni espacios
 
-export const CONTACT_EMAIL = "callejaj@proton.me";
+export const CONTACT_EMAIL = "hola@jorgecalleja.dev";
 
 // Enlace para dejar reseña en Google
 export const GOOGLE_REVIEW_URL = "https://g.page/r/CWeblad9pUMcEBM/review";

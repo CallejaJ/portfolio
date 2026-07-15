@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const to = process.env.AUDIT_TO_EMAIL || "callejaj@proton.me";
+    const to = process.env.AUDIT_TO_EMAIL || "hola@jorgecalleja.dev";
 
     if (!apiKey) {
       console.error("RESEND_API_KEY no configurada");
