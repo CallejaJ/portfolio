@@ -369,7 +369,7 @@ export const projects: Project[] = [
       "YouTube Embed",
     ],
     github: "https://github.com/CallejaJ/nitrile-affair",
-    demo: "https://nitrile-affair.vercel.app/",
+    demo: "https://nitrileaffair.com",
     featured: false,
   },
   {
