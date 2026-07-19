@@ -2,6 +2,8 @@
 
 Todo organizado por tipo de contenido. Aquí tienes qué hay en cada carpeta y para qué usarlo.
 
+> **Nueva rama de negocio:** el material de la campaña "CVs que pasan los ATS" está en `cv-ats/` (con su propio LEEME).
+
 ## 01-posts-cuadrados (1080×1080)
 Imágenes para el **feed de Instagram y Facebook**. Las que mejor se ven en el muro.
 - `foto-1..4` — los 4 dolores con foto (frustración, tono violeta): Kit Digital, Google, móvil, velocidad.
