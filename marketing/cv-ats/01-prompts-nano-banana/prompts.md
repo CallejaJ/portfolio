@@ -1,6 +1,6 @@
 # Prompts Nano Banana — fondos para creatividades CV-ATS
 
-Prompts en inglés (rinde mejor). Genera cada concepto en dos formatos y guarda en `../fondos/`:
+Prompts en inglés (rinde mejor). Genera cada concepto en dos formatos y guarda en `../06-fondos/`:
 
 - **1:1** (1080×1080) → `concepto-N.png` (feed)
 - **9:16** (1080×1920) → `concepto-N-v.png` (stories/reels)
