@@ -169,6 +169,13 @@ export const translations = {
           business: "Ana Rodríguez Abogados · Toledo",
           url: "https://anarodriguezabogados.vercel.app",
         },
+        {
+          quote:
+            "Nunca pensé que internet me generaría tantos clientes. Se han multiplicado los interesados en mis clases. Estoy muy feliz con el resultado.",
+          name: "Carlos Yépez",
+          business: "Bachata al Aire Libre · Málaga",
+          url: "https://bachataalairelibre.com",
+        },
       ],
     },
     caseStudy: {
