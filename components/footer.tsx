@@ -79,6 +79,16 @@ const Footer = ({ t }: any) => {
                   </a>
                 </li>
               ))}
+              {t.footer.cvLink && (
+                <li>
+                  <a
+                    href="/cv"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {t.footer.cvLink}
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
 
