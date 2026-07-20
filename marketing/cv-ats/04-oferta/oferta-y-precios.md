@@ -8,17 +8,18 @@ Oferta = gancho + paquetes + precio. Misma mecánica que la rama web: algo grati
 ## Paquetes
 
 ### 1. CV que pasa el filtro — 49€
-Reescritura y reestructuración completa del CV: formato ATS-friendly (una columna, jerarquía limpia, PDF parseable), keywords del sector, logros con métricas. Entrega en 48h + una ronda de cambios.
+Reescritura y reestructuración completa del CV **adaptado a una oferta concreta** (el cliente envía la oferta y se extraen sus keywords): formato ATS-friendly (una columna, jerarquía limpia, PDF parseable), logros con métricas. Entrega en 48h + una ronda de cambios.
+Clave del posicionamiento: un CV genérico no convierte; el producto base ya es "CV para esta oferta".
 
 ### 2. CV + Carta — 79€
-Lo anterior + carta de presentación adaptable y versión del CV optimizada para una oferta concreta (keywords de esa oferta). Entrega en 48-72h.
+Lo anterior + carta de presentación adaptada a esa oferta + segunda oferta objetivo incluida (CV adaptado a dos candidaturas). Entrega en 48-72h.
 
 ### 3. Pack Visibilidad Total — 129€
 CV + carta + optimización de perfil de LinkedIn (titular, extracto, keywords, foto/portada recomendadas). Es tu paquete diferencial: nadie más une "pasar el ATS" con "que te encuentren los recruiters". Entrega en 3-5 días.
 
 ### Extras
 - Versión en inglés de cualquier paquete: +25€
-- Segunda oferta objetivo (re-targeting de keywords): +15€
+- Oferta objetivo adicional (re-targeting de keywords): +15€
 
 ## Argumentos de venta (para copies y landing)
 - El 75% de los CVs los descarta un ATS antes de llegar a un humano.

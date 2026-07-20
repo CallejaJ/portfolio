@@ -50,4 +50,4 @@ Detalles técnicos (mismo estándar que la home):
 
 **Pains:** same three as ES, translated.
 **Process:** WhatsApp → free 24h ATS check → fixed quote → 48h delivery with before/after report.
-**Packages:** ATS-proof CV €49 / CV + cover letter €79 / Total Visibility (CV + letter + LinkedIn) €129. English version of any package +€25.
+**Packages:** ATS-proof CV tailored to one job post €49 / CV + cover letter (2 job posts) €79 / Total Visibility (CV + letter + LinkedIn) €129. English version of any package +€25.

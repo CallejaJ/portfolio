@@ -70,10 +70,10 @@ export const cvTranslations = {
         {
           name: "CV que pasa el filtro",
           price: "49€",
-          desc: "Tu CV reescrito y reestructurado para que el software lo lea entero.",
+          desc: "Tu CV reescrito y adaptado a la oferta que tú elijas. Un CV genérico no convierte.",
           features: [
             "Formato ATS-friendly: una columna, jerarquía limpia, PDF parseable",
-            "Keywords de tu sector",
+            "Adaptado a una oferta concreta: me envías la oferta y extraigo sus keywords",
             "Logros con métricas, no listas de tareas",
             "Entrega en 48h + una ronda de cambios",
           ],
@@ -82,11 +82,11 @@ export const cvTranslations = {
         {
           name: "CV + Carta",
           price: "79€",
-          desc: "Aplicas «armado» para una oferta concreta.",
+          desc: "Aplicas «armado»: CV y carta alineados con la misma oferta.",
           features: [
             "Todo lo del paquete anterior",
-            "Carta de presentación adaptable",
-            "Versión del CV optimizada para una oferta concreta: me envías la oferta y extraigo sus keywords",
+            "Carta de presentación adaptada a esa oferta",
+            "Segunda oferta objetivo incluida (CV adaptado a dos candidaturas)",
             "Entrega en 48-72h",
           ],
           highlighted: true,
@@ -105,7 +105,7 @@ export const cvTranslations = {
         },
       ],
       extras:
-        "Extras: versión en inglés de cualquier paquete +25€ · segunda oferta objetivo +15€",
+        "Extras: versión en inglés de cualquier paquete +25€ · oferta objetivo adicional +15€",
       cta: "Empezar gratis",
     },
     why: {
@@ -126,7 +126,7 @@ export const cvTranslations = {
         },
         {
           q: "¿Cuánto cuesta?",
-          a: "El análisis es gratis. Si quieres que lo arregle: CV optimizado 49€, CV + carta 79€, y el pack completo con LinkedIn 129€. Precio cerrado, sin sorpresas.",
+          a: "El análisis es gratis. Si quieres que lo arregle: CV optimizado y adaptado a una oferta concreta 49€, CV + carta 79€, y el pack completo con LinkedIn 129€. Precio cerrado, sin sorpresas.",
         },
         {
           q: "¿Cuánto se tarda?",
@@ -225,10 +225,10 @@ export const cvTranslations = {
         {
           name: "ATS-proof CV",
           price: "€49",
-          desc: "Your CV rewritten and restructured so the software reads all of it.",
+          desc: "Your CV rewritten and tailored to the job post you choose. A generic CV doesn't convert.",
           features: [
             "ATS-friendly format: single column, clean hierarchy, parseable PDF",
-            "Keywords for your sector",
+            "Tailored to one specific job post: you send me the post and I extract its keywords",
             "Achievements with metrics, not task lists",
             "48h delivery + one revision round",
           ],
@@ -237,11 +237,11 @@ export const cvTranslations = {
         {
           name: "CV + Cover letter",
           price: "€79",
-          desc: "Apply fully armed for a specific job post.",
+          desc: "Apply fully armed: CV and cover letter aligned with the same job post.",
           features: [
             "Everything in the previous package",
-            "Adaptable cover letter",
-            "CV version optimised for one specific job post: you send me the post and I extract its keywords",
+            "Cover letter tailored to that job post",
+            "Second target job post included (CV tailored to two applications)",
             "48-72h delivery",
           ],
           highlighted: true,
@@ -260,7 +260,7 @@ export const cvTranslations = {
         },
       ],
       extras:
-        "Extras: English version of any package +€25 · second target job post +€15",
+        "Extras: English version of any package +€25 · additional target job post +€15",
       cta: "Start free",
     },
     why: {
@@ -281,7 +281,7 @@ export const cvTranslations = {
         },
         {
           q: "How much does it cost?",
-          a: "The analysis is free. If you want it fixed: optimised CV €49, CV + cover letter €79, full pack with LinkedIn €129. Fixed price, no surprises.",
+          a: "The analysis is free. If you want it fixed: CV optimised and tailored to a specific job post €49, CV + cover letter €79, full pack with LinkedIn €129. Fixed price, no surprises.",
         },
         {
           q: "How long does it take?",
