@@ -52,12 +52,6 @@ export default function CvLanding() {
             </span>
           </a>
           <div className="flex items-center gap-4">
-            <a
-              href="/"
-              className="hidden sm:block text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
-              {t.backHome}
-            </a>
             <div className="flex items-center gap-1 rounded-full border border-border p-1">
               {["es", "en"].map((lang) => (
                 <button
