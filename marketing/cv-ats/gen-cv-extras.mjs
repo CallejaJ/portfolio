@@ -44,7 +44,7 @@ const textBlock = ({ tag, headline, sub, cta, phone }) => {
   ).join("");
   return `
     ${faro(60, 60, 1.4)}
-    <text x="135" y="104" font-family="Liberation Sans" font-size="32" font-weight="bold" fill="#e9e4f8">jorgecalleja.dev/cv</text>
+    <text x="135" y="104" font-family="Liberation Sans" font-size="32" font-weight="bold" fill="#e9e4f8">jorgecalleja.dev/cv-ats</text>
     <rect x="60" y="${base - 160}" width="${tag.length * 17 + 44}" height="52" rx="26" fill="#9333ea"/>
     <text x="82" y="${base - 125}" font-family="Liberation Sans" font-size="26" font-weight="bold" fill="white">${tag}</text>
     ${hlLines}
@@ -93,7 +93,7 @@ async function makeOfertaStory(lang, outDir) {
     </defs>
     <rect width="${W}" height="${H}" fill="url(#bg)"/>
     ${faro(60, 60, 1.4)}
-    <text x="135" y="104" font-family="Liberation Sans" font-size="32" font-weight="bold" fill="#e9e4f8">jorgecalleja.dev/cv</text>
+    <text x="135" y="104" font-family="Liberation Sans" font-size="32" font-weight="bold" fill="#e9e4f8">jorgecalleja.dev/cv-ats</text>
     <!-- Documento con check -->
     <g transform="translate(390,430)">
       <rect x="0" y="0" width="300" height="400" rx="24" fill="none" stroke="#e9e4f8" stroke-width="14"/>

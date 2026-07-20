@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   FileX2,
   KeyRound,
@@ -22,6 +23,11 @@ import { getWhatsAppLink, CONTACT_EMAIL } from "@/lib/site-config";
 import { cvTranslations } from "@/lib/cv-translations";
 
 const painIcons = [FileX2, KeyRound, History];
+const painImages = [
+  "/images/cv/pain-1-robot.jpg",
+  "/images/cv/pain-2-monton.jpg",
+  "/images/cv/pain-3-segundos.jpg",
+];
 
 export default function CvLanding() {
   const [language, setLanguage] = useState("es");
@@ -161,30 +167,61 @@ export default function CvLanding() {
             </motion.p>
             <div className="w-32 h-1.5 bg-gradient-to-r from-amber-500 to-orange-400 mx-auto rounded-full"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col gap-24">
             {t.pains.items.map((item, i) => {
               const Icon = painIcons[i % painIcons.length];
+              const isEven = i % 2 === 0;
               return (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.15 }}
-                  className="rounded-3xl border border-border bg-card/50 p-8 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] transition-all duration-300"
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.7 }}
+                  className={`flex flex-col ${
+                    isEven ? "lg:flex-row" : "lg:flex-row-reverse"
+                  } items-center gap-12 lg:gap-20`}
                 >
-                  <div className="p-4 bg-amber-500/10 dark:bg-amber-500/20 rounded-2xl text-amber-500 w-fit mb-6">
-                    <Icon size={28} />
+                  <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                    <div className="flex items-start gap-4 mb-6">
+                      <motion.div
+                        whileHover={{ rotate: -8, scale: 1.05 }}
+                        className="p-4 bg-amber-500/10 dark:bg-amber-500/20 rounded-2xl text-amber-500 shrink-0"
+                      >
+                        <Icon size={32} />
+                      </motion.div>
+                      <div>
+                        <span className="block text-sm font-bold tracking-widest text-amber-500/80 mb-1">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <h3 className="text-2xl md:text-4xl font-bold text-foreground leading-tight">
+                          {item.title}
+                        </h3>
+                      </div>
+                    </div>
+                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
-                  <span className="block text-sm font-bold tracking-widest text-amber-500/80 mb-2">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="text-xl font-bold mb-3 leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {item.desc}
-                  </p>
+                  <div className="w-full lg:w-1/2">
+                    <motion.div
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ duration: 0.4 }}
+                      className="relative w-full aspect-video md:aspect-[4/3] rounded-3xl overflow-hidden shadow-[0_0_60px_rgba(168,85,247,0.2)] border border-border/50 group"
+                    >
+                      <Image
+                        src={painImages[i % painImages.length]}
+                        alt={item.title}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background/60 to-transparent"></div>
+                      <span className="absolute bottom-4 right-6 text-6xl font-black text-white/10 select-none">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                    </motion.div>
+                  </div>
                 </motion.div>
               );
             })}
@@ -255,13 +292,13 @@ export default function CvLanding() {
                   href={waLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
+                  className={`inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all duration-300 hover:scale-105 ${
                     pkg.highlighted
                       ? "bg-[#25D366] hover:bg-[#1fbd5a] text-white shadow-[0_8px_30px_rgba(37,211,102,0.35)]"
                       : "border border-border hover:border-primary/60 text-foreground"
                   }`}
                 >
-                  <WhatsAppIcon size={18} />
+                  <WhatsAppIcon size={16} />
                   {t.packages.cta}
                 </a>
               </motion.div>

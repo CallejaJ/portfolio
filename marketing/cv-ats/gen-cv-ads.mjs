@@ -72,7 +72,7 @@ async function makeAd({ concepto, vertical, name, lang, tag, headline, sub, cta,
     <rect width="${W}" height="${H}" fill="url(#dark)"/>
     <rect width="${W}" height="200" fill="url(#topfade)"/>
     ${faro(60, 48, 1.4)}
-    <text x="135" y="92" font-family="Liberation Sans" font-size="32" font-weight="bold" fill="#e9e4f8">jorgecalleja.dev/cv</text>
+    <text x="135" y="92" font-family="Liberation Sans" font-size="32" font-weight="bold" fill="#e9e4f8">jorgecalleja.dev/cv-ats</text>
     <rect x="60" y="${base - 166}" width="${tag.length * 17 + 44}" height="52" rx="26" fill="#9333ea"/>
     <text x="82" y="${base - 131}" font-family="Liberation Sans" font-size="26" font-weight="bold" fill="white">${tag}</text>
     ${hlLines}

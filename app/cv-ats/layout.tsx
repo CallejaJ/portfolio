@@ -10,7 +10,7 @@ const serviceJsonLd = {
   serviceType: "Redacción y optimización de currículum",
   description:
     "Optimización de currículums para pasar los filtros ATS: formato parseable, keywords de la oferta y puntuación medible antes/después. Análisis ATS gratuito en 24h.",
-  url: `${SITE_URL}/cv`,
+  url: `${SITE_URL}/cv-ats`,
   provider: {
     "@type": "Person",
     name: "Jorge Calleja Pérez",
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
   title: "CVs que pasan los ATS · Análisis gratis en 24h | Jorge Calleja",
   description:
     "¿Envías currículums y nadie te llama? El 75% de los CVs los descarta un software antes de que los vea una persona. Análisis ATS gratuito en 24h y CV optimizado desde 49€.",
-  alternates: { canonical: `${SITE_URL}/cv` },
+  alternates: { canonical: `${SITE_URL}/cv-ats` },
   openGraph: {
     title: "CVs que pasan los ATS · Análisis gratis en 24h",
     description:
       "El 75% de los CVs los descarta un software antes de que los vea una persona. Descubre gratis si el tuyo pasa el filtro.",
-    url: `${SITE_URL}/cv`,
+    url: `${SITE_URL}/cv-ats`,
     siteName: "Jorge Calleja — Desarrollo Web",
     locale: "es_ES",
     type: "website",

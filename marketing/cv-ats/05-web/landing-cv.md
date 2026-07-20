@@ -2,7 +2,7 @@
 
 ## Recomendación de ubicación
 
-**Nueva ruta `app/cv/page.tsx` → jorgecalleja.dev/cv**, como landing independiente. No lo metas como quinta tarjeta en "Así lo arreglamos":
+**Nueva ruta `app/cv-ats/page.tsx` → jorgecalleja.dev/cv-ats**, como landing independiente. No lo metas como quinta tarjeta en "Así lo arreglamos":
 
 - Público distinto: la home vende B2B (dueños de negocio con web del Kit Digital); esto es B2C (candidatos). Mezclarlos diluye ambos mensajes y confunde a Google sobre de qué va tu home.
 - Los anuncios deben apuntar **directo a /cv** (o a WhatsApp), nunca a la home: mensaje del anuncio = mensaje de la landing.
@@ -10,10 +10,10 @@
 
 Detalles técnicos (mismo estándar que la home):
 - Metadata propia + OG image propia (genera una con el concepto 5).
-- Añadir `/cv` a `app/sitemap.ts`.
+- Añadir `/cv-ats` a `app/sitemap.ts`.
 - JSON-LD `Service` + `FAQPage`.
 - Versión EN: con tu selector ES/EN actual, o ruta `/en/cv` si lo tienes por rutas.
-- El píxel de Meta ya está (banner de cookies) → registra visitas a /cv para retargeting.
+- El píxel de Meta ya está (banner de cookies) → registra visitas a /cv-ats para retargeting.
 
 ## Copy de la landing — ES
 

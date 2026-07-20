@@ -46,7 +46,7 @@ export const cvTranslations = {
       steps: [
         {
           title: "Me mandas tu CV por WhatsApp",
-          desc: "En PDF o Word, tal y como lo estés enviando ahora. Sin formularios ni registros.",
+          desc: "En PDF o Word, tal y como lo estés enviando ahora. Si quieres adaptarlo a una oferta concreta, mándame también el enlace o el texto de esa oferta. Sin formularios ni registros.",
         },
         {
           title: "Análisis ATS gratis en 24h",
@@ -86,7 +86,7 @@ export const cvTranslations = {
           features: [
             "Todo lo del paquete anterior",
             "Carta de presentación adaptable",
-            "Versión del CV optimizada para una oferta concreta, con sus keywords",
+            "Versión del CV optimizada para una oferta concreta: me envías la oferta y extraigo sus keywords",
             "Entrega en 48-72h",
           ],
           highlighted: true,
@@ -106,7 +106,7 @@ export const cvTranslations = {
       ],
       extras:
         "Extras: versión en inglés de cualquier paquete +25€ · segunda oferta objetivo +15€",
-      cta: "Empezar con el análisis gratis",
+      cta: "Empezar gratis",
     },
     why: {
       title: "¿Por qué conmigo?",
@@ -201,7 +201,7 @@ export const cvTranslations = {
       steps: [
         {
           title: "Send me your CV on WhatsApp",
-          desc: "PDF or Word, exactly as you're sending it now. No forms, no sign-ups.",
+          desc: "PDF or Word, exactly as you're sending it now. If you want it tailored to a specific job post, send me the link or text of that post too. No forms, no sign-ups.",
         },
         {
           title: "Free ATS analysis in 24h",
@@ -241,7 +241,7 @@ export const cvTranslations = {
           features: [
             "Everything in the previous package",
             "Adaptable cover letter",
-            "CV version optimised for one specific job post, with its keywords",
+            "CV version optimised for one specific job post: you send me the post and I extract its keywords",
             "48-72h delivery",
           ],
           highlighted: true,
@@ -261,7 +261,7 @@ export const cvTranslations = {
       ],
       extras:
         "Extras: English version of any package +€25 · second target job post +€15",
-      cta: "Start with the free analysis",
+      cta: "Start free",
     },
     why: {
       title: "Why me?",

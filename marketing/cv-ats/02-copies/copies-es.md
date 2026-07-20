@@ -38,7 +38,7 @@ Tu CV tiene una nota en el ATS y no la conoces. Descúbrela gratis: análisis en
 
 ## CTA del botón
 - Enviar mensaje de WhatsApp (recomendado, tu funnel de siempre)
-- Más información → landing /cv
+- Más información → landing /cv-ats
 
 ## Enlace WhatsApp precargado
 https://wa.me/34649530022?text=Hola%20Jorge%2C%20%C2%BFme%20analizas%20el%20CV%20para%20ver%20si%20pasa%20los%20ATS%3F
