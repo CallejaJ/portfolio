@@ -159,6 +159,7 @@ export const translations = {
     },
     testimonials: {
       title: "Lo que dicen mis clientes",
+      onGoogle: "reseñas en Google",
       reviewText: "¿Trabajamos juntos? Me ayudarías mucho dejando tu opinión.",
       reviewButton: "Deja tu reseña en Google",
       items: [
@@ -175,6 +176,13 @@ export const translations = {
           name: "Carlos Yépez",
           business: "Bachata al Aire Libre · Málaga",
           url: "https://bachataalairelibre.com",
+        },
+        {
+          quote:
+            "Jorge Calleja me hizo una web funcional, moderna y totalmente personalizada a mis necesidades. Siempre atento y fiel a que me sintiera satisfecho.",
+          name: "Rafa Rodríguez",
+          business: "Reseña en Google",
+          url: "https://g.page/r/CWeblad9pUMcEBM/review",
         },
       ],
     },
@@ -220,7 +228,7 @@ export const translations = {
     analyzer: {
       title: "¿Qué nota le pone Google a tu web?",
       subtitle:
-        "Analízala gratis en 30 segundos. Sin registro, sin dejar tu email. Te enseño exactamente qué está fallando.",
+        "La mido con el estándar oficial de Google (PageSpeed), el mismo para todas las webs. Sin trucos y sin maquillaje: la nota real, la que cuenta para tu posicionamiento.",
       placeholder: "escribe tu web: tu-negocio.es",
       button: "Analizar mi web gratis",
       analyzing: "Analizando tu web…",
@@ -241,7 +249,8 @@ export const translations = {
       cta: "Quiero arreglar esto",
       ctaSub: "Te digo gratis cómo y cuánto costaría · WhatsApp",
       again: "Analizar otra web",
-      disclaimer: "Datos reales de Google Lighthouse.",
+      disclaimer:
+        "Datos 100% reales de Google (PageSpeed Insights / Lighthouse). El mismo criterio para tu web y la de tu competencia — así de honesto.",
     },
     mobileBar: {
       text: "Auditoría gratis en 24h",
@@ -626,6 +635,7 @@ export const translations = {
     },
     testimonials: {
       title: "What my clients say",
+      onGoogle: "Google reviews",
       reviewText: "Did we work together? A quick review would really help me out.",
       reviewButton: "Leave a Google review",
       items: [
@@ -635,6 +645,20 @@ export const translations = {
           name: "Ana Rodríguez",
           business: "Ana Rodríguez Abogados · Toledo",
           url: "https://anarodriguezabogados.vercel.app",
+        },
+        {
+          quote:
+            "I never thought the internet would bring me so many clients. The number of people interested in my classes has multiplied. I'm very happy with the result.",
+          name: "Carlos Yépez",
+          business: "Bachata al Aire Libre · Málaga",
+          url: "https://bachataalairelibre.com",
+        },
+        {
+          quote:
+            "Jorge Calleja built me a functional, modern website fully tailored to my needs. Always attentive and committed to making sure I was satisfied.",
+          name: "Rafa Rodríguez",
+          business: "Google review",
+          url: "https://g.page/r/CWeblad9pUMcEBM/review",
         },
       ],
     },
@@ -680,7 +704,7 @@ export const translations = {
     analyzer: {
       title: "What score does Google give your website?",
       subtitle:
-        "Analyze it free in 30 seconds. No sign-up, no email. I'll show you exactly what's failing.",
+        "I measure it with Google's official standard (PageSpeed), the same for every website. No tricks, no makeup: the real score, the one that counts for your ranking.",
       placeholder: "type your website: your-business.com",
       button: "Analyze my website free",
       analyzing: "Analyzing your website…",
@@ -701,7 +725,8 @@ export const translations = {
       cta: "I want to fix this",
       ctaSub: "I'll tell you how and how much, free · WhatsApp",
       again: "Analyze another website",
-      disclaimer: "Real data from Google Lighthouse.",
+      disclaimer:
+        "100% real data from Google (PageSpeed Insights / Lighthouse). The same criteria for your website and your competitor's — that's how honest it is.",
     },
     mobileBar: {
       text: "Free audit in 24h",

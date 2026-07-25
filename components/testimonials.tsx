@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Quote, ExternalLink, Star } from "lucide-react";
-import { GOOGLE_REVIEW_URL } from "@/lib/site-config";
+import { GOOGLE_REVIEW_URL, GOOGLE_RATING } from "@/lib/site-config";
 
 const TestimonialsSection = ({ t }: { t: any }) => {
   return (
@@ -17,7 +17,32 @@ const TestimonialsSection = ({ t }: { t: any }) => {
           >
             {t.testimonials.title}
           </motion.h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+
+          {/* Valoración de Google */}
+          {GOOGLE_RATING.count > 0 && (
+            <motion.a
+              href={GOOGLE_REVIEW_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-border bg-card hover:border-primary/50 transition-colors"
+            >
+              <span className="text-2xl font-bold text-foreground">
+                {GOOGLE_RATING.rating.toFixed(1)}
+              </span>
+              <span className="flex gap-0.5">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} size={16} className="fill-amber-400 text-amber-400" />
+                ))}
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {GOOGLE_RATING.count} {t.testimonials.onGoogle}
+              </span>
+            </motion.a>
+          )}
         </div>
 
         <div className="grid grid-cols-1 gap-8">

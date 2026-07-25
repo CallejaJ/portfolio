@@ -10,6 +10,10 @@ export const CONTACT_EMAIL = "hola@jorgecalleja.dev";
 // Enlace para dejar reseña en Google
 export const GOOGLE_REVIEW_URL = "https://g.page/r/CWeblad9pUMcEBM/review";
 
+// Valoración de Google (actualízala a mano cuando cambie).
+// rating = nota media (0-5), count = número de reseñas. Si count es 0, no se muestra el badge.
+export const GOOGLE_RATING = { rating: 5.0, count: 2 };
+
 // Meta Pixel (Facebook) — se carga solo tras consentimiento de cookies
 export const META_PIXEL_ID = "2021817168707788";
 
