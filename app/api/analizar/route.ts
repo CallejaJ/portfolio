@@ -59,35 +59,21 @@ export async function POST(request: Request) {
 
     // Métricas clave y comprobaciones propias derivadas del análisis
     const lcpMs = audits["largest-contentful-paint"]?.numericValue ?? null;
-    const httpsAudit = audits["is-on-https"]?.score;
-    const viewportAudit = audits["viewport"]?.score;
-    const titleAudit = audits["document-title"]?.score;
-    const metaDescAudit = audits["meta-description"]?.score;
+    // Un audit se considera "aprobado" si su score es 1.
+    // Si el audit no existe (undefined), damos beneficio de la duda (no lo marcamos en rojo).
+    const passes = (id: string) => {
+      const s = audits[id]?.score;
+      return s == null ? true : s === 1;
+    };
 
     const checks = [
-      {
-        id: "https",
-        ok: httpsAudit === 1,
-        label: "Certificado de seguridad (HTTPS)",
-      },
-      {
-        id: "movil",
-        ok: viewportAudit === 1,
-        label: "Preparada para el móvil",
-      },
-      {
-        id: "titulo",
-        ok: titleAudit === 1,
-        label: "Título para Google",
-      },
-      {
-        id: "meta",
-        ok: metaDescAudit === 1,
-        label: "Descripción para Google",
-      },
+      { id: "https", ok: passes("is-on-https"), label: "Certificado de seguridad (HTTPS)" },
+      { id: "movil", ok: passes("viewport"), label: "Preparada para el móvil" },
+      { id: "titulo", ok: passes("document-title"), label: "Título para Google" },
+      { id: "meta", ok: passes("meta-description"), label: "Descripción para Google" },
       {
         id: "velocidad",
-        ok: lcpMs != null && lcpMs < 2500,
+        ok: lcpMs != null ? lcpMs < 2500 : true,
         label: "Carga rápida (menos de 2,5s)",
       },
     ];

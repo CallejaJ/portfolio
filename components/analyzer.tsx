@@ -116,8 +116,16 @@ const AnalyzerSection = ({ t }: { t: any }) => {
           .reduce((a, b) => a + b, 0) / 4
       )
     : 0;
+  // Nº de comprobaciones que fallan (rojas)
+  const failedChecks = result ? result.checks.filter((c) => !c.ok).length : 0;
+  // "Muy bien" solo si la media es alta Y no hay ningún check en rojo.
+  // Si hay fallos, no puede decir que va perfecta aunque la media sea alta.
   const resultMsg =
-    avg >= 90 ? t.analyzer.resultGood : avg >= 50 ? t.analyzer.resultOk : t.analyzer.resultBad;
+    avg >= 90 && failedChecks === 0
+      ? t.analyzer.resultGood
+      : avg >= 50 && failedChecks <= 1
+      ? t.analyzer.resultOk
+      : t.analyzer.resultBad;
 
   return (
     <section className="py-24 bg-secondary/5 relative" id="analizar">
