@@ -18,6 +18,7 @@ import AuditFormSection from "@/components/audit-form";
 import MobileCtaBar from "@/components/mobile-cta-bar";
 import CookieConsent from "@/components/cookie-consent";
 import WhatsAppTracker from "@/components/whatsapp-tracker";
+import AnalyzerSection from "@/components/analyzer";
 import { Header } from "@/components/header";
 import { FaroBackground } from "@/components/animated-backgrounds";
 import { translations } from "@/lib/translations";
@@ -38,6 +39,7 @@ export default function JorgeLanding() {
       <FaroBackground />
       <Header language={language} setLanguage={setLanguage} t={t} />
       <HeroSection t={t} />
+      <AnalyzerSection t={t} />
       <PainPointsSection t={t} />
       <ServicesSection t={t} />
       <ProcessSection t={t} />
