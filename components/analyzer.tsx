@@ -40,27 +40,47 @@ const Gauge = ({
   const c = 2 * Math.PI * r;
   const pct = score == null ? 0 : score / 100;
   const color = colorFor(score);
+  const gid = `g-${label.replace(/\s+/g, "")}`;
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-col items-center gap-2.5">
       <div className="relative w-32 h-32">
         <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
-          <circle cx="60" cy="60" r={r} fill="none" stroke="#352a55" strokeWidth="9" />
+          {/* halo suave del color, tras el aro */}
+          <circle
+            cx="60"
+            cy="60"
+            r={r}
+            fill={color}
+            opacity="0.08"
+          />
+          {/* carril: gris muy tenue que se integra con el fondo */}
+          <circle
+            cx="60"
+            cy="60"
+            r={r}
+            fill="none"
+            stroke="currentColor"
+            className="text-muted-foreground/15"
+            strokeWidth="8"
+          />
+          {/* arco de progreso */}
           <motion.circle
             cx="60"
             cy="60"
             r={r}
             fill="none"
             stroke={color}
-            strokeWidth="9"
+            strokeWidth="8"
             strokeLinecap="round"
             strokeDasharray={c}
             initial={{ strokeDashoffset: c }}
             animate={{ strokeDashoffset: c - c * pct }}
-            transition={{ duration: 1, delay, ease: "easeOut" }}
+            transition={{ duration: 1.1, delay, ease: "easeOut" }}
+            style={{ filter: `drop-shadow(0 0 4px ${color}66)` }}
           />
         </svg>
         <div
-          className="absolute inset-0 flex items-center justify-center text-3xl font-bold"
+          className="absolute inset-0 flex items-center justify-center text-[2rem] font-bold tabular-nums"
           style={{ color }}
         >
           {score ?? "—"}
@@ -215,21 +235,29 @@ const AnalyzerSection = ({ t }: { t: any }) => {
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
                   {t.analyzer.checksTitle}
                 </h3>
-                <ul className="space-y-2.5">
+                <ul className="space-y-3">
                   {result.checks.map((c) => (
                     <li key={c.id} className="flex items-center gap-3">
                       <span
-                        className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center ${
-                          c.ok ? "bg-green-500" : "bg-red-500"
+                        className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center ${
+                          c.ok
+                            ? "bg-green-500/15 text-green-500"
+                            : "bg-red-500/15 text-red-500"
                         }`}
                       >
                         {c.ok ? (
-                          <Check size={14} className="text-white" />
+                          <Check size={15} strokeWidth={2.5} />
                         ) : (
-                          <X size={14} className="text-white" />
+                          <X size={15} strokeWidth={2.5} />
                         )}
                       </span>
-                      <span className={c.ok ? "text-foreground" : "text-muted-foreground"}>
+                      <span
+                        className={
+                          c.ok
+                            ? "text-foreground"
+                            : "text-foreground/70 line-through decoration-red-500/40"
+                        }
+                      >
                         {c.label}
                       </span>
                     </li>
