@@ -21,7 +21,8 @@ export type ProjectKey =
   | "precioLuzHora"
   | "nitrileAffair"
   | "timeBankOnChain"
-  | "outdoorBachata";
+  | "outdoorBachata"
+  | "analizoTuCv";
 
 export interface Project {
   id: number;
@@ -402,6 +403,21 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ",
     demo: "https://www.outdoorbachatamalaga.eu",
+    featured: false,
+  },
+  {
+    id: 24,
+    titleKey: "analizoTuCv",
+    image: "/images/analizotucv.webp",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "IA (LLM)",
+      "SEO",
+    ],
+    github: "https://github.com/CallejaJ",
+    demo: "https://analizotucv.com",
     featured: false,
   },
 ];

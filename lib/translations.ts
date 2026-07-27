@@ -431,6 +431,12 @@ export const translations = {
           "Web en inglés dirigida a los cruceristas que atracan en Málaga: bajan del barco y reservan una clase de bachata junto al puerto. El mismo negocio de baile, abierto a un público internacional que busca experiencias.",
         metrics: "Reservas de turistas internacionales",
       },
+      analizoTuCv: {
+        title: "Analizo tu CV — Análisis de currículum con IA",
+        description:
+          "Herramienta que analiza tu currículum con inteligencia artificial y te dice si pasará los filtros automáticos (ATS) que usan las empresas. Da una puntuación y consejos concretos para mejorarlo, al instante y sin registro.",
+        metrics: "Análisis de CV con IA al instante",
+      },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
       {
@@ -906,6 +912,12 @@ export const translations = {
         description:
           "An English-language site aimed at cruise passengers docking in Málaga: they step off the ship and book a bachata class right by the port. The same dance business, opened up to an international audience looking for experiences.",
         metrics: "International tourist bookings",
+      },
+      analizoTuCv: {
+        title: "Analizo tu CV — AI résumé analysis",
+        description:
+          "A tool that analyzes your résumé with AI and tells you whether it will pass the automated filters (ATS) companies use. It gives a score and concrete tips to improve it, instantly and with no sign-up.",
+        metrics: "Instant AI résumé analysis",
       },
     } as Record<ProjectKey, ProjectData>,
     experienceItems: [
