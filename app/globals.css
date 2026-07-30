@@ -77,3 +77,28 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+/* Transición suave y uniforme al cambiar de tema.
+   La clase .theme-transition la añade el botón de tema solo durante el cambio
+   (~450ms), así el efecto no afecta a hovers ni a otras interacciones.
+   El !important fuerza que TODOS los elementos se fundan a la vez, evitando
+   el efecto "a trozos" (unos con transición propia y otros sin ella). */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 400ms ease, border-color 400ms ease,
+    color 400ms ease, fill 400ms ease, stroke 400ms ease,
+    box-shadow 400ms ease !important;
+  transition-delay: 0ms !important;
+}
+
+/* Respeta a quien prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .theme-transition,
+  .theme-transition *,
+  .theme-transition *::before,
+  .theme-transition *::after {
+    transition: none !important;
+  }
+}

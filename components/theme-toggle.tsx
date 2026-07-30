@@ -13,6 +13,14 @@ export function ThemeToggle() {
     setMounted(true);
   }, []);
 
+  const toggleTheme = React.useCallback(() => {
+    const root = document.documentElement;
+    // Activa la transición de color solo durante el cambio de tema
+    root.classList.add("theme-transition");
+    window.setTimeout(() => root.classList.remove("theme-transition"), 450);
+    setTheme(theme === "dark" ? "light" : "dark");
+  }, [theme, setTheme]);
+
   if (!mounted) {
     return (
       <Button variant="ghost" size="icon" aria-label="Cambiar tema" className="w-10 h-10">
@@ -25,7 +33,7 @@ export function ThemeToggle() {
     <Button
       variant="ghost"
       size="icon"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={toggleTheme}
       aria-label="Cambiar tema claro u oscuro"
       className="w-10 h-10 relative"
     >
