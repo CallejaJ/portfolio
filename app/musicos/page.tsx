@@ -5,18 +5,24 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Music,
-  Video,
-  CalendarDays,
-  Images,
-  ShoppingBag,
-  Mail,
-  Lock,
-  Zap,
+  Disc3,
+  Clapperboard,
+  Ticket,
+  Aperture,
+  Shirt,
+  Send,
+  Unlink,
+  Shuffle,
+  Frown,
   Smartphone,
   ArrowRight,
   Check,
   ArrowLeft,
 } from "lucide-react";
+
+// Iconos por posición (más originales y a tono con la escena musical)
+const PAIN_ICONS = [Unlink, Shuffle, Frown];
+const FEATURE_ICONS = [Disc3, Clapperboard, Ticket, Aperture, Shirt, Send];
 import { FaroLogo } from "@/components/logo";
 import { FaroBackground } from "@/components/animated-backgrounds";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -46,17 +52,14 @@ const copy = {
         "Spotify, Instagram y YouTube son de ellos, no tuyos. Y ese es el problema.",
       items: [
         {
-          icon: Lock,
           title: "No eres dueño de tu audiencia",
           desc: "Un cambio de algoritmo o un cierre de cuenta y desapareces, sin avisar y sin control.",
         },
         {
-          icon: Images,
           title: "Todo está disperso",
           desc: "Tu música por aquí, los vídeos por allá, los bolos en otro sitio. Nadie encuentra todo junto.",
         },
         {
-          icon: Zap,
           title: "No transmites profesionalidad",
           desc: "Un enlace de perfil no es lo mismo que una web propia. La diferencia se nota a la hora de que te contraten.",
         },
@@ -67,12 +70,12 @@ const copy = {
       subtitle:
         "Un solo enlace, tuyo, con todo lo que necesita quien quiere escucharte o contratarte.",
       items: [
-        { icon: Music, title: "Tu música", desc: "Reproductor con tus tracks y enlaces a todas las plataformas." },
-        { icon: Video, title: "Tus vídeos", desc: "Videoclips y sesiones en directo integrados." },
-        { icon: CalendarDays, title: "Tus bolos", desc: "Fechas y próximos conciertos, siempre al día." },
-        { icon: Images, title: "Tu galería", desc: "Fotos de directo y prensa para promotores y medios." },
-        { icon: ShoppingBag, title: "Tu tienda", desc: "Merch y entradas, con la venta en tus manos." },
-        { icon: Mail, title: "Tu contacto", desc: "Formulario de booking directo, sin intermediarios." },
+        { title: "Tu música", desc: "Reproductor con tus tracks y enlaces a todas las plataformas." },
+        { title: "Tus vídeos", desc: "Videoclips y sesiones en directo integrados." },
+        { title: "Tus bolos", desc: "Fechas y próximos conciertos, siempre al día." },
+        { title: "Tu galería", desc: "Fotos de directo y prensa para promotores y medios." },
+        { title: "Tu tienda", desc: "Merch y entradas, con la venta en tus manos." },
+        { title: "Tu contacto", desc: "Formulario de booking directo, sin intermediarios." },
       ],
     },
     example: {
@@ -118,17 +121,14 @@ const copy = {
         "Spotify, Instagram and YouTube are theirs, not yours. And that's the problem.",
       items: [
         {
-          icon: Lock,
           title: "You don't own your audience",
           desc: "One algorithm change or a banned account and you vanish — no warning, no control.",
         },
         {
-          icon: Images,
           title: "Everything is scattered",
           desc: "Your music here, videos there, gigs somewhere else. Nobody finds it all in one place.",
         },
         {
-          icon: Zap,
           title: "It doesn't look professional",
           desc: "A profile link isn't a real website. That difference matters when someone wants to book you.",
         },
@@ -139,12 +139,12 @@ const copy = {
       subtitle:
         "A single link, yours, with everything a fan or promoter needs to listen or book you.",
       items: [
-        { icon: Music, title: "Your music", desc: "A player with your tracks and links to every platform." },
-        { icon: Video, title: "Your videos", desc: "Music videos and live sessions built in." },
-        { icon: CalendarDays, title: "Your gigs", desc: "Tour dates and upcoming shows, always current." },
-        { icon: Images, title: "Your gallery", desc: "Live and press photos for promoters and media." },
-        { icon: ShoppingBag, title: "Your store", desc: "Merch and tickets, with the sale in your hands." },
-        { icon: Mail, title: "Your contact", desc: "A direct booking form, no middlemen." },
+        { title: "Your music", desc: "A player with your tracks and links to every platform." },
+        { title: "Your videos", desc: "Music videos and live sessions built in." },
+        { title: "Your gigs", desc: "Tour dates and upcoming shows, always current." },
+        { title: "Your gallery", desc: "Live and press photos for promoters and media." },
+        { title: "Your store", desc: "Merch and tickets, with the sale in your hands." },
+        { title: "Your contact", desc: "A direct booking form, no middlemen." },
       ],
     },
     example: {
@@ -288,7 +288,7 @@ export default function MusicosPage() {
           </div>
           <div className="space-y-12 mt-14">
             {t.pain.items.map((item, i) => {
-              const Icon = item.icon;
+              const Icon = PAIN_ICONS[i];
               const images = [
                 "/images/music-pain-1.webp",
                 "/images/music-pain-2.webp",
@@ -336,7 +336,7 @@ export default function MusicosPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {t.features.items.map((item, i) => {
-              const Icon = item.icon;
+              const Icon = FEATURE_ICONS[i];
               return (
                 <div
                   key={i}
