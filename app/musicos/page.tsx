@@ -226,40 +226,56 @@ export default function MusicosPage() {
       </header>
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 px-5">
-        <div className="max-w-3xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-card/50 backdrop-blur-sm text-xs font-semibold text-secondary mb-6">
-            <Music size={14} />
-            {t.hero.badge}
-          </span>
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.05]">
-            {t.hero.titleA}{" "}
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              {t.hero.titleB}
+      <section className="relative pt-28 pb-16 px-5">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div className="text-center lg:text-left">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-card/50 backdrop-blur-sm text-xs font-semibold text-secondary mb-6">
+              <Music size={14} />
+              {t.hero.badge}
             </span>
-          </h1>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            {t.hero.subtitle}
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href={wa}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#1fbd5a] text-white font-semibold shadow-lg transition-all hover:scale-105"
-            >
-              <WhatsAppIcon size={18} />
-              {t.hero.ctaPrimary}
-            </a>
-            <a
-              href="#ejemplo"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-card/50 backdrop-blur-sm font-semibold hover:border-primary transition-all"
-            >
-              {t.hero.ctaSecondary}
-              <ArrowRight size={18} />
-            </a>
+            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.05]">
+              {t.hero.titleA}{" "}
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                {t.hero.titleB}
+              </span>
+            </h1>
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0">
+              {t.hero.subtitle}
+            </p>
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+              <a
+                href={wa}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#1fbd5a] text-white font-semibold shadow-lg transition-all hover:scale-105"
+              >
+                <WhatsAppIcon size={18} />
+                {t.hero.ctaPrimary}
+              </a>
+              <a
+                href="#ejemplo"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-card/50 backdrop-blur-sm font-semibold hover:border-primary transition-all"
+              >
+                {t.hero.ctaSecondary}
+                <ArrowRight size={18} />
+              </a>
+            </div>
+            <p className="mt-4 text-sm font-semibold text-primary">{t.hero.priceNote}</p>
           </div>
-          <p className="mt-4 text-sm font-semibold text-primary">{t.hero.priceNote}</p>
+
+          <div className="relative">
+            <div className="relative aspect-[4/5] max-w-sm mx-auto rounded-3xl overflow-hidden border border-border shadow-2xl">
+              <Image
+                src="/images/music-artist.webp"
+                alt="Músico"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 40vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -270,19 +286,38 @@ export default function MusicosPage() {
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">{t.pain.title}</h2>
             <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">{t.pain.subtitle}</p>
           </div>
-          <div className="grid sm:grid-cols-3 gap-5">
+          <div className="space-y-12 mt-14">
             {t.pain.items.map((item, i) => {
               const Icon = item.icon;
+              const images = [
+                "/images/music-pain-1.webp",
+                "/images/music-pain-2.webp",
+                "/images/music-pain-3.webp",
+              ];
+              const reverse = i % 2 === 1;
               return (
                 <div
                   key={i}
-                  className="rounded-2xl border border-border bg-card/50 backdrop-blur-sm p-6"
+                  className="grid md:grid-cols-2 gap-6 md:gap-10 items-center"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
-                    <Icon size={22} />
+                  <div className={reverse ? "md:order-2" : ""}>
+                    <div className="relative aspect-[4/5] max-w-sm mx-auto md:mx-0 rounded-2xl overflow-hidden border border-border shadow-xl">
+                      <Image
+                        src={images[i]}
+                        alt={item.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 45vw"
+                      />
+                    </div>
                   </div>
-                  <h3 className="font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  <div className={reverse ? "md:order-1" : ""}>
+                    <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                      <Icon size={22} />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
                 </div>
               );
             })}
