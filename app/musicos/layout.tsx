@@ -39,7 +39,14 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/musicos`,
     siteName: "Jorge Calleja — Desarrollo Web",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/og-musicos.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Webs para músicos y artistas desde 199€",
+    description:
+      "Tu música, tus vídeos y tus bolos en una web que es tuya. Desde 199€.",
+    images: ["/og-musicos.jpg"],
   },
 };
 
