@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -35,6 +35,16 @@ const copy = {
   es: {
     whatsappMessage:
       "Hola Jorge, soy músico/artista y me interesa una web para mi proyecto.",
+    referral: {
+      banner: "Vienes de parte de Nitrile Affair · 50% de descuento aplicado",
+      waMessage:
+        "Hola Jorge, vengo de Nitrile Affair con el código NITRILE50. Quiero una web para mi proyecto musical (paquete básico con el 50% de descuento).",
+      priceNote: "Código NITRILE50 · 50% dto · 99€ (antes 199€)",
+      base: "199€",
+      price: "99€",
+      per: "código NITRILE50 · básico",
+      note: "Oferta para artistas de lanzamiento · plazas limitadas · aplica al paquete básico.",
+    },
     nav: { example: "Ver ejemplo", back: "Web principal" },
     hero: {
       badge: "Webs para músicos y artistas",
@@ -104,6 +114,16 @@ const copy = {
   en: {
     whatsappMessage:
       "Hi Jorge, I'm a musician/artist and I'm interested in a website for my project.",
+    referral: {
+      banner: "You come from Nitrile Affair · 50% discount applied",
+      waMessage:
+        "Hi Jorge, I come from Nitrile Affair with code NITRILE50. I'd like a website for my music project (basic package, 50% off).",
+      priceNote: "Code NITRILE50 · 50% off · €99 (was €199)",
+      base: "€199",
+      price: "€99",
+      per: "code NITRILE50 · basic",
+      note: "Launch offer for artists · limited spots · applies to the basic package.",
+    },
     nav: { example: "See example", back: "Main site" },
     hero: {
       badge: "Websites for musicians & artists",
@@ -174,9 +194,18 @@ const copy = {
 
 export default function MusicosPage() {
   const [lang, setLang] = useState<"es" | "en">("es");
+  const [referred, setReferred] = useState(false);
   const t = copy[lang];
   const year = new Date().getFullYear();
-  const wa = getWhatsAppLink(t.whatsappMessage);
+
+  useEffect(() => {
+    const r = new URLSearchParams(window.location.search).get("ref");
+    if (r) setReferred(true);
+  }, []);
+
+  const wa = getWhatsAppLink(
+    referred ? t.referral.waMessage : t.whatsappMessage
+  );
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -229,6 +258,14 @@ export default function MusicosPage() {
       <section className="relative pt-28 pb-16 px-5">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div className="text-center lg:text-left">
+            {referred && (
+              <div className="mb-4 flex justify-center lg:justify-start">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-300 text-xs font-bold">
+                  <Check size={14} />
+                  {t.referral.banner}
+                </span>
+              </div>
+            )}
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-card/50 backdrop-blur-sm text-xs font-semibold text-secondary mb-6">
               <Music size={14} />
               {t.hero.badge}
@@ -260,7 +297,9 @@ export default function MusicosPage() {
                 <ArrowRight size={18} />
               </a>
             </div>
-            <p className="mt-4 text-sm font-semibold text-primary">{t.hero.priceNote}</p>
+            <p className="mt-4 text-sm font-semibold text-primary">
+              {referred ? t.referral.priceNote : t.hero.priceNote}
+            </p>
           </div>
 
           <div className="relative">
@@ -418,11 +457,23 @@ export default function MusicosPage() {
           <div className="rounded-3xl border border-border bg-card/60 backdrop-blur-sm p-8 sm:p-10 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">{t.pricing.title}</h2>
             <div className="mt-5 flex items-end justify-center gap-2">
+              {referred && (
+                <span className="mb-2 text-2xl font-bold text-muted-foreground line-through">
+                  {t.referral.base}
+                </span>
+              )}
               <span className="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                {t.pricing.price}
+                {referred ? t.referral.price : t.pricing.price}
               </span>
-              <span className="mb-2 text-sm text-muted-foreground">{t.pricing.per}</span>
+              <span className="mb-2 text-sm text-muted-foreground">
+                {referred ? t.referral.per : t.pricing.per}
+              </span>
             </div>
+            {referred && (
+              <p className="mt-3 text-xs font-semibold text-green-400">
+                {t.referral.note}
+              </p>
+            )}
             <ul className="mt-7 space-y-3 text-left max-w-md mx-auto">
               {t.pricing.includes.map((line, i) => (
                 <li key={i} className="flex items-start gap-3">
