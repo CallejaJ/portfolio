@@ -35,4 +35,25 @@ He's onboarding trusted people with a launch discount: with my code **NITRILE50*
 The discount is already applied here 👉 jorgecalleja.dev/musicos?ref=nitrile
 
 ### Pie de foto corto (para la historia/post)
-Web a medida para artistas con el respaldo de @nitrileaffair. Código NITRILE50 → 50% dto (99€). Plazas limitadas. Link en bio / desliza.
+Web a medida para artistas con el respaldo de @nitrileaffair. Código NITRILE50 → 50% dto (99€). Solo 9 artistas. Link en bio / desliza.
+
+---
+
+## Texto para el Instagram de Nitrile
+
+### Post (caption)
+Si eres músico y sigues sin web propia, esto te interesa 👇
+
+Un colega, Jorge (@elfarodetuweb), me montó la mía —nitrileaffair.com— y quedó justo como quería: mi música, mis vídeos, mis bolos y el contacto en un solo link que es MÍO, no alquilado a ningún algoritmo.
+
+Está abriendo hueco para 9 artistas con precio de lanzamiento: con mi código **NITRILE50** os sale a **99€** en vez de 199€ (web a medida, paquete básico). Solo los 9 primeros.
+
+Os dejo el link con el descuento ya aplicado 👉 jorgecalleja.dev/musicos?ref=nitrile
+
+#músicaindependiente #artistaindependiente #webparamúsicos #djs #productores
+
+### Story (texto corto sobre la tarjeta)
+¿Sin web propia todavía? Mi código NITRILE50 → 50% (99€). Solo 9 artistas.
+(añade el sticker de enlace a jorgecalleja.dev/musicos?ref=nitrile)
+
+> Nota: recuerda poner el enlace en la bio o en el sticker de la historia. En un post normal el link no es clicable, así que dirige a "link en bio".
