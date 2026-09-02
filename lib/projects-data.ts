@@ -19,7 +19,6 @@ export type ProjectKey =
   | "legacyWallet"
   | "malagaPremiumTransfers"
   | "precioLuzHora"
-  | "nitrileAffair"
   | "timeBankOnChain"
   | "outdoorBachata"
   | "analizoTuCv";
@@ -355,22 +354,6 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/CallejaJ/precio-luz-hora",
     demo: "https://precioluzhora.online",
-    featured: false,
-  },
-  {
-    id: 21,
-    titleKey: "nitrileAffair",
-    image: "/images/nitrile-affair.webp",
-    technologies: [
-      "HTML5",
-      "CSS3",
-      "JavaScript Vanilla",
-      "SoundCloud Widget",
-      "Bandcamp Embed",
-      "YouTube Embed",
-    ],
-    github: "https://github.com/CallejaJ/nitrile-affair",
-    demo: "https://nitrileaffair.com",
     featured: false,
   },
   {

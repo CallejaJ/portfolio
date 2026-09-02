@@ -20,7 +20,6 @@ export type ProjectKey =
   | "twitterBot"
   | "legacyWallet"
   | "precioLuzHora"
-  | "nitrileAffair"
   | "timeBankOnChain";
 
 export interface ProjectData {
@@ -412,12 +411,6 @@ export const translations = {
         description:
           "Web que muestra el precio de la luz hora a hora, directamente de la fuente oficial, y te dice cuándo poner la lavadora para pagar menos. Con calculadoras de factura y consejos de ahorro. Miles de visitas gracias a estar en primera página de Google.",
         metrics: "Precio de la luz en tiempo real",
-      },
-      nitrileAffair: {
-        title: "Nitrile Affair — Web de artista musical",
-        description:
-          "La web de un artista electrónico con toda su música en un solo sitio: reproductores de SoundCloud y Bandcamp, vídeos, galería y su historial de directos verificado. Carga al instante en cualquier dispositivo.",
-        metrics: "Toda su música en un solo enlace",
       },
       timeBankOnChain: {
         title: "Time Bank — Banco del tiempo",
@@ -894,12 +887,6 @@ export const translations = {
         description:
           "A website showing Spain's electricity price hour by hour, straight from the official source, telling you when to run appliances to pay less. With bill calculators and saving tips. Thousands of visits thanks to ranking on Google's first page.",
         metrics: "Real-time electricity prices",
-      },
-      nitrileAffair: {
-        title: "Nitrile Affair — Music artist website",
-        description:
-          "An electronic artist's website with all his music in one place: SoundCloud and Bandcamp players, videos, gallery, and a verified live-performance history. Loads instantly on any device.",
-        metrics: "All his music in one link",
       },
       timeBankOnChain: {
         title: "Time Bank — Time-based exchange",
