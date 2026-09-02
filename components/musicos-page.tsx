@@ -29,6 +29,8 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { WhatsAppIcon } from "@/components/whatsapp-button";
 import { getWhatsAppLink } from "@/lib/site-config";
 
+const DEMO_URL = "https://musicartistdj.vercel.app";
+
 const copy = {
   es: {
     whatsappMessage:
@@ -77,10 +79,11 @@ const copy = {
       ],
     },
     example: {
-      badge: "Ejemplo de diseño",
+      badge: "Demo en vivo",
       title: "Así se vería tu web",
-      desc: "Un ejemplo de web para artista: tu nombre, tu música, tus vídeos, tus bolos y el contacto, todo en un enlace propio, rápido y perfecto en el móvil. Esto es una muestra; la tuya se diseña a tu medida.",
+      desc: "Una demo real que puedes explorar: música, vídeos, bolos, galería y contacto, todo en un enlace propio, rápido y perfecto en el móvil. El contenido es de muestra; la tuya se diseña a tu medida.",
       cta: "La quiero así",
+      demo: "Ver demo en vivo",
       tags: ["Reproductor propio", "Bolos", "Galería", "Móvil"],
     },
     pricing: {
@@ -146,10 +149,11 @@ const copy = {
       ],
     },
     example: {
-      badge: "Design example",
+      badge: "Live demo",
       title: "This is how your site would look",
-      desc: "An example artist site: your name, your music, your videos, your gigs and contact — all in one link, fast and perfect on mobile. This is a sample; yours is built around you.",
+      desc: "A real demo you can explore: music, videos, gigs, gallery and contact — all in one link, fast and perfect on mobile. The content is sample; yours is built around you.",
       cta: "I want one like this",
+      demo: "See live demo",
       tags: ["Custom player", "Gigs", "Gallery", "Mobile-ready"],
     },
     pricing: {
@@ -374,35 +378,50 @@ export default function MusicosPage() {
                 </span>
               ))}
             </div>
-            <a
-              href={wa}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold transition-all hover:scale-105"
-            >
-              {t.example.cta}
-              <ArrowRight size={18} />
-            </a>
+            <div className="mt-6 flex flex-col sm:flex-row gap-3">
+              <a
+                href={DEMO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold transition-all hover:scale-105"
+              >
+                {t.example.demo}
+                <ArrowRight size={18} />
+              </a>
+              <a
+                href={wa}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card/50 backdrop-blur-sm font-semibold hover:border-primary transition-all"
+              >
+                {t.example.cta}
+              </a>
+            </div>
           </div>
 
-          {/* Mockup de plantilla (muestra, sin contenido real) */}
-          <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-card">
+          {/* Mockup de la demo (clicable) */}
+          <a
+            href={DEMO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group rounded-2xl overflow-hidden border border-border shadow-2xl bg-card"
+          >
             <div className="flex items-center gap-1.5 px-4 py-3 bg-muted/40 border-b border-border">
               <span className="w-3 h-3 rounded-full bg-red-400" />
               <span className="w-3 h-3 rounded-full bg-yellow-400" />
               <span className="w-3 h-3 rounded-full bg-green-400" />
-              <span className="ml-3 text-xs text-muted-foreground truncate">tuproyecto.com</span>
+              <span className="ml-3 text-xs text-muted-foreground truncate">musicartistdj.vercel.app</span>
             </div>
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
                 src="/images/music-template.webp"
-                alt="Ejemplo de web para artista musical"
+                alt="Demo de web para artista musical"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
