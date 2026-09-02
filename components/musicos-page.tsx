@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -29,22 +29,10 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { WhatsAppIcon } from "@/components/whatsapp-button";
 import { getWhatsAppLink } from "@/lib/site-config";
 
-const NITRILE_URL = "https://nitrileaffair.com";
-
 const copy = {
   es: {
     whatsappMessage:
       "Hola Jorge, soy músico/artista y me interesa una web para mi proyecto.",
-    referral: {
-      banner: "Vienes de parte de Nitrile Affair · 50% de descuento aplicado",
-      waMessage:
-        "Hola Jorge, vengo de Nitrile Affair con el código NITRILE50. Quiero una web para mi proyecto musical (paquete básico con el 50% de descuento).",
-      priceNote: "Código NITRILE50 · 50% dto · 99€ (antes 199€)",
-      base: "199€",
-      price: "99€",
-      per: "código NITRILE50 · básico",
-      note: "Oferta de lanzamiento · solo los primeros 9 artistas · aplica al paquete básico.",
-    },
     nav: { example: "Ver ejemplo", back: "Web principal" },
     hero: {
       badge: "Webs para músicos y artistas",
@@ -54,7 +42,7 @@ const copy = {
         "Una web a medida —tuya para siempre— con tu música, tus vídeos, tus bolos y tu tienda en un solo enlace que controlas tú.",
       priceNote: "Desde 199€ · a medida",
       ctaPrimary: "Escríbeme por WhatsApp",
-      ctaSecondary: "Ver un ejemplo real",
+      ctaSecondary: "Ver un ejemplo",
     },
     pain: {
       title: "Hoy tu carrera vive alquilada.",
@@ -89,11 +77,11 @@ const copy = {
       ],
     },
     example: {
-      badge: "Ejemplo real",
-      title: "Nitrile Affair",
-      desc: "Web hecha a medida para un proyecto de techno de Málaga: música, galería, vídeos, directos y contacto, todo en un enlace propio y rápido en el móvil.",
-      cta: "Visitar nitrileaffair.com",
-      tags: ["Techno · Vinilo", "Reproductor propio", "Móvil", "Contacto directo"],
+      badge: "Ejemplo de diseño",
+      title: "Así se vería tu web",
+      desc: "Un ejemplo de web para artista: tu nombre, tu música, tus vídeos, tus bolos y el contacto, todo en un enlace propio, rápido y perfecto en el móvil. Esto es una muestra; la tuya se diseña a tu medida.",
+      cta: "La quiero así",
+      tags: ["Reproductor propio", "Bolos", "Galería", "Móvil"],
     },
     pricing: {
       title: "Precio claro, sin sorpresas",
@@ -114,16 +102,6 @@ const copy = {
   en: {
     whatsappMessage:
       "Hi Jorge, I'm a musician/artist and I'm interested in a website for my project.",
-    referral: {
-      banner: "You come from Nitrile Affair · 50% discount applied",
-      waMessage:
-        "Hi Jorge, I come from Nitrile Affair with code NITRILE50. I'd like a website for my music project (basic package, 50% off).",
-      priceNote: "Code NITRILE50 · 50% off · €99 (was €199)",
-      base: "€199",
-      price: "€99",
-      per: "code NITRILE50 · basic",
-      note: "Launch offer · only the first 9 artists · applies to the basic package.",
-    },
     nav: { example: "See example", back: "Main site" },
     hero: {
       badge: "Websites for musicians & artists",
@@ -133,7 +111,7 @@ const copy = {
         "A custom website —yours forever— with your music, videos, gigs and store in one single link that you control.",
       priceNote: "From €199 · custom-built",
       ctaPrimary: "Message me on WhatsApp",
-      ctaSecondary: "See a real example",
+      ctaSecondary: "See an example",
     },
     pain: {
       title: "Right now your career lives on rent.",
@@ -168,11 +146,11 @@ const copy = {
       ],
     },
     example: {
-      badge: "Real example",
-      title: "Nitrile Affair",
-      desc: "A custom site for a techno project from Málaga: music, gallery, videos, live sets and contact — all in one link, fast on mobile.",
-      cta: "Visit nitrileaffair.com",
-      tags: ["Techno · Vinyl", "Custom player", "Mobile-ready", "Direct contact"],
+      badge: "Design example",
+      title: "This is how your site would look",
+      desc: "An example artist site: your name, your music, your videos, your gigs and contact — all in one link, fast and perfect on mobile. This is a sample; yours is built around you.",
+      cta: "I want one like this",
+      tags: ["Custom player", "Gigs", "Gallery", "Mobile-ready"],
     },
     pricing: {
       title: "Clear price, no surprises",
@@ -194,18 +172,10 @@ const copy = {
 
 export default function MusicosPage() {
   const [lang, setLang] = useState<"es" | "en">("es");
-  const [referred, setReferred] = useState(false);
   const t = copy[lang];
   const year = new Date().getFullYear();
 
-  useEffect(() => {
-    const r = new URLSearchParams(window.location.search).get("ref");
-    if (r) setReferred(true);
-  }, []);
-
-  const wa = getWhatsAppLink(
-    referred ? t.referral.waMessage : t.whatsappMessage
-  );
+  const wa = getWhatsAppLink(t.whatsappMessage);
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -258,14 +228,6 @@ export default function MusicosPage() {
       <section className="relative pt-28 pb-16 px-5">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div className="text-center lg:text-left">
-            {referred && (
-              <div className="mb-4 flex justify-center lg:justify-start">
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-300 text-xs font-bold">
-                  <Check size={14} />
-                  {t.referral.banner}
-                </span>
-              </div>
-            )}
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-card/50 backdrop-blur-sm text-xs font-semibold text-secondary mb-6">
               <Music size={14} />
               {t.hero.badge}
@@ -298,7 +260,7 @@ export default function MusicosPage() {
               </a>
             </div>
             <p className="mt-4 text-sm font-semibold text-primary">
-              {referred ? t.referral.priceNote : t.hero.priceNote}
+              {t.hero.priceNote}
             </p>
           </div>
 
@@ -393,7 +355,7 @@ export default function MusicosPage() {
         </div>
       </section>
 
-      {/* Example — Nitrile Affair */}
+      {/* Example — plantilla de muestra */}
       <section id="ejemplo" className="relative py-16 px-5 scroll-mt-20">
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
           <div>
@@ -413,7 +375,7 @@ export default function MusicosPage() {
               ))}
             </div>
             <a
-              href={NITRILE_URL}
+              href={wa}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold transition-all hover:scale-105"
@@ -423,31 +385,24 @@ export default function MusicosPage() {
             </a>
           </div>
 
-          {/* Browser mockup */}
-          <a
-            href={NITRILE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block group"
-          >
-            <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-card">
-              <div className="flex items-center gap-1.5 px-4 py-3 bg-muted/40 border-b border-border">
-                <span className="w-3 h-3 rounded-full bg-red-400" />
-                <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                <span className="w-3 h-3 rounded-full bg-green-400" />
-                <span className="ml-3 text-xs text-muted-foreground truncate">nitrileaffair.com</span>
-              </div>
-              <div className="relative aspect-[16/10] overflow-hidden">
-                <Image
-                  src="/images/nitrile-affair.webp"
-                  alt="Nitrile Affair — web para músico"
-                  fill
-                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
+          {/* Mockup de plantilla (muestra, sin contenido real) */}
+          <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-card">
+            <div className="flex items-center gap-1.5 px-4 py-3 bg-muted/40 border-b border-border">
+              <span className="w-3 h-3 rounded-full bg-red-400" />
+              <span className="w-3 h-3 rounded-full bg-yellow-400" />
+              <span className="w-3 h-3 rounded-full bg-green-400" />
+              <span className="ml-3 text-xs text-muted-foreground truncate">tuproyecto.com</span>
             </div>
-          </a>
+            <div className="relative aspect-[16/10] overflow-hidden">
+              <Image
+                src="/images/music-template.webp"
+                alt="Ejemplo de web para artista musical"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -457,23 +412,13 @@ export default function MusicosPage() {
           <div className="rounded-3xl border border-border bg-card/60 backdrop-blur-sm p-8 sm:p-10 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">{t.pricing.title}</h2>
             <div className="mt-5 flex items-end justify-center gap-2">
-              {referred && (
-                <span className="mb-2 text-2xl font-bold text-muted-foreground line-through">
-                  {t.referral.base}
-                </span>
-              )}
               <span className="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                {referred ? t.referral.price : t.pricing.price}
+                {t.pricing.price}
               </span>
               <span className="mb-2 text-sm text-muted-foreground">
-                {referred ? t.referral.per : t.pricing.per}
+                {t.pricing.per}
               </span>
             </div>
-            {referred && (
-              <p className="mt-3 text-xs font-semibold text-green-400">
-                {t.referral.note}
-              </p>
-            )}
             <ul className="mt-7 space-y-3 text-left max-w-md mx-auto">
               {t.pricing.includes.map((line, i) => (
                 <li key={i} className="flex items-start gap-3">
