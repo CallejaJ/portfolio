@@ -7,7 +7,7 @@ import { WhatsAppIcon } from "./whatsapp-button";
 
 const LeadMagnetSection = ({ t }: { t: any }) => {
   return (
-    <section className="py-20 relative" id="checklist">
+    <section className="py-20 bg-secondary/5 relative" id="checklist">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -19,7 +19,7 @@ interface ProjectsSectionProps {
 
 const ProjectsSection = ({ t, projects }: ProjectsSectionProps) => {
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-20 px-6 bg-secondary/5 relative">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

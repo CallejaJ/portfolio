@@ -8,7 +8,7 @@ const icons = [Wrench, Rocket, LineChart, Sparkles];
 
 const ServicesSection = ({ t }: { t: any }) => {
   return (
-    <section className="py-24 relative" id="services">
+    <section className="py-24 bg-secondary/5 relative" id="services">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2

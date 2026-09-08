@@ -20,7 +20,7 @@ const item = {
 
 const HeroSection = ({ t }: any) => {
   return (
-    <section className="min-h-screen w-full relative overflow-hidden px-4 sm:px-6">
+    <section className="min-h-[85vh] w-full relative overflow-hidden px-4 sm:px-6">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
       {/* Animated gradient blobs */}
@@ -41,7 +41,7 @@ const HeroSection = ({ t }: any) => {
         variants={container}
         initial="hidden"
         animate="show"
-        className="max-w-5xl mx-auto text-center relative z-10 pt-36 pb-16 md:pt-44 md:pb-24"
+        className="max-w-5xl mx-auto text-center relative z-10 pt-28 pb-14 md:pt-36 md:pb-20"
       >
         {/* Headline */}
         <motion.h1
