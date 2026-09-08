@@ -105,14 +105,14 @@ const ContactSection = ({ t }: any) => {
                 name="website"
                 required
                 placeholder={t.auditForm.urlPlaceholder}
-                className="flex-1 px-5 py-3.5 rounded-full bg-white text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-white/70 transition-all"
+                className="flex-1 min-w-0 w-full px-5 py-3.5 rounded-full bg-white text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-white/70 transition-all"
               />
               <input
                 type="email"
                 name="email"
                 required
                 placeholder={t.auditForm.emailPlaceholder}
-                className="flex-1 px-5 py-3.5 rounded-full bg-white text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-white/70 transition-all"
+                className="flex-1 min-w-0 w-full px-5 py-3.5 rounded-full bg-white text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-white/70 transition-all"
               />
               <button
                 type="submit"
