@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/site-config";
 import { WhatsAppIcon } from "./whatsapp-button";
+import HeroBeforeAfter from "./hero-before-after";
 
 const container = {
   hidden: {},
@@ -97,10 +98,13 @@ const HeroSection = ({ t }: any) => {
         {/* Texto bajo los CTAs, mismo estilo que la descripción */}
         <motion.p
           variants={item}
-          className="text-base md:text-lg text-muted-foreground mb-14 max-w-3xl mx-auto leading-relaxed"
+          className="text-base md:text-lg text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed"
         >
           {t.heroBadge}
         </motion.p>
+
+        {/* Comparación visual antes/después */}
+        <HeroBeforeAfter t={t} variants={item} />
 
         {/* Stats strip */}
         <motion.div
