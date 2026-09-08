@@ -8,13 +8,14 @@ export async function POST(request: Request) {
   try {
     const { website, email } = await request.json();
 
+    // Email real: sin espacios ni caracteres de control, con dominio y TLD
+    const EMAIL_RE = /^[^\s@]{1,64}@[^\s@]+\.[^\s@]{2,}$/;
     if (
       typeof website !== "string" ||
       typeof email !== "string" ||
-      !email.includes("@") ||
-      website.length < 4 ||
-      website.length > 300 ||
-      email.length > 200
+      !EMAIL_RE.test(email.trim()) ||
+      website.trim().length < 4 ||
+      website.trim().length > 300
     ) {
       return NextResponse.json({ ok: false }, { status: 400 });
     }
