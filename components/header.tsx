@@ -5,8 +5,6 @@ import { useTheme } from "next-themes";
 import { ThemeToggle } from "./theme-toggle";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
-import { getWhatsAppLink } from "@/lib/site-config";
-import { WhatsAppIcon } from "./whatsapp-button";
 import { FaroLogo } from "./logo";
 
 interface HeaderProps {
@@ -102,16 +100,6 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
           </div>
 
           <ThemeToggle />
-
-          <a
-            href={getWhatsAppLink(t.whatsappMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] hover:bg-[#1fbd5a] text-white text-sm font-semibold shadow-md transition-all duration-300 hover:scale-105"
-          >
-            <WhatsAppIcon size={16} />
-            WhatsApp
-          </a>
         </nav>
 
         {/* Mobile Controls */}

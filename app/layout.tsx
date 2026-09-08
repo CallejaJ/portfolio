@@ -1,6 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { Space_Grotesk } from "next/font/google";
+
+// Tipografía display para titulares (h1-h3, ver globals.css)
+const displayFont = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+});
 import { ThemeProvider } from "@/components/theme-provider";
 import ChunkErrorReloader from "@/components/chunk-error-reloader";
 import { Analytics } from "@vercel/analytics/react";
@@ -97,7 +104,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning className={displayFont.variable}>
       <head>
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
         <script

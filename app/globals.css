@@ -63,6 +63,15 @@
   }
 }
 
+@layer base {
+  /* Tipografía display para titulares (definida en layout.tsx) */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display), system-ui, sans-serif;
+  }
+}
+
 @layer utilities {
   .bg-grid-pattern {
     background-image: radial-gradient(circle, #3b0764 1px, transparent 1px);
