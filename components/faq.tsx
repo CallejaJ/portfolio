@@ -49,7 +49,7 @@ const FaqSection = ({ t }: { t: any }) => {
           >
             {t.faq.subtitle}
           </motion.p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
         <div className="space-y-4">

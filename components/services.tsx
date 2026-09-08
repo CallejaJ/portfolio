@@ -28,7 +28,7 @@ const ServicesSection = ({ t }: { t: any }) => {
           >
             {t.services.subtitle}
           </motion.p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -46,7 +46,7 @@ const ServicesSection = ({ t }: { t: any }) => {
               >
                 <Card className="h-full bg-card/50 hover:shadow-[0_0_40px_rgba(168,85,247,0.2)] transition-all duration-300 border border-border/50 hover:border-primary/50 overflow-hidden group relative">
                   {/* Top gradient line on hover */}
-                  <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className="absolute top-0 inset-x-0 h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
 
                   <CardContent className="p-8 flex flex-col items-center text-center">
                     <div className="p-4 bg-primary/10 rounded-2xl mb-6 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">

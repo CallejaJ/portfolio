@@ -83,7 +83,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
               onClick={() => setLanguage("es")}
               className={`px-3 py-1 rounded-full text-xs font-semibold transition-all duration-300 ${
                 language === "es"
-                  ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-sm"
+                  ? "bg-primary text-primary-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -93,7 +93,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
               onClick={() => setLanguage("en")}
               className={`px-3 py-1 rounded-full text-xs font-semibold transition-all duration-300 ${
                 language === "en"
-                  ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-sm"
+                  ? "bg-primary text-primary-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -119,9 +119,9 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
           <div className="flex bg-card/50 backdrop-blur-sm rounded-full p-0.5 border border-border">
             <button
               onClick={() => setLanguage("es")}
-              className={`px-2 py-1 rounded-full text-[10px] font-semibold transition-all duration-300 ${
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 ${
                 language === "es"
-                  ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-sm"
+                  ? "bg-primary text-primary-foreground shadow-sm"
                   : "text-muted-foreground"
               }`}
             >
@@ -129,9 +129,9 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
             </button>
             <button
               onClick={() => setLanguage("en")}
-              className={`px-2 py-1 rounded-full text-[10px] font-semibold transition-all duration-300 ${
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 ${
                 language === "en"
-                  ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-sm"
+                  ? "bg-primary text-primary-foreground shadow-sm"
                   : "text-muted-foreground"
               }`}
             >
@@ -177,7 +177,7 @@ export const Header = ({ language, setLanguage, t }: HeaderProps) => {
                   }}
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <span>{t.nav[item.key]}</span>
                   </div>
                   {/* Hover gradient border */}

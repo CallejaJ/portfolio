@@ -37,7 +37,7 @@ const CaseStudySection = ({ t }: { t: any }) => {
 
           {/* Historia + números */}
           <div className="p-7 md:p-12">
-            <span className="inline-block px-4 py-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs font-bold uppercase tracking-wider mb-5">
+            <span className="inline-block px-4 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider mb-5">
               {t.caseStudy.badge}
             </span>
             <h2 className="text-2xl md:text-4xl font-bold mb-3 leading-tight">
@@ -53,7 +53,7 @@ const CaseStudySection = ({ t }: { t: any }) => {
             <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
               {t.caseStudy.stats.map((s: any, i: number) => (
                 <div key={i} className="min-w-0 text-center rounded-2xl border border-border bg-background/40 px-1.5 py-4">
-                  <div className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                  <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary">
                     {s.value}
                   </div>
                   <div className="text-[10px] md:text-xs text-muted-foreground mt-1 leading-tight break-words hyphens-auto">

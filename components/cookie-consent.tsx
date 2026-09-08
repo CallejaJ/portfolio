@@ -61,13 +61,13 @@ const CookieConsent = ({ t }: { t: any }) => {
             <div className="flex gap-3">
               <button
                 onClick={() => choose("accepted")}
-                className="flex-1 px-4 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold hover:from-blue-700 hover:to-purple-700 transition-all"
+                className="flex-1 px-4 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-all"
               >
                 {t.cookies.accept}
               </button>
               <button
                 onClick={() => choose("rejected")}
-                className="flex-1 px-4 py-2.5 rounded-full border border-border bg-transparent text-foreground text-sm font-semibold hover:bg-muted/50 transition-all"
+                className="flex-1 px-4 py-2.5 rounded-full border-2 border-primary/50 bg-transparent text-foreground text-sm font-semibold hover:bg-primary/10 transition-all"
               >
                 {t.cookies.reject}
               </button>

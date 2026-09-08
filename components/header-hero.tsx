@@ -48,7 +48,7 @@ const HeroSection = ({ t }: any) => {
           variants={item}
           className="text-4xl md:text-6xl lg:text-[4.2rem] font-bold mb-6 leading-tight tracking-tight"
         >
-          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
             {t.title}
           </span>
         </motion.h1>
@@ -113,7 +113,7 @@ const HeroSection = ({ t }: any) => {
               whileHover={{ y: -4 }}
               className="rounded-2xl border border-border bg-card/50 backdrop-blur-sm px-4 py-5 transition-colors hover:border-primary/50"
             >
-              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+              <div className="text-2xl md:text-3xl font-bold text-primary">
                 {stat.value}
               </div>
               <div className="text-xs md:text-sm text-muted-foreground mt-1 leading-tight">

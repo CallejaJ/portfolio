@@ -17,7 +17,7 @@ const TestimonialsSection = ({ t }: { t: any }) => {
           >
             {t.testimonials.title}
           </motion.h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6"></div>
 
           {/* Valoración de Google */}
           {GOOGLE_RATING.count > 0 && (

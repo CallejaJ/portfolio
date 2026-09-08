@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { MotionConfig } from "framer-motion";
 import ContactSection from "@/components/contact-cta";
 import Footer from "@/components/footer";
 import ProjectsSection from "@/components/projects-section";
@@ -35,7 +36,10 @@ export default function JorgeLanding() {
   const t = translations[language as keyof typeof translations];
 
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
+    // reducedMotion="user": si el visitante pide menos movimiento en su SO,
+    // framer-motion desactiva las animaciones de desplazamiento/escala en toda la página
+    <MotionConfig reducedMotion="user">
+      <div className="min-h-screen bg-background overflow-x-hidden">
       <FaroBackground />
       <Header language={language} setLanguage={setLanguage} t={t} />
       <HeroSection t={t} />
@@ -56,6 +60,7 @@ export default function JorgeLanding() {
       <MobileCtaBar t={t} />
       <CookieConsent t={t} />
       <WhatsAppTracker />
-    </div>
+      </div>
+    </MotionConfig>
   );
 }

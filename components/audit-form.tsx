@@ -71,7 +71,7 @@ const AuditFormSection = ({ t }: { t: any }) => {
             <button
               type="submit"
               disabled={state === "sending"}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold transition-all duration-300 hover:scale-105 disabled:opacity-60 disabled:hover:scale-100 whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 hover:scale-105 disabled:opacity-60 disabled:hover:scale-100 whitespace-nowrap"
             >
               <Send size={16} />
               {state === "sending" ? t.auditForm.sending : t.auditForm.button}

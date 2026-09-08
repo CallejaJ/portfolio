@@ -183,7 +183,7 @@ const AnalyzerSection = ({ t }: { t: any }) => {
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold transition-all duration-300 hover:scale-105 whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 hover:scale-105 whitespace-nowrap"
               >
                 <Search size={18} />
                 {t.analyzer.button}
