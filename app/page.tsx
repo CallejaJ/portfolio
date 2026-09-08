@@ -15,7 +15,6 @@ import CaseStudySection from "@/components/case-study";
 import TestimonialsSection from "@/components/testimonials";
 import AboutSection from "@/components/about";
 import LeadMagnetSection from "@/components/lead-magnet";
-import AuditFormSection from "@/components/audit-form";
 import MobileCtaBar from "@/components/mobile-cta-bar";
 import CookieConsent from "@/components/cookie-consent";
 import WhatsAppTracker from "@/components/whatsapp-tracker";
@@ -26,7 +25,7 @@ import { translations } from "@/lib/translations";
 import { projects } from "@/lib/projects-data";
 
 // Proyectos relevantes para pymes y negocios locales (orden de aparición)
-const LANDING_PROJECT_IDS = [12, 18, 14, 23, 13, 1, 24, 11, 20, 10, 22];
+const LANDING_PROJECT_IDS = [12, 18, 14, 22, 20, 24];
 const landingProjects = LANDING_PROJECT_IDS.map(
   (id) => projects.find((p) => p.id === id)!
 ).filter(Boolean);
@@ -53,7 +52,6 @@ export default function JorgeLanding() {
       <AboutSection t={t} />
       <LeadMagnetSection t={t} />
       <FaqSection t={t} />
-      <AuditFormSection t={t} />
       <ContactSection t={t} language={language} />
       <Footer t={t} />
       <FloatingWhatsApp t={t} />
