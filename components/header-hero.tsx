@@ -42,7 +42,7 @@ const HeroSection = ({ t }: any) => {
         variants={container}
         initial="hidden"
         animate="show"
-        className="max-w-5xl mx-auto text-center relative z-10 pt-28 pb-14 md:pt-36 md:pb-20"
+        className="max-w-6xl mx-auto text-center relative z-10 pt-28 pb-14 md:pt-36 md:pb-20"
       >
         {/* Headline */}
         <motion.h1
@@ -109,7 +109,7 @@ const HeroSection = ({ t }: any) => {
         {/* Stats strip */}
         <motion.div
           variants={item}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
         >
           {t.heroStats.map((stat: any, i: number) => (
             <motion.div

@@ -42,7 +42,7 @@ const BrowserShell = ({
       </span>
     </div>
     {/* Contenido de la "web" */}
-    <div className="h-36 sm:h-40 p-3">{children}</div>
+    <div className="h-40 sm:h-48 p-3">{children}</div>
   </div>
 );
 
@@ -51,7 +51,7 @@ const HeroBeforeAfter = ({ t, variants }: { t: any; variants: any }) => {
   return (
     <motion.div
       variants={variants}
-      className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto mb-14 px-2 text-left"
+      className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto mb-14 px-2 text-left"
     >
       {/* ANTES — web en serie, rota */}
       <div>
