@@ -1,0 +1,24 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://jorgecalleja.dev/api/analizar",
+      "service": [
+        {
+          "href": "https://jorgecalleja.dev/api/analizar",
+          "title": "Website audit powered by Google PageSpeed Insights (Lighthouse). POST {\"url\": \"https://example.com\"} -> performance, accessibility, best-practices and SEO scores.",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://jorgecalleja.dev/api/audit",
+      "service": [
+        {
+          "href": "https://jorgecalleja.dev/api/audit",
+          "title": "Request a manual website audit by email. POST {\"website\": \"https://example.com\", \"email\": \"you@example.com\"} -> the owner replies within 24h.",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}
