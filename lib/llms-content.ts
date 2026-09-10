@@ -1,4 +1,6 @@
-# Jorge Calleja — Desarrollo Web
+// Fuente única del contenido markdown del sitio.
+// Lo sirven /llms.txt (text/plain) y /md (text/markdown para agentes).
+export const LLMS_CONTENT = `# Jorge Calleja — Desarrollo Web
 
 > Desarrollador web en Málaga (España) especializado en rescatar webs del Kit Digital que no generan clientes: webs rápidas (99/100 en PageSpeed), con estructura SEO, optimizadas para buscadores con IA (GEO) y pensadas para vender. Auditoría gratuita en 24 horas.
 
@@ -14,8 +16,8 @@
 ## APIs para agentes
 
 - [API catalog (RFC 9727)](https://jorgecalleja.dev/.well-known/api-catalog): catálogo de servicios en formato linkset
-- `POST https://jorgecalleja.dev/api/analizar` — body `{"url": "https://ejemplo.com"}` → puntuaciones de rendimiento, accesibilidad, buenas prácticas y SEO
-- `POST https://jorgecalleja.dev/api/audit` — body `{"website": "https://ejemplo.com", "email": "tu@email.com"}` → solicita una auditoría manual (respuesta en 24h)
+- \`POST https://jorgecalleja.dev/api/analizar\` — body \`{"url": "https://ejemplo.com"}\` → puntuaciones de rendimiento, accesibilidad, buenas prácticas y SEO
+- \`POST https://jorgecalleja.dev/api/audit\` — body \`{"website": "https://ejemplo.com", "email": "tu@email.com"}\` → solicita una auditoría manual (respuesta en 24h)
 
 ## Otros recursos
 
@@ -29,3 +31,4 @@
 - Email: hola@jorgecalleja.dev
 - WhatsApp: +34 649 53 00 22
 - Ubicación: Málaga, España (trabajo en remoto para toda España)
+`;

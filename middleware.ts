@@ -9,10 +9,8 @@ export function middleware(request: NextRequest) {
   const accept = request.headers.get("accept") || "";
   if (accept.includes("text/markdown")) {
     const url = request.nextUrl.clone();
-    url.pathname = "/llms.txt";
-    const response = NextResponse.rewrite(url);
-    response.headers.set("Content-Type", "text/markdown; charset=utf-8");
-    return response;
+    url.pathname = "/md";
+    return NextResponse.rewrite(url);
   }
   return NextResponse.next();
 }
