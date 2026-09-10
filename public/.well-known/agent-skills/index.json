@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "website-audit",
+      "type": "skill-md",
+      "description": "Analyze any website's performance, accessibility, SEO and best practices with the jorgecalleja.dev PageSpeed-powered API, and request a manual expert audit delivered by email within 24 hours.",
+      "url": "https://jorgecalleja.dev/.well-known/agent-skills/website-audit/SKILL.md",
+      "digest": "sha256:d485fe08036a16c6df2ec710c4414ca07db14180d97564fc9853248b8b9e38c3"
+    }
+  ]
+}
