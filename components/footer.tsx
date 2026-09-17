@@ -5,7 +5,7 @@
 "use client";
 
 import React from "react";
-import { Linkedin, Github, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FaroLogo } from "./logo";
 import { WhatsAppIcon } from "./whatsapp-button";
 import { getWhatsAppLink, CONTACT_EMAIL, GOOGLE_REVIEW_URL } from "@/lib/site-config";
@@ -106,28 +106,6 @@ const Footer = ({ t }: any) => {
                 >
                   <Mail size={16} />
                   {CONTACT_EMAIL}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/callejaj"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <Linkedin size={16} />
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/CallejaJ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <Github size={16} />
-                  GitHub
                 </a>
               </li>
             </ul>
